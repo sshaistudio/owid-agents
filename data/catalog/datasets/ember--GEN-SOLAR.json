@@ -1,21 +1,21 @@
 {
   "meta": {
     "id": "ember--GEN-SOLAR",
-    "title": "Solar Electricity Generation",
+    "title": "Solar Electricity Generation (TWh)",
     "description": "Electricity generation from solar (TWh) from ember",
     "source": {
       "provider": "ember",
       "indicatorId": "GEN-SOLAR",
       "indicatorName": "Electricity generation from solar (TWh)",
       "sourceUrl": "https://ember-energy.org/data/yearly-electricity-data/",
-      "lastFetched": "2026-06-26T03:31:38.878Z"
+      "lastFetched": "2026-07-01T00:43:35.530Z"
     },
     "topics": [
       "energy",
-      "renewable energy",
+      "renewable",
       "solar",
       "electricity",
-      "clean energy"
+      "climate"
     ],
     "countries": [
       "AFG",
