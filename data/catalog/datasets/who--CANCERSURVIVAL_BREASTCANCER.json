@@ -8,13 +8,15 @@
       "indicatorId": "CANCERSURVIVAL_BREASTCANCER",
       "indicatorName": "Cancer survival for those diagnosed with breast cancer, 5-year net survival (%)",
       "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/CANCERSURVIVAL_BREASTCANCER",
-      "lastFetched": "2026-07-01T00:44:14.034Z"
+      "lastFetched": "2026-07-05T00:34:07.173Z"
     },
     "topics": [
-      "health",
       "cancer",
-      "women",
+      "health",
       "mortality",
+      "disease",
+      "inequality",
+      "women",
       "noncommunicable disease"
     ],
     "countries": [
