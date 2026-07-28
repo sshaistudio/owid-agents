@@ -8,15 +8,14 @@
       "indicatorId": "NY.GDP.TOTL.RT.ZS",
       "indicatorName": "Total natural resources rents (% of GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
-      "lastFetched": "2026-07-20T03:30:07.773Z"
+      "lastFetched": "2026-07-28T00:34:23.225Z"
     },
     "topics": [
       "economics",
       "natural resources",
-      "oil",
-      "minerals",
+      "development",
       "environment",
-      "development"
+      "resource curse"
     ],
     "countries": [
       "ZH",

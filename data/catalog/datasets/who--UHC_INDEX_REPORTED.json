@@ -1,22 +1,21 @@
 {
   "meta": {
     "id": "who--UHC_INDEX_REPORTED",
-    "title": "UHC Service Coverage Index",
+    "title": "UHC Service Coverage Index (SDG 3.8.1)",
     "description": "UHC Service Coverage Index (SDG 3.8.1) from who-gho",
     "source": {
       "provider": "who-gho",
       "indicatorId": "UHC_INDEX_REPORTED",
       "indicatorName": "UHC Service Coverage Index (SDG 3.8.1)",
       "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/UHC_INDEX_REPORTED",
-      "lastFetched": "2026-07-06T00:45:47.805Z"
+      "lastFetched": "2026-07-28T00:34:28.692Z"
     },
     "topics": [
       "health",
-      "universal health coverage",
-      "healthcare",
+      "health systems",
       "sdg",
-      "development",
-      "sdg-3"
+      "universal health coverage",
+      "healthcare"
     ],
     "countries": [
       "GMB",
