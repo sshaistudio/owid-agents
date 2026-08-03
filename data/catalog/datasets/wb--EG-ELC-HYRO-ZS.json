@@ -1,21 +1,21 @@
 {
   "meta": {
     "id": "wb--EG-ELC-HYRO-ZS",
-    "title": "Hydropower Electricity Production (% of total)",
+    "title": "Electricity from Hydroelectric Sources (% of total)",
     "description": "Electricity production from hydroelectric sources (% of total) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "EG.ELC.HYRO.ZS",
       "indicatorName": "Electricity production from hydroelectric sources (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS",
-      "lastFetched": "2026-07-28T00:34:19.883Z"
+      "lastFetched": "2026-08-03T02:05:14.747Z"
     },
     "topics": [
       "energy",
+      "hydropower",
       "electricity",
       "renewable energy",
-      "environment",
-      "climate"
+      "environment"
     ],
     "countries": [
       "ZH",
