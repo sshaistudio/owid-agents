@@ -1,20 +1,22 @@
 {
   "meta": {
     "id": "who--CANCERSURVIVAL_BREASTCANCER",
-    "title": "Breast Cancer 5-Year Survival Rate",
+    "title": "Breast Cancer 5-Year Survival Rate (%)",
     "description": "Cancer survival for those diagnosed with breast cancer, 5-year net survival (%) from who-gho",
     "source": {
       "provider": "who-gho",
       "indicatorId": "CANCERSURVIVAL_BREASTCANCER",
       "indicatorName": "Cancer survival for those diagnosed with breast cancer, 5-year net survival (%)",
       "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/CANCERSURVIVAL_BREASTCANCER",
-      "lastFetched": "2026-08-02T00:41:35.098Z"
+      "lastFetched": "2026-08-04T00:34:56.490Z"
     },
     "topics": [
-      "health",
       "cancer",
-      "gender",
-      "mortality"
+      "health",
+      "noncommunicable disease",
+      "survival",
+      "women",
+      "healthcare"
     ],
     "countries": [
       "GLOBAL",
