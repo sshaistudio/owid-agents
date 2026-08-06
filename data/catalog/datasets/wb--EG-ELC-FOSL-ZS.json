@@ -1,21 +1,22 @@
 {
   "meta": {
     "id": "wb--EG-ELC-FOSL-ZS",
-    "title": "Fossil Fuel Electricity Production (% of Total)",
+    "title": "Electricity Production from Fossil Fuels (% of Total)",
     "description": "Electricity production from oil, gas and coal sources (% of total) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "EG.ELC.FOSL.ZS",
       "indicatorName": "Electricity production from oil, gas and coal sources (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.FOSL.ZS",
-      "lastFetched": "2026-07-08T02:06:45.094Z"
+      "lastFetched": "2026-08-06T00:54:07.559Z"
     },
     "topics": [
       "energy",
-      "fossil fuels",
       "electricity",
+      "fossil fuels",
       "climate",
-      "environment"
+      "environment",
+      "emissions"
     ],
     "countries": [
       "ZH",
