@@ -35843,15 +35843,15 @@
         "indicatorId": "SH.ANM.NPRG.ZS",
         "indicatorName": "Prevalence of anemia among non-pregnant women (% of women ages 15-49)",
         "sourceUrl": "https://data.worldbank.org/indicator/SH.ANM.NPRG.ZS",
-        "lastFetched": "2026-07-06T00:46:06.343Z"
+        "lastFetched": "2026-08-12T00:47:36.761Z"
       },
       "topics": [
         "health",
+        "women",
         "nutrition",
         "anemia",
-        "women",
         "gender",
-        "development"
+        "reproductive health"
       ],
       "countries": [
         "ZH",
@@ -39501,14 +39501,16 @@
         "indicatorId": "NY.GDP.TOTL.RT.ZS",
         "indicatorName": "Total natural resources rents (% of GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
-        "lastFetched": "2026-07-28T00:34:23.225Z"
+        "lastFetched": "2026-08-12T00:47:40.962Z"
       },
       "topics": [
-        "economics",
         "natural resources",
-        "development",
+        "economics",
         "environment",
-        "resource curse"
+        "development",
+        "oil",
+        "mining",
+        "sustainability"
       ],
       "countries": [
         "ZH",
@@ -41676,20 +41678,22 @@
     },
     {
       "id": "wb--SH-XPD-OOPC-CH-ZS",
-      "title": "Out-of-Pocket Health Expenditure (% of Current Health Spending)",
+      "title": "Out-of-Pocket Expenditure (% of Current Health Expenditure)",
       "description": "Out-of-pocket expenditure (% of current health expenditure) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SH.XPD.OOPC.CH.ZS",
         "indicatorName": "Out-of-pocket expenditure (% of current health expenditure)",
         "sourceUrl": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
-        "lastFetched": "2026-07-26T01:59:37.081Z"
+        "lastFetched": "2026-08-12T00:47:46.148Z"
       },
       "topics": [
         "health",
-        "healthcare",
         "spending",
-        "economics",
+        "healthcare",
+        "insurance",
+        "finance",
+        "poverty",
         "development"
       ],
       "countries": [

@@ -8,15 +8,15 @@
       "indicatorId": "SH.ANM.NPRG.ZS",
       "indicatorName": "Prevalence of anemia among non-pregnant women (% of women ages 15-49)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.ANM.NPRG.ZS",
-      "lastFetched": "2026-07-06T00:46:06.343Z"
+      "lastFetched": "2026-08-12T00:47:36.761Z"
     },
     "topics": [
       "health",
+      "women",
       "nutrition",
       "anemia",
-      "women",
       "gender",
-      "development"
+      "reproductive health"
     ],
     "countries": [
       "ZH",
