@@ -1,19 +1,19 @@
 {
   "meta": {
     "id": "wb--SE-ADT-1524-LT-ZS",
-    "title": "Youth Literacy Rate (% of ages 15-24)",
+    "title": "Youth Literacy Rate (% ages 15-24)",
     "description": "Literacy rate, youth total (% of people ages 15-24) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.ADT.1524.LT.ZS",
       "indicatorName": "Literacy rate, youth total (% of people ages 15-24)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.ZS",
-      "lastFetched": "2026-07-26T01:59:30.635Z"
+      "lastFetched": "2026-08-13T01:28:16.044Z"
     },
     "topics": [
       "education",
-      "literacy",
       "youth",
+      "literacy",
       "development",
       "gender"
     ],

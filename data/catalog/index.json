@@ -32666,22 +32666,22 @@
     },
     {
       "id": "wb--ER-PTD-TOTL-ZS",
-      "title": "Terrestrial and Marine Protected Areas (% of total territorial area)",
+      "title": "Terrestrial and Marine Protected Areas (% of territory)",
       "description": "Terrestrial and marine protected areas (% of total territorial area) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "ER.PTD.TOTL.ZS",
         "indicatorName": "Terrestrial and marine protected areas (% of total territorial area)",
         "sourceUrl": "https://data.worldbank.org/indicator/ER.PTD.TOTL.ZS",
-        "lastFetched": "2026-06-08T02:37:27.575Z"
+        "lastFetched": "2026-08-13T01:28:29.276Z"
       },
       "topics": [
         "environment",
-        "biodiversity",
         "conservation",
-        "protected areas",
-        "climate",
-        "land"
+        "biodiversity",
+        "ocean",
+        "sdg",
+        "sustainability"
       ],
       "countries": [
         "ZH",
@@ -32698,7 +32698,6 @@
         "7E",
         "T7",
         "EU",
-        "F1",
         "XE",
         "XD",
         "XF",
@@ -32841,7 +32840,7 @@
         "start": "2013",
         "end": "2024"
       },
-      "dataPointCount": 1822,
+      "dataPointCount": 1810,
       "dataFilePath": "datasets/wb--ER-PTD-TOTL-ZS.json"
     },
     {
@@ -41532,19 +41531,19 @@
     },
     {
       "id": "wb--SE-ADT-1524-LT-ZS",
-      "title": "Youth Literacy Rate (% of ages 15-24)",
+      "title": "Youth Literacy Rate (% ages 15-24)",
       "description": "Literacy rate, youth total (% of people ages 15-24) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SE.ADT.1524.LT.ZS",
         "indicatorName": "Literacy rate, youth total (% of people ages 15-24)",
         "sourceUrl": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.ZS",
-        "lastFetched": "2026-07-26T01:59:30.635Z"
+        "lastFetched": "2026-08-13T01:28:16.044Z"
       },
       "topics": [
         "education",
-        "literacy",
         "youth",
+        "literacy",
         "development",
         "gender"
       ],
@@ -42023,21 +42022,21 @@
     },
     {
       "id": "wb--EG-ELC-HYRO-ZS",
-      "title": "Electricity from Hydroelectric Sources (% of total)",
+      "title": "Electricity Production from Hydropower (% of total)",
       "description": "Electricity production from hydroelectric sources (% of total) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.ELC.HYRO.ZS",
         "indicatorName": "Electricity production from hydroelectric sources (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS",
-        "lastFetched": "2026-08-03T02:05:14.747Z"
+        "lastFetched": "2026-08-13T01:28:34.744Z"
       },
       "topics": [
         "energy",
-        "hydropower",
-        "electricity",
+        "environment",
         "renewable energy",
-        "environment"
+        "electricity",
+        "hydropower"
       ],
       "countries": [
         "ZH",
