@@ -33893,19 +33893,18 @@
     },
     {
       "id": "wb--SP-POP-DPND-OL",
-      "title": "Old-Age Dependency Ratio (% of Working-Age Population)",
+      "title": "Age Dependency Ratio, Old (% of Working-Age Population)",
       "description": "Age dependency ratio, old (% of working-age population) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SP.POP.DPND.OL",
         "indicatorName": "Age dependency ratio, old (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-        "lastFetched": "2026-08-15T01:31:22.793Z"
+        "lastFetched": "2026-08-16T00:34:09.237Z"
       },
       "topics": [
-        "aging",
         "demographics",
-        "social",
+        "aging",
         "population"
       ],
       "countries": [
@@ -40016,21 +40015,20 @@
     },
     {
       "id": "wb--EG-ELC-NUCL-ZS",
-      "title": "Electricity Production from Nuclear Sources (% of total)",
+      "title": "Electricity Production from Nuclear Sources (% of Total)",
       "description": "Electricity production from nuclear sources (% of total) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.ELC.NUCL.ZS",
         "indicatorName": "Electricity production from nuclear sources (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS",
-        "lastFetched": "2026-08-05T00:35:51.583Z"
+        "lastFetched": "2026-08-16T00:34:18.330Z"
       },
       "topics": [
         "energy",
         "nuclear",
         "electricity",
-        "climate",
-        "environment"
+        "climate"
       ],
       "countries": [
         "ZH",
@@ -41375,14 +41373,13 @@
         "indicatorId": "NY.GNS.ICTR.ZS",
         "indicatorName": "Gross savings (% of GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS",
-        "lastFetched": "2026-07-26T01:59:27.525Z"
+        "lastFetched": "2026-08-16T00:34:18.977Z"
       },
       "topics": [
         "economics",
-        "savings",
-        "investment",
+        "finance",
         "development",
-        "fiscal"
+        "investment"
       ],
       "countries": [
         "CA",
@@ -44891,21 +44888,19 @@
     },
     {
       "id": "wb--SE-PRE-ENRR",
-      "title": "Preprimary School Enrollment Rate (% gross)",
+      "title": "School Enrollment, Preprimary (% Gross)",
       "description": "School enrollment, preprimary (% gross) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SE.PRE.ENRR",
         "indicatorName": "School enrollment, preprimary (% gross)",
         "sourceUrl": "https://data.worldbank.org/indicator/SE.PRE.ENRR",
-        "lastFetched": "2026-08-09T02:14:59.466Z"
+        "lastFetched": "2026-08-16T00:34:14.087Z"
       },
       "topics": [
         "education",
-        "early childhood",
         "children",
-        "development",
-        "sdg-4"
+        "development"
       ],
       "countries": [
         "1A",
@@ -45779,12 +45774,12 @@
         "indicatorId": "EG.EGY.PRIM.PP.KD",
         "indicatorName": "Energy intensity level of primary energy (MJ/$2021 PPP GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD",
-        "lastFetched": "2026-08-15T01:31:26.619Z"
+        "lastFetched": "2026-08-16T00:34:13.455Z"
       },
       "topics": [
         "energy",
+        "environment",
         "climate",
-        "economics",
         "efficiency"
       ],
       "countries": [
