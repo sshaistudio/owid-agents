@@ -1,20 +1,22 @@
 {
   "meta": {
     "id": "wb--EG-USE-COMM-FO-ZS",
-    "title": "Fossil Fuel Energy Consumption (% of total)",
+    "title": "Fossil Fuel Energy Consumption (% of Total)",
     "description": "Fossil fuel energy consumption (% of total) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "EG.USE.COMM.FO.ZS",
       "indicatorName": "Fossil fuel energy consumption (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.USE.COMM.FO.ZS",
-      "lastFetched": "2026-08-22T03:14:09.097Z"
+      "lastFetched": "2026-08-25T00:36:56.889Z"
     },
     "topics": [
       "energy",
-      "environment",
+      "fossil fuels",
       "climate",
-      "fossil fuels"
+      "emissions",
+      "environment",
+      "renewable energy"
     ],
     "countries": [
       "B8",

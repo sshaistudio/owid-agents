@@ -32309,21 +32309,22 @@
     },
     {
       "id": "wb--SP-POP-DPND",
-      "title": "Age Dependency Ratio (% of working-age population)",
+      "title": "Age Dependency Ratio (% of Working-Age Population)",
       "description": "Age dependency ratio (% of working-age population) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SP.POP.DPND",
         "indicatorName": "Age dependency ratio (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND",
-        "lastFetched": "2026-08-09T02:14:57.524Z"
+        "lastFetched": "2026-08-25T00:36:49.483Z"
       },
       "topics": [
         "demographics",
         "aging",
         "population",
+        "labor",
         "economics",
-        "labor"
+        "social"
       ],
       "countries": [
         "ZH",
@@ -34239,22 +34240,21 @@
     },
     {
       "id": "who--TB_1",
-      "title": "Tuberculosis Treatment Coverage (% of estimated TB incidence)",
+      "title": "Tuberculosis Treatment Coverage",
       "description": "Tuberculosis treatment coverage from who-gho",
       "source": {
         "provider": "who-gho",
         "indicatorId": "TB_1",
         "indicatorName": "Tuberculosis treatment coverage",
         "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/TB_1",
-        "lastFetched": "2026-06-15T00:34:47.263Z"
+        "lastFetched": "2026-08-25T00:36:56.015Z"
       },
       "topics": [
         "tuberculosis",
-        "infectious disease",
         "health",
-        "mortality",
-        "development",
-        "sdg"
+        "infectious disease",
+        "global health",
+        "disease"
       ],
       "countries": [
         "AZE",
@@ -36000,22 +36000,23 @@
     },
     {
       "id": "wb--SH-ANM-ALLW-ZS",
-      "title": "Anemia Prevalence Among Women of Reproductive Age (% ages 15-49)",
+      "title": "Prevalence of Anemia Among Women of Reproductive Age (% ages 15-49)",
       "description": "Prevalence of anemia among women of reproductive age (% of women ages 15-49) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SH.ANM.ALLW.ZS",
         "indicatorName": "Prevalence of anemia among women of reproductive age (% of women ages 15-49)",
         "sourceUrl": "https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS",
-        "lastFetched": "2026-08-10T01:14:24.699Z"
+        "lastFetched": "2026-08-25T00:37:01.616Z"
       },
       "topics": [
         "health",
-        "gender",
-        "women",
         "nutrition",
         "anaemia",
-        "maternal health"
+        "women",
+        "gender",
+        "maternal health",
+        "development"
       ],
       "countries": [
         "ZH",
@@ -42296,20 +42297,22 @@
     },
     {
       "id": "wb--EG-USE-COMM-FO-ZS",
-      "title": "Fossil Fuel Energy Consumption (% of total)",
+      "title": "Fossil Fuel Energy Consumption (% of Total)",
       "description": "Fossil fuel energy consumption (% of total) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.USE.COMM.FO.ZS",
         "indicatorName": "Fossil fuel energy consumption (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.USE.COMM.FO.ZS",
-        "lastFetched": "2026-08-22T03:14:09.097Z"
+        "lastFetched": "2026-08-25T00:36:56.889Z"
       },
       "topics": [
         "energy",
-        "environment",
+        "fossil fuels",
         "climate",
-        "fossil fuels"
+        "emissions",
+        "environment",
+        "renewable energy"
       ],
       "countries": [
         "B8",
