@@ -8,14 +8,15 @@
       "indicatorId": "TX.VAL.MANF.ZS.UN",
       "indicatorName": "Manufactures exports (% of merchandise exports)",
       "sourceUrl": "https://data.worldbank.org/indicator/TX.VAL.MANF.ZS.UN",
-      "lastFetched": "2026-07-31T00:51:08.716Z"
+      "lastFetched": "2026-08-26T00:34:21.182Z"
     },
     "topics": [
       "trade",
+      "industrialization",
+      "manufacturing",
       "economics",
       "development",
-      "globalization",
-      "industry"
+      "exports"
     ],
     "countries": [
       "ZI",

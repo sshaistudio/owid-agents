@@ -8,13 +8,14 @@
       "indicatorId": "SE.PRM.CMPT.ZS",
       "indicatorName": "Primary completion rate, total (% of relevant age group)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
-      "lastFetched": "2026-07-05T00:33:57.938Z"
+      "lastFetched": "2026-08-26T00:34:29.915Z"
     },
     "topics": [
       "education",
       "primary",
       "completion",
-      "literacy",
+      "development",
+      "children",
       "sdg-4",
       "learning outcomes"
     ],
