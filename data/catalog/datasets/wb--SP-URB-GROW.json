@@ -1,21 +1,21 @@
 {
   "meta": {
     "id": "wb--SP-URB-GROW",
-    "title": "Urban Population Growth Rate (annual %)",
+    "title": "Urban Population Growth Rate (Annual %)",
     "description": "Urban population growth (annual %) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SP.URB.GROW",
       "indicatorName": "Urban population growth (annual %)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.GROW",
-      "lastFetched": "2026-08-03T02:05:13.761Z"
+      "lastFetched": "2026-08-27T01:44:24.670Z"
     },
     "topics": [
       "urbanization",
       "population",
       "demographics",
       "growth",
-      "development"
+      "cities"
     ],
     "countries": [
       "ZH",

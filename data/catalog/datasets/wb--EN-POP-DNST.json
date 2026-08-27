@@ -1,19 +1,20 @@
 {
   "meta": {
     "id": "wb--EN-POP-DNST",
-    "title": "Population Density (people per sq. km)",
+    "title": "Population Density (People per sq. km of Land Area)",
     "description": "Population density (people per sq. km of land area) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "EN.POP.DNST",
       "indicatorName": "Population density (people per sq. km of land area)",
       "sourceUrl": "https://data.worldbank.org/indicator/EN.POP.DNST",
-      "lastFetched": "2026-07-30T02:39:16.384Z"
+      "lastFetched": "2026-08-27T01:44:16.408Z"
     },
     "topics": [
       "population",
       "demographics",
-      "urbanization"
+      "urbanization",
+      "land use"
     ],
     "countries": [
       "ZH",
