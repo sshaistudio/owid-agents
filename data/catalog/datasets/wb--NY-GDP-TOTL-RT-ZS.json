@@ -1,22 +1,19 @@
 {
   "meta": {
     "id": "wb--NY-GDP-TOTL-RT-ZS",
-    "title": "Total Natural Resources Rents (% of GDP)",
+    "title": "Total Natural Resource Rents (% of GDP)",
     "description": "Total natural resources rents (% of GDP) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "NY.GDP.TOTL.RT.ZS",
       "indicatorName": "Total natural resources rents (% of GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
-      "lastFetched": "2026-08-12T00:47:40.962Z"
+      "lastFetched": "2026-08-28T01:46:31.861Z"
     },
     "topics": [
-      "natural resources",
+      "resources",
       "economics",
       "environment",
-      "development",
-      "oil",
-      "mining",
       "sustainability"
     ],
     "countries": [

@@ -33897,20 +33897,20 @@
     },
     {
       "id": "wb--SP-POP-DPND-OL",
-      "title": "Old-Age Dependency Ratio (% of working-age population)",
+      "title": "Old-Age Dependency Ratio",
       "description": "Age dependency ratio, old (% of working-age population) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SP.POP.DPND.OL",
         "indicatorName": "Age dependency ratio, old (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-        "lastFetched": "2026-08-22T03:14:05.125Z"
+        "lastFetched": "2026-08-28T01:36:03.530Z"
       },
       "topics": [
-        "demographics",
         "aging",
+        "demographics",
         "population",
-        "dependency"
+        "social"
       ],
       "countries": [
         "ZH",
@@ -34960,21 +34960,20 @@
     },
     {
       "id": "wb--VC-IHR-PSRC-P5",
-      "title": "Intentional Homicides (per 100,000 People)",
+      "title": "Intentional Homicides (per 100,000)",
       "description": "Intentional homicides (per 100,000 people) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "VC.IHR.PSRC.P5",
         "indicatorName": "Intentional homicides (per 100,000 people)",
         "sourceUrl": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
-        "lastFetched": "2026-08-11T01:21:51.246Z"
+        "lastFetched": "2026-08-28T01:36:04.260Z"
       },
       "topics": [
         "crime",
         "safety",
         "violence",
-        "social",
-        "development"
+        "governance"
       ],
       "countries": [
         "AG",
@@ -39494,22 +39493,19 @@
     },
     {
       "id": "wb--NY-GDP-TOTL-RT-ZS",
-      "title": "Total Natural Resources Rents (% of GDP)",
+      "title": "Total Natural Resource Rents (% of GDP)",
       "description": "Total natural resources rents (% of GDP) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "NY.GDP.TOTL.RT.ZS",
         "indicatorName": "Total natural resources rents (% of GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.TOTL.RT.ZS",
-        "lastFetched": "2026-08-12T00:47:40.962Z"
+        "lastFetched": "2026-08-28T01:46:31.861Z"
       },
       "topics": [
-        "natural resources",
+        "resources",
         "economics",
         "environment",
-        "development",
-        "oil",
-        "mining",
         "sustainability"
       ],
       "countries": [
@@ -45411,22 +45407,20 @@
     },
     {
       "id": "wb--SH-DYN-NCOM-ZS",
-      "title": "Mortality from CVD, Cancer, Diabetes or CRD (Ages 30-70, %)",
+      "title": "NCD Mortality Risk (age 30-70)",
       "description": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SH.DYN.NCOM.ZS",
         "indicatorName": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",
         "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.NCOM.ZS",
-        "lastFetched": "2026-08-11T01:21:56.261Z"
+        "lastFetched": "2026-08-28T01:46:30.253Z"
       },
       "topics": [
         "health",
         "noncommunicable disease",
         "mortality",
-        "cardiovascular",
-        "cancer",
-        "diabetes"
+        "chronic disease"
       ],
       "countries": [
         "ZH",
