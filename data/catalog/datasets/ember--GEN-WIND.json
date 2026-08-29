@@ -8,14 +8,14 @@
       "indicatorId": "GEN-WIND",
       "indicatorName": "Electricity generation from wind (TWh)",
       "sourceUrl": "https://ember-energy.org/data/yearly-electricity-data/",
-      "lastFetched": "2026-06-26T03:31:50.879Z"
+      "lastFetched": "2026-08-29T00:40:49.820Z"
     },
     "topics": [
       "energy",
-      "renewable energy",
-      "wind",
       "electricity",
-      "clean energy"
+      "renewable",
+      "wind",
+      "climate"
     ],
     "countries": [
       "AFG",
