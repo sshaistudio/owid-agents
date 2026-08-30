@@ -1,20 +1,21 @@
 {
   "meta": {
     "id": "wb--EG-EGY-PRIM-PP-KD",
-    "title": "Energy Intensity of Primary Energy (MJ per  PPP GDP)",
+    "title": "Energy Intensity of GDP (MJ per  PPP)",
     "description": "Energy intensity level of primary energy (MJ/$2021 PPP GDP) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "EG.EGY.PRIM.PP.KD",
       "indicatorName": "Energy intensity level of primary energy (MJ/$2021 PPP GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD",
-      "lastFetched": "2026-08-16T00:34:13.455Z"
+      "lastFetched": "2026-08-30T02:20:58.915Z"
     },
     "topics": [
       "energy",
-      "environment",
+      "efficiency",
       "climate",
-      "efficiency"
+      "sustainability",
+      "economics"
     ],
     "countries": [
       "ZH",
