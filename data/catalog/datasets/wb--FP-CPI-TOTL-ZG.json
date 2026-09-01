@@ -8,14 +8,13 @@
       "indicatorId": "FP.CPI.TOTL.ZG",
       "indicatorName": "Inflation, consumer prices (annual %)",
       "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
-      "lastFetched": "2026-08-03T02:05:20.875Z"
+      "lastFetched": "2026-09-01T02:07:22.337Z"
     },
     "topics": [
       "inflation",
       "prices",
       "economics",
-      "monetary",
-      "development"
+      "monetary"
     ],
     "countries": [
       "XC",
