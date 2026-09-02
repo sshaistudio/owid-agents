@@ -33243,14 +33243,14 @@
         "indicatorId": "IP.JRN.ARTC.SC",
         "indicatorName": "Scientific and technical journal articles",
         "sourceUrl": "https://data.worldbank.org/indicator/IP.JRN.ARTC.SC",
-        "lastFetched": "2026-06-12T02:28:58.867Z"
+        "lastFetched": "2026-09-02T01:45:27.481Z"
       },
       "topics": [
         "science",
-        "innovation",
         "research",
-        "technology",
-        "education"
+        "innovation",
+        "education",
+        "development"
       ],
       "countries": [
         "ZH",
@@ -33267,7 +33267,6 @@
         "7E",
         "T7",
         "EU",
-        "F1",
         "XE",
         "XD",
         "XF",
@@ -33392,13 +33391,14 @@
         "KE",
         "KI",
         "KP",
-        "KR"
+        "KR",
+        "XK"
       ],
       "dateRange": {
         "start": "1996",
-        "end": "2022"
+        "end": "2023"
       },
-      "dataPointCount": 3780,
+      "dataPointCount": 3920,
       "dataFilePath": "datasets/wb--IP-JRN-ARTC-SC.json"
     },
     {
@@ -34807,14 +34807,13 @@
         "indicatorId": "SL.GDP.PCAP.EM.KD",
         "indicatorName": "GDP per person employed (constant 2021 PPP $)",
         "sourceUrl": "https://data.worldbank.org/indicator/SL.GDP.PCAP.EM.KD",
-        "lastFetched": "2026-06-21T03:23:35.116Z"
+        "lastFetched": "2026-09-02T01:45:19.432Z"
       },
       "topics": [
         "labor",
         "economics",
-        "development",
         "productivity",
-        "employment"
+        "development"
       ],
       "countries": [
         "ZH",
@@ -34831,7 +34830,6 @@
         "7E",
         "T7",
         "EU",
-        "F1",
         "XE",
         "XD",
         "XF",
@@ -34954,7 +34952,7 @@
         "start": "1991",
         "end": "2024"
       },
-      "dataPointCount": 4455,
+      "dataPointCount": 4423,
       "dataFilePath": "datasets/wb--SL-GDP-PCAP-EM-KD.json"
     },
     {
