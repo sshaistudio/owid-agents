@@ -8,13 +8,14 @@
       "indicatorId": "VC.IHR.PSRC.P5",
       "indicatorName": "Intentional homicides (per 100,000 people)",
       "sourceUrl": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
-      "lastFetched": "2026-09-01T02:07:16.691Z"
+      "lastFetched": "2026-09-07T00:40:42.551Z"
     },
     "topics": [
       "crime",
       "safety",
       "violence",
-      "governance"
+      "homicide",
+      "mortality"
     ],
     "countries": [
       "AG",
