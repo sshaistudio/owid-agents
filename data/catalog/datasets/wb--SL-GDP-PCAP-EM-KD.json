@@ -8,14 +8,15 @@
       "indicatorId": "SL.GDP.PCAP.EM.KD",
       "indicatorName": "GDP per person employed (constant 2021 PPP $)",
       "sourceUrl": "https://data.worldbank.org/indicator/SL.GDP.PCAP.EM.KD",
-      "lastFetched": "2026-09-09T00:58:04.334Z"
+      "lastFetched": "2026-09-12T01:48:32.100Z"
     },
     "topics": [
-      "economics",
       "labor",
+      "economics",
       "productivity",
       "employment",
-      "development"
+      "development",
+      "growth"
     ],
     "countries": [
       "ZH",
