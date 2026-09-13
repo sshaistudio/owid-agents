@@ -8,12 +8,13 @@
       "indicatorId": "IP.JRN.ARTC.SC",
       "indicatorName": "Scientific and technical journal articles",
       "sourceUrl": "https://data.worldbank.org/indicator/IP.JRN.ARTC.SC",
-      "lastFetched": "2026-09-02T01:45:27.481Z"
+      "lastFetched": "2026-09-13T02:52:28.709Z"
     },
     "topics": [
       "science",
-      "research",
       "innovation",
+      "research",
+      "technology",
       "education",
       "development"
     ],
