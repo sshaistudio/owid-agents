@@ -8,13 +8,12 @@
       "indicatorId": "GDO_q35",
       "indicatorName": "Estimated population-based prevalence of depression",
       "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/GDO_q35",
-      "lastFetched": "2026-09-11T02:03:20.337Z"
+      "lastFetched": "2026-09-21T00:33:30.725Z"
     },
     "topics": [
       "mental health",
-      "depression",
       "health",
-      "noncommunicable disease",
+      "depression",
       "wellbeing"
     ],
     "countries": [

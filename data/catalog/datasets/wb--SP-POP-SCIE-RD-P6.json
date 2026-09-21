@@ -8,15 +8,14 @@
       "indicatorId": "SP.POP.SCIE.RD.P6",
       "indicatorName": "Researchers in R&D (per million people)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.SCIE.RD.P6",
-      "lastFetched": "2026-07-04T00:46:28.430Z"
+      "lastFetched": "2026-09-21T00:33:26.273Z"
     },
     "topics": [
       "science",
       "innovation",
       "research",
-      "technology",
       "development",
-      "education"
+      "technology"
     ],
     "countries": [
       "B8",
