@@ -1,22 +1,20 @@
 {
   "meta": {
     "id": "wb--SE-PRM-CMPT-ZS",
-    "title": "Primary School Completion Rate (% of Relevant Age Group)",
+    "title": "Primary School Completion Rate",
     "description": "Primary completion rate, total (% of relevant age group) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.PRM.CMPT.ZS",
       "indicatorName": "Primary completion rate, total (% of relevant age group)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
-      "lastFetched": "2026-09-13T02:52:25.186Z"
+      "lastFetched": "2026-09-24T00:34:19.273Z"
     },
     "topics": [
       "education",
-      "sdg",
-      "sdg-4",
-      "learning outcomes",
       "development",
-      "children"
+      "children",
+      "literacy"
     ],
     "countries": [
       "ZI",
