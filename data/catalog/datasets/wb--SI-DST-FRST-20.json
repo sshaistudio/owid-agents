@@ -8,13 +8,15 @@
       "indicatorId": "SI.DST.FRST.20",
       "indicatorName": "Income share held by lowest 20%",
       "sourceUrl": "https://data.worldbank.org/indicator/SI.DST.FRST.20",
-      "lastFetched": "2026-09-06T02:02:06.098Z"
+      "lastFetched": "2026-09-28T01:14:20.518Z"
     },
     "topics": [
       "inequality",
       "poverty",
+      "income",
       "economics",
-      "development"
+      "development",
+      "social"
     ],
     "countries": [
       "FR",

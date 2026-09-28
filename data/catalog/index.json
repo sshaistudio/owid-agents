@@ -35361,18 +35361,19 @@
     },
     {
       "id": "wb--EG-FEC-RNEW-ZS",
-      "title": "Renewable Energy Share of Total Final Energy Consumption",
+      "title": "Renewable Energy Consumption (% of Total Final Energy)",
       "description": "Renewable energy consumption (% of total final energy consumption) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.FEC.RNEW.ZS",
         "indicatorName": "Renewable energy consumption (% of total final energy consumption)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
-        "lastFetched": "2026-08-24T00:32:58.558Z"
+        "lastFetched": "2026-09-28T01:14:12.854Z"
       },
       "topics": [
         "energy",
-        "renewables",
+        "renewable energy",
+        "clean energy",
         "environment",
         "climate",
         "sustainability"
@@ -38970,13 +38971,14 @@
         "indicatorId": "NV.IND.MANF.ZS",
         "indicatorName": "Manufacturing, value added (% of GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS",
-        "lastFetched": "2026-09-11T02:03:26.741Z"
+        "lastFetched": "2026-09-28T01:14:23.516Z"
       },
       "topics": [
-        "manufacturing",
         "economics",
         "industry",
+        "manufacturing",
         "development",
+        "trade",
         "structural transformation"
       ],
       "countries": [
@@ -47955,13 +47957,15 @@
         "indicatorId": "SI.DST.FRST.20",
         "indicatorName": "Income share held by lowest 20%",
         "sourceUrl": "https://data.worldbank.org/indicator/SI.DST.FRST.20",
-        "lastFetched": "2026-09-06T02:02:06.098Z"
+        "lastFetched": "2026-09-28T01:14:20.518Z"
       },
       "topics": [
         "inequality",
         "poverty",
+        "income",
         "economics",
-        "development"
+        "development",
+        "social"
       ],
       "countries": [
         "FR",

@@ -8,13 +8,14 @@
       "indicatorId": "NV.IND.MANF.ZS",
       "indicatorName": "Manufacturing, value added (% of GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS",
-      "lastFetched": "2026-09-11T02:03:26.741Z"
+      "lastFetched": "2026-09-28T01:14:23.516Z"
     },
     "topics": [
-      "manufacturing",
       "economics",
       "industry",
+      "manufacturing",
       "development",
+      "trade",
       "structural transformation"
     ],
     "countries": [
