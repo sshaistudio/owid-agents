@@ -1,14 +1,14 @@
 {
   "meta": {
     "id": "who--GDO_q35",
-    "title": "Estimated Prevalence of Depression (% of population)",
+    "title": "Estimated Population-Based Prevalence of Depression",
     "description": "Estimated population-based prevalence of depression from who-gho",
     "source": {
       "provider": "who-gho",
       "indicatorId": "GDO_q35",
       "indicatorName": "Estimated population-based prevalence of depression",
       "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/GDO_q35",
-      "lastFetched": "2026-09-21T00:33:30.725Z"
+      "lastFetched": "2026-09-29T00:33:32.606Z"
     },
     "topics": [
       "mental health",

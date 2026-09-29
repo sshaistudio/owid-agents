@@ -32316,13 +32316,14 @@
         "indicatorId": "SP.POP.DPND",
         "indicatorName": "Age dependency ratio (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND",
-        "lastFetched": "2026-09-15T01:22:21.724Z"
+        "lastFetched": "2026-09-29T00:33:25.634Z"
       },
       "topics": [
         "demographics",
         "aging",
         "population",
-        "labor"
+        "labor",
+        "development"
       ],
       "countries": [
         "ZH",
@@ -40018,13 +40019,13 @@
         "indicatorId": "EG.ELC.NUCL.ZS",
         "indicatorName": "Electricity production from nuclear sources (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS",
-        "lastFetched": "2026-09-09T00:57:57.523Z"
+        "lastFetched": "2026-09-29T00:33:23.110Z"
       },
       "topics": [
         "energy",
         "nuclear",
         "electricity",
-        "climate"
+        "environment"
       ],
       "countries": [
         "ZH",
@@ -40679,14 +40680,14 @@
         "indicatorId": "NY.ADJ.SVNG.GN.ZS",
         "indicatorName": "Adjusted net savings, including particulate emission damage (% of GNI)",
         "sourceUrl": "https://data.worldbank.org/indicator/NY.ADJ.SVNG.GN.ZS",
-        "lastFetched": "2026-07-17T04:46:35.910Z"
+        "lastFetched": "2026-09-29T00:33:29.038Z"
       },
       "topics": [
         "environment",
         "economics",
         "sustainability",
-        "natural capital",
-        "emissions"
+        "climate",
+        "development"
       ],
       "countries": [
         "ZH",
@@ -48802,14 +48803,14 @@
     },
     {
       "id": "who--GDO_q35",
-      "title": "Estimated Prevalence of Depression (% of population)",
+      "title": "Estimated Population-Based Prevalence of Depression",
       "description": "Estimated population-based prevalence of depression from who-gho",
       "source": {
         "provider": "who-gho",
         "indicatorId": "GDO_q35",
         "indicatorName": "Estimated population-based prevalence of depression",
         "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/GDO_q35",
-        "lastFetched": "2026-09-21T00:33:30.725Z"
+        "lastFetched": "2026-09-29T00:33:32.606Z"
       },
       "topics": [
         "mental health",
