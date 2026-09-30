@@ -33893,18 +33893,18 @@
     },
     {
       "id": "wb--SP-POP-DPND-OL",
-      "title": "Old-Age Dependency Ratio",
+      "title": "Old-Age Dependency Ratio (% of working-age population)",
       "description": "Age dependency ratio, old (% of working-age population) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SP.POP.DPND.OL",
         "indicatorName": "Age dependency ratio, old (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-        "lastFetched": "2026-09-24T00:34:15.350Z"
+        "lastFetched": "2026-09-30T02:18:24.753Z"
       },
       "topics": [
-        "aging",
         "demographics",
+        "aging",
         "population",
         "social"
       ],
@@ -38965,22 +38965,20 @@
     },
     {
       "id": "wb--NV-IND-MANF-ZS",
-      "title": "Manufacturing Value Added (% of GDP)",
+      "title": "Manufacturing, Value Added (% of GDP)",
       "description": "Manufacturing, value added (% of GDP) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "NV.IND.MANF.ZS",
         "indicatorName": "Manufacturing, value added (% of GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS",
-        "lastFetched": "2026-09-28T01:14:23.516Z"
+        "lastFetched": "2026-09-30T02:18:25.538Z"
       },
       "topics": [
         "economics",
         "industry",
-        "manufacturing",
         "development",
-        "trade",
-        "structural transformation"
+        "trade"
       ],
       "countries": [
         "8S",
@@ -40012,20 +40010,20 @@
     },
     {
       "id": "wb--EG-ELC-NUCL-ZS",
-      "title": "Electricity Production from Nuclear Sources (% of total)",
+      "title": "Electricity from Nuclear Sources (% of total)",
       "description": "Electricity production from nuclear sources (% of total) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.ELC.NUCL.ZS",
         "indicatorName": "Electricity production from nuclear sources (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS",
-        "lastFetched": "2026-09-29T00:33:23.110Z"
+        "lastFetched": "2026-09-30T02:18:21.820Z"
       },
       "topics": [
         "energy",
         "nuclear",
         "electricity",
-        "environment"
+        "climate"
       ],
       "countries": [
         "ZH",
