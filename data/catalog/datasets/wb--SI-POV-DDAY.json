@@ -1,20 +1,21 @@
 {
   "meta": {
     "id": "wb--SI-POV-DDAY",
-    "title": "Poverty Headcount Ratio at .00 a Day (2021 PPP)",
+    "title": "Poverty Headcount at $3.00/day (2021 PPP, % of population)",
     "description": "Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SI.POV.DDAY",
       "indicatorName": "Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)",
       "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.DDAY",
-      "lastFetched": "2026-08-24T00:33:02.034Z"
+      "lastFetched": "2026-10-01T01:20:23.630Z"
     },
     "topics": [
       "poverty",
+      "inequality",
       "economics",
       "development",
-      "inequality"
+      "sdg"
     ],
     "countries": [
       "FR",

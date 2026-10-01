@@ -32316,14 +32316,14 @@
         "indicatorId": "SP.POP.DPND",
         "indicatorName": "Age dependency ratio (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND",
-        "lastFetched": "2026-09-29T00:33:25.634Z"
+        "lastFetched": "2026-10-01T01:20:19.604Z"
       },
       "topics": [
         "demographics",
         "aging",
         "population",
-        "labor",
-        "development"
+        "economics",
+        "labor"
       ],
       "countries": [
         "ZH",
@@ -34954,20 +34954,21 @@
     },
     {
       "id": "wb--VC-IHR-PSRC-P5",
-      "title": "Intentional Homicide Rate (per 100,000 people)",
+      "title": "Intentional Homicides (per 100,000 people)",
       "description": "Intentional homicides (per 100,000 people) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "VC.IHR.PSRC.P5",
         "indicatorName": "Intentional homicides (per 100,000 people)",
         "sourceUrl": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
-        "lastFetched": "2026-09-22T01:41:34.957Z"
+        "lastFetched": "2026-10-01T01:20:15.681Z"
       },
       "topics": [
         "crime",
         "safety",
         "violence",
-        "governance"
+        "governance",
+        "development"
       ],
       "countries": [
         "AG",
@@ -37583,17 +37584,18 @@
     },
     {
       "id": "who--UHC_INDEX_REPORTED",
-      "title": "Universal Health Coverage Service Coverage Index",
+      "title": "UHC Service Coverage Index (SDG 3.8.1)",
       "description": "UHC Service Coverage Index (SDG 3.8.1) from who-gho",
       "source": {
         "provider": "who-gho",
         "indicatorId": "UHC_INDEX_REPORTED",
         "indicatorName": "UHC Service Coverage Index (SDG 3.8.1)",
         "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/UHC_INDEX_REPORTED",
-        "lastFetched": "2026-09-21T00:33:19.255Z"
+        "lastFetched": "2026-10-01T01:20:08.150Z"
       },
       "topics": [
         "health",
+        "universal health coverage",
         "healthcare",
         "sdg",
         "development"
@@ -45765,22 +45767,21 @@
     },
     {
       "id": "wb--EG-EGY-PRIM-PP-KD",
-      "title": "Energy Intensity of Primary Energy (MJ per  PPP GDP)",
+      "title": "Energy Intensity (MJ per 2021 PPP GDP)",
       "description": "Energy intensity level of primary energy (MJ/$2021 PPP GDP) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.EGY.PRIM.PP.KD",
         "indicatorName": "Energy intensity level of primary energy (MJ/$2021 PPP GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD",
-        "lastFetched": "2026-09-12T01:48:21.336Z"
+        "lastFetched": "2026-10-01T01:20:12.091Z"
       },
       "topics": [
         "energy",
         "environment",
         "climate",
         "economics",
-        "sustainability",
-        "efficiency"
+        "sustainability"
       ],
       "countries": [
         "ZH",
@@ -46115,20 +46116,21 @@
     },
     {
       "id": "wb--SI-POV-DDAY",
-      "title": "Poverty Headcount Ratio at .00 a Day (2021 PPP)",
+      "title": "Poverty Headcount at $3.00/day (2021 PPP, % of population)",
       "description": "Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SI.POV.DDAY",
         "indicatorName": "Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.DDAY",
-        "lastFetched": "2026-08-24T00:33:02.034Z"
+        "lastFetched": "2026-10-01T01:20:23.630Z"
       },
       "topics": [
         "poverty",
+        "inequality",
         "economics",
         "development",
-        "inequality"
+        "sdg"
       ],
       "countries": [
         "FR",
