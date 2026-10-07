@@ -38966,19 +38966,21 @@
     },
     {
       "id": "wb--NV-IND-MANF-ZS",
-      "title": "Manufacturing, Value Added (% of GDP)",
+      "title": "Manufacturing Value Added (% of GDP)",
       "description": "Manufacturing, value added (% of GDP) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "NV.IND.MANF.ZS",
         "indicatorName": "Manufacturing, value added (% of GDP)",
         "sourceUrl": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS",
-        "lastFetched": "2026-09-30T02:18:25.538Z"
+        "lastFetched": "2026-10-07T00:37:22.780Z"
       },
       "topics": [
         "economics",
-        "industry",
+        "manufacturing",
         "development",
+        "industry",
+        "structural transformation",
         "trade"
       ],
       "countries": [
@@ -42019,14 +42021,15 @@
         "indicatorId": "EG.ELC.HYRO.ZS",
         "indicatorName": "Electricity production from hydroelectric sources (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS",
-        "lastFetched": "2026-09-09T00:57:58.277Z"
+        "lastFetched": "2026-10-07T00:37:14.016Z"
       },
       "topics": [
         "energy",
-        "hydropower",
         "electricity",
+        "renewable energy",
         "environment",
-        "renewable energy"
+        "climate",
+        "water"
       ],
       "countries": [
         "ZH",
@@ -46236,22 +46239,21 @@
     },
     {
       "id": "wb--SH-DTH-NCOM-ZS",
-      "title": "Cause of Death by Non-Communicable Diseases (% of Total Deaths)",
+      "title": "Deaths from Non-Communicable Diseases (% of total)",
       "description": "Cause of death, by non-communicable diseases (% of total) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SH.DTH.NCOM.ZS",
         "indicatorName": "Cause of death, by non-communicable diseases (% of total)",
         "sourceUrl": "https://data.worldbank.org/indicator/SH.DTH.NCOM.ZS",
-        "lastFetched": "2026-10-02T05:46:35.359Z"
+        "lastFetched": "2026-10-07T00:37:20.064Z"
       },
       "topics": [
-        "mortality",
-        "noncommunicable disease",
         "health",
-        "epidemiological transition",
-        "cardiovascular",
-        "cancer"
+        "noncommunicable disease",
+        "mortality",
+        "epidemiology",
+        "development"
       ],
       "countries": [
         "ZH",
@@ -47950,22 +47952,21 @@
     },
     {
       "id": "wb--SI-DST-FRST-20",
-      "title": "Income Share Held by Lowest 20%",
+      "title": "Income Share Held by Lowest 20% of Population",
       "description": "Income share held by lowest 20% from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SI.DST.FRST.20",
         "indicatorName": "Income share held by lowest 20%",
         "sourceUrl": "https://data.worldbank.org/indicator/SI.DST.FRST.20",
-        "lastFetched": "2026-09-28T01:14:20.518Z"
+        "lastFetched": "2026-10-07T00:37:25.877Z"
       },
       "topics": [
         "inequality",
         "poverty",
-        "income",
         "economics",
         "development",
-        "social"
+        "income distribution"
       ],
       "countries": [
         "FR",
@@ -51522,6 +51523,128 @@
       },
       "dataPointCount": 5001,
       "dataFilePath": "datasets/wb--NY-GNS-ICTR-GN-ZS.json"
+    },
+    {
+      "id": "wb--SI-POV-LMIC",
+      "title": "Poverty Headcount at .20 Per Day (% of population)",
+      "description": "Poverty headcount ratio at $4.20 a day (2021 PPP) (% of population) from world-bank",
+      "source": {
+        "provider": "world-bank",
+        "indicatorId": "SI.POV.LMIC",
+        "indicatorName": "Poverty headcount ratio at $4.20 a day (2021 PPP) (% of population)",
+        "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.LMIC",
+        "lastFetched": "2026-10-07T00:37:29.123Z"
+      },
+      "topics": [
+        "poverty",
+        "inequality",
+        "development",
+        "economics",
+        "sdg"
+      ],
+      "countries": [
+        "FR",
+        "CA",
+        "IN",
+        "IT",
+        "IL",
+        "AR",
+        "CO",
+        "Z4",
+        "ZJ",
+        "XO",
+        "XN",
+        "XU",
+        "8S",
+        "XT",
+        "1W",
+        "AU",
+        "BR",
+        "CN",
+        "CR",
+        "XD",
+        "BD",
+        "ZQ",
+        "ID",
+        "BE",
+        "BW",
+        "CI",
+        "DO",
+        "GT",
+        "IR",
+        "JO",
+        "CL",
+        "DK",
+        "EC",
+        "FI",
+        "GH",
+        "HU",
+        "IE",
+        "Z7",
+        "DZ",
+        "HR",
+        "JM",
+        "XG",
+        "BG",
+        "SV",
+        "HN",
+        "ZG",
+        "BO",
+        "EG",
+        "DE",
+        "GN",
+        "GW",
+        "BI",
+        "CF",
+        "CZ",
+        "GY",
+        "KE",
+        "BY",
+        "BZ",
+        "EE",
+        "KZ",
+        "AT",
+        "BF",
+        "SZ",
+        "XM",
+        "AZ",
+        "ET",
+        "GR",
+        "AL",
+        "AM",
+        "CM",
+        "GE",
+        "GM",
+        "AO",
+        "BA",
+        "CV",
+        "HT",
+        "DJ",
+        "FJ",
+        "BJ",
+        "BT",
+        "TD",
+        "IS",
+        "XK",
+        "KM",
+        "CD",
+        "CY",
+        "CG",
+        "GA",
+        "IQ",
+        "KI",
+        "KR",
+        "JP",
+        "BB",
+        "GD",
+        "GQ"
+      ],
+      "dateRange": {
+        "start": "1970",
+        "end": "2024"
+      },
+      "dataPointCount": 1798,
+      "dataFilePath": "datasets/wb--SI-POV-LMIC.json"
     }
   ],
   "lastUpdated": "2026-10-11T00:38:17.754Z"

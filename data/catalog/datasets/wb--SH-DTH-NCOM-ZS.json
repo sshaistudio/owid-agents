@@ -1,22 +1,21 @@
 {
   "meta": {
     "id": "wb--SH-DTH-NCOM-ZS",
-    "title": "Cause of Death by Non-Communicable Diseases (% of Total Deaths)",
+    "title": "Deaths from Non-Communicable Diseases (% of total)",
     "description": "Cause of death, by non-communicable diseases (% of total) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.DTH.NCOM.ZS",
       "indicatorName": "Cause of death, by non-communicable diseases (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.DTH.NCOM.ZS",
-      "lastFetched": "2026-10-02T05:46:35.359Z"
+      "lastFetched": "2026-10-07T00:37:20.064Z"
     },
     "topics": [
-      "mortality",
-      "noncommunicable disease",
       "health",
-      "epidemiological transition",
-      "cardiovascular",
-      "cancer"
+      "noncommunicable disease",
+      "mortality",
+      "epidemiology",
+      "development"
     ],
     "countries": [
       "ZH",
