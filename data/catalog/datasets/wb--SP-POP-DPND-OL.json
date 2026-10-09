@@ -1,20 +1,21 @@
 {
   "meta": {
     "id": "wb--SP-POP-DPND-OL",
-    "title": "Old-Age Dependency Ratio (% of working-age population)",
+    "title": "Old-Age Dependency Ratio (% of Working-Age Population)",
     "description": "Age dependency ratio, old (% of working-age population) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SP.POP.DPND.OL",
       "indicatorName": "Age dependency ratio, old (% of working-age population)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-      "lastFetched": "2026-09-30T02:18:24.753Z"
+      "lastFetched": "2026-10-09T01:02:40.794Z"
     },
     "topics": [
       "demographics",
       "aging",
       "population",
-      "social"
+      "social",
+      "labor"
     ],
     "countries": [
       "ZH",
@@ -31,6 +32,7 @@
       "7E",
       "T7",
       "EU",
+      "F2",
       "XE",
       "XD",
       "XF",
@@ -168,8 +170,7 @@
       "KE",
       "KI",
       "KP",
-      "KR",
-      "XK"
+      "KR"
     ],
     "dateRange": {
       "start": "1960",
@@ -262,6 +263,12 @@
       "countryName": "European Union",
       "year": 1960,
       "value": 14.7756836116793
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1960,
+      "value": 7.05978222231879
     },
     {
       "country": "XE",
@@ -1086,12 +1093,6 @@
       "value": 5.53999859749787
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1960,
-      "value": 5.63302800881276
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1961,
@@ -1174,6 +1175,12 @@
       "countryName": "European Union",
       "year": 1961,
       "value": 15.0703317326033
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1961,
+      "value": 7.10492030474564
     },
     {
       "country": "XE",
@@ -1998,12 +2005,6 @@
       "value": 5.60264150473827
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1961,
-      "value": 5.75231225638045
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1962,
@@ -2086,6 +2087,12 @@
       "countryName": "European Union",
       "year": 1962,
       "value": 15.3369033717409
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1962,
+      "value": 7.12543902537962
     },
     {
       "country": "XE",
@@ -2910,12 +2917,6 @@
       "value": 5.65224966587506
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1962,
-      "value": 5.89492828977541
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1963,
@@ -2998,6 +2999,12 @@
       "countryName": "European Union",
       "year": 1963,
       "value": 15.5534166069774
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1963,
+      "value": 7.14941374586726
     },
     {
       "country": "XE",
@@ -3822,12 +3829,6 @@
       "value": 5.70099138924278
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1963,
-      "value": 6.01529973479989
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1964,
@@ -3910,6 +3911,12 @@
       "countryName": "European Union",
       "year": 1964,
       "value": 15.803453453958
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1964,
+      "value": 7.17965588023536
     },
     {
       "country": "XE",
@@ -4734,12 +4741,6 @@
       "value": 5.75445490808027
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1964,
-      "value": 6.08213609725585
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1965,
@@ -4822,6 +4823,12 @@
       "countryName": "European Union",
       "year": 1965,
       "value": 16.1455770037573
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1965,
+      "value": 7.24120176549471
     },
     {
       "country": "XE",
@@ -5646,12 +5653,6 @@
       "value": 5.80207668973608
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1965,
-      "value": 6.12687401958811
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1966,
@@ -5734,6 +5735,12 @@
       "countryName": "European Union",
       "year": 1966,
       "value": 16.5012542867717
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1966,
+      "value": 7.30343560016857
     },
     {
       "country": "XE",
@@ -6558,12 +6565,6 @@
       "value": 5.8826221882249
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1966,
-      "value": 6.14551549435999
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1967,
@@ -6646,6 +6647,12 @@
       "countryName": "European Union",
       "year": 1967,
       "value": 16.8738345784292
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1967,
+      "value": 7.34490158346196
     },
     {
       "country": "XE",
@@ -7470,12 +7477,6 @@
       "value": 5.99673759031203
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1967,
-      "value": 6.16300792496789
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1968,
@@ -7558,6 +7559,12 @@
       "countryName": "European Union",
       "year": 1968,
       "value": 17.2150856008038
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1968,
+      "value": 7.41500918592882
     },
     {
       "country": "XE",
@@ -8382,12 +8389,6 @@
       "value": 6.0840891175937
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1968,
-      "value": 6.17751969238914
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1969,
@@ -8470,6 +8471,12 @@
       "countryName": "European Union",
       "year": 1969,
       "value": 17.4984581828197
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1969,
+      "value": 7.48434641336706
     },
     {
       "country": "XE",
@@ -9294,12 +9301,6 @@
       "value": 6.13135422144889
     },
     {
-      "country": "KR",
-      "countryName": "Korea, Rep.",
-      "year": 1969,
-      "value": 6.15716899617313
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1970,
@@ -9382,6 +9383,12 @@
       "countryName": "European Union",
       "year": 1970,
       "value": 17.8243305851106
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1970,
+      "value": 7.52486038982698
     },
     {
       "country": "XE",
@@ -10212,12 +10219,6 @@
       "value": 6.16394206615139
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1970,
-      "value": 7.81035679370741
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1971,
@@ -10300,6 +10301,12 @@
       "countryName": "European Union",
       "year": 1971,
       "value": 18.12920971446
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1971,
+      "value": 7.57160651370274
     },
     {
       "country": "XE",
@@ -11130,12 +11137,6 @@
       "value": 6.21918341478878
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1971,
-      "value": 7.95359138522013
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1972,
@@ -11218,6 +11219,12 @@
       "countryName": "European Union",
       "year": 1972,
       "value": 18.422636236642
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1972,
+      "value": 7.63806201724203
     },
     {
       "country": "XE",
@@ -12048,12 +12055,6 @@
       "value": 6.26943179764485
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1972,
-      "value": 7.98316670595202
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1973,
@@ -12136,6 +12137,12 @@
       "countryName": "European Union",
       "year": 1973,
       "value": 18.7140336500689
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1973,
+      "value": 7.69149010273575
     },
     {
       "country": "XE",
@@ -12966,12 +12973,6 @@
       "value": 6.28462515763711
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1973,
-      "value": 8.017895312979
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1974,
@@ -13054,6 +13055,12 @@
       "countryName": "European Union",
       "year": 1974,
       "value": 19.0061772836478
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1974,
+      "value": 7.74392561642468
     },
     {
       "country": "XE",
@@ -13884,12 +13891,6 @@
       "value": 6.2755291421287
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1974,
-      "value": 8.03195265306566
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1975,
@@ -13972,6 +13973,12 @@
       "countryName": "European Union",
       "year": 1975,
       "value": 19.3031800829329
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1975,
+      "value": 7.79714161953324
     },
     {
       "country": "XE",
@@ -14802,12 +14809,6 @@
       "value": 6.23427979292885
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1975,
-      "value": 8.01923593941918
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1976,
@@ -14890,6 +14891,12 @@
       "countryName": "European Union",
       "year": 1976,
       "value": 19.5580593841119
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1976,
+      "value": 7.85137223428975
     },
     {
       "country": "XE",
@@ -15720,12 +15727,6 @@
       "value": 6.18782745148577
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1976,
-      "value": 7.9784888122959
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1977,
@@ -15808,6 +15809,12 @@
       "countryName": "European Union",
       "year": 1977,
       "value": 19.8158552077244
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1977,
+      "value": 7.91547975156672
     },
     {
       "country": "XE",
@@ -16638,12 +16645,6 @@
       "value": 6.15925214425555
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1977,
-      "value": 7.90277446205265
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1978,
@@ -16726,6 +16727,12 @@
       "countryName": "European Union",
       "year": 1978,
       "value": 20.0623969286424
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1978,
+      "value": 7.95923067437933
     },
     {
       "country": "XE",
@@ -17556,12 +17563,6 @@
       "value": 6.13987705133494
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1978,
-      "value": 7.79055295442423
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1979,
@@ -17644,6 +17645,12 @@
       "countryName": "European Union",
       "year": 1979,
       "value": 20.2384969283343
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1979,
+      "value": 7.96904195836962
     },
     {
       "country": "XE",
@@ -18474,12 +18481,6 @@
       "value": 6.13911720547348
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1979,
-      "value": 7.64092790837634
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1980,
@@ -18562,6 +18563,12 @@
       "countryName": "European Union",
       "year": 1980,
       "value": 20.2059137476401
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1980,
+      "value": 7.94645008980514
     },
     {
       "country": "XE",
@@ -19392,12 +19399,6 @@
       "value": 6.15841580146325
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1980,
-      "value": 7.47649217063019
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1981,
@@ -19480,6 +19481,12 @@
       "countryName": "European Union",
       "year": 1981,
       "value": 19.9021721901076
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1981,
+      "value": 7.86896388819686
     },
     {
       "country": "XE",
@@ -20310,12 +20317,6 @@
       "value": 6.23006107196945
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1981,
-      "value": 7.33329808607381
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1982,
@@ -20398,6 +20399,12 @@
       "countryName": "European Union",
       "year": 1982,
       "value": 19.4810714074659
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1982,
+      "value": 7.77333609316849
     },
     {
       "country": "XE",
@@ -21228,12 +21235,6 @@
       "value": 6.3351989901062
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1982,
-      "value": 7.20521283627063
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1983,
@@ -21316,6 +21317,12 @@
       "countryName": "European Union",
       "year": 1983,
       "value": 19.0284107375269
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1983,
+      "value": 7.71448942015636
     },
     {
       "country": "XE",
@@ -22146,12 +22153,6 @@
       "value": 6.39395423019249
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1983,
-      "value": 7.07384977869905
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1984,
@@ -22234,6 +22235,12 @@
       "countryName": "European Union",
       "year": 1984,
       "value": 18.7502216602124
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1984,
+      "value": 7.67601183631028
     },
     {
       "country": "XE",
@@ -23064,12 +23071,6 @@
       "value": 6.41416155792689
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1984,
-      "value": 6.94151554856066
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1985,
@@ -23152,6 +23153,12 @@
       "countryName": "European Union",
       "year": 1985,
       "value": 18.8269575438264
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1985,
+      "value": 7.6330754647692
     },
     {
       "country": "XE",
@@ -23982,12 +23989,6 @@
       "value": 6.47479615670882
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1985,
-      "value": 6.80571111257518
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1986,
@@ -24070,6 +24071,12 @@
       "countryName": "European Union",
       "year": 1986,
       "value": 19.0835812361197
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1986,
+      "value": 7.6048149063864
     },
     {
       "country": "XE",
@@ -24900,12 +24907,6 @@
       "value": 6.57851259345555
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1986,
-      "value": 6.69520797324665
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1987,
@@ -24988,6 +24989,12 @@
       "countryName": "European Union",
       "year": 1987,
       "value": 19.3652605067539
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1987,
+      "value": 7.6055840231784
     },
     {
       "country": "XE",
@@ -25818,12 +25825,6 @@
       "value": 6.67959214372552
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1987,
-      "value": 6.62509297381375
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1988,
@@ -25906,6 +25907,12 @@
       "countryName": "European Union",
       "year": 1988,
       "value": 19.6582988480186
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1988,
+      "value": 7.62512664505991
     },
     {
       "country": "XE",
@@ -26736,12 +26743,6 @@
       "value": 6.79691900513317
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1988,
-      "value": 6.71025612839398
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1989,
@@ -26824,6 +26825,12 @@
       "countryName": "European Union",
       "year": 1989,
       "value": 19.91529948145
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1989,
+      "value": 7.64719867958621
     },
     {
       "country": "XE",
@@ -27654,12 +27661,6 @@
       "value": 6.92776557521168
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1989,
-      "value": 6.91677306982057
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1990,
@@ -27742,6 +27743,12 @@
       "countryName": "European Union",
       "year": 1990,
       "value": 20.1755469531451
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1990,
+      "value": 7.64685203330026
     },
     {
       "country": "XE",
@@ -28572,12 +28579,6 @@
       "value": 7.05072021276016
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1990,
-      "value": 7.07996236576358
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1991,
@@ -28660,6 +28661,12 @@
       "countryName": "European Union",
       "year": 1991,
       "value": 20.4557200181127
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1991,
+      "value": 7.65325041407257
     },
     {
       "country": "XE",
@@ -29490,12 +29497,6 @@
       "value": 7.2072826687068
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1991,
-      "value": 7.136060086704
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1992,
@@ -29578,6 +29579,12 @@
       "countryName": "European Union",
       "year": 1992,
       "value": 20.7282171363106
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1992,
+      "value": 7.65759402336802
     },
     {
       "country": "XE",
@@ -30408,12 +30415,6 @@
       "value": 7.40353315852931
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1992,
-      "value": 7.13819289829553
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1993,
@@ -30496,6 +30497,12 @@
       "countryName": "European Union",
       "year": 1993,
       "value": 21.0226039936646
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1993,
+      "value": 7.66510395721664
     },
     {
       "country": "XE",
@@ -31326,12 +31333,6 @@
       "value": 7.61806582342116
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1993,
-      "value": 7.19790670581557
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1994,
@@ -31414,6 +31415,12 @@
       "countryName": "European Union",
       "year": 1994,
       "value": 21.4338527941202
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1994,
+      "value": 7.67353749434214
     },
     {
       "country": "XE",
@@ -32244,12 +32251,6 @@
       "value": 7.86342572789887
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1994,
-      "value": 7.30700707480397
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1995,
@@ -32332,6 +32333,12 @@
       "countryName": "European Union",
       "year": 1995,
       "value": 21.77807963923
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1995,
+      "value": 7.63491200028843
     },
     {
       "country": "XE",
@@ -33162,12 +33169,6 @@
       "value": 8.10701197164369
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1995,
-      "value": 7.43060325669724
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1996,
@@ -33250,6 +33251,12 @@
       "countryName": "European Union",
       "year": 1996,
       "value": 22.0249002577179
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1996,
+      "value": 7.58520496760067
     },
     {
       "country": "XE",
@@ -34080,12 +34087,6 @@
       "value": 8.34947260358299
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1996,
-      "value": 7.55896352003408
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1997,
@@ -34168,6 +34169,12 @@
       "countryName": "European Union",
       "year": 1997,
       "value": 22.3292030296018
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1997,
+      "value": 7.55142160122553
     },
     {
       "country": "XE",
@@ -34998,12 +35005,6 @@
       "value": 8.64995296083618
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1997,
-      "value": 7.68919577898956
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1998,
@@ -35086,6 +35087,12 @@
       "countryName": "European Union",
       "year": 1998,
       "value": 22.630466607475
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1998,
+      "value": 7.47804182934338
     },
     {
       "country": "XE",
@@ -35916,12 +35923,6 @@
       "value": 8.99034108684341
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1998,
-      "value": 8.3306212872743
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 1999,
@@ -36004,6 +36005,12 @@
       "countryName": "European Union",
       "year": 1999,
       "value": 22.9417760410672
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 1999,
+      "value": 7.37527853390647
     },
     {
       "country": "XE",
@@ -36834,12 +36841,6 @@
       "value": 9.3832143276981
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 1999,
-      "value": 9.49098189131163
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2000,
@@ -36924,6 +36925,12 @@
       "value": 23.2768879394912
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2000,
+      "value": 7.30109939372108
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2000,
@@ -36999,7 +37006,7 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2000,
-      "value": 8.32037865477434
+      "value": 8.32037865477435
     },
     {
       "country": "XM",
@@ -37752,12 +37759,6 @@
       "value": 9.85842322024216
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2000,
-      "value": 10.1042541440644
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2001,
@@ -37840,6 +37841,12 @@
       "countryName": "European Union",
       "year": 2001,
       "value": 23.6232145651019
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2001,
+      "value": 7.26851642858003
     },
     {
       "country": "XE",
@@ -38670,12 +38677,6 @@
       "value": 10.3694915258224
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2001,
-      "value": 10.2479919189617
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2002,
@@ -38758,6 +38759,12 @@
       "countryName": "European Union",
       "year": 2002,
       "value": 23.9449711561889
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2002,
+      "value": 7.27520909171128
     },
     {
       "country": "XE",
@@ -39588,12 +39595,6 @@
       "value": 10.8990467346679
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2002,
-      "value": 10.3383529437083
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2003,
@@ -39676,6 +39677,12 @@
       "countryName": "European Union",
       "year": 2003,
       "value": 24.2257132540049
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2003,
+      "value": 7.29347239168252
     },
     {
       "country": "XE",
@@ -40506,12 +40513,6 @@
       "value": 11.4431076881698
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2003,
-      "value": 10.3981918336092
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2004,
@@ -40594,6 +40595,12 @@
       "countryName": "European Union",
       "year": 2004,
       "value": 24.5449450434408
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2004,
+      "value": 7.29020806848974
     },
     {
       "country": "XE",
@@ -41424,12 +41431,6 @@
       "value": 12.0004342255512
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2004,
-      "value": 10.4362820875699
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2005,
@@ -41512,6 +41513,12 @@
       "countryName": "European Union",
       "year": 2005,
       "value": 24.9121301521646
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2005,
+      "value": 7.26019183554589
     },
     {
       "country": "XE",
@@ -42342,12 +42349,6 @@
       "value": 12.5432686078152
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2005,
-      "value": 10.4531570380249
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2006,
@@ -42430,6 +42431,12 @@
       "countryName": "European Union",
       "year": 2006,
       "value": 25.2762814413484
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2006,
+      "value": 7.22109269943811
     },
     {
       "country": "XE",
@@ -43260,12 +43267,6 @@
       "value": 13.1054252643816
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2006,
-      "value": 10.4529479298941
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2007,
@@ -43348,6 +43349,12 @@
       "countryName": "European Union",
       "year": 2007,
       "value": 25.5497124260864
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2007,
+      "value": 7.18832901421296
     },
     {
       "country": "XE",
@@ -44178,12 +44185,6 @@
       "value": 13.6845570185099
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2007,
-      "value": 10.4509694191016
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2008,
@@ -44266,6 +44267,12 @@
       "countryName": "European Union",
       "year": 2008,
       "value": 25.791536023849
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2008,
+      "value": 7.13137201813952
     },
     {
       "country": "XE",
@@ -45096,12 +45103,6 @@
       "value": 14.187066293195
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2008,
-      "value": 10.449712922796
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2009,
@@ -45184,6 +45185,12 @@
       "countryName": "European Union",
       "year": 2009,
       "value": 26.0974951314101
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2009,
+      "value": 7.07496932551387
     },
     {
       "country": "XE",
@@ -46014,12 +46021,6 @@
       "value": 14.6497226464137
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2009,
-      "value": 10.4445131492065
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2010,
@@ -46102,6 +46103,12 @@
       "countryName": "European Union",
       "year": 2010,
       "value": 26.3892423137188
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2010,
+      "value": 7.02935306360939
     },
     {
       "country": "XE",
@@ -46932,12 +46939,6 @@
       "value": 15.1359936224068
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2010,
-      "value": 10.4162629455152
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2011,
@@ -47020,6 +47021,12 @@
       "countryName": "European Union",
       "year": 2011,
       "value": 26.7609789034244
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2011,
+      "value": 6.99367518381654
     },
     {
       "country": "XE",
@@ -47850,12 +47857,6 @@
       "value": 15.5789415587946
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2011,
-      "value": 10.443529107956
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2012,
@@ -47938,6 +47939,12 @@
       "countryName": "European Union",
       "year": 2012,
       "value": 27.3336289082312
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2012,
+      "value": 6.99705651354529
     },
     {
       "country": "XE",
@@ -48768,12 +48775,6 @@
       "value": 16.0082431817077
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2012,
-      "value": 10.5359764127071
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2013,
@@ -48856,6 +48857,12 @@
       "countryName": "European Union",
       "year": 2013,
       "value": 27.9751417930094
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2013,
+      "value": 7.00883866249955
     },
     {
       "country": "XE",
@@ -49686,12 +49693,6 @@
       "value": 16.516748195558
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2013,
-      "value": 10.6696176374703
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2014,
@@ -49774,6 +49775,12 @@
       "countryName": "European Union",
       "year": 2014,
       "value": 28.6444102990051
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2014,
+      "value": 7.04182904332038
     },
     {
       "country": "XE",
@@ -50604,12 +50611,6 @@
       "value": 17.0936824049145
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2014,
-      "value": 10.9313662838467
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2015,
@@ -50692,6 +50693,12 @@
       "countryName": "European Union",
       "year": 2015,
       "value": 29.268501589122
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2015,
+      "value": 7.10478712862955
     },
     {
       "country": "XE",
@@ -51522,12 +51529,6 @@
       "value": 17.6779804083552
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2015,
-      "value": 11.3297913026083
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2016,
@@ -51610,6 +51611,12 @@
       "countryName": "European Union",
       "year": 2016,
       "value": 29.8443331908837
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2016,
+      "value": 7.16433932099453
     },
     {
       "country": "XE",
@@ -52440,12 +52447,6 @@
       "value": 18.2353000731619
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2016,
-      "value": 11.6461754949908
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2017,
@@ -52528,6 +52529,12 @@
       "countryName": "European Union",
       "year": 2017,
       "value": 30.4277010303832
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2017,
+      "value": 7.22862122713309
     },
     {
       "country": "XE",
@@ -53358,12 +53365,6 @@
       "value": 18.9764143023336
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2017,
-      "value": 11.8210791378195
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2018,
@@ -53446,6 +53447,12 @@
       "countryName": "European Union",
       "year": 2018,
       "value": 30.9948640494384
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2018,
+      "value": 7.28860726618238
     },
     {
       "country": "XE",
@@ -54276,12 +54283,6 @@
       "value": 19.8458040524492
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2018,
-      "value": 12.0891821158439
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2019,
@@ -54364,6 +54365,12 @@
       "countryName": "European Union",
       "year": 2019,
       "value": 31.5744413112585
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2019,
+      "value": 7.34462230127193
     },
     {
       "country": "XE",
@@ -55194,12 +55201,6 @@
       "value": 20.7697470386564
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2019,
-      "value": 12.5010944840459
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2020,
@@ -55282,6 +55283,12 @@
       "countryName": "European Union",
       "year": 2020,
       "value": 32.1483133050322
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2020,
+      "value": 7.38010155788223
     },
     {
       "country": "XE",
@@ -56112,12 +56119,6 @@
       "value": 21.955966668736
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2020,
-      "value": 12.6988994292584
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2021,
@@ -56200,6 +56201,12 @@
       "countryName": "European Union",
       "year": 2021,
       "value": 32.7187817103134
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2021,
+      "value": 7.38881586441178
     },
     {
       "country": "XE",
@@ -57030,12 +57037,6 @@
       "value": 23.2870478873057
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2021,
-      "value": 12.8886125494022
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2022,
@@ -57118,6 +57119,12 @@
       "countryName": "European Union",
       "year": 2022,
       "value": 33.2788175931073
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2022,
+      "value": 7.36544532256364
     },
     {
       "country": "XE",
@@ -57948,12 +57955,6 @@
       "value": 24.5912480325812
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2022,
-      "value": 13.3876736173714
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2023,
@@ -58036,6 +58037,12 @@
       "countryName": "European Union",
       "year": 2023,
       "value": 33.8915901919783
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2023,
+      "value": 7.37299730569858
     },
     {
       "country": "XE",
@@ -58866,12 +58873,6 @@
       "value": 25.9356983752934
     },
     {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2023,
-      "value": 13.9640748243239
-    },
-    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2024,
@@ -58954,6 +58955,12 @@
       "countryName": "European Union",
       "year": 2024,
       "value": 34.6246134645753
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2024,
+      "value": 7.44760507295071
     },
     {
       "country": "XE",
@@ -59782,12 +59789,6 @@
       "countryName": "Korea, Rep.",
       "year": 2024,
       "value": 27.47144069912
-    },
-    {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2024,
-      "value": 14.5548112786942
     }
   ]
 }
