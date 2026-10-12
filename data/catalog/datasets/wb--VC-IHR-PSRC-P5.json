@@ -1,21 +1,20 @@
 {
   "meta": {
     "id": "wb--VC-IHR-PSRC-P5",
-    "title": "Intentional Homicides (per 100,000 people)",
+    "title": "Intentional Homicide Rate (per 100,000 people)",
     "description": "Intentional homicides (per 100,000 people) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "VC.IHR.PSRC.P5",
       "indicatorName": "Intentional homicides (per 100,000 people)",
       "sourceUrl": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
-      "lastFetched": "2026-09-07T00:40:42.551Z"
+      "lastFetched": "2026-09-22T01:41:34.957Z"
     },
     "topics": [
       "crime",
       "safety",
       "violence",
-      "homicide",
-      "mortality"
+      "governance"
     ],
     "countries": [
       "AG",

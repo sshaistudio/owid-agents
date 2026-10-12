@@ -8,13 +8,13 @@
       "indicatorId": "SP.POP.DPND.OL",
       "indicatorName": "Age dependency ratio, old (% of working-age population)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-      "lastFetched": "2026-09-10T00:33:52.793Z"
+      "lastFetched": "2026-09-22T01:41:39.167Z"
     },
     "topics": [
       "aging",
       "demographics",
       "population",
-      "society"
+      "labor"
     ],
     "countries": [
       "ZH",
