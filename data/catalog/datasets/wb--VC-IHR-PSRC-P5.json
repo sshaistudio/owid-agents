@@ -1,22 +1,20 @@
 {
   "meta": {
     "id": "wb--VC-IHR-PSRC-P5",
-    "title": "Intentional Homicide Rate (per 100,000 people)",
+    "title": "Intentional Homicides (per 100,000 people)",
     "description": "Intentional homicides (per 100,000 people) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "VC.IHR.PSRC.P5",
       "indicatorName": "Intentional homicides (per 100,000 people)",
       "sourceUrl": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
-      "lastFetched": "2026-06-21T03:23:38.805Z"
+      "lastFetched": "2026-08-02T00:41:25.159Z"
     },
     "topics": [
       "crime",
       "safety",
       "violence",
-      "mortality",
-      "governance",
-      "development"
+      "security"
     ],
     "countries": [
       "AG",
@@ -101,13 +99,13 @@
       "DZ",
       "PF",
       "HT",
+      "XK",
       "AF",
       "IR",
       "ZH",
       "ZI",
       "Z4",
       "Z7",
-      "F1",
       "XD",
       "XF",
       "XI",
@@ -6668,6 +6666,12 @@
       "value": 0.888451063800414
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2008,
+      "value": 6.27478679607165
+    },
+    {
       "country": "1W",
       "countryName": "World",
       "year": 2009,
@@ -7118,6 +7122,12 @@
       "value": 1.09643755353408
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2009,
+      "value": 4.06757410716052
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2010,
@@ -7140,12 +7150,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2010,
       "value": 3.6
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2010,
-      "value": 15
     },
     {
       "country": "XD",
@@ -7688,6 +7692,12 @@
       "value": 0.993727389936438
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2010,
+      "value": 5.92595077267969
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2011,
@@ -7710,12 +7720,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2011,
       "value": 3.5
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2011,
-      "value": 15.5
     },
     {
       "country": "XD",
@@ -8240,6 +8244,12 @@
       "value": 0.820312091704541
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2011,
+      "value": 3.45991989727386
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2012,
@@ -8322,12 +8332,6 @@
       "countryName": "European Union",
       "year": 2012,
       "value": 1.1
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2012,
-      "value": 16
     },
     {
       "country": "XE",
@@ -8966,6 +8970,12 @@
       "value": 0.877023564282435
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2012,
+      "value": 4.98192116165116
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2013,
@@ -8988,12 +8998,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2013,
       "value": 3.3
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2013,
-      "value": 16.3
     },
     {
       "country": "XD",
@@ -9482,6 +9486,12 @@
       "value": 0.702999427944201
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2013,
+      "value": 2.25625933114568
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2014,
@@ -9564,12 +9574,6 @@
       "countryName": "European Union",
       "year": 2014,
       "value": 1
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2014,
-      "value": 16.5
     },
     {
       "country": "XE",
@@ -10172,6 +10176,12 @@
       "value": 0.745957747469183
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2014,
+      "value": 3.04038656027525
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2015,
@@ -10254,12 +10264,6 @@
       "countryName": "European Union",
       "year": 2015,
       "value": 1
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2015,
-      "value": 16.2
     },
     {
       "country": "XE",
@@ -10856,6 +10860,12 @@
       "value": 0.73552614730237
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2015,
+      "value": 2.36085035581387
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2016,
@@ -10878,12 +10888,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2016,
       "value": 3.3
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2016,
-      "value": 16.4
     },
     {
       "country": "XD",
@@ -11372,6 +11376,12 @@
       "value": 0.693986349015599
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2016,
+      "value": 2.15692969005204
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2017,
@@ -11394,12 +11404,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2017,
       "value": 2.9
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2017,
-      "value": 15.9
     },
     {
       "country": "XD",
@@ -11894,6 +11898,12 @@
       "value": 0.584621875068617
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2017,
+      "value": 2.71474940317931
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2018,
@@ -11916,12 +11926,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2018,
       "value": 2.6
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2018,
-      "value": 15.5
     },
     {
       "country": "XD",
@@ -12374,6 +12378,12 @@
       "value": 0.59836299503258
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2018,
+      "value": 2.48905241208978
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2019,
@@ -12396,12 +12406,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2019,
       "value": 2.4
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2019,
-      "value": 15.1
     },
     {
       "country": "XD",
@@ -12842,6 +12846,12 @@
       "value": 0.573715197653771
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2019,
+      "value": 1.36748864129747
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2020,
@@ -12864,12 +12874,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2020,
       "value": 2.3
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2020,
-      "value": 13.9
     },
     {
       "country": "XD",
@@ -13322,6 +13326,12 @@
       "value": 0.593924062354197
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2020,
+      "value": 2.11257513202167
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2021,
@@ -13344,12 +13354,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2021,
       "value": 2.2
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2021,
-      "value": 15
     },
     {
       "country": "XD",
@@ -13784,6 +13788,12 @@
       "value": 0.472531479878428
     },
     {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2021,
+      "value": 1.89497747704421
+    },
+    {
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2022,
@@ -13806,12 +13816,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2022,
       "value": 2.2
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2022,
-      "value": 13.5
     },
     {
       "country": "XD",
@@ -14256,12 +14260,6 @@
       "countryName": "Europe & Central Asia",
       "year": 2023,
       "value": 2.1
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2023,
-      "value": 12.9
     },
     {
       "country": "XD",
