@@ -1,21 +1,22 @@
 {
   "meta": {
     "id": "ember--GEN-WIND",
-    "title": "Wind Electricity Generation",
+    "title": "Wind Electricity Generation (TWh)",
     "description": "Electricity generation from wind (TWh) from ember",
     "source": {
       "provider": "ember",
       "indicatorId": "GEN-WIND",
       "indicatorName": "Electricity generation from wind (TWh)",
       "sourceUrl": "https://ember-energy.org/data/yearly-electricity-data/",
-      "lastFetched": "2026-08-29T00:40:49.820Z"
+      "lastFetched": "2026-09-11T02:02:56.836Z"
     },
     "topics": [
       "energy",
-      "electricity",
-      "renewable",
+      "renewable energy",
       "wind",
-      "climate"
+      "electricity",
+      "climate",
+      "clean energy"
     ],
     "countries": [
       "AFG",
