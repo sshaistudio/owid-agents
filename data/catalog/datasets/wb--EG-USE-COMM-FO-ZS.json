@@ -8,15 +8,14 @@
       "indicatorId": "EG.USE.COMM.FO.ZS",
       "indicatorName": "Fossil fuel energy consumption (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.USE.COMM.FO.ZS",
-      "lastFetched": "2026-08-25T00:36:56.889Z"
+      "lastFetched": "2026-10-06T01:07:36.053Z"
     },
     "topics": [
       "energy",
       "fossil fuels",
       "climate",
-      "emissions",
       "environment",
-      "renewable energy"
+      "energy transition"
     ],
     "countries": [
       "B8",

@@ -1,22 +1,21 @@
 {
   "meta": {
     "id": "wb--ER-LND-PTLD-ZS",
-    "title": "Terrestrial Protected Areas (% of Total Land Area)",
+    "title": "Terrestrial Protected Areas (% of Land Area)",
     "description": "Terrestrial protected areas (% of total land area) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "ER.LND.PTLD.ZS",
       "indicatorName": "Terrestrial protected areas (% of total land area)",
       "sourceUrl": "https://data.worldbank.org/indicator/ER.LND.PTLD.ZS",
-      "lastFetched": "2026-10-02T05:46:20.080Z"
+      "lastFetched": "2026-10-06T01:07:38.843Z"
     },
     "topics": [
-      "environment",
       "biodiversity",
       "conservation",
+      "environment",
       "land",
-      "protected areas",
-      "sustainability"
+      "protected areas"
     ],
     "countries": [
       "ZH",
