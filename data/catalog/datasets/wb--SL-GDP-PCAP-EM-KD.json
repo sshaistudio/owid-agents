@@ -1,19 +1,20 @@
 {
   "meta": {
     "id": "wb--SL-GDP-PCAP-EM-KD",
-    "title": "Labor Productivity: GDP per Person Employed",
+    "title": "Labor Productivity: GDP per Person Employed (constant 2021 PPP $)",
     "description": "GDP per person employed (constant 2021 PPP $) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SL.GDP.PCAP.EM.KD",
       "indicatorName": "GDP per person employed (constant 2021 PPP $)",
       "sourceUrl": "https://data.worldbank.org/indicator/SL.GDP.PCAP.EM.KD",
-      "lastFetched": "2026-09-02T01:45:19.432Z"
+      "lastFetched": "2026-09-09T00:58:04.334Z"
     },
     "topics": [
-      "labor",
       "economics",
+      "labor",
       "productivity",
+      "employment",
       "development"
     ],
     "countries": [
