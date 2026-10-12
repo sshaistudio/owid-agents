@@ -1,21 +1,21 @@
 {
   "meta": {
     "id": "wb--FP-CPI-TOTL-ZG",
-    "title": "Inflation, Consumer Prices (Annual %)",
+    "title": "Inflation, Consumer Prices (annual %)",
     "description": "Inflation, consumer prices (annual %) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "FP.CPI.TOTL.ZG",
       "indicatorName": "Inflation, consumer prices (annual %)",
       "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
-      "lastFetched": "2026-07-05T00:33:56.978Z"
+      "lastFetched": "2026-08-03T02:05:20.875Z"
     },
     "topics": [
       "inflation",
       "prices",
       "economics",
-      "macroeconomics",
-      "monetary policy"
+      "monetary",
+      "development"
     ],
     "countries": [
       "XC",
