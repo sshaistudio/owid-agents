@@ -8,14 +8,13 @@
       "indicatorId": "AG.LND.ARBL.HA.PC",
       "indicatorName": "Arable land (hectares per person)",
       "sourceUrl": "https://data.worldbank.org/indicator/AG.LND.ARBL.HA.PC",
-      "lastFetched": "2026-08-08T00:37:04.625Z"
+      "lastFetched": "2026-10-08T01:15:48.891Z"
     },
     "topics": [
       "agriculture",
       "food security",
-      "land",
-      "demographics",
-      "sustainability"
+      "land use",
+      "rural development"
     ],
     "countries": [
       "ZH",
