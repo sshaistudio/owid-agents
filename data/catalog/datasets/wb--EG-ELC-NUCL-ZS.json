@@ -8,13 +8,14 @@
       "indicatorId": "EG.ELC.NUCL.ZS",
       "indicatorName": "Electricity production from nuclear sources (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS",
-      "lastFetched": "2026-07-30T02:39:24.269Z"
+      "lastFetched": "2026-08-05T00:35:51.583Z"
     },
     "topics": [
       "energy",
       "nuclear",
       "electricity",
-      "climate"
+      "climate",
+      "environment"
     ],
     "countries": [
       "ZH",
