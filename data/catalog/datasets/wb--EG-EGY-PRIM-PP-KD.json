@@ -8,12 +8,12 @@
       "indicatorId": "EG.EGY.PRIM.PP.KD",
       "indicatorName": "Energy intensity level of primary energy (MJ/$2021 PPP GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD",
-      "lastFetched": "2026-08-15T01:31:26.619Z"
+      "lastFetched": "2026-08-16T00:34:13.455Z"
     },
     "topics": [
       "energy",
+      "environment",
       "climate",
-      "economics",
       "efficiency"
     ],
     "countries": [

@@ -8,14 +8,13 @@
       "indicatorId": "NY.GNS.ICTR.ZS",
       "indicatorName": "Gross savings (% of GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS",
-      "lastFetched": "2026-07-26T01:59:27.525Z"
+      "lastFetched": "2026-08-16T00:34:18.977Z"
     },
     "topics": [
       "economics",
-      "savings",
-      "investment",
+      "finance",
       "development",
-      "fiscal"
+      "investment"
     ],
     "countries": [
       "CA",
