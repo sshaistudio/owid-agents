@@ -8,14 +8,14 @@
       "indicatorId": "NY.ADJ.SVNG.GN.ZS",
       "indicatorName": "Adjusted net savings, including particulate emission damage (% of GNI)",
       "sourceUrl": "https://data.worldbank.org/indicator/NY.ADJ.SVNG.GN.ZS",
-      "lastFetched": "2026-07-17T04:46:35.910Z"
+      "lastFetched": "2026-09-29T00:33:29.038Z"
     },
     "topics": [
       "environment",
       "economics",
       "sustainability",
-      "natural capital",
-      "emissions"
+      "climate",
+      "development"
     ],
     "countries": [
       "ZH",
