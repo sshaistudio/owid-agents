@@ -8,13 +8,12 @@
       "indicatorId": "EN.POP.DNST",
       "indicatorName": "Population density (people per sq. km of land area)",
       "sourceUrl": "https://data.worldbank.org/indicator/EN.POP.DNST",
-      "lastFetched": "2026-07-01T00:44:02.812Z"
+      "lastFetched": "2026-07-30T02:39:16.384Z"
     },
     "topics": [
       "population",
       "demographics",
-      "urbanization",
-      "land"
+      "urbanization"
     ],
     "countries": [
       "ZH",
