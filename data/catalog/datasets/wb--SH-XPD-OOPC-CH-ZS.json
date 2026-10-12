@@ -1,23 +1,23 @@
 {
   "meta": {
     "id": "wb--SH-XPD-OOPC-CH-ZS",
-    "title": "Out-of-Pocket Expenditure (% of Current Health Expenditure)",
+    "title": "Out-of-Pocket Health Expenditure (% of Current Health Spending)",
     "description": "Out-of-pocket expenditure (% of current health expenditure) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.XPD.OOPC.CH.ZS",
       "indicatorName": "Out-of-pocket expenditure (% of current health expenditure)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
-      "lastFetched": "2026-08-12T00:47:46.148Z"
+      "lastFetched": "2026-09-14T02:10:39.854Z"
     },
     "topics": [
       "health",
-      "spending",
       "healthcare",
-      "insurance",
+      "out-of-pocket",
+      "universal health coverage",
       "finance",
-      "poverty",
-      "development"
+      "spending",
+      "inequality"
     ],
     "countries": [
       "ZH",

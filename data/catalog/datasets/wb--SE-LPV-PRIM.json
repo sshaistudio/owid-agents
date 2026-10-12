@@ -1,23 +1,23 @@
 {
   "meta": {
     "id": "wb--SE-LPV-PRIM",
-    "title": "Learning Poverty: Share of Children Below Minimum Reading Proficiency (%)",
+    "title": "Learning Poverty: Children Below Minimum Reading Proficiency at End of Primary School (%)",
     "description": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.LPV.PRIM",
       "indicatorName": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.LPV.PRIM",
-      "lastFetched": "2026-07-04T00:46:25.082Z"
+      "lastFetched": "2026-09-14T02:10:41.092Z"
     },
     "topics": [
       "education",
       "learning outcomes",
-      "children",
-      "development",
+      "literacy",
       "poverty",
+      "children",
       "sdg-4",
-      "literacy"
+      "proficiency"
     ],
     "countries": [
       "BZ",
