@@ -8,14 +8,14 @@
       "indicatorId": "SP.POP.DPND",
       "indicatorName": "Age dependency ratio (% of working-age population)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND",
-      "lastFetched": "2026-09-29T00:33:25.634Z"
+      "lastFetched": "2026-10-01T01:20:19.604Z"
     },
     "topics": [
       "demographics",
       "aging",
       "population",
-      "labor",
-      "development"
+      "economics",
+      "labor"
     ],
     "countries": [
       "ZH",
