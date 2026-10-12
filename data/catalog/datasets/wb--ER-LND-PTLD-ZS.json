@@ -1,21 +1,21 @@
 {
   "meta": {
     "id": "wb--ER-LND-PTLD-ZS",
-    "title": "Terrestrial Protected Areas (% of Land Area)",
+    "title": "Terrestrial Protected Areas (% of Land)",
     "description": "Terrestrial protected areas (% of total land area) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "ER.LND.PTLD.ZS",
       "indicatorName": "Terrestrial protected areas (% of total land area)",
       "sourceUrl": "https://data.worldbank.org/indicator/ER.LND.PTLD.ZS",
-      "lastFetched": "2026-10-06T01:07:38.843Z"
+      "lastFetched": "2026-10-09T01:02:34.941Z"
     },
     "topics": [
+      "environment",
       "biodiversity",
       "conservation",
-      "environment",
       "land",
-      "protected areas"
+      "sdg-15"
     ],
     "countries": [
       "ZH",
@@ -32,6 +32,7 @@
       "7E",
       "T7",
       "EU",
+      "F2",
       "XE",
       "XD",
       "XF",
@@ -174,7 +175,7 @@
       "start": "2013",
       "end": "2024"
     },
-    "dataPointCount": 1810,
+    "dataPointCount": 1822,
     "dataFilePath": "datasets/wb--ER-LND-PTLD-ZS.json"
   },
   "data": [
@@ -260,7 +261,13 @@
       "country": "EU",
       "countryName": "European Union",
       "year": 2013,
-      "value": 25.1983687813778
+      "value": 25.1983687813777
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2013,
+      "value": 9.24372455865487
     },
     {
       "country": "XE",
@@ -1163,6 +1170,12 @@
       "value": 25.1471037304662
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2014,
+      "value": 9.00127043731811
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2014,
@@ -2061,6 +2074,12 @@
       "countryName": "European Union",
       "year": 2015,
       "value": 25.1906277050929
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2015,
+      "value": 9.08967890414957
     },
     {
       "country": "XE",
@@ -2969,6 +2988,12 @@
       "value": 25.7043547707764
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2016,
+      "value": 9.32719513138012
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2016,
@@ -3026,7 +3051,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2016,
-      "value": 23.6566136109283
+      "value": 23.6566136109282
     },
     {
       "country": "T2",
@@ -3824,7 +3849,7 @@
       "country": "V2",
       "countryName": "Early-demographic dividend",
       "year": 2017,
-      "value": 13.0617553614473
+      "value": 13.0617553614474
     },
     {
       "country": "Z4",
@@ -3875,10 +3900,16 @@
       "value": 25.898783902159
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2017,
+      "value": 9.46742855391914
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2017,
-      "value": 16.6188945587992
+      "value": 16.6188945587991
     },
     {
       "country": "XD",
@@ -4058,7 +4089,7 @@
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2017,
-      "value": 16.7099882752323
+      "value": 16.7099882752322
     },
     {
       "country": "XT",
@@ -4781,6 +4812,12 @@
       "value": 25.8478135560333
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2018,
+      "value": 9.38200521443156
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2018,
@@ -4790,7 +4827,7 @@
       "country": "XD",
       "countryName": "High income",
       "year": 2018,
-      "value": 14.3639490131773
+      "value": 14.3639490131772
     },
     {
       "country": "XF",
@@ -4802,7 +4839,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2018,
-      "value": 14.5529648195605
+      "value": 14.5529648195606
     },
     {
       "country": "XH",
@@ -4964,7 +5001,7 @@
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2018,
-      "value": 16.3844264485218
+      "value": 16.3844264485219
     },
     {
       "country": "XT",
@@ -5685,6 +5722,12 @@
       "countryName": "European Union",
       "year": 2019,
       "value": 25.9560605032779
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2019,
+      "value": 9.09519182618217
     },
     {
       "country": "XE",
@@ -6593,6 +6636,12 @@
       "value": 26.0148006027255
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2020,
+      "value": 9.49481844568156
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2020,
@@ -7497,6 +7546,12 @@
       "countryName": "European Union",
       "year": 2021,
       "value": 26.0895081934081
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2021,
+      "value": 9.82874101641726
     },
     {
       "country": "XE",
@@ -8405,6 +8460,12 @@
       "value": 26.2821103615777
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2022,
+      "value": 9.84114191988422
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2022,
@@ -9311,6 +9372,12 @@
       "value": 26.2821103615777
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2023,
+      "value": 9.84166515120794
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2023,
@@ -10196,7 +10263,7 @@
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2024,
-      "value": 15.8588366986626
+      "value": 15.8588366986625
     },
     {
       "country": "7E",
@@ -10215,6 +10282,12 @@
       "countryName": "European Union",
       "year": 2024,
       "value": 26.5691975888467
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2024,
+      "value": 9.98564412303448
     },
     {
       "country": "XE",
@@ -10412,7 +10485,7 @@
       "country": "1W",
       "countryName": "World",
       "year": 2024,
-      "value": 16.4442551348079
+      "value": 16.4442551348078
     },
     {
       "country": "AF",
