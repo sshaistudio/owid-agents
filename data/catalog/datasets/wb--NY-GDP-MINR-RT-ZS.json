@@ -8,14 +8,13 @@
       "indicatorId": "NY.GDP.MINR.RT.ZS",
       "indicatorName": "Mineral rents (% of GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MINR.RT.ZS",
-      "lastFetched": "2026-07-25T00:33:28.523Z"
+      "lastFetched": "2026-08-15T01:31:36.455Z"
     },
     "topics": [
-      "natural resources",
-      "minerals",
+      "resources",
       "economics",
       "development",
-      "resource curse"
+      "mining"
     ],
     "countries": [
       "ZH",

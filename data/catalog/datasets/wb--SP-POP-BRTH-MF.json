@@ -1,20 +1,19 @@
 {
   "meta": {
     "id": "wb--SP-POP-BRTH-MF",
-    "title": "Sex Ratio at Birth (male births per female births)",
+    "title": "Sex Ratio at Birth (Male Births per Female Births)",
     "description": "Sex ratio at birth (male births per female births) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SP.POP.BRTH.MF",
       "indicatorName": "Sex ratio at birth (male births per female births)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.BRTH.MF",
-      "lastFetched": "2026-08-09T02:14:58.807Z"
+      "lastFetched": "2026-08-15T01:31:32.098Z"
     },
     "topics": [
       "demographics",
       "gender",
-      "population",
-      "health"
+      "fertility"
     ],
     "countries": [
       "ZH",
