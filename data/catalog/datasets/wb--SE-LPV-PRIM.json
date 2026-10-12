@@ -1,21 +1,23 @@
 {
   "meta": {
     "id": "wb--SE-LPV-PRIM",
-    "title": "Learning Poverty Rate (% of children below reading proficiency)",
+    "title": "Learning Poverty: Share of Children Below Minimum Reading Proficiency (%)",
     "description": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.LPV.PRIM",
       "indicatorName": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.LPV.PRIM",
-      "lastFetched": "2026-06-24T00:34:28.650Z"
+      "lastFetched": "2026-07-04T00:46:25.082Z"
     },
     "topics": [
       "education",
       "learning outcomes",
       "children",
       "development",
-      "sdg-4"
+      "poverty",
+      "sdg-4",
+      "literacy"
     ],
     "countries": [
       "BZ",
@@ -73,7 +75,6 @@
       "Z7",
       "7E",
       "T7",
-      "F1",
       "XD",
       "XF",
       "ZT",
@@ -112,6 +113,7 @@
       "GN",
       "AL",
       "JO",
+      "XK",
       "BD",
       "KE"
     ],
@@ -119,7 +121,7 @@
       "start": "2001",
       "end": "2023"
     },
-    "dataPointCount": 227,
+    "dataPointCount": 226,
     "dataFilePath": "datasets/wb--SE-LPV-PRIM.json"
   },
   "data": [
@@ -658,12 +660,6 @@
       "value": 13.2862251017471
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2015,
-      "value": 89.7919404439571
-    },
-    {
       "country": "XD",
       "countryName": "High income",
       "year": 2015,
@@ -1028,12 +1024,6 @@
       "countryName": "Europe & Central Asia (IDA & IBRD countries)",
       "year": 2019,
       "value": 10.4115896592543
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2019,
-      "value": 90.3344408644642
     },
     {
       "country": "XD",
@@ -1472,6 +1462,12 @@
       "countryName": "Kazakhstan",
       "year": 2021,
       "value": 10.4149551391601
+    },
+    {
+      "country": "XK",
+      "countryName": "Kosovo",
+      "year": 2021,
+      "value": 37.9216194152832
     },
     {
       "country": "BD",
