@@ -8,14 +8,15 @@
       "indicatorId": "SH.DTH.NCOM.ZS",
       "indicatorName": "Cause of death, by non-communicable diseases (% of total)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.DTH.NCOM.ZS",
-      "lastFetched": "2026-08-27T01:44:11.890Z"
+      "lastFetched": "2026-10-02T05:46:35.359Z"
     },
     "topics": [
-      "health",
       "mortality",
       "noncommunicable disease",
-      "chronic disease",
-      "epidemiology"
+      "health",
+      "epidemiological transition",
+      "cardiovascular",
+      "cancer"
     ],
     "countries": [
       "ZH",
