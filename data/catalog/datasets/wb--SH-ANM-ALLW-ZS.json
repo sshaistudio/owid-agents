@@ -1,21 +1,22 @@
 {
   "meta": {
     "id": "wb--SH-ANM-ALLW-ZS",
-    "title": "Prevalence of Anaemia Among Women of Reproductive Age (% ages 15-49)",
+    "title": "Prevalence of Anemia Among Women of Reproductive Age (% ages 15-49)",
     "description": "Prevalence of anemia among women of reproductive age (% of women ages 15-49) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.ANM.ALLW.ZS",
       "indicatorName": "Prevalence of anemia among women of reproductive age (% of women ages 15-49)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS",
-      "lastFetched": "2026-06-25T03:01:37.428Z"
+      "lastFetched": "2026-07-25T00:33:39.661Z"
     },
     "topics": [
-      "health",
+      "anemia",
       "nutrition",
       "women",
-      "gender",
-      "anaemia"
+      "reproductive health",
+      "health",
+      "gender"
     ],
     "countries": [
       "ZH",
@@ -32,7 +33,6 @@
       "7E",
       "T7",
       "EU",
-      "F1",
       "XE",
       "XD",
       "XF",
@@ -162,7 +162,7 @@
       "start": "2000",
       "end": "2023"
     },
-    "dataPointCount": 3336,
+    "dataPointCount": 3312,
     "dataFilePath": "datasets/wb--SH-ANM-ALLW-ZS.json"
   },
   "data": [
@@ -176,7 +176,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2000,
-      "value": 51.9433237706026
+      "value": 51.9492369134745
     },
     {
       "country": "1A",
@@ -224,7 +224,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2000,
-      "value": 10.8811976104473
+      "value": 11.1435650520137
     },
     {
       "country": "Z7",
@@ -251,16 +251,10 @@
       "value": 13.1240782142357
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2000,
-      "value": 39.3939890510506
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2000,
-      "value": 42.4572331371892
+      "value": 42.4527973990663
     },
     {
       "country": "XD",
@@ -278,7 +272,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2000,
-      "value": 32.5659842459114
+      "value": 32.5649460334319
     },
     {
       "country": "XH",
@@ -290,13 +284,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2000,
-      "value": 39.9838403708331
+      "value": 39.9797875067718
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2000,
-      "value": 40.7018857537469
+      "value": 40.6994715492485
     },
     {
       "country": "V3",
@@ -314,7 +308,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2000,
-      "value": 26.7100550808018
+      "value": 26.7195734652624
     },
     {
       "country": "T2",
@@ -326,25 +320,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2000,
-      "value": 40.8080701320947
+      "value": 40.804094051338
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2000,
-      "value": 33.2951309804266
+      "value": 33.1846399634549
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2000,
-      "value": 42.2091822503213
+      "value": 39.5114690681521
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2000,
-      "value": 43.8522713892853
+      "value": 45.3774585490388
     },
     {
       "country": "ZQ",
@@ -368,7 +362,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2000,
-      "value": 32.73275363594
+      "value": 32.7154448471865
     },
     {
       "country": "XU",
@@ -404,7 +398,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2000,
-      "value": 45.9581758084734
+      "value": 45.9568876810888
     },
     {
       "country": "S1",
@@ -428,31 +422,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2000,
-      "value": 43.2335237436372
+      "value": 43.2309337293509
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2000,
-      "value": 44.928337924163
+      "value": 43.2334415554053
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2000,
-      "value": 43.2335237436372
+      "value": 43.2309337293509
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2000,
-      "value": 23.7865265305207
+      "value": 23.9720596870354
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2000,
-      "value": 29.3755334099763
+      "value": 29.3744780641787
     },
     {
       "country": "AF",
@@ -1010,7 +1004,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2001,
-      "value": 51.4889854876308
+      "value": 51.4944684296549
     },
     {
       "country": "1A",
@@ -1028,7 +1022,7 @@
       "country": "B8",
       "countryName": "Central Europe and the Baltics",
       "year": 2001,
-      "value": 20.7447176529748
+      "value": 20.7447176529749
     },
     {
       "country": "V2",
@@ -1058,7 +1052,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2001,
-      "value": 10.6523585572197
+      "value": 10.9125446093925
     },
     {
       "country": "Z7",
@@ -1085,16 +1079,10 @@
       "value": 12.8861119597811
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2001,
-      "value": 38.9408389899829
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2001,
-      "value": 41.8712991386434
+      "value": 41.8669799071853
     },
     {
       "country": "XD",
@@ -1112,7 +1100,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2001,
-      "value": 32.1906421144189
+      "value": 32.1896569099181
     },
     {
       "country": "XH",
@@ -1124,13 +1112,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2001,
-      "value": 39.4774167018627
+      "value": 39.4735439078462
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2001,
-      "value": 40.3305870628785
+      "value": 40.3283244742011
     },
     {
       "country": "V3",
@@ -1148,7 +1136,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2001,
-      "value": 25.8085553305365
+      "value": 25.8181977787415
     },
     {
       "country": "T2",
@@ -1160,25 +1148,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2001,
-      "value": 40.3025916114661
+      "value": 40.2987876266157
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2001,
-      "value": 32.9112577385742
+      "value": 32.7900954885867
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2001,
-      "value": 41.699995189484
+      "value": 38.9162311607308
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2001,
-      "value": 43.6142760548489
+      "value": 45.1764950344754
     },
     {
       "country": "ZQ",
@@ -1202,7 +1190,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2001,
-      "value": 32.3514668947111
+      "value": 32.3313934546422
     },
     {
       "country": "XU",
@@ -1238,7 +1226,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2001,
-      "value": 45.4172036256652
+      "value": 45.4159004586291
     },
     {
       "country": "S1",
@@ -1262,31 +1250,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2001,
-      "value": 42.6492962301978
+      "value": 42.6467619408974
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2001,
-      "value": 44.3863478279521
+      "value": 42.649207968732
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2001,
-      "value": 42.6492962301978
+      "value": 42.6467619408974
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2001,
-      "value": 23.1837710080144
+      "value": 23.3612651425641
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2001,
-      "value": 29.076497805969
+      "value": 29.0754977146741
     },
     {
       "country": "AF",
@@ -1844,7 +1832,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2002,
-      "value": 51.04168202143
+      "value": 51.0466353430766
     },
     {
       "country": "1A",
@@ -1868,7 +1856,7 @@
       "country": "V2",
       "countryName": "Early-demographic dividend",
       "year": 2002,
-      "value": 38.6082790114439
+      "value": 38.608279011444
     },
     {
       "country": "Z4",
@@ -1892,7 +1880,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2002,
-      "value": 10.5385254217875
+      "value": 10.7954741112822
     },
     {
       "country": "Z7",
@@ -1919,16 +1907,10 @@
       "value": 12.740449124807
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2002,
-      "value": 38.4949486491293
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2002,
-      "value": 41.2807582539717
+      "value": 41.2766776526676
     },
     {
       "country": "XD",
@@ -1946,7 +1928,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2002,
-      "value": 31.9214119511084
+      "value": 31.9205085565992
     },
     {
       "country": "XH",
@@ -1958,13 +1940,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2002,
-      "value": 38.9856451616412
+      "value": 38.9820547532048
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2002,
-      "value": 39.9935621081516
+      "value": 39.9915091726705
     },
     {
       "country": "V3",
@@ -1982,7 +1964,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2002,
-      "value": 24.9598886317902
+      "value": 24.9720477288754
     },
     {
       "country": "T2",
@@ -1994,25 +1976,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2002,
-      "value": 39.8034044186148
+      "value": 39.7998711206784
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2002,
-      "value": 32.6362611828613
+      "value": 32.5026980296389
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2002,
-      "value": 41.1809984237637
+      "value": 38.3152304117976
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2002,
-      "value": 43.4619767459069
+      "value": 45.056268532928
     },
     {
       "country": "ZQ",
@@ -2036,7 +2018,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2002,
-      "value": 32.0846672703537
+      "value": 32.0616121545115
     },
     {
       "country": "XU",
@@ -2072,7 +2054,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2002,
-      "value": 44.8795326997998
+      "value": 44.8782605106322
     },
     {
       "country": "S1",
@@ -2096,31 +2078,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2002,
-      "value": 42.0715684718433
+      "value": 42.0691634633656
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2002,
-      "value": 43.855872789966
+      "value": 42.0716050410159
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2002,
-      "value": 42.0715684718433
+      "value": 42.0691634633656
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2002,
-      "value": 22.7216840072089
+      "value": 22.8881161418074
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2002,
-      "value": 28.8678709601086
+      "value": 28.8669535034968
     },
     {
       "country": "AF",
@@ -2672,13 +2654,13 @@
       "country": "ZH",
       "countryName": "Africa Eastern and Southern",
       "year": 2003,
-      "value": 35.4890161504531
+      "value": 35.4890161504532
     },
     {
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2003,
-      "value": 50.6017110032197
+      "value": 50.6061483240735
     },
     {
       "country": "1A",
@@ -2726,7 +2708,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2003,
-      "value": 10.4790704199317
+      "value": 10.7341077116883
     },
     {
       "country": "Z7",
@@ -2753,16 +2735,10 @@
       "value": 12.6593048284665
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2003,
-      "value": 38.0749706603497
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2003,
-      "value": 40.716164236074
+      "value": 40.7123717178654
     },
     {
       "country": "XD",
@@ -2780,7 +2756,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2003,
-      "value": 31.6758184842814
+      "value": 31.6749992153813
     },
     {
       "country": "XH",
@@ -2792,13 +2768,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2003,
-      "value": 38.5095881848578
+      "value": 38.5062997782136
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2003,
-      "value": 39.6808773828241
+      "value": 39.6790395262642
     },
     {
       "country": "V3",
@@ -2816,7 +2792,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2003,
-      "value": 24.1925379365371
+      "value": 24.2031001444312
     },
     {
       "country": "T2",
@@ -2828,25 +2804,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2003,
-      "value": 39.3078340263471
+      "value": 39.3045876645751
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2003,
-      "value": 32.3855036764116
+      "value": 32.2398775190121
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2003,
-      "value": 40.7030202069703
+      "value": 37.7640538541777
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2003,
-      "value": 43.3236253313745
+      "value": 44.9490747639638
     },
     {
       "country": "ZQ",
@@ -2870,7 +2846,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2003,
-      "value": 31.8406113992228
+      "value": 31.8144032970815
     },
     {
       "country": "XU",
@@ -2906,7 +2882,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2003,
-      "value": 44.3616478461171
+      "value": 44.3604345273695
     },
     {
       "country": "S1",
@@ -2930,31 +2906,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2003,
-      "value": 41.516077447684
+      "value": 41.5138307309879
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2003,
-      "value": 43.3423345276214
+      "value": 41.5161651457571
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2003,
-      "value": 41.516077447684
+      "value": 41.5138307309879
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2003,
-      "value": 22.2852154848162
+      "value": 22.438948442029
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2003,
-      "value": 28.6905694131238
+      "value": 28.6897373381259
     },
     {
       "country": "AF",
@@ -3512,7 +3488,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2004,
-      "value": 50.1689885232082
+      "value": 50.1730515543926
     },
     {
       "country": "1A",
@@ -3560,7 +3536,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2004,
-      "value": 10.4459570449206
+      "value": 10.7007593048559
     },
     {
       "country": "Z7",
@@ -3587,16 +3563,10 @@
       "value": 12.5969524087345
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2004,
-      "value": 37.6826025349523
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2004,
-      "value": 40.1716476274135
+      "value": 40.1680631828338
     },
     {
       "country": "XD",
@@ -3614,7 +3584,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2004,
-      "value": 31.4685336363966
+      "value": 31.4677772900574
     },
     {
       "country": "XH",
@@ -3626,13 +3596,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2004,
-      "value": 38.0629781210356
+      "value": 38.0599141916203
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2004,
-      "value": 39.3907756692506
+      "value": 39.3891022296124
     },
     {
       "country": "V3",
@@ -3650,7 +3620,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2004,
-      "value": 23.385674491135
+      "value": 23.3966397426193
     },
     {
       "country": "T2",
@@ -3662,25 +3632,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2004,
-      "value": 38.8409799855271
+      "value": 38.8379466282105
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2004,
-      "value": 32.1743705569591
+      "value": 32.0156453601216
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2004,
-      "value": 40.2605399237601
+      "value": 37.2387386094038
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2004,
-      "value": 43.1964145512055
+      "value": 44.8475229311824
     },
     {
       "country": "ZQ",
@@ -3704,7 +3674,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2004,
-      "value": 31.6371987089509
+      "value": 31.607563851026
     },
     {
       "country": "XU",
@@ -3740,7 +3710,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2004,
-      "value": 43.8541808324485
+      "value": 43.8530078206555
     },
     {
       "country": "S1",
@@ -3764,31 +3734,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2004,
-      "value": 40.9671035766877
+      "value": 40.964966711365
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2004,
-      "value": 42.8373081508273
+      "value": 40.9671980632078
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2004,
-      "value": 40.9671035766877
+      "value": 40.964966711365
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2004,
-      "value": 21.9081520925731
+      "value": 22.0487436615705
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2004,
-      "value": 28.5442651638021
+      "value": 28.5434964274643
     },
     {
       "country": "AF",
@@ -4346,7 +4316,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2005,
-      "value": 49.6582570141051
+      "value": 49.6618933572562
     },
     {
       "country": "1A",
@@ -4394,7 +4364,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2005,
-      "value": 10.4399052616399
+      "value": 10.6915665015281
     },
     {
       "country": "Z7",
@@ -4421,16 +4391,10 @@
       "value": 12.5601348034353
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2005,
-      "value": 37.240563530751
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2005,
-      "value": 39.5890591625374
+      "value": 39.5856628877226
     },
     {
       "country": "XD",
@@ -4448,25 +4412,25 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2005,
-      "value": 31.280855270885
+      "value": 31.2801597882165
     },
     {
       "country": "XH",
       "countryName": "IDA blend",
       "year": 2005,
-      "value": 41.9125426841515
+      "value": 41.9125426841516
     },
     {
       "country": "XI",
       "countryName": "IDA only",
       "year": 2005,
-      "value": 37.6034310045907
+      "value": 37.6005802791862
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2005,
-      "value": 39.1028891975342
+      "value": 39.1013706680571
     },
     {
       "country": "V3",
@@ -4484,7 +4448,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2005,
-      "value": 22.5700796374285
+      "value": 22.5818925675863
     },
     {
       "country": "T2",
@@ -4496,25 +4460,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2005,
-      "value": 38.3609119212583
+      "value": 38.3580814009459
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2005,
-      "value": 31.9843598685058
+      "value": 31.8117871797537
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2005,
-      "value": 39.7922922121081
+      "value": 36.6909548031594
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2005,
-      "value": 43.0744750054011
+      "value": 44.7552631866542
     },
     {
       "country": "ZQ",
@@ -4538,7 +4502,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2005,
-      "value": 31.4579641091627
+      "value": 31.4247509067299
     },
     {
       "country": "XU",
@@ -4574,7 +4538,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2005,
-      "value": 43.2983218843408
+      "value": 43.297171541609
     },
     {
       "country": "S1",
@@ -4598,31 +4562,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2005,
-      "value": 40.3734043068898
+      "value": 40.3713623919818
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2005,
-      "value": 42.28473037583
+      "value": 40.3735046518786
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2005,
-      "value": 40.3734043068898
+      "value": 40.3713623919819
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2005,
-      "value": 21.5711323920819
+      "value": 21.6928516746346
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2005,
-      "value": 28.4179633196807
+      "value": 28.4172558577639
     },
     {
       "country": "AF",
@@ -5180,7 +5144,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2006,
-      "value": 49.1013888935629
+      "value": 49.104817859213
     },
     {
       "country": "1A",
@@ -5228,7 +5192,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2006,
-      "value": 10.4743691356747
+      "value": 10.7221798350971
     },
     {
       "country": "Z7",
@@ -5255,16 +5219,10 @@
       "value": 12.5691913052101
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2006,
-      "value": 36.7920058490074
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2006,
-      "value": 38.9436854184049
+      "value": 38.9403647617501
     },
     {
       "country": "XD",
@@ -5282,7 +5240,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2006,
-      "value": 31.0469502155615
+      "value": 31.0462878268318
     },
     {
       "country": "XH",
@@ -5294,13 +5252,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2006,
-      "value": 37.0842782139874
+      "value": 37.0815379330213
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2006,
-      "value": 38.7705466425302
+      "value": 38.7691279329998
     },
     {
       "country": "V3",
@@ -5318,7 +5276,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2006,
-      "value": 21.7807430129472
+      "value": 21.7972011001223
     },
     {
       "country": "T2",
@@ -5330,25 +5288,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2006,
-      "value": 37.8239278852015
+      "value": 37.821199962779
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2006,
-      "value": 31.7444702383212
+      "value": 31.5588708214873
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2006,
-      "value": 39.2568724209872
+      "value": 36.0893879360657
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2006,
-      "value": 42.8819061677956
+      "value": 44.5905981172503
     },
     {
       "country": "ZQ",
@@ -5372,7 +5330,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2006,
-      "value": 31.2289824463805
+      "value": 31.1929966156221
     },
     {
       "country": "XU",
@@ -5408,7 +5366,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2006,
-      "value": 42.7016357241745
+      "value": 42.7004930430745
     },
     {
       "country": "S1",
@@ -5432,31 +5390,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2006,
-      "value": 39.7271080375591
+      "value": 39.7251000438808
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2006,
-      "value": 41.6770370753094
+      "value": 39.7271932999456
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2006,
-      "value": 39.7271080375591
+      "value": 39.7251000438808
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2006,
-      "value": 21.1820733192969
+      "value": 21.2919713251341
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2006,
-      "value": 28.2583028477017
+      "value": 28.2576287037009
     },
     {
       "country": "AF",
@@ -6014,7 +5972,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2007,
-      "value": 48.5051042296311
+      "value": 48.5083866292254
     },
     {
       "country": "1A",
@@ -6062,7 +6020,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2007,
-      "value": 10.5193804606441
+      "value": 10.7587265146434
     },
     {
       "country": "Z7",
@@ -6089,16 +6047,10 @@
       "value": 12.573185531003
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2007,
-      "value": 36.2962548894796
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2007,
-      "value": 38.3020224306041
+      "value": 38.2986928649105
     },
     {
       "country": "XD",
@@ -6116,7 +6068,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2007,
-      "value": 30.842938107448
+      "value": 30.8422913883604
     },
     {
       "country": "XH",
@@ -6128,13 +6080,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2007,
-      "value": 36.5485727174753
+      "value": 36.5458650817304
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2007,
-      "value": 38.4134742551644
+      "value": 38.4121107440599
     },
     {
       "country": "V3",
@@ -6152,7 +6104,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2007,
-      "value": 20.9947292685076
+      "value": 21.0105033592317
     },
     {
       "country": "T2",
@@ -6164,25 +6116,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2007,
-      "value": 37.2700178743791
+      "value": 37.2673129347232
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2007,
-      "value": 31.5373599000213
+      "value": 31.3380584022621
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2007,
-      "value": 38.684193559182
+      "value": 35.4696811225134
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2007,
-      "value": 42.7216597509801
+      "value": 44.4633065607719
     },
     {
       "country": "ZQ",
@@ -6206,7 +6158,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2007,
-      "value": 31.0371641386444
+      "value": 30.9975724341194
     },
     {
       "country": "XU",
@@ -6224,7 +6176,7 @@
       "country": "S4",
       "countryName": "Other small states",
       "year": 2007,
-      "value": 23.7951096134754
+      "value": 23.7951096134755
     },
     {
       "country": "S2",
@@ -6242,7 +6194,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2007,
-      "value": 42.0928007856662
+      "value": 42.0916311018912
     },
     {
       "country": "S1",
@@ -6266,31 +6218,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2007,
-      "value": 39.068256691773
+      "value": 39.0662279970167
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2007,
-      "value": 41.0484865992382
+      "value": 39.0682360149474
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2007,
-      "value": 39.068256691773
+      "value": 39.0662279970167
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2007,
-      "value": 20.7945773617616
+      "value": 20.8933790078579
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2007,
-      "value": 28.1235448641245
+      "value": 28.1228861397465
     },
     {
       "country": "AF",
@@ -6848,7 +6800,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2008,
-      "value": 47.7998634345869
+      "value": 47.8030206310726
     },
     {
       "country": "1A",
@@ -6896,7 +6848,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2008,
-      "value": 10.5986404664533
+      "value": 10.830933321581
     },
     {
       "country": "Z7",
@@ -6923,16 +6875,10 @@
       "value": 12.599844116398
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2008,
-      "value": 35.7689144077983
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2008,
-      "value": 37.6085861713654
+      "value": 37.6052488990035
     },
     {
       "country": "XD",
@@ -6950,7 +6896,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2008,
-      "value": 30.6001127692356
+      "value": 30.5994788062054
     },
     {
       "country": "XH",
@@ -6962,13 +6908,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2008,
-      "value": 35.9985780047284
+      "value": 35.995905722761
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2008,
-      "value": 38.0178874251777
+      "value": 38.0165787597152
     },
     {
       "country": "V3",
@@ -6986,37 +6932,37 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2008,
-      "value": 20.1842913185509
+      "value": 20.2058020604497
     },
     {
       "country": "T2",
       "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
       "year": 2008,
-      "value": 19.8163286404889
+      "value": 19.816328640489
     },
     {
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2008,
-      "value": 36.700738805204
+      "value": 36.6980653300371
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2008,
-      "value": 31.2865859496965
+      "value": 31.0743358709515
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2008,
-      "value": 38.1009838694381
+      "value": 34.8355809381715
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2008,
-      "value": 42.4867426322101
+      "value": 44.2576624834079
     },
     {
       "country": "ZQ",
@@ -7040,7 +6986,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2008,
-      "value": 30.8007429736623
+      "value": 30.7582908001007
     },
     {
       "country": "XU",
@@ -7076,7 +7022,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2008,
-      "value": 41.4042550845591
+      "value": 41.4030608064992
     },
     {
       "country": "S1",
@@ -7100,31 +7046,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2008,
-      "value": 38.3594672835609
+      "value": 38.3574206024712
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2008,
-      "value": 40.3656367822229
+      "value": 38.3593602151681
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2008,
-      "value": 38.3594672835609
+      "value": 38.3574206024712
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2008,
-      "value": 20.3911772673337
+      "value": 20.4756225892418
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2008,
-      "value": 27.9531016648386
+      "value": 27.9524551551004
     },
     {
       "country": "AF",
@@ -7682,7 +7628,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2009,
-      "value": 47.0383918628281
+      "value": 47.0414161081171
     },
     {
       "country": "1A",
@@ -7730,7 +7676,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2009,
-      "value": 10.6620868018539
+      "value": 10.8882909336564
     },
     {
       "country": "Z7",
@@ -7757,16 +7703,10 @@
       "value": 12.6384509653427
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2009,
-      "value": 35.2405299901123
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2009,
-      "value": 36.9498746064193
+      "value": 36.9465072202327
     },
     {
       "country": "XD",
@@ -7784,25 +7724,25 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2009,
-      "value": 30.3471461009046
+      "value": 30.3465166417656
     },
     {
       "country": "XH",
       "countryName": "IDA blend",
       "year": 2009,
-      "value": 41.5990136999987
+      "value": 41.5990136999988
     },
     {
       "country": "XI",
       "countryName": "IDA only",
       "year": 2009,
-      "value": 35.4772423053865
+      "value": 35.4745785703694
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2009,
-      "value": 37.6259270839277
+      "value": 37.624655751921
     },
     {
       "country": "V3",
@@ -7820,7 +7760,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2009,
-      "value": 19.418653623818
+      "value": 19.4435846010851
     },
     {
       "country": "T2",
@@ -7832,25 +7772,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2009,
-      "value": 36.157803054219
+      "value": 36.1551367056874
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2009,
-      "value": 31.0252397143969
+      "value": 30.802643834354
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2009,
-      "value": 37.5487608421428
+      "value": 34.2598185495998
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2009,
-      "value": 42.3044308699097
+      "value": 44.1015474578047
     },
     {
       "country": "ZQ",
@@ -7874,7 +7814,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2009,
-      "value": 30.5518741744712
+      "value": 30.5066755310932
     },
     {
       "country": "XU",
@@ -7910,7 +7850,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2009,
-      "value": 40.7010717297339
+      "value": 40.6998331065366
     },
     {
       "country": "S1",
@@ -7934,31 +7874,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2009,
-      "value": 37.6618776501709
+      "value": 37.6597907059257
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2009,
-      "value": 39.673974132972
+      "value": 37.6616178986128
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2009,
-      "value": 37.6618776501709
+      "value": 37.6597907059257
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2009,
-      "value": 19.9337502679644
+      "value": 20.0081753510126
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2009,
-      "value": 27.7759636788474
+      "value": 27.775321020776
     },
     {
       "country": "AF",
@@ -8516,7 +8456,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2010,
-      "value": 46.3439109702085
+      "value": 46.3468154436913
     },
     {
       "country": "1A",
@@ -8564,7 +8504,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2010,
-      "value": 10.7315263415487
+      "value": 10.9539059477841
     },
     {
       "country": "Z7",
@@ -8591,22 +8531,16 @@
       "value": 12.6881088855
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2010,
-      "value": 34.7746746371458
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2010,
-      "value": 36.358369997008
+      "value": 36.3550570018097
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2010,
-      "value": 13.5521455697698
+      "value": 13.5521455697697
     },
     {
       "country": "XF",
@@ -8618,7 +8552,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2010,
-      "value": 30.1264233414227
+      "value": 30.1258100919865
     },
     {
       "country": "XH",
@@ -8630,13 +8564,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2010,
-      "value": 35.0128297337768
+      "value": 35.010234984744
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2010,
-      "value": 37.2942161786061
+      "value": 37.2930141837734
     },
     {
       "country": "V3",
@@ -8654,7 +8588,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2010,
-      "value": 18.7751666922791
+      "value": 18.8075606882215
     },
     {
       "country": "T2",
@@ -8666,25 +8600,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2010,
-      "value": 35.682518714867
+      "value": 35.679924820135
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2010,
-      "value": 30.7943398460613
+      "value": 30.562881515352
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2010,
-      "value": 37.0217804258959
+      "value": 33.7207708225082
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2010,
-      "value": 42.1603811092881
+      "value": 43.9840498201022
     },
     {
       "country": "ZQ",
@@ -8708,7 +8642,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2010,
-      "value": 30.3343893824339
+      "value": 30.2873660214771
     },
     {
       "country": "XU",
@@ -8744,7 +8678,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2010,
-      "value": 40.0879993003051
+      "value": 40.0867735768896
     },
     {
       "country": "S1",
@@ -8768,31 +8702,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2010,
-      "value": 37.0492812313693
+      "value": 37.0472165774618
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2010,
-      "value": 39.0676220375715
+      "value": 37.0489717114998
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2010,
-      "value": 37.0492812313693
+      "value": 37.0472165774618
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2010,
-      "value": 19.5054618767707
+      "value": 19.5682916271464
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2010,
-      "value": 27.6310093048939
+      "value": 27.6303820258121
     },
     {
       "country": "AF",
@@ -9350,7 +9284,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2011,
-      "value": 45.6701340549305
+      "value": 45.6729415579176
     },
     {
       "country": "1A",
@@ -9398,7 +9332,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2011,
-      "value": 10.8573375643677
+      "value": 11.0759211398355
     },
     {
       "country": "Z7",
@@ -9425,16 +9359,10 @@
       "value": 12.7947580598163
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2011,
-      "value": 34.4090618709415
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2011,
-      "value": 35.9235550083256
+      "value": 35.9202188845442
     },
     {
       "country": "XD",
@@ -9452,25 +9380,25 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2011,
-      "value": 30.015234246391
+      "value": 30.0146183021584
     },
     {
       "country": "XH",
       "countryName": "IDA blend",
       "year": 2011,
-      "value": 41.4091263216732
+      "value": 41.4091263216731
     },
     {
       "country": "XI",
       "countryName": "IDA only",
       "year": 2011,
-      "value": 34.6671424334824
+      "value": 34.6645399083424
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2011,
-      "value": 37.0368180026614
+      "value": 37.0356409585831
     },
     {
       "country": "V3",
@@ -9488,7 +9416,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2011,
-      "value": 18.2849025082511
+      "value": 18.3272022146373
     },
     {
       "country": "T2",
@@ -9500,25 +9428,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2011,
-      "value": 35.3293805800862
+      "value": 35.3267851107806
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2011,
-      "value": 30.6731899581818
+      "value": 30.4355743270238
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2011,
-      "value": 36.6461535098546
+      "value": 33.3559398460786
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2011,
-      "value": 42.0956113537518
+      "value": 43.9331002466393
     },
     {
       "country": "ZQ",
@@ -9542,7 +9470,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2011,
-      "value": 30.2242496542544
+      "value": 30.1758996715915
     },
     {
       "country": "XU",
@@ -9578,7 +9506,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2011,
-      "value": 39.5761164913731
+      "value": 39.5748650008973
     },
     {
       "country": "S1",
@@ -9602,31 +9530,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2011,
-      "value": 36.5539316139567
+      "value": 36.5518289404966
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2011,
-      "value": 38.5603644895215
+      "value": 36.5534205847697
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2011,
-      "value": 36.5539316139567
+      "value": 36.5518289404966
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2011,
-      "value": 19.2125419438669
+      "value": 19.269903446458
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2011,
-      "value": 27.5857813326503
+      "value": 27.5851495823923
     },
     {
       "country": "AF",
@@ -10184,7 +10112,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2012,
-      "value": 45.044342044794
+      "value": 45.0471140688255
     },
     {
       "country": "1A",
@@ -10196,7 +10124,7 @@
       "country": "S3",
       "countryName": "Caribbean small states",
       "year": 2012,
-      "value": 21.3794647147704
+      "value": 21.3794647147705
     },
     {
       "country": "B8",
@@ -10232,7 +10160,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2012,
-      "value": 11.0140011685974
+      "value": 11.2297569668363
     },
     {
       "country": "Z7",
@@ -10259,16 +10187,10 @@
       "value": 12.9347674487279
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2012,
-      "value": 34.134269465319
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2012,
-      "value": 35.5921790528839
+      "value": 35.5888484157435
     },
     {
       "country": "XD",
@@ -10286,7 +10208,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2012,
-      "value": 29.9818887516183
+      "value": 29.9812689962107
     },
     {
       "country": "XH",
@@ -10298,13 +10220,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2012,
-      "value": 34.4162042840193
+      "value": 34.4136054827547
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2012,
-      "value": 36.8249617681758
+      "value": 36.8238111080091
     },
     {
       "country": "V3",
@@ -10322,7 +10244,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2012,
-      "value": 17.9737131731476
+      "value": 18.0322244731013
     },
     {
       "country": "T2",
@@ -10334,25 +10256,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2012,
-      "value": 35.0681454840105
+      "value": 35.0655642062159
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2012,
-      "value": 30.630126037525
+      "value": 30.3872530483883
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2012,
-      "value": 36.4055029208908
+      "value": 33.1159201543737
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2012,
-      "value": 42.0351306204534
+      "value": 43.8881057898245
     },
     {
       "country": "ZQ",
@@ -10376,7 +10298,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2012,
-      "value": 30.1885449203192
+      "value": 30.1399773926083
     },
     {
       "country": "XU",
@@ -10394,7 +10316,7 @@
       "country": "S4",
       "countryName": "Other small states",
       "year": 2012,
-      "value": 23.5987881549112
+      "value": 23.5987881549113
     },
     {
       "country": "S2",
@@ -10412,7 +10334,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2012,
-      "value": 39.1605141250533
+      "value": 39.1592689655532
     },
     {
       "country": "S1",
@@ -10436,31 +10358,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2012,
-      "value": 36.1579575165434
+      "value": 36.1558353314444
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2012,
-      "value": 38.1527955546995
+      "value": 36.1573371416476
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2012,
-      "value": 36.1579575165434
+      "value": 36.1558353314444
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2012,
-      "value": 19.0349377755492
+      "value": 19.0792452551456
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2012,
-      "value": 27.6010962513399
+      "value": 27.6004576274348
     },
     {
       "country": "AF",
@@ -11018,7 +10940,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2013,
-      "value": 44.5235621353376
+      "value": 44.5262331450347
     },
     {
       "country": "1A",
@@ -11066,13 +10988,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2013,
-      "value": 11.2072774380837
+      "value": 11.4188398984652
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2013,
-      "value": 17.7953148305094
+      "value": 17.7953224087369
     },
     {
       "country": "7E",
@@ -11093,22 +11015,16 @@
       "value": 13.1104882528323
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2013,
-      "value": 33.9832023108889
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2013,
-      "value": 35.4085202778984
+      "value": 35.4053041194012
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2013,
-      "value": 13.9505573770777
+      "value": 13.9505598059106
     },
     {
       "country": "XF",
@@ -11120,7 +11036,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2013,
-      "value": 30.0567790368169
+      "value": 30.0561704320052
     },
     {
       "country": "XH",
@@ -11132,13 +11048,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2013,
-      "value": 34.3238475847296
+      "value": 34.3213333976985
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2013,
-      "value": 36.7345824136345
+      "value": 36.7334909318296
     },
     {
       "country": "V3",
@@ -11156,7 +11072,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2013,
-      "value": 17.8244828795179
+      "value": 17.9012149431445
     },
     {
       "country": "T2",
@@ -11168,25 +11084,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2013,
-      "value": 34.9609472893888
+      "value": 34.9584663821689
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2013,
-      "value": 30.6971059305161
+      "value": 30.4500972016346
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2013,
-      "value": 36.3171910216802
+      "value": 33.0298224992124
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2013,
-      "value": 42.0783749006267
+      "value": 43.9440995049106
     },
     {
       "country": "ZQ",
@@ -11210,7 +11126,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2013,
-      "value": 30.2602625304513
+      "value": 30.2118881879227
     },
     {
       "country": "XU",
@@ -11222,7 +11138,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2013,
-      "value": 13.4459730795334
+      "value": 13.4459750708553
     },
     {
       "country": "S4",
@@ -11240,13 +11156,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2013,
-      "value": 12.4038528331001
+      "value": 12.403854352188
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2013,
-      "value": 38.87810216811
+      "value": 38.8769093334606
     },
     {
       "country": "S1",
@@ -11270,31 +11186,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2013,
-      "value": 35.9054862034521
+      "value": 35.9034136572784
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2013,
-      "value": 37.8800405180653
+      "value": 35.904842620632
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2013,
-      "value": 35.9054862034521
+      "value": 35.9034136572784
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2013,
-      "value": 18.9168688753168
+      "value": 18.948500537269
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2013,
-      "value": 27.709415777882
+      "value": 27.7087872001618
     },
     {
       "country": "AF",
@@ -11852,7 +11768,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2014,
-      "value": 44.0353526851883
+      "value": 44.0377843860216
     },
     {
       "country": "1A",
@@ -11900,13 +11816,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2014,
-      "value": 11.4173687249014
+      "value": 11.6264723056473
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2014,
-      "value": 17.9399753149358
+      "value": 17.9399828165825
     },
     {
       "country": "7E",
@@ -11927,22 +11843,16 @@
       "value": 13.3034729235111
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2014,
-      "value": 33.8893589542248
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2014,
-      "value": 35.2998911170998
+      "value": 35.2968717495425
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2014,
-      "value": 14.103072245576
+      "value": 14.1030746269634
     },
     {
       "country": "XF",
@@ -11954,7 +11864,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2014,
-      "value": 30.1959068492449
+      "value": 30.1953256822511
     },
     {
       "country": "XH",
@@ -11966,13 +11876,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2014,
-      "value": 34.2830776184129
+      "value": 34.2807067967564
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2014,
-      "value": 36.6579234253362
+      "value": 36.6569041853125
     },
     {
       "country": "V3",
@@ -11990,7 +11900,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2014,
-      "value": 17.7483588366066
+      "value": 17.8447349140371
     },
     {
       "country": "T2",
@@ -12002,25 +11912,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2014,
-      "value": 34.9214174354066
+      "value": 34.9190963947465
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2014,
-      "value": 30.8331723692469
+      "value": 30.5825209979902
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2014,
-      "value": 36.3063166670525
+      "value": 33.024610159571
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2014,
-      "value": 42.1592591175066
+      "value": 44.0496254548952
     },
     {
       "country": "ZQ",
@@ -12044,7 +11954,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2014,
-      "value": 30.4006828123379
+      "value": 30.3527335498253
     },
     {
       "country": "XU",
@@ -12056,7 +11966,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2014,
-      "value": 13.5895027252499
+      "value": 13.5895046595368
     },
     {
       "country": "S4",
@@ -12074,13 +11984,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2014,
-      "value": 12.5782103103801
+      "value": 12.5782118005621
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2014,
-      "value": 38.6602117055838
+      "value": 38.6590894579368
     },
     {
       "country": "S1",
@@ -12104,31 +12014,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2014,
-      "value": 35.7152141336988
+      "value": 35.713238224052
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2014,
-      "value": 37.663486259967
+      "value": 35.7145890254771
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2014,
-      "value": 35.7152141336988
+      "value": 35.713238224052
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2014,
-      "value": 18.875562261046
+      "value": 18.8885466771659
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2014,
-      "value": 27.8710074485579
+      "value": 27.870403456559
     },
     {
       "country": "AF",
@@ -12686,7 +12596,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2015,
-      "value": 43.6548564020547
+      "value": 43.6569968015118
     },
     {
       "country": "1A",
@@ -12734,13 +12644,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2015,
-      "value": 11.6518074640976
+      "value": 11.8600806960427
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2015,
-      "value": 18.141347392261
+      "value": 18.1413549801191
     },
     {
       "country": "7E",
@@ -12761,22 +12671,16 @@
       "value": 13.5302207562729
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2015,
-      "value": 33.9034277805904
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2015,
-      "value": 35.3070484652379
+      "value": 35.3043128089585
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2015,
-      "value": 14.2788100675149
+      "value": 14.2788124925731
     },
     {
       "country": "XF",
@@ -12788,7 +12692,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2015,
-      "value": 30.3511384285227
+      "value": 30.3505975351229
     },
     {
       "country": "XH",
@@ -12800,13 +12704,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2015,
-      "value": 34.30472453266
+      "value": 34.3025516452908
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2015,
-      "value": 36.6425883461344
+      "value": 36.641660849508
     },
     {
       "country": "V3",
@@ -12824,7 +12728,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2015,
-      "value": 17.7801795623334
+      "value": 17.9009686885269
     },
     {
       "country": "T2",
@@ -12836,25 +12740,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2015,
-      "value": 34.9497693696696
+      "value": 34.9476575027644
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2015,
-      "value": 30.975611083826
+      "value": 30.725538885589
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2015,
-      "value": 36.3756572869189
+      "value": 33.1281303329303
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2015,
-      "value": 42.2206121063574
+      "value": 44.1278540302064
     },
     {
       "country": "ZQ",
@@ -12878,7 +12782,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2015,
-      "value": 30.5410262166149
+      "value": 30.4948429051142
     },
     {
       "country": "XU",
@@ -12890,13 +12794,13 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2015,
-      "value": 13.7548810531402
+      "value": 13.75488302042
     },
     {
       "country": "S4",
       "countryName": "Other small states",
       "year": 2015,
-      "value": 24.2039256668962
+      "value": 24.2039256668961
     },
     {
       "country": "S2",
@@ -12908,19 +12812,19 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2015,
-      "value": 12.7412459968759
+      "value": 12.7412475408248
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2015,
-      "value": 38.5514483040043
+      "value": 38.5504294824081
     },
     {
       "country": "S1",
       "countryName": "Small states",
       "year": 2015,
-      "value": 23.8766213219204
+      "value": 23.8766213219205
     },
     {
       "country": "8S",
@@ -12938,31 +12842,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2015,
-      "value": 35.6415069558658
+      "value": 35.6396885634765
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2015,
-      "value": 37.5517954178282
+      "value": 35.6409762756791
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2015,
-      "value": 35.6415069558658
+      "value": 35.6396885634765
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2015,
-      "value": 18.8634072866351
+      "value": 18.8640825801389
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2015,
-      "value": 28.0427321047449
+      "value": 28.042166905593
     },
     {
       "country": "AF",
@@ -13520,7 +13424,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2016,
-      "value": 43.2471303181853
+      "value": 43.2489383519312
     },
     {
       "country": "1A",
@@ -13568,13 +13472,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2016,
-      "value": 11.8949181834463
+      "value": 12.1020799077676
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2016,
-      "value": 18.3646847843292
+      "value": 18.3646923505469
     },
     {
       "country": "7E",
@@ -13595,22 +13499,16 @@
       "value": 13.7648429453643
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2016,
-      "value": 33.9090468469218
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2016,
-      "value": 35.3319547305903
+      "value": 35.3295469502005
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2016,
-      "value": 14.4511576098232
+      "value": 14.4511599908618
     },
     {
       "country": "XF",
@@ -13622,7 +13520,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2016,
-      "value": 30.5305406333981
+      "value": 30.530050840241
     },
     {
       "country": "XH",
@@ -13634,13 +13532,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2016,
-      "value": 34.356271532948
+      "value": 34.3543407965049
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2016,
-      "value": 36.6094456920646
+      "value": 36.6086203684928
     },
     {
       "country": "V3",
@@ -13658,7 +13556,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2016,
-      "value": 17.8779118978868
+      "value": 18.0189023917356
     },
     {
       "country": "T2",
@@ -13670,25 +13568,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2016,
-      "value": 35.0183854180435
+      "value": 35.0165249781461
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2016,
-      "value": 31.1467916426402
+      "value": 30.8955615807255
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2016,
-      "value": 36.4676425314724
+      "value": 33.2425152975258
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2016,
-      "value": 42.3343927040383
+      "value": 44.262252081935
     },
     {
       "country": "ZQ",
@@ -13712,7 +13610,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2016,
-      "value": 30.7092173018891
+      "value": 30.6649534629328
     },
     {
       "country": "XU",
@@ -13724,7 +13622,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2016,
-      "value": 13.9257269696979
+      "value": 13.9257288932548
     },
     {
       "country": "S4",
@@ -13742,13 +13640,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2016,
-      "value": 12.9089182181317
+      "value": 12.9089197202324
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2016,
-      "value": 38.4451653985043
+      "value": 38.4442649228278
     },
     {
       "country": "S1",
@@ -13772,31 +13670,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2016,
-      "value": 35.5725181103697
+      "value": 35.5708866663059
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2016,
-      "value": 37.4549845049862
+      "value": 35.5720928297023
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2016,
-      "value": 35.5725181103697
+      "value": 35.5708866663059
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2016,
-      "value": 18.8522470702606
+      "value": 18.83803589337
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2016,
-      "value": 28.2341178690489
+      "value": 28.2336028257188
     },
     {
       "country": "AF",
@@ -14354,7 +14252,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2017,
-      "value": 42.9185234466971
+      "value": 42.9200064684404
     },
     {
       "country": "1A",
@@ -14402,13 +14300,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2017,
-      "value": 12.2235500116474
+      "value": 12.427751176521
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2017,
-      "value": 18.6373936105609
+      "value": 18.6374088145015
     },
     {
       "country": "7E",
@@ -14429,22 +14327,16 @@
       "value": 14.0737054736326
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2017,
-      "value": 34.028144240954
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2017,
-      "value": 35.3908840379079
+      "value": 35.3887680618228
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2017,
-      "value": 14.6584365619207
+      "value": 14.6584412962056
     },
     {
       "country": "XF",
@@ -14456,7 +14348,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2017,
-      "value": 30.7792179974372
+      "value": 30.7787787971891
     },
     {
       "country": "XH",
@@ -14468,13 +14360,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2017,
-      "value": 34.4606566132633
+      "value": 34.4589507826825
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2017,
-      "value": 36.6308013554685
+      "value": 36.6300687878573
     },
     {
       "country": "V3",
@@ -14492,7 +14384,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2017,
-      "value": 18.041152686523
+      "value": 18.2009225084536
     },
     {
       "country": "T2",
@@ -14504,25 +14396,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2017,
-      "value": 35.1462086664263
+      "value": 35.1445795568383
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2017,
-      "value": 31.3869687323472
+      "value": 31.1363377458147
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2017,
-      "value": 36.5835599499956
+      "value": 33.4000456198352
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2017,
-      "value": 42.4720916716374
+      "value": 44.4266861937239
     },
     {
       "country": "ZQ",
@@ -14546,7 +14438,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2017,
-      "value": 30.9495279521554
+      "value": 30.9083992862768
     },
     {
       "country": "XU",
@@ -14558,7 +14450,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2017,
-      "value": 14.1490448881985
+      "value": 14.1490487271315
     },
     {
       "country": "S4",
@@ -14576,13 +14468,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2017,
-      "value": 13.1182034282036
+      "value": 13.1182064292679
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2017,
-      "value": 38.3934497385564
+      "value": 38.3926493301212
     },
     {
       "country": "S1",
@@ -14606,31 +14498,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2017,
-      "value": 35.5655345482663
+      "value": 35.5640781596122
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2017,
-      "value": 37.4135649288631
+      "value": 35.5652275013644
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2017,
-      "value": 35.5655345482663
+      "value": 35.5640781596122
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2017,
-      "value": 18.9681521891231
+      "value": 18.9257346398293
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2017,
-      "value": 28.4929424950775
+      "value": 28.4924797284249
     },
     {
       "country": "AF",
@@ -15188,7 +15080,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2018,
-      "value": 42.5912632541203
+      "value": 42.5925804493429
     },
     {
       "country": "1A",
@@ -15200,7 +15092,7 @@
       "country": "S3",
       "countryName": "Caribbean small states",
       "year": 2018,
-      "value": 22.370431018764
+      "value": 22.3704310187641
     },
     {
       "country": "B8",
@@ -15236,13 +15128,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2018,
-      "value": 12.5720594500302
+      "value": 12.7714382133957
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2018,
-      "value": 18.918518725516
+      "value": 18.9199295826481
     },
     {
       "country": "7E",
@@ -15260,25 +15152,19 @@
       "country": "EU",
       "countryName": "European Union",
       "year": 2018,
-      "value": 14.4027847496798
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2018,
-      "value": 34.1591914360005
+      "value": 14.403194920402
     },
     {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2018,
-      "value": 35.4780397626209
+      "value": 35.476015237458
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2018,
-      "value": 14.9162301086094
+      "value": 14.9164634520471
     },
     {
       "country": "XF",
@@ -15290,7 +15176,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2018,
-      "value": 30.9732451777348
+      "value": 30.9728120501929
     },
     {
       "country": "XH",
@@ -15302,13 +15188,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2018,
-      "value": 34.5816806619473
+      "value": 34.5800377956487
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2018,
-      "value": 36.651179908924
+      "value": 36.650469077783
     },
     {
       "country": "V3",
@@ -15326,7 +15212,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2018,
-      "value": 18.1444956911818
+      "value": 18.3296657583372
     },
     {
       "country": "T2",
@@ -15338,25 +15224,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2018,
-      "value": 35.2958056554796
+      "value": 35.2942528037192
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2018,
-      "value": 31.5690948095985
+      "value": 31.3209526267914
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2018,
-      "value": 36.72194972211
+      "value": 33.5660750033069
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2018,
-      "value": 42.5905424163656
+      "value": 44.5963507916219
     },
     {
       "country": "ZQ",
@@ -15380,7 +15266,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2018,
-      "value": 31.124120422043
+      "value": 31.0888633974367
     },
     {
       "country": "XU",
@@ -15392,7 +15278,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2018,
-      "value": 14.4129433298923
+      "value": 14.4130762670851
     },
     {
       "country": "S4",
@@ -15404,25 +15290,25 @@
       "country": "S2",
       "countryName": "Pacific island small states",
       "year": 2018,
-      "value": 27.0690869157377
+      "value": 27.0690869157378
     },
     {
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2018,
-      "value": 13.3926990924383
+      "value": 13.392630714358
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2018,
-      "value": 38.345693835569
+      "value": 38.3449167851679
     },
     {
       "country": "S1",
       "countryName": "Small states",
       "year": 2018,
-      "value": 24.7333836393391
+      "value": 24.7333836393392
     },
     {
       "country": "8S",
@@ -15440,31 +15326,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2018,
-      "value": 35.5544344407675
+      "value": 35.553011652117
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2018,
-      "value": 37.374563846032
+      "value": 35.5540859671292
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2018,
-      "value": 35.5544344407675
+      "value": 35.553011652117
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2018,
-      "value": 18.9657258917244
+      "value": 18.8897551434931
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2018,
-      "value": 28.7127325039045
+      "value": 28.7127224629237
     },
     {
       "country": "AF",
@@ -16022,7 +15908,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2019,
-      "value": 42.300902841503
+      "value": 42.3022265148473
     },
     {
       "country": "1A",
@@ -16070,13 +15956,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2019,
-      "value": 12.988369140391
+      "value": 13.1845772928995
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2019,
-      "value": 19.2603955024597
+      "value": 19.2604184714282
     },
     {
       "country": "7E",
@@ -16097,22 +15983,16 @@
       "value": 14.79540571072
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2019,
-      "value": 34.2980606154592
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2019,
-      "value": 35.592756923886
+      "value": 35.590413405672
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2019,
-      "value": 15.2194240687202
+      "value": 15.2194312132855
     },
     {
       "country": "XF",
@@ -16124,7 +16004,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2019,
-      "value": 31.1939405729681
+      "value": 31.1934273286359
     },
     {
       "country": "XH",
@@ -16136,13 +16016,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2019,
-      "value": 34.7341916600109
+      "value": 34.7322860432978
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2019,
-      "value": 36.6846208474739
+      "value": 36.6837810769488
     },
     {
       "country": "V3",
@@ -16160,7 +16040,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2019,
-      "value": 18.3367624238501
+      "value": 18.5299741497607
     },
     {
       "country": "T2",
@@ -16172,25 +16052,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2019,
-      "value": 35.4703217877985
+      "value": 35.4685345796734
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2019,
-      "value": 31.7756575508766
+      "value": 31.5301260763727
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2019,
-      "value": 36.8452056428608
+      "value": 33.7424991174377
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2019,
-      "value": 42.7124870192793
+      "value": 44.7669521071366
     },
     {
       "country": "ZQ",
@@ -16214,7 +16094,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2019,
-      "value": 31.3256523930428
+      "value": 31.2949450044086
     },
     {
       "country": "XU",
@@ -16226,7 +16106,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2019,
-      "value": 14.7184572678568
+      "value": 14.7184630620633
     },
     {
       "country": "S4",
@@ -16244,13 +16124,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2019,
-      "value": 13.7043748557858
+      "value": 13.7043795445656
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2019,
-      "value": 38.2941634240794
+      "value": 38.2932232366378
     },
     {
       "country": "S1",
@@ -16274,31 +16154,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2019,
-      "value": 35.5674707959384
+      "value": 35.5657880102979
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2019,
-      "value": 37.3490650316606
+      "value": 35.5668020746838
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2019,
-      "value": 35.5674707959384
+      "value": 35.5657880102978
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2019,
-      "value": 19.0011944956325
+      "value": 18.8899629101924
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2019,
-      "value": 28.9584925495933
+      "value": 28.9579483945074
     },
     {
       "country": "AF",
@@ -16856,7 +16736,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2020,
-      "value": 42.0385461265157
+      "value": 42.0399395268952
     },
     {
       "country": "1A",
@@ -16904,13 +16784,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2020,
-      "value": 13.4503186277789
+      "value": 13.6431967322651
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2020,
-      "value": 19.6374198082624
+      "value": 19.63745073353
     },
     {
       "country": "7E",
@@ -16931,22 +16811,16 @@
       "value": 15.232684485937
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2020,
-      "value": 34.4934385207928
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2020,
-      "value": 35.7921198799553
+      "value": 35.7892921076663
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2020,
-      "value": 15.6034626982588
+      "value": 15.6034716892564
     },
     {
       "country": "XF",
@@ -16958,7 +16832,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2020,
-      "value": 31.4574653360718
+      "value": 31.4568234892705
     },
     {
       "country": "XH",
@@ -16970,13 +16844,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2020,
-      "value": 34.9610180521026
+      "value": 34.9587045368788
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2020,
-      "value": 36.7633634052885
+      "value": 36.7623233753873
     },
     {
       "country": "V3",
@@ -16994,7 +16868,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2020,
-      "value": 18.5211139306501
+      "value": 18.7256403752982
     },
     {
       "country": "T2",
@@ -17006,25 +16880,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2020,
-      "value": 35.7184420400991
+      "value": 35.7162944468968
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2020,
-      "value": 32.0258362038088
+      "value": 31.7826123314231
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2020,
-      "value": 37.07798343682
+      "value": 34.0262039689374
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2020,
-      "value": 42.8399967768031
+      "value": 44.9337708278643
     },
     {
       "country": "ZQ",
@@ -17048,19 +16922,19 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2020,
-      "value": 31.5652448396819
+      "value": 31.5375645335393
     },
     {
       "country": "XU",
       "countryName": "North America",
       "year": 2020,
-      "value": 12.8764013271792
+      "value": 12.8764014556576
     },
     {
       "country": "OE",
       "countryName": "OECD members",
       "year": 2020,
-      "value": 15.0893385312599
+      "value": 15.0893458436883
     },
     {
       "country": "S4",
@@ -17078,13 +16952,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2020,
-      "value": 14.1096891871718
+      "value": 14.1096954184756
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2020,
-      "value": 38.3130206660088
+      "value": 38.3118490195654
     },
     {
       "country": "S1",
@@ -17108,31 +16982,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2020,
-      "value": 35.6446641512553
+      "value": 35.6425794165349
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2020,
-      "value": 37.3828452550994
+      "value": 35.643526144702
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2020,
-      "value": 35.6446641512553
+      "value": 35.6425794165349
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2020,
-      "value": 19.1018219178042
+      "value": 18.9531942385537
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2020,
-      "value": 29.254403195914
+      "value": 29.2537197239187
     },
     {
       "country": "AF",
@@ -17690,7 +17564,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2021,
-      "value": 41.8719753152852
+      "value": 41.873343677671
     },
     {
       "country": "1A",
@@ -17714,7 +17588,7 @@
       "country": "V2",
       "countryName": "Early-demographic dividend",
       "year": 2021,
-      "value": 38.4296149223134
+      "value": 38.4296149223135
     },
     {
       "country": "Z4",
@@ -17738,13 +17612,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2021,
-      "value": 13.9900665548037
+      "value": 14.1816869133916
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2021,
-      "value": 20.1116914264869
+      "value": 20.1117331341397
     },
     {
       "country": "7E",
@@ -17762,25 +17636,19 @@
       "country": "EU",
       "countryName": "European Union",
       "year": 2021,
-      "value": 15.7608897344895
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2021,
-      "value": 34.7802556197483
+      "value": 15.7608869770402
     },
     {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2021,
-      "value": 36.1069785837177
+      "value": 36.1036695161524
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2021,
-      "value": 16.0565246798623
+      "value": 16.0565377249709
     },
     {
       "country": "XF",
@@ -17792,7 +17660,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2021,
-      "value": 31.8193059636943
+      "value": 31.8185245834647
     },
     {
       "country": "XH",
@@ -17804,13 +17672,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2021,
-      "value": 35.2748942375565
+      "value": 35.272154058862
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2021,
-      "value": 36.9550352915997
+      "value": 36.9537851220958
     },
     {
       "country": "V3",
@@ -17828,7 +17696,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2021,
-      "value": 18.8365607292087
+      "value": 19.0498787237325
     },
     {
       "country": "T2",
@@ -17840,25 +17708,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2021,
-      "value": 36.0559861097918
+      "value": 36.0534711991944
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2021,
-      "value": 32.3723367113526
+      "value": 32.1323642848295
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2021,
-      "value": 37.3944558743342
+      "value": 34.412765164256
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2021,
-      "value": 43.0672856216877
+      "value": 45.1933782593199
     },
     {
       "country": "ZQ",
@@ -17870,7 +17738,7 @@
       "country": "XQ",
       "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
       "year": 2021,
-      "value": 35.3943174788786
+      "value": 35.3943174788785
     },
     {
       "country": "T3",
@@ -17882,19 +17750,19 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2021,
-      "value": 31.9028521428379
+      "value": 31.8768619991921
     },
     {
       "country": "XU",
       "countryName": "North America",
       "year": 2021,
-      "value": 13.3968513417478
+      "value": 13.3968514549213
     },
     {
       "country": "OE",
       "countryName": "OECD members",
       "year": 2021,
-      "value": 15.5316650743996
+      "value": 15.5316757993636
     },
     {
       "country": "S4",
@@ -17912,13 +17780,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2021,
-      "value": 14.5823798296912
+      "value": 14.5823896522539
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2021,
-      "value": 38.4382484761684
+      "value": 38.4368292572001
     },
     {
       "country": "S1",
@@ -17942,31 +17810,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2021,
-      "value": 35.8544169774128
+      "value": 35.8519174975566
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2021,
-      "value": 37.5400361360414
+      "value": 35.8528023937091
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2021,
-      "value": 35.8544169774128
+      "value": 35.8519174975566
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2021,
-      "value": 19.3041556659248
+      "value": 19.1194115498493
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2021,
-      "value": 29.6505303775804
+      "value": 29.6496954161081
     },
     {
       "country": "AF",
@@ -18524,7 +18392,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2022,
-      "value": 41.8896921707664
+      "value": 41.891009329423
     },
     {
       "country": "1A",
@@ -18572,13 +18440,13 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2022,
-      "value": 14.6399094484415
+      "value": 14.8317171893248
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2022,
-      "value": 20.6750881289504
+      "value": 20.6748266643641
     },
     {
       "country": "7E",
@@ -18596,25 +18464,19 @@
       "country": "EU",
       "countryName": "European Union",
       "year": 2022,
-      "value": 16.4025541268169
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2022,
-      "value": 35.2304722030125
+      "value": 16.4025513197224
     },
     {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2022,
-      "value": 36.5545036198857
+      "value": 36.550872191589
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2022,
-      "value": 16.6306438140867
+      "value": 16.6305614082819
     },
     {
       "country": "XF",
@@ -18626,7 +18488,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2022,
-      "value": 32.3050252062668
+      "value": 32.3041286448683
     },
     {
       "country": "XH",
@@ -18638,13 +18500,13 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2022,
-      "value": 35.7523594409487
+      "value": 35.7493290237204
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2022,
-      "value": 37.2882600665776
+      "value": 37.2868545785471
     },
     {
       "country": "V3",
@@ -18662,7 +18524,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2022,
-      "value": 19.2639824804854
+      "value": 19.4878516540498
     },
     {
       "country": "T2",
@@ -18674,25 +18536,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2022,
-      "value": 36.5579122995221
+      "value": 36.5551712308107
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2022,
-      "value": 32.8456358880686
+      "value": 32.6082257697683
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2022,
-      "value": 37.8329160538851
+      "value": 34.9193170267844
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2022,
-      "value": 43.4110654805073
+      "value": 45.5680401426701
     },
     {
       "country": "ZQ",
@@ -18716,19 +18578,19 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2022,
-      "value": 32.3675685545296
+      "value": 32.3426521136019
     },
     {
       "country": "XU",
       "countryName": "North America",
       "year": 2022,
-      "value": 14.0956182651396
+      "value": 14.0955782917687
     },
     {
       "country": "OE",
       "countryName": "OECD members",
       "year": 2022,
-      "value": 16.0914829691673
+      "value": 16.0914139857572
     },
     {
       "country": "S4",
@@ -18746,13 +18608,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2022,
-      "value": 15.164771908849
+      "value": 15.1647038741115
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2022,
-      "value": 38.7075969326581
+      "value": 38.706000849543
     },
     {
       "country": "S1",
@@ -18776,31 +18638,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2022,
-      "value": 36.1962524567947
+      "value": 36.1934371150329
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2022,
-      "value": 37.8319293021997
+      "value": 36.194444408435
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2022,
-      "value": 36.1962524567947
+      "value": 36.1934371150329
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2022,
-      "value": 19.6595697754695
+      "value": 19.4323002477592
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2022,
-      "value": 30.1564341677055
+      "value": 30.1554081118278
     },
     {
       "country": "AF",
@@ -19358,7 +19220,7 @@
       "country": "ZI",
       "countryName": "Africa Western and Central",
       "year": 2023,
-      "value": 42.0246594870101
+      "value": 42.0254881259977
     },
     {
       "country": "1A",
@@ -19406,25 +19268,25 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2023,
-      "value": 15.2946415943383
+      "value": 15.4862999300005
     },
     {
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2023,
-      "value": 21.2880796707362
+      "value": 21.2877938397802
     },
     {
       "country": "7E",
       "countryName": "Europe & Central Asia (excluding high income)",
       "year": 2023,
-      "value": 28.4412233299349
+      "value": 28.4412587476247
     },
     {
       "country": "T7",
       "countryName": "Europe & Central Asia (IDA & IBRD countries)",
       "year": 2023,
-      "value": 26.4869321660325
+      "value": 26.4869415902987
     },
     {
       "country": "EU",
@@ -19433,34 +19295,28 @@
       "value": 17.055265646884
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2023,
-      "value": 35.8041341738734
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2023,
-      "value": 37.1642479020914
+      "value": 37.1604690610974
     },
     {
       "country": "XD",
       "countryName": "High income",
       "year": 2023,
-      "value": 17.2534393127448
+      "value": 17.2535194727892
     },
     {
       "country": "XF",
       "countryName": "IBRD only",
       "year": 2023,
-      "value": 30.9782261524692
+      "value": 30.978229082127
     },
     {
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2023,
-      "value": 32.8611074327914
+      "value": 32.8601384823587
     },
     {
       "country": "XH",
@@ -19472,19 +19328,19 @@
       "country": "XI",
       "countryName": "IDA only",
       "year": 2023,
-      "value": 36.3872849069672
+      "value": 36.3841198745396
     },
     {
       "country": "XG",
       "countryName": "IDA total",
       "year": 2023,
-      "value": 37.7735240999531
+      "value": 37.7720109323597
     },
     {
       "country": "V3",
       "countryName": "Late-demographic dividend",
       "year": 2023,
-      "value": 18.867107336122
+      "value": 18.8671011665758
     },
     {
       "country": "ZJ",
@@ -19496,7 +19352,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2023,
-      "value": 19.8246933695381
+      "value": 20.0547780125331
     },
     {
       "country": "T2",
@@ -19508,25 +19364,25 @@
       "country": "XL",
       "countryName": "Least developed countries: UN classification",
       "year": 2023,
-      "value": 37.2154553273449
+      "value": 37.2126214768663
     },
     {
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2023,
-      "value": 33.3884807849595
+      "value": 33.1541427605919
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2023,
-      "value": 38.4554204421207
+      "value": 35.598256292487
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2023,
-      "value": 43.8198657939971
+      "value": 45.9997481950485
     },
     {
       "country": "ZQ",
@@ -19550,19 +19406,19 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2023,
-      "value": 32.8897499571402
+      "value": 32.865813977136
     },
     {
       "country": "XU",
       "countryName": "North America",
       "year": 2023,
-      "value": 14.8932649953146
+      "value": 14.8933323360008
     },
     {
       "country": "OE",
       "countryName": "OECD members",
       "year": 2023,
-      "value": 16.7061472488863
+      "value": 16.7062032740291
     },
     {
       "country": "S4",
@@ -19580,13 +19436,13 @@
       "country": "V4",
       "countryName": "Post-demographic dividend",
       "year": 2023,
-      "value": 15.7944870019408
+      "value": 15.7945152662696
     },
     {
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2023,
-      "value": 39.1238274864788
+      "value": 39.1220631380528
     },
     {
       "country": "S1",
@@ -19610,31 +19466,31 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2023,
-      "value": 36.6815659002542
+      "value": 36.6785503811781
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2023,
-      "value": 38.2709242071382
+      "value": 36.6795077589865
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2023,
-      "value": 36.6815659002542
+      "value": 36.6785503811781
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2023,
-      "value": 20.0779462879156
+      "value": 19.8140166173229
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2023,
-      "value": 30.7236022941261
+      "value": 30.72264159089
     },
     {
       "country": "AF",
