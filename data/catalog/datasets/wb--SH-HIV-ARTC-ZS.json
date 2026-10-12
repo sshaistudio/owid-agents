@@ -1,20 +1,21 @@
 {
   "meta": {
     "id": "wb--SH-HIV-ARTC-ZS",
-    "title": "Antiretroviral Therapy Coverage (% of people living with HIV)",
+    "title": "Antiretroviral Therapy Coverage (% of People Living with HIV)",
     "description": "Antiretroviral therapy coverage (% of people living with HIV) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.HIV.ARTC.ZS",
       "indicatorName": "Antiretroviral therapy coverage (% of people living with HIV)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.HIV.ARTC.ZS",
-      "lastFetched": "2026-07-17T04:46:25.754Z"
+      "lastFetched": "2026-08-06T00:53:54.185Z"
     },
     "topics": [
       "health",
       "hiv",
+      "infectious disease",
       "treatment",
-      "infectious disease"
+      "development"
     ],
     "countries": [
       "ZH",
