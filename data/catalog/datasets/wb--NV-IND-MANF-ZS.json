@@ -1,19 +1,21 @@
 {
   "meta": {
     "id": "wb--NV-IND-MANF-ZS",
-    "title": "Manufacturing, Value Added (% of GDP)",
+    "title": "Manufacturing Value Added (% of GDP)",
     "description": "Manufacturing, value added (% of GDP) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "NV.IND.MANF.ZS",
       "indicatorName": "Manufacturing, value added (% of GDP)",
       "sourceUrl": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS",
-      "lastFetched": "2026-09-30T02:18:25.538Z"
+      "lastFetched": "2026-10-07T00:37:22.780Z"
     },
     "topics": [
       "economics",
-      "industry",
+      "manufacturing",
       "development",
+      "industry",
+      "structural transformation",
       "trade"
     ],
     "countries": [

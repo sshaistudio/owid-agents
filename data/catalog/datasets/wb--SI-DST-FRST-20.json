@@ -1,22 +1,21 @@
 {
   "meta": {
     "id": "wb--SI-DST-FRST-20",
-    "title": "Income Share Held by Lowest 20%",
+    "title": "Income Share Held by Lowest 20% of Population",
     "description": "Income share held by lowest 20% from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SI.DST.FRST.20",
       "indicatorName": "Income share held by lowest 20%",
       "sourceUrl": "https://data.worldbank.org/indicator/SI.DST.FRST.20",
-      "lastFetched": "2026-09-28T01:14:20.518Z"
+      "lastFetched": "2026-10-07T00:37:25.877Z"
     },
     "topics": [
       "inequality",
       "poverty",
-      "income",
       "economics",
       "development",
-      "social"
+      "income distribution"
     ],
     "countries": [
       "FR",
