@@ -1,20 +1,20 @@
 {
   "meta": {
     "id": "wb--SE-PRE-ENRR",
-    "title": "Pre-Primary School Enrollment (% gross)",
+    "title": "Pre-Primary School Enrollment (% Gross)",
     "description": "School enrollment, preprimary (% gross) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.PRE.ENRR",
       "indicatorName": "School enrollment, preprimary (% gross)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.PRE.ENRR",
-      "lastFetched": "2026-09-05T02:46:33.720Z"
+      "lastFetched": "2026-09-06T02:02:01.537Z"
     },
     "topics": [
       "education",
       "children",
       "development",
-      "demographics"
+      "sdg-4"
     ],
     "countries": [
       "1A",
