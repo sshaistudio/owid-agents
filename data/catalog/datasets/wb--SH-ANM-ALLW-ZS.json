@@ -1,22 +1,22 @@
 {
   "meta": {
     "id": "wb--SH-ANM-ALLW-ZS",
-    "title": "Prevalence of Anemia Among Women of Reproductive Age (% ages 15-49)",
+    "title": "Anemia Prevalence Among Women of Reproductive Age (% ages 15-49)",
     "description": "Prevalence of anemia among women of reproductive age (% of women ages 15-49) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.ANM.ALLW.ZS",
       "indicatorName": "Prevalence of anemia among women of reproductive age (% of women ages 15-49)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.ANM.ALLW.ZS",
-      "lastFetched": "2026-07-25T00:33:39.661Z"
+      "lastFetched": "2026-08-10T01:14:24.699Z"
     },
     "topics": [
-      "anemia",
-      "nutrition",
-      "women",
-      "reproductive health",
       "health",
-      "gender"
+      "gender",
+      "women",
+      "nutrition",
+      "anaemia",
+      "maternal health"
     ],
     "countries": [
       "ZH",
