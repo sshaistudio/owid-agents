@@ -8,13 +8,13 @@
       "indicatorId": "HD.HCI.OVRL",
       "indicatorName": "Human Capital Index (HCI) (scale 0-1)",
       "sourceUrl": "https://data.worldbank.org/indicator/HD.HCI.OVRL",
-      "lastFetched": "2026-08-14T00:35:26.479Z"
+      "lastFetched": "2026-09-21T00:33:22.607Z"
     },
     "topics": [
       "education",
       "health",
       "development",
-      "human capital"
+      "labor"
     ],
     "countries": [
       "AL",
