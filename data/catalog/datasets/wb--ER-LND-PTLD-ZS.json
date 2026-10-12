@@ -1,21 +1,20 @@
 {
   "meta": {
     "id": "wb--ER-LND-PTLD-ZS",
-    "title": "Terrestrial Protected Areas (% of Total Land Area)",
+    "title": "Terrestrial Protected Areas (% of total land)",
     "description": "Terrestrial protected areas (% of total land area) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "ER.LND.PTLD.ZS",
       "indicatorName": "Terrestrial protected areas (% of total land area)",
       "sourceUrl": "https://data.worldbank.org/indicator/ER.LND.PTLD.ZS",
-      "lastFetched": "2026-06-29T02:56:36.111Z"
+      "lastFetched": "2026-08-14T00:35:32.970Z"
     },
     "topics": [
       "environment",
       "conservation",
       "biodiversity",
-      "land",
-      "sdg-15"
+      "land"
     ],
     "countries": [
       "ZH",
@@ -32,7 +31,6 @@
       "7E",
       "T7",
       "EU",
-      "F1",
       "XE",
       "XD",
       "XF",
@@ -175,7 +173,7 @@
       "start": "2013",
       "end": "2024"
     },
-    "dataPointCount": 1822,
+    "dataPointCount": 1810,
     "dataFilePath": "datasets/wb--ER-LND-PTLD-ZS.json"
   },
   "data": [
@@ -237,7 +235,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2013,
-      "value": 25.7435060573956
+      "value": 26.4818833054197
     },
     {
       "country": "Z7",
@@ -262,12 +260,6 @@
       "countryName": "European Union",
       "year": 2013,
       "value": 25.1983687813778
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2013,
-      "value": 12.9081788448649
     },
     {
       "country": "XE",
@@ -327,7 +319,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2013,
-      "value": 21.1680840537054
+      "value": 22.7469730826767
     },
     {
       "country": "T2",
@@ -345,19 +337,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2013,
-      "value": 14.4975337836291
+      "value": 15.0212269394443
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2013,
-      "value": 11.1838198499342
+      "value": 11.7032074422394
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2013,
-      "value": 15.4408969516837
+      "value": 17.5898612499399
     },
     {
       "country": "ZQ",
@@ -381,7 +373,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2013,
-      "value": 15.1862313999341
+      "value": 15.7562748777714
     },
     {
       "country": "XU",
@@ -447,7 +439,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2013,
-      "value": 16.2371170039756
+      "value": 16.3458869466113
     },
     {
       "country": "T6",
@@ -459,7 +451,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2013,
-      "value": 15.0758047287271
+      "value": 14.9674304673676
     },
     {
       "country": "1W",
@@ -1143,7 +1135,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2014,
-      "value": 25.9033692124719
+      "value": 26.4611088457343
     },
     {
       "country": "Z7",
@@ -1168,12 +1160,6 @@
       "countryName": "European Union",
       "year": 2014,
       "value": 25.1471037304662
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2014,
-      "value": 12.6718354403713
     },
     {
       "country": "XE",
@@ -1233,7 +1219,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2014,
-      "value": 22.8128048003731
+      "value": 24.3128392753953
     },
     {
       "country": "T2",
@@ -1251,19 +1237,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2014,
-      "value": 15.2364199445947
+      "value": 15.7406777881452
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2014,
-      "value": 10.8174840133632
+      "value": 11.3655815488494
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2014,
-      "value": 17.2678952134508
+      "value": 19.3248042828308
     },
     {
       "country": "ZQ",
@@ -1287,7 +1273,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2014,
-      "value": 16.1548142193811
+      "value": 16.7098975705252
     },
     {
       "country": "XU",
@@ -1353,7 +1339,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2014,
-      "value": 15.5351921921822
+      "value": 15.6777015378924
     },
     {
       "country": "T6",
@@ -1365,7 +1351,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2014,
-      "value": 15.672169531864
+      "value": 15.5849216727366
     },
     {
       "country": "1W",
@@ -2049,7 +2035,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2015,
-      "value": 25.9373127313388
+      "value": 26.493764202298
     },
     {
       "country": "Z7",
@@ -2074,12 +2060,6 @@
       "countryName": "European Union",
       "year": 2015,
       "value": 25.1906277050929
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2015,
-      "value": 12.754797601975
     },
     {
       "country": "XE",
@@ -2139,7 +2119,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2015,
-      "value": 22.4991117095781
+      "value": 24.0141858980603
     },
     {
       "country": "T2",
@@ -2157,19 +2137,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2015,
-      "value": 14.8659586663637
+      "value": 15.3799599232078
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2015,
-      "value": 10.9429648015792
+      "value": 11.4815065277949
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2015,
-      "value": 16.1608918471099
+      "value": 18.1865829881687
     },
     {
       "country": "ZQ",
@@ -2193,7 +2173,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2015,
-      "value": 15.6812805360419
+      "value": 16.2435885029826
     },
     {
       "country": "XU",
@@ -2259,7 +2239,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2015,
-      "value": 15.7290065466502
+      "value": 15.8621998224379
     },
     {
       "country": "T6",
@@ -2271,7 +2251,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2015,
-      "value": 15.4733155697966
+      "value": 15.4076803020957
     },
     {
       "country": "1W",
@@ -2961,7 +2941,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2016,
-      "value": 26.0429212667558
+      "value": 26.3714588742938
     },
     {
       "country": "Z7",
@@ -2986,12 +2966,6 @@
       "countryName": "European Union",
       "year": 2016,
       "value": 25.7043547707764
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2016,
-      "value": 13.0504050166172
     },
     {
       "country": "XE",
@@ -3051,7 +3025,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2016,
-      "value": 22.123532645534
+      "value": 23.6566136109283
     },
     {
       "country": "T2",
@@ -3069,19 +3043,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2016,
-      "value": 15.0230549168474
+      "value": 15.5329244228573
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2016,
-      "value": 11.273821794878
+      "value": 11.7871675817893
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2016,
-      "value": 16.5794103244678
+      "value": 18.6011633965337
     },
     {
       "country": "ZQ",
@@ -3105,7 +3079,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2016,
-      "value": 15.8022638231635
+      "value": 16.3627259704761
     },
     {
       "country": "XU",
@@ -3171,7 +3145,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2016,
-      "value": 16.4091296611454
+      "value": 16.5096314755191
     },
     {
       "country": "T6",
@@ -3183,7 +3157,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2016,
-      "value": 15.4652841853156
+      "value": 15.399713354702
     },
     {
       "country": "1W",
@@ -3873,7 +3847,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2017,
-      "value": 26.1053651721325
+      "value": 26.4315330228611
     },
     {
       "country": "Z7",
@@ -3898,12 +3872,6 @@
       "countryName": "European Union",
       "year": 2017,
       "value": 25.898783902159
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2017,
-      "value": 13.1786080418838
     },
     {
       "country": "XE",
@@ -3963,7 +3931,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2017,
-      "value": 22.125938358855
+      "value": 23.6589039846384
     },
     {
       "country": "T2",
@@ -3981,19 +3949,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2017,
-      "value": 15.0918539054136
+      "value": 15.5998737081236
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2017,
-      "value": 11.501347816856
+      "value": 11.9973666862287
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2017,
-      "value": 16.6389856055489
+      "value": 18.6590363087288
     },
     {
       "country": "ZQ",
@@ -4017,7 +3985,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2017,
-      "value": 15.8380010183917
+      "value": 16.3978637626009
     },
     {
       "country": "XU",
@@ -4083,19 +4051,19 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2017,
-      "value": 16.619053519295
+      "value": 16.7094649286196
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2017,
-      "value": 16.7099882752322
+      "value": 16.7099882752323
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2017,
-      "value": 15.4905720924435
+      "value": 15.4247572343144
     },
     {
       "country": "1W",
@@ -4785,7 +4753,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2018,
-      "value": 26.1593363204446
+      "value": 26.4834559569327
     },
     {
       "country": "Z7",
@@ -4812,12 +4780,6 @@
       "value": 25.8478135560333
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2018,
-      "value": 13.1015409251851
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2018,
@@ -4827,7 +4789,7 @@
       "country": "XD",
       "countryName": "High income",
       "year": 2018,
-      "value": 14.3639490131772
+      "value": 14.3639490131773
     },
     {
       "country": "XF",
@@ -4839,7 +4801,7 @@
       "country": "ZT",
       "countryName": "IDA & IBRD total",
       "year": 2018,
-      "value": 14.5529648195606
+      "value": 14.5529648195605
     },
     {
       "country": "XH",
@@ -4875,7 +4837,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2018,
-      "value": 22.4425492560222
+      "value": 23.9603352769261
     },
     {
       "country": "T2",
@@ -4893,19 +4855,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2018,
-      "value": 14.8956817509347
+      "value": 15.3957690892238
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2018,
-      "value": 11.5513385738993
+      "value": 11.9713575253235
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2018,
-      "value": 16.5916108233721
+      "value": 18.6121273659059
     },
     {
       "country": "ZQ",
@@ -4929,7 +4891,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2018,
-      "value": 15.5906734721033
+      "value": 16.154309281879
     },
     {
       "country": "XU",
@@ -4989,25 +4951,25 @@
       "country": "ZG",
       "countryName": "Sub-Saharan Africa",
       "year": 2018,
-      "value": 16.3844264485219
+      "value": 16.3844264485218
     },
     {
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2018,
-      "value": 16.3224903664486
+      "value": 16.3838963913302
     },
     {
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2018,
-      "value": 16.3844264485219
+      "value": 16.3844264485218
     },
     {
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2018,
-      "value": 15.1565145700862
+      "value": 15.0965753964208
     },
     {
       "country": "1W",
@@ -5697,7 +5659,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2019,
-      "value": 26.1803802259993
+      "value": 26.7276072442734
     },
     {
       "country": "Z7",
@@ -5722,12 +5684,6 @@
       "countryName": "European Union",
       "year": 2019,
       "value": 25.9560605032779
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2019,
-      "value": 12.721736868325
     },
     {
       "country": "XE",
@@ -5787,7 +5743,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2019,
-      "value": 22.8835681384393
+      "value": 24.3802099332935
     },
     {
       "country": "T2",
@@ -5805,19 +5761,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2019,
-      "value": 14.9269756227605
+      "value": 15.4221923678455
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2019,
-      "value": 11.0139947988243
+      "value": 11.4550549179437
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2019,
-      "value": 16.7673358694076
+      "value": 18.7785061068335
     },
     {
       "country": "ZQ",
@@ -5841,7 +5797,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2019,
-      "value": 15.779808553013
+      "value": 16.3405590430097
     },
     {
       "country": "XU",
@@ -5907,7 +5863,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2019,
-      "value": 16.0067133756438
+      "value": 16.0812838043971
     },
     {
       "country": "T6",
@@ -5919,7 +5875,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2019,
-      "value": 15.3514662847839
+      "value": 15.291376747087
     },
     {
       "country": "1W",
@@ -6609,7 +6565,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2020,
-      "value": 26.2604884131572
+      "value": 26.819855380033
     },
     {
       "country": "Z7",
@@ -6634,12 +6590,6 @@
       "countryName": "European Union",
       "year": 2020,
       "value": 26.0148006027255
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2020,
-      "value": 13.2068618299417
     },
     {
       "country": "XE",
@@ -6669,7 +6619,7 @@
       "country": "XH",
       "countryName": "IDA blend",
       "year": 2020,
-      "value": 14.7731832722771
+      "value": 14.773183272277
     },
     {
       "country": "XI",
@@ -6699,7 +6649,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2020,
-      "value": 22.9174640886066
+      "value": 24.54672408109
     },
     {
       "country": "T2",
@@ -6717,19 +6667,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2020,
-      "value": 15.1551732820503
+      "value": 15.655435356
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2020,
-      "value": 11.8444663869627
+      "value": 12.1083241071884
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2020,
-      "value": 16.2518175113849
+      "value": 18.396320903852
     },
     {
       "country": "ZQ",
@@ -6753,7 +6703,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2020,
-      "value": 15.8767408004172
+      "value": 16.4765686807577
     },
     {
       "country": "XU",
@@ -6819,7 +6769,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2020,
-      "value": 16.3619211109475
+      "value": 16.349662444337
     },
     {
       "country": "T6",
@@ -6831,7 +6781,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2020,
-      "value": 15.7140504054594
+      "value": 15.65039403779
     },
     {
       "country": "1W",
@@ -7521,7 +7471,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2021,
-      "value": 26.3704444497817
+      "value": 26.9256385664017
     },
     {
       "country": "Z7",
@@ -7548,12 +7498,6 @@
       "value": 26.0895081934081
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2021,
-      "value": 13.4865047197958
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2021,
@@ -7569,7 +7513,7 @@
       "country": "XF",
       "countryName": "IBRD only",
       "year": 2021,
-      "value": 15.4730931332531
+      "value": 15.4730931332532
     },
     {
       "country": "ZT",
@@ -7611,7 +7555,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2021,
-      "value": 22.9811356393561
+      "value": 24.6073429605919
     },
     {
       "country": "T2",
@@ -7629,19 +7573,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2021,
-      "value": 15.3807316045326
+      "value": 15.8880952812939
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2021,
-      "value": 11.8184330275168
+      "value": 12.1532671727401
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2021,
-      "value": 16.4938773962119
+      "value": 18.6282306868997
     },
     {
       "country": "ZQ",
@@ -7665,7 +7609,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2021,
-      "value": 16.1571334502269
+      "value": 16.7526838456371
     },
     {
       "country": "XU",
@@ -7731,7 +7675,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2021,
-      "value": 16.3815465740697
+      "value": 16.4104919856677
     },
     {
       "country": "T6",
@@ -7743,7 +7687,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2021,
-      "value": 16.0110699811552
+      "value": 15.9455332022839
     },
     {
       "country": "1W",
@@ -8433,7 +8377,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2022,
-      "value": 26.4989091368423
+      "value": 27.0492279967803
     },
     {
       "country": "Z7",
@@ -8458,12 +8402,6 @@
       "countryName": "European Union",
       "year": 2022,
       "value": 26.2821103615777
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2022,
-      "value": 13.4995916456297
     },
     {
       "country": "XE",
@@ -8523,7 +8461,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2022,
-      "value": 23.0110058395981
+      "value": 24.635781062819
     },
     {
       "country": "T2",
@@ -8541,19 +8479,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2022,
-      "value": 15.4052704867452
+      "value": 15.9119940552231
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2022,
-      "value": 11.8375099890805
+      "value": 12.1709540113522
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2022,
-      "value": 16.497971183468
+      "value": 18.632284219676
     },
     {
       "country": "ZQ",
@@ -8577,7 +8515,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2022,
-      "value": 16.1828627563137
+      "value": 16.7780206424369
     },
     {
       "country": "XU",
@@ -8643,7 +8581,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2022,
-      "value": 16.4277474886015
+      "value": 16.4545305635849
     },
     {
       "country": "T6",
@@ -8655,7 +8593,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2022,
-      "value": 16.0461837438098
+      "value": 15.9800293545693
     },
     {
       "country": "1W",
@@ -9345,7 +9283,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2023,
-      "value": 26.4989091368423
+      "value": 27.0492279967803
     },
     {
       "country": "Z7",
@@ -9370,12 +9308,6 @@
       "countryName": "European Union",
       "year": 2023,
       "value": 26.2821103615777
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2023,
-      "value": 13.5212037818058
     },
     {
       "country": "XE",
@@ -9435,7 +9367,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2023,
-      "value": 23.1528879624384
+      "value": 24.7708607837728
     },
     {
       "country": "T2",
@@ -9453,19 +9385,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2023,
-      "value": 15.5764096977794
+      "value": 16.0786690194488
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2023,
-      "value": 11.8375099890805
+      "value": 12.1709540113522
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2023,
-      "value": 17.0511919831404
+      "value": 19.1800651627824
     },
     {
       "country": "ZQ",
@@ -9489,7 +9421,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2023,
-      "value": 16.3913017041456
+      "value": 16.9832797834555
     },
     {
       "country": "XU",
@@ -9555,7 +9487,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2023,
-      "value": 16.8077033491207
+      "value": 16.8167033893424
     },
     {
       "country": "T6",
@@ -9567,7 +9499,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2023,
-      "value": 16.1050727622273
+      "value": 16.0378825834373
     },
     {
       "country": "1W",
@@ -10257,7 +10189,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2024,
-      "value": 26.7945003562651
+      "value": 27.4588370394495
     },
     {
       "country": "Z7",
@@ -10282,12 +10214,6 @@
       "countryName": "European Union",
       "year": 2024,
       "value": 26.5691975888467
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2024,
-      "value": 13.6492435238702
     },
     {
       "country": "XE",
@@ -10347,7 +10273,7 @@
       "country": "XJ",
       "countryName": "Latin America & Caribbean (excluding high income)",
       "year": 2024,
-      "value": 23.2922433746396
+      "value": 24.898740531
     },
     {
       "country": "T2",
@@ -10365,19 +10291,19 @@
       "country": "XO",
       "countryName": "Low & middle income",
       "year": 2024,
-      "value": 15.8320345762676
+      "value": 16.326460077698
     },
     {
       "country": "XM",
       "countryName": "Low income",
       "year": 2024,
-      "value": 12.0896210879261
+      "value": 12.4043054076001
     },
     {
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2024,
-      "value": 17.4539945192371
+      "value": 19.5683355067073
     },
     {
       "country": "ZQ",
@@ -10401,7 +10327,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2024,
-      "value": 16.6476924097931
+      "value": 17.2344135301167
     },
     {
       "country": "XU",
@@ -10467,7 +10393,7 @@
       "country": "ZF",
       "countryName": "Sub-Saharan Africa (excluding high income)",
       "year": 2024,
-      "value": 17.0224989005217
+      "value": 17.0214458868124
     },
     {
       "country": "T6",
@@ -10479,7 +10405,7 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2024,
-      "value": 16.2979569961965
+      "value": 16.2299989329994
     },
     {
       "country": "1W",
