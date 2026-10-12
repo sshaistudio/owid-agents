@@ -1,22 +1,21 @@
 {
   "meta": {
     "id": "wb--SP-POP-DPND-OL",
-    "title": "Old-Age Dependency Ratio (% of Working-Age Population)",
+    "title": "Old-Age Dependency Ratio (% of working-age population)",
     "description": "Age dependency ratio, old (% of working-age population) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SP.POP.DPND.OL",
       "indicatorName": "Age dependency ratio, old (% of working-age population)",
       "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-      "lastFetched": "2026-07-05T00:34:01.739Z"
+      "lastFetched": "2026-07-06T00:45:53.545Z"
     },
     "topics": [
       "aging",
       "demographics",
       "population",
-      "social",
-      "elderly",
-      "dependency"
+      "economics",
+      "social"
     ],
     "countries": [
       "ZH",

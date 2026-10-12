@@ -1,22 +1,22 @@
 {
   "meta": {
     "id": "wb--SH-ANM-NPRG-ZS",
-    "title": "Anemia Prevalence Among Non-Pregnant Women Ages 15-49 (%)",
+    "title": "Prevalence of Anemia Among Non-Pregnant Women (% ages 15-49)",
     "description": "Prevalence of anemia among non-pregnant women (% of women ages 15-49) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.ANM.NPRG.ZS",
       "indicatorName": "Prevalence of anemia among non-pregnant women (% of women ages 15-49)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.ANM.NPRG.ZS",
-      "lastFetched": "2026-07-04T00:46:29.467Z"
+      "lastFetched": "2026-07-06T00:46:06.343Z"
     },
     "topics": [
       "health",
       "nutrition",
+      "anemia",
       "women",
       "gender",
-      "maternal health",
-      "anaemia"
+      "development"
     ],
     "countries": [
       "ZH",
