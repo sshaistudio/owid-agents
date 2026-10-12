@@ -33549,27 +33549,26 @@
     },
     {
       "id": "wb--SE-PRM-CMPT-ZS",
-      "title": "Primary School Completion Rate (% of relevant age group)",
+      "title": "Primary School Completion Rate (% of Relevant Age Group)",
       "description": "Primary completion rate, total (% of relevant age group) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SE.PRM.CMPT.ZS",
         "indicatorName": "Primary completion rate, total (% of relevant age group)",
         "sourceUrl": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
-        "lastFetched": "2026-06-19T00:32:05.201Z"
+        "lastFetched": "2026-07-05T00:33:57.938Z"
       },
       "topics": [
         "education",
         "primary",
         "completion",
         "literacy",
-        "development",
-        "sdg-4"
+        "sdg-4",
+        "learning outcomes"
       ],
       "countries": [
         "ZI",
         "1A",
-        "F1",
         "XE",
         "XI",
         "ZQ",
@@ -33710,7 +33709,7 @@
         "start": "1970",
         "end": "2024"
       },
-      "dataPointCount": 4238,
+      "dataPointCount": 4184,
       "dataFilePath": "datasets/wb--SE-PRM-CMPT-ZS.json"
     },
     {
@@ -33896,22 +33895,22 @@
     },
     {
       "id": "wb--SP-POP-DPND-OL",
-      "title": "Old-Age Dependency Ratio (% of working-age population)",
+      "title": "Old-Age Dependency Ratio (% of Working-Age Population)",
       "description": "Age dependency ratio, old (% of working-age population) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "SP.POP.DPND.OL",
         "indicatorName": "Age dependency ratio, old (% of working-age population)",
         "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
-        "lastFetched": "2026-06-30T00:35:28.879Z"
+        "lastFetched": "2026-07-05T00:34:01.739Z"
       },
       "topics": [
         "aging",
         "demographics",
         "population",
-        "pension",
-        "labor",
-        "development"
+        "social",
+        "elderly",
+        "dependency"
       ],
       "countries": [
         "ZH",
@@ -33928,7 +33927,6 @@
         "7E",
         "T7",
         "EU",
-        "F1",
         "XE",
         "XD",
         "XF",
@@ -34066,7 +34064,8 @@
         "KE",
         "KI",
         "KP",
-        "KR"
+        "KR",
+        "XK"
       ],
       "dateRange": {
         "start": "1960",
@@ -35372,21 +35371,21 @@
     },
     {
       "id": "wb--EG-FEC-RNEW-ZS",
-      "title": "Renewable Energy Share of Total Final Consumption (%)",
+      "title": "Renewable Energy Consumption (% of Total Final Energy)",
       "description": "Renewable energy consumption (% of total final energy consumption) from world-bank",
       "source": {
         "provider": "world-bank",
         "indicatorId": "EG.FEC.RNEW.ZS",
         "indicatorName": "Renewable energy consumption (% of total final energy consumption)",
         "sourceUrl": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
-        "lastFetched": "2026-06-23T00:39:25.654Z"
+        "lastFetched": "2026-07-05T00:34:02.936Z"
       },
       "topics": [
-        "energy",
         "renewable energy",
         "clean energy",
         "environment",
         "climate",
+        "energy transition",
         "sustainability"
       ],
       "countries": [
@@ -35404,7 +35403,6 @@
         "7E",
         "T7",
         "EU",
-        "F1",
         "XE",
         "XD",
         "XF",
@@ -35547,7 +35545,7 @@
         "start": "1990",
         "end": "2022"
       },
-      "dataPointCount": 4831,
+      "dataPointCount": 4800,
       "dataFilePath": "datasets/wb--EG-FEC-RNEW-ZS.json"
     },
     {
@@ -36789,16 +36787,23 @@
         "indicatorId": "FP.CPI.TOTL.ZG",
         "indicatorName": "Inflation, consumer prices (annual %)",
         "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
-        "lastFetched": "2026-06-26T03:31:55.088Z"
+        "lastFetched": "2026-07-05T00:33:56.978Z"
       },
       "topics": [
         "inflation",
         "prices",
         "economics",
-        "monetary policy",
-        "development"
+        "macroeconomics",
+        "monetary policy"
       ],
       "countries": [
+        "XC",
+        "EU",
+        "XJ",
+        "T2",
+        "XU",
+        "OE",
+        "V4",
         "AU",
         "AT",
         "BE",
@@ -36831,61 +36836,100 @@
         "JM",
         "JP",
         "KE",
+        "KR",
         "CI",
         "GM",
         "GA",
         "CD",
+        "T3",
+        "8S",
+        "T5",
         "GH",
+        "V2",
         "BH",
         "BI",
         "SZ",
         "ET",
+        "S3",
+        "ZJ",
         "BS",
         "BB",
         "DM",
         "CM",
+        "XH",
+        "ZQ",
+        "XQ",
         "DZ",
         "FJ",
         "JO",
-        "KR",
+        "XF",
         "CL",
+        "1A",
         "HU",
         "ZH",
+        "ZG",
+        "T6",
+        "XT",
         "BW",
+        "4E",
+        "ZT",
+        "XP",
         "GD",
+        "S1",
         "DJ",
         "ZI",
+        "XE",
+        "XD",
+        "XG",
+        "XO",
+        "XN",
+        "S4",
+        "ZF",
+        "1W",
         "BZ",
         "BT",
         "BR",
         "BN",
         "CF",
         "HK",
+        "XM",
         "CV",
         "TD",
         "AW",
+        "XI",
+        "XL",
+        "V1",
         "BG",
         "CG",
         "HR",
         "GQ",
+        "Z4",
+        "T4",
+        "V3",
         "BD",
         "CN",
         "GW",
+        "B8",
         "AO",
+        "Z7",
         "AL",
         "AZ",
         "CZ",
         "BY",
         "BJ",
         "EE",
+        "7E",
+        "T7",
         "AM",
         "KZ",
         "KH",
         "GE",
         "GY",
         "AG",
+        "S2",
         "KM",
         "CW",
+        "XK",
         "AF",
         "GN",
         "BA",
@@ -36897,7 +36941,7 @@
         "start": "1960",
         "end": "2024"
       },
-      "dataPointCount": 4564,
+      "dataPointCount": 6790,
       "dataFilePath": "datasets/wb--FP-CPI-TOTL-ZG.json"
     },
     {
@@ -38536,13 +38580,15 @@
         "indicatorId": "CANCERSURVIVAL_BREASTCANCER",
         "indicatorName": "Cancer survival for those diagnosed with breast cancer, 5-year net survival (%)",
         "sourceUrl": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/CANCERSURVIVAL_BREASTCANCER",
-        "lastFetched": "2026-07-01T00:44:14.034Z"
+        "lastFetched": "2026-07-05T00:34:07.173Z"
       },
       "topics": [
-        "health",
         "cancer",
-        "women",
+        "health",
         "mortality",
+        "disease",
+        "inequality",
+        "women",
         "noncommunicable disease"
       ],
       "countries": [

@@ -1,27 +1,26 @@
 {
   "meta": {
     "id": "wb--SE-PRM-CMPT-ZS",
-    "title": "Primary School Completion Rate (% of relevant age group)",
+    "title": "Primary School Completion Rate (% of Relevant Age Group)",
     "description": "Primary completion rate, total (% of relevant age group) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.PRM.CMPT.ZS",
       "indicatorName": "Primary completion rate, total (% of relevant age group)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
-      "lastFetched": "2026-06-19T00:32:05.201Z"
+      "lastFetched": "2026-07-05T00:33:57.938Z"
     },
     "topics": [
       "education",
       "primary",
       "completion",
       "literacy",
-      "development",
-      "sdg-4"
+      "sdg-4",
+      "learning outcomes"
     ],
     "countries": [
       "ZI",
       "1A",
-      "F1",
       "XE",
       "XI",
       "ZQ",
@@ -162,7 +161,7 @@
       "start": "1970",
       "end": "2024"
     },
-    "dataPointCount": 4238,
+    "dataPointCount": 4184,
     "dataFilePath": "datasets/wb--SE-PRM-CMPT-ZS.json"
   },
   "data": [
@@ -177,12 +176,6 @@
       "countryName": "Arab World",
       "year": 1970,
       "value": 60.1427001953125
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1970,
-      "value": 50.1360893249512
     },
     {
       "country": "XE",
@@ -249,12 +242,6 @@
       "countryName": "Arab World",
       "year": 1971,
       "value": 59.7624206542969
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1971,
-      "value": 49.885440826416
     },
     {
       "country": "XE",
@@ -459,12 +446,6 @@
       "countryName": "Arab World",
       "year": 1972,
       "value": 59.1708602905273
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1972,
-      "value": 50.1410903930664
     },
     {
       "country": "XE",
@@ -681,12 +662,6 @@
       "countryName": "Arab World",
       "year": 1973,
       "value": 59.777961730957
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1973,
-      "value": 51.1344108581543
     },
     {
       "country": "XE",
@@ -915,12 +890,6 @@
       "countryName": "Arab World",
       "year": 1974,
       "value": 59.9752388000488
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1974,
-      "value": 51.0077095031738
     },
     {
       "country": "XE",
@@ -1179,12 +1148,6 @@
       "countryName": "Caribbean small states",
       "year": 1975,
       "value": 91.5243225097656
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1975,
-      "value": 52.0862007141113
     },
     {
       "country": "XE",
@@ -1449,12 +1412,6 @@
       "countryName": "Caribbean small states",
       "year": 1976,
       "value": 91.0541534423828
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1976,
-      "value": 52.5325889587402
     },
     {
       "country": "XE",
@@ -1769,12 +1726,6 @@
       "value": 93.5693588256836
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1977,
-      "value": 53.6112289428711
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1977,
@@ -2087,12 +2038,6 @@
       "value": 93.376823425293
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1978,
-      "value": 54.5851287841797
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1978,
@@ -2381,12 +2326,6 @@
       "value": 95.1342010498047
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1979,
-      "value": 54.7653198242188
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1979,
@@ -2655,12 +2594,6 @@
       "countryName": "Caribbean small states",
       "year": 1980,
       "value": 93.3055877685547
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1980,
-      "value": 55.3400802612305
     },
     {
       "country": "XE",
@@ -2949,12 +2882,6 @@
       "countryName": "Caribbean small states",
       "year": 1981,
       "value": 94.4775466918945
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1981,
-      "value": 56.1484184265137
     },
     {
       "country": "XE",
@@ -3269,12 +3196,6 @@
       "value": 95.3738098144531
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1982,
-      "value": 56.5252799987793
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1982,
@@ -3549,12 +3470,6 @@
       "countryName": "Caribbean small states",
       "year": 1983,
       "value": 94.2112274169922
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1983,
-      "value": 56.537841796875
     },
     {
       "country": "XE",
@@ -3845,12 +3760,6 @@
       "value": 93.7565231323242
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1984,
-      "value": 57.3603096008301
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1984,
@@ -4139,12 +4048,6 @@
       "value": 90.0361022949219
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1985,
-      "value": 57.6569290161133
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1985,
@@ -4421,12 +4324,6 @@
       "value": 74.262092590332
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1986,
-      "value": 58.2663688659668
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1986,
@@ -4689,12 +4586,6 @@
       "countryName": "Early-demographic dividend",
       "year": 1987,
       "value": 74.4558563232422
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1987,
-      "value": 57.7393684387207
     },
     {
       "country": "XE",
@@ -5001,12 +4892,6 @@
       "countryName": "East Asia & Pacific (IDA & IBRD countries)",
       "year": 1988,
       "value": 103.145530700684
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1988,
-      "value": 57.5368499755859
     },
     {
       "country": "XE",
@@ -5351,12 +5236,6 @@
       "value": 102.97802734375
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1989,
-      "value": 57.5575714111328
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1989,
@@ -5675,12 +5554,6 @@
       "value": 99.7771377563477
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1990,
-      "value": 57.8760185241699
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1990,
@@ -5979,12 +5852,6 @@
       "countryName": "East Asia & Pacific (IDA & IBRD countries)",
       "year": 1991,
       "value": 95.6884994506836
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1991,
-      "value": 58.0404891967773
     },
     {
       "country": "XE",
@@ -6321,12 +6188,6 @@
       "countryName": "East Asia & Pacific (IDA & IBRD countries)",
       "year": 1992,
       "value": 91.6344604492188
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1992,
-      "value": 58.0279312133789
     },
     {
       "country": "XE",
@@ -6683,12 +6544,6 @@
       "value": 91.5077514648438
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1993,
-      "value": 58.3694381713867
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1993,
@@ -7029,12 +6884,6 @@
       "countryName": "East Asia & Pacific (IDA & IBRD countries)",
       "year": 1994,
       "value": 88.8646469116211
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1994,
-      "value": 57.6489410400391
     },
     {
       "country": "XE",
@@ -7415,12 +7264,6 @@
       "value": 94.3628005981445
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1995,
-      "value": 57.1136512756348
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1995,
@@ -7761,12 +7604,6 @@
       "countryName": "East Asia & Pacific (IDA & IBRD countries)",
       "year": 1996,
       "value": 91.16259765625
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1996,
-      "value": 57.0960311889648
     },
     {
       "country": "XE",
@@ -8117,12 +7954,6 @@
       "value": 91.6727066040039
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1997,
-      "value": 56.7694816589355
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1997,
@@ -8441,12 +8272,6 @@
       "value": 92.7435836791992
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1998,
-      "value": 56.413330078125
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 1998,
@@ -8757,12 +8582,6 @@
       "countryName": "European Union",
       "year": 1999,
       "value": 98.111572265625
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 1999,
-      "value": 56.2576484680176
     },
     {
       "country": "XE",
@@ -9273,12 +9092,6 @@
       "countryName": "European Union",
       "year": 2000,
       "value": 98.1151733398438
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2000,
-      "value": 57.1624717712402
     },
     {
       "country": "XE",
@@ -9849,12 +9662,6 @@
       "countryName": "European Union",
       "year": 2001,
       "value": 100.223640441895
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2001,
-      "value": 58.4478607177734
     },
     {
       "country": "XE",
@@ -10473,12 +10280,6 @@
       "countryName": "European Union",
       "year": 2002,
       "value": 99.2682113647461
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2002,
-      "value": 59.3806915283203
     },
     {
       "country": "XE",
@@ -11141,12 +10942,6 @@
       "value": 98.8861694335938
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2003,
-      "value": 60.7153511047363
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2003,
@@ -11781,12 +11576,6 @@
       "countryName": "European Union",
       "year": 2004,
       "value": 99.2575912475586
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2004,
-      "value": 61.8767204284668
     },
     {
       "country": "XE",
@@ -12461,12 +12250,6 @@
       "value": 98.9454727172852
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2005,
-      "value": 63.8876800537109
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2005,
@@ -13127,12 +12910,6 @@
       "value": 98.6799087524414
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2006,
-      "value": 66.0656890869141
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2006,
@@ -13779,12 +13556,6 @@
       "countryName": "European Union",
       "year": 2007,
       "value": 98.90380859375
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2007,
-      "value": 64.6313323974609
     },
     {
       "country": "XE",
@@ -14447,12 +14218,6 @@
       "value": 99.0276184082031
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2008,
-      "value": 63.9313316345215
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2008,
@@ -15111,12 +14876,6 @@
       "countryName": "European Union",
       "year": 2009,
       "value": 98.689323425293
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2009,
-      "value": 65.5614700317383
     },
     {
       "country": "XE",
@@ -15789,12 +15548,6 @@
       "countryName": "European Union",
       "year": 2010,
       "value": 98.5140686035156
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2010,
-      "value": 66.955680847168
     },
     {
       "country": "XE",
@@ -16481,12 +16234,6 @@
       "value": 98.3588485717773
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2011,
-      "value": 66.6321029663086
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2011,
@@ -17171,12 +16918,6 @@
       "value": 97.6279373168945
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2012,
-      "value": 66.8352584838867
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2012,
@@ -17853,12 +17594,6 @@
       "countryName": "European Union",
       "year": 2013,
       "value": 97.5628662109375
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2013,
-      "value": 65.9128112792969
     },
     {
       "country": "XE",
@@ -18539,12 +18274,6 @@
       "value": 97.0506820678711
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2014,
-      "value": 66.2700805664062
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2014,
@@ -19217,12 +18946,6 @@
       "value": 97.6802291870117
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2015,
-      "value": 66.3889236450195
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2015,
@@ -19887,12 +19610,6 @@
       "countryName": "European Union",
       "year": 2016,
       "value": 96.9267196655273
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2016,
-      "value": 67.0385513305664
     },
     {
       "country": "XE",
@@ -20579,12 +20296,6 @@
       "value": 97.3928909301758
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2017,
-      "value": 67.3908920288086
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2017,
@@ -21237,12 +20948,6 @@
       "countryName": "European Union",
       "year": 2018,
       "value": 96.2794494628906
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2018,
-      "value": 68.0734329223633
     },
     {
       "country": "XE",
@@ -21903,12 +21608,6 @@
       "countryName": "European Union",
       "year": 2019,
       "value": 96.5203475952148
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2019,
-      "value": 68.6295166015625
     },
     {
       "country": "XE",
@@ -22577,12 +22276,6 @@
       "value": 96.4519805908203
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2020,
-      "value": 69.1967010498047
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2020,
@@ -23223,12 +22916,6 @@
       "countryName": "European Union",
       "year": 2021,
       "value": 97.2294235229492
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2021,
-      "value": 69.3914794921875
     },
     {
       "country": "XE",
@@ -23873,12 +23560,6 @@
       "value": 96.4560394287109
     },
     {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2022,
-      "value": 68.5898132324219
-    },
-    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2022,
@@ -24507,12 +24188,6 @@
       "countryName": "European Union",
       "year": 2023,
       "value": 97.3585662841797
-    },
-    {
-      "country": "F1",
-      "countryName": "Fragile and conflict affected situations",
-      "year": 2023,
-      "value": 68.0504837036133
     },
     {
       "country": "XE",
