@@ -1,18 +1,19 @@
 {
   "meta": {
     "id": "wb--EG-FEC-RNEW-ZS",
-    "title": "Renewable Energy Share of Total Final Energy Consumption",
+    "title": "Renewable Energy Consumption (% of Total Final Energy)",
     "description": "Renewable energy consumption (% of total final energy consumption) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "EG.FEC.RNEW.ZS",
       "indicatorName": "Renewable energy consumption (% of total final energy consumption)",
       "sourceUrl": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
-      "lastFetched": "2026-08-24T00:32:58.558Z"
+      "lastFetched": "2026-09-28T01:14:12.854Z"
     },
     "topics": [
       "energy",
-      "renewables",
+      "renewable energy",
+      "clean energy",
       "environment",
       "climate",
       "sustainability"
