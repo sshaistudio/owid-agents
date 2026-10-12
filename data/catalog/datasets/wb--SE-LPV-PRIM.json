@@ -1,23 +1,22 @@
 {
   "meta": {
     "id": "wb--SE-LPV-PRIM",
-    "title": "Learning Poverty: Children Below Minimum Reading Proficiency at End of Primary School (%)",
+    "title": "Learning Poverty Rate (% of Children Below Minimum Reading Proficiency)",
     "description": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SE.LPV.PRIM",
       "indicatorName": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%)",
       "sourceUrl": "https://data.worldbank.org/indicator/SE.LPV.PRIM",
-      "lastFetched": "2026-09-14T02:10:41.092Z"
+      "lastFetched": "2026-10-12T00:36:11.799Z"
     },
     "topics": [
       "education",
-      "learning outcomes",
       "literacy",
-      "poverty",
       "children",
-      "sdg-4",
-      "proficiency"
+      "learning outcomes",
+      "development",
+      "sdg-4"
     ],
     "countries": [
       "BZ",
@@ -113,7 +112,6 @@
       "GN",
       "AL",
       "JO",
-      "XK",
       "BD",
       "KE"
     ],
@@ -121,7 +119,7 @@
       "start": "2001",
       "end": "2023"
     },
-    "dataPointCount": 226,
+    "dataPointCount": 225,
     "dataFilePath": "datasets/wb--SE-LPV-PRIM.json"
   },
   "data": [
@@ -1462,12 +1460,6 @@
       "countryName": "Kazakhstan",
       "year": 2021,
       "value": 10.4149551391601
-    },
-    {
-      "country": "XK",
-      "countryName": "Kosovo",
-      "year": 2021,
-      "value": 37.9216194152832
     },
     {
       "country": "BD",

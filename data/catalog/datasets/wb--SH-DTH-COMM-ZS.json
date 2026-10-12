@@ -1,0 +1,5100 @@
+{
+  "meta": {
+    "id": "wb--SH-DTH-COMM-ZS",
+    "title": "Cause of Death: Communicable Diseases (% of Total)",
+    "description": "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total) from world-bank",
+    "source": {
+      "provider": "world-bank",
+      "indicatorId": "SH.DTH.COMM.ZS",
+      "indicatorName": "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",
+      "sourceUrl": "https://data.worldbank.org/indicator/SH.DTH.COMM.ZS",
+      "lastFetched": "2026-10-12T00:36:05.589Z"
+    },
+    "topics": [
+      "health",
+      "mortality",
+      "infectious disease",
+      "epidemiology",
+      "development"
+    ],
+    "countries": [
+      "ZH",
+      "ZI",
+      "1A",
+      "S3",
+      "B8",
+      "V2",
+      "Z4",
+      "4E",
+      "T4",
+      "XC",
+      "Z7",
+      "7E",
+      "T7",
+      "EU",
+      "F2",
+      "XE",
+      "XD",
+      "XF",
+      "ZT",
+      "XH",
+      "XI",
+      "XG",
+      "V3",
+      "ZJ",
+      "XJ",
+      "T2",
+      "XL",
+      "XO",
+      "XM",
+      "XN",
+      "ZQ",
+      "XQ",
+      "T3",
+      "XP",
+      "XU",
+      "OE",
+      "S4",
+      "S2",
+      "V4",
+      "V1",
+      "S1",
+      "8S",
+      "T5",
+      "ZG",
+      "ZF",
+      "T6",
+      "XT",
+      "1W",
+      "AF",
+      "AL",
+      "DZ",
+      "AO",
+      "AG",
+      "AR",
+      "AM",
+      "AU",
+      "AT",
+      "AZ",
+      "BS",
+      "BH",
+      "BD",
+      "BB",
+      "BY",
+      "BE",
+      "BZ",
+      "BJ",
+      "BT",
+      "BO",
+      "BA",
+      "BW",
+      "BR",
+      "BN",
+      "BG",
+      "BF",
+      "BI",
+      "CV",
+      "KH",
+      "CM",
+      "CA",
+      "CF",
+      "TD",
+      "CL",
+      "CN",
+      "CO",
+      "KM",
+      "CD",
+      "CG",
+      "CR",
+      "CI",
+      "HR",
+      "CU",
+      "CY",
+      "CZ",
+      "DK",
+      "DJ",
+      "DO",
+      "EC",
+      "EG",
+      "SV",
+      "GQ",
+      "ER",
+      "EE",
+      "SZ",
+      "ET",
+      "FJ",
+      "FI",
+      "FR",
+      "GA",
+      "GM",
+      "GE",
+      "DE",
+      "GH",
+      "GR",
+      "GD",
+      "GT",
+      "GN",
+      "GW",
+      "GY",
+      "HT",
+      "HN",
+      "HU",
+      "IS",
+      "IN",
+      "ID",
+      "IR",
+      "IQ",
+      "IE",
+      "IL",
+      "IT",
+      "JM",
+      "JP",
+      "JO",
+      "KZ",
+      "KE",
+      "KI",
+      "KP",
+      "KR"
+    ],
+    "dateRange": {
+      "start": "2000",
+      "end": "2021"
+    },
+    "dataPointCount": 822,
+    "dataFilePath": "datasets/wb--SH-DTH-COMM-ZS.json"
+  },
+  "data": [
+    {
+      "country": "ZH",
+      "countryName": "Africa Eastern and Southern",
+      "year": 2000,
+      "value": 71.8802696605483
+    },
+    {
+      "country": "ZI",
+      "countryName": "Africa Western and Central",
+      "year": 2000,
+      "value": 74.6109937687449
+    },
+    {
+      "country": "1A",
+      "countryName": "Arab World",
+      "year": 2000,
+      "value": 34.8690703036362
+    },
+    {
+      "country": "S3",
+      "countryName": "Caribbean small states",
+      "year": 2000,
+      "value": 19.7302826160703
+    },
+    {
+      "country": "B8",
+      "countryName": "Central Europe and the Baltics",
+      "year": 2000,
+      "value": 3.68031110880824
+    },
+    {
+      "country": "V2",
+      "countryName": "Early-demographic dividend",
+      "year": 2000,
+      "value": 47.012610973746
+    },
+    {
+      "country": "Z4",
+      "countryName": "East Asia & Pacific",
+      "year": 2000,
+      "value": 15.6466727994164
+    },
+    {
+      "country": "4E",
+      "countryName": "East Asia & Pacific (excluding high income)",
+      "year": 2000,
+      "value": 16.2016747717149
+    },
+    {
+      "country": "T4",
+      "countryName": "East Asia & Pacific (IDA & IBRD countries)",
+      "year": 2000,
+      "value": 15.696482643348
+    },
+    {
+      "country": "XC",
+      "countryName": "Euro area",
+      "year": 2000,
+      "value": 4.86130569285234
+    },
+    {
+      "country": "Z7",
+      "countryName": "Europe & Central Asia",
+      "year": 2000,
+      "value": 5.97069903742675
+    },
+    {
+      "country": "7E",
+      "countryName": "Europe & Central Asia (excluding high income)",
+      "year": 2000,
+      "value": 8.76916832182422
+    },
+    {
+      "country": "T7",
+      "countryName": "Europe & Central Asia (IDA & IBRD countries)",
+      "year": 2000,
+      "value": 6.11497616717309
+    },
+    {
+      "country": "EU",
+      "countryName": "European Union",
+      "year": 2000,
+      "value": 4.63624809229511
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2000,
+      "value": 59.1083383418175
+    },
+    {
+      "country": "XE",
+      "countryName": "Heavily indebted poor countries (HIPC)",
+      "year": 2000,
+      "value": 70.8382885333148
+    },
+    {
+      "country": "XD",
+      "countryName": "High income",
+      "year": 2000,
+      "value": 6.21579988556562
+    },
+    {
+      "country": "XF",
+      "countryName": "IBRD only",
+      "year": 2000,
+      "value": 26.1609449224613
+    },
+    {
+      "country": "ZT",
+      "countryName": "IDA & IBRD total",
+      "year": 2000,
+      "value": 37.4302627493533
+    },
+    {
+      "country": "XH",
+      "countryName": "IDA blend",
+      "year": 2000,
+      "value": 65.5733192785977
+    },
+    {
+      "country": "XI",
+      "countryName": "IDA only",
+      "year": 2000,
+      "value": 64.0664636542705
+    },
+    {
+      "country": "XG",
+      "countryName": "IDA total",
+      "year": 2000,
+      "value": 64.5960283010394
+    },
+    {
+      "country": "V3",
+      "countryName": "Late-demographic dividend",
+      "year": 2000,
+      "value": 10.4521236473113
+    },
+    {
+      "country": "ZJ",
+      "countryName": "Latin America & Caribbean",
+      "year": 2000,
+      "value": 20.2253193526322
+    },
+    {
+      "country": "XJ",
+      "countryName": "Latin America & Caribbean (excluding high income)",
+      "year": 2000,
+      "value": 20.8194176816219
+    },
+    {
+      "country": "T2",
+      "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
+      "year": 2000,
+      "value": 20.6390722695494
+    },
+    {
+      "country": "XL",
+      "countryName": "Least developed countries: UN classification",
+      "year": 2000,
+      "value": 66.2736108751346
+    },
+    {
+      "country": "XO",
+      "countryName": "Low & middle income",
+      "year": 2000,
+      "value": 40.0001837523785
+    },
+    {
+      "country": "XM",
+      "countryName": "Low income",
+      "year": 2000,
+      "value": 68.6709453187429
+    },
+    {
+      "country": "XN",
+      "countryName": "Lower middle income",
+      "year": 2000,
+      "value": 55.8160735301369
+    },
+    {
+      "country": "ZQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
+      "year": 2000,
+      "value": 38.9668737974634
+    },
+    {
+      "country": "XQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+      "year": 2000,
+      "value": 40.0056802001437
+    },
+    {
+      "country": "T3",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+      "year": 2000,
+      "value": 40.0897443534704
+    },
+    {
+      "country": "XP",
+      "countryName": "Middle income",
+      "year": 2000,
+      "value": 35.8388066058008
+    },
+    {
+      "country": "XU",
+      "countryName": "North America",
+      "year": 2000,
+      "value": 6.22109194883625
+    },
+    {
+      "country": "OE",
+      "countryName": "OECD members",
+      "year": 2000,
+      "value": 7.4627540486605
+    },
+    {
+      "country": "S4",
+      "countryName": "Other small states",
+      "year": 2000,
+      "value": 32.4949511373402
+    },
+    {
+      "country": "S2",
+      "countryName": "Pacific island small states",
+      "year": 2000,
+      "value": 20.8814905311263
+    },
+    {
+      "country": "V4",
+      "countryName": "Post-demographic dividend",
+      "year": 2000,
+      "value": 6.42771838325007
+    },
+    {
+      "country": "V1",
+      "countryName": "Pre-demographic dividend",
+      "year": 2000,
+      "value": 73.2219720393652
+    },
+    {
+      "country": "S1",
+      "countryName": "Small states",
+      "year": 2000,
+      "value": 28.6846865702004
+    },
+    {
+      "country": "8S",
+      "countryName": "South Asia",
+      "year": 2000,
+      "value": 52.069272355065
+    },
+    {
+      "country": "T5",
+      "countryName": "South Asia (IDA & IBRD)",
+      "year": 2000,
+      "value": 52.069272355065
+    },
+    {
+      "country": "ZG",
+      "countryName": "Sub-Saharan Africa",
+      "year": 2000,
+      "value": 72.9719265003409
+    },
+    {
+      "country": "ZF",
+      "countryName": "Sub-Saharan Africa (excluding high income)",
+      "year": 2000,
+      "value": 72.9759019341039
+    },
+    {
+      "country": "T6",
+      "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
+      "year": 2000,
+      "value": 72.971926500341
+    },
+    {
+      "country": "XT",
+      "countryName": "Upper middle income",
+      "year": 2000,
+      "value": 15.6960917953102
+    },
+    {
+      "country": "1W",
+      "countryName": "World",
+      "year": 2000,
+      "value": 32.4343027896073
+    },
+    {
+      "country": "AF",
+      "countryName": "Afghanistan",
+      "year": 2000,
+      "value": 60.9624483595695
+    },
+    {
+      "country": "AL",
+      "countryName": "Albania",
+      "year": 2000,
+      "value": 8.73078771592839
+    },
+    {
+      "country": "DZ",
+      "countryName": "Algeria",
+      "year": 2000,
+      "value": 19.4143421343327
+    },
+    {
+      "country": "AO",
+      "countryName": "Angola",
+      "year": 2000,
+      "value": 72.8803905882544
+    },
+    {
+      "country": "AG",
+      "countryName": "Antigua and Barbuda",
+      "year": 2000,
+      "value": 13.2831171218475
+    },
+    {
+      "country": "AR",
+      "countryName": "Argentina",
+      "year": 2000,
+      "value": 12.6978529174744
+    },
+    {
+      "country": "AM",
+      "countryName": "Armenia",
+      "year": 2000,
+      "value": 5.20174454158638
+    },
+    {
+      "country": "AU",
+      "countryName": "Australia",
+      "year": 2000,
+      "value": 4.41045086332496
+    },
+    {
+      "country": "AT",
+      "countryName": "Austria",
+      "year": 2000,
+      "value": 2.69032371933675
+    },
+    {
+      "country": "AZ",
+      "countryName": "Azerbaijan",
+      "year": 2000,
+      "value": 17.5182332347885
+    },
+    {
+      "country": "BS",
+      "countryName": "Bahamas, The",
+      "year": 2000,
+      "value": 20.6218550444758
+    },
+    {
+      "country": "BH",
+      "countryName": "Bahrain",
+      "year": 2000,
+      "value": 6.12379332587365
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "year": 2000,
+      "value": 50.9670074292021
+    },
+    {
+      "country": "BB",
+      "countryName": "Barbados",
+      "year": 2000,
+      "value": 12.0355081547052
+    },
+    {
+      "country": "BY",
+      "countryName": "Belarus",
+      "year": 2000,
+      "value": 2.04791063679399
+    },
+    {
+      "country": "BE",
+      "countryName": "Belgium",
+      "year": 2000,
+      "value": 7.60558532540048
+    },
+    {
+      "country": "BZ",
+      "countryName": "Belize",
+      "year": 2000,
+      "value": 21.0833028603586
+    },
+    {
+      "country": "BJ",
+      "countryName": "Benin",
+      "year": 2000,
+      "value": 67.686628633412
+    },
+    {
+      "country": "BT",
+      "countryName": "Bhutan",
+      "year": 2000,
+      "value": 42.0314853120945
+    },
+    {
+      "country": "BO",
+      "countryName": "Bolivia",
+      "year": 2000,
+      "value": 38.8989029135025
+    },
+    {
+      "country": "BA",
+      "countryName": "Bosnia and Herzegovina",
+      "year": 2000,
+      "value": 3.08656700315995
+    },
+    {
+      "country": "BW",
+      "countryName": "Botswana",
+      "year": 2000,
+      "value": 78.2120812581842
+    },
+    {
+      "country": "BR",
+      "countryName": "Brazil",
+      "year": 2000,
+      "value": 18.6808576007313
+    },
+    {
+      "country": "BN",
+      "countryName": "Brunei Darussalam",
+      "year": 2000,
+      "value": 9.63540189395182
+    },
+    {
+      "country": "BG",
+      "countryName": "Bulgaria",
+      "year": 2000,
+      "value": 3.28767346092345
+    },
+    {
+      "country": "BF",
+      "countryName": "Burkina Faso",
+      "year": 2000,
+      "value": 73.3915697663215
+    },
+    {
+      "country": "BI",
+      "countryName": "Burundi",
+      "year": 2000,
+      "value": 62.3234681344466
+    },
+    {
+      "country": "CV",
+      "countryName": "Cabo Verde",
+      "year": 2000,
+      "value": 35.0752228999221
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "year": 2000,
+      "value": 52.2621028149912
+    },
+    {
+      "country": "CM",
+      "countryName": "Cameroon",
+      "year": 2000,
+      "value": 71.3843941833485
+    },
+    {
+      "country": "CA",
+      "countryName": "Canada",
+      "year": 2000,
+      "value": 4.58157819412493
+    },
+    {
+      "country": "CF",
+      "countryName": "Central African Republic",
+      "year": 2000,
+      "value": 75.2091426973133
+    },
+    {
+      "country": "TD",
+      "countryName": "Chad",
+      "year": 2000,
+      "value": 76.0199594436587
+    },
+    {
+      "country": "CL",
+      "countryName": "Chile",
+      "year": 2000,
+      "value": 10.9825168005424
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "year": 2000,
+      "value": 9.1170714474038
+    },
+    {
+      "country": "CO",
+      "countryName": "Colombia",
+      "year": 2000,
+      "value": 14.2630018883695
+    },
+    {
+      "country": "KM",
+      "countryName": "Comoros",
+      "year": 2000,
+      "value": 49.4752876084657
+    },
+    {
+      "country": "CD",
+      "countryName": "Congo, Dem. Rep.",
+      "year": 2000,
+      "value": 71.8863507105396
+    },
+    {
+      "country": "CG",
+      "countryName": "Congo, Rep.",
+      "year": 2000,
+      "value": 60.8868107069835
+    },
+    {
+      "country": "CR",
+      "countryName": "Costa Rica",
+      "year": 2000,
+      "value": 9.17124071174104
+    },
+    {
+      "country": "CI",
+      "countryName": "Cote d'Ivoire",
+      "year": 2000,
+      "value": 79.6911803678277
+    },
+    {
+      "country": "HR",
+      "countryName": "Croatia",
+      "year": 2000,
+      "value": 3.32059805859406
+    },
+    {
+      "country": "CU",
+      "countryName": "Cuba",
+      "year": 2000,
+      "value": 8.78229629605176
+    },
+    {
+      "country": "CY",
+      "countryName": "Cyprus",
+      "year": 2000,
+      "value": 3.9553566843609
+    },
+    {
+      "country": "CZ",
+      "countryName": "Czechia",
+      "year": 2000,
+      "value": 3.05733670889086
+    },
+    {
+      "country": "DK",
+      "countryName": "Denmark",
+      "year": 2000,
+      "value": 3.79245315808177
+    },
+    {
+      "country": "DJ",
+      "countryName": "Djibouti",
+      "year": 2000,
+      "value": 64.1642190790645
+    },
+    {
+      "country": "DO",
+      "countryName": "Dominican Republic",
+      "year": 2000,
+      "value": 35.4996789471491
+    },
+    {
+      "country": "EC",
+      "countryName": "Ecuador",
+      "year": 2000,
+      "value": 20.9298169876447
+    },
+    {
+      "country": "EG",
+      "countryName": "Egypt, Arab Rep.",
+      "year": 2000,
+      "value": 23.5528306045059
+    },
+    {
+      "country": "SV",
+      "countryName": "El Salvador",
+      "year": 2000,
+      "value": 21.6158150971385
+    },
+    {
+      "country": "GQ",
+      "countryName": "Equatorial Guinea",
+      "year": 2000,
+      "value": 68.1287168538869
+    },
+    {
+      "country": "ER",
+      "countryName": "Eritrea",
+      "year": 2000,
+      "value": 51.5211057751745
+    },
+    {
+      "country": "EE",
+      "countryName": "Estonia",
+      "year": 2000,
+      "value": 3.0342971409913
+    },
+    {
+      "country": "SZ",
+      "countryName": "Eswatini",
+      "year": 2000,
+      "value": 74.5796904566675
+    },
+    {
+      "country": "ET",
+      "countryName": "Ethiopia",
+      "year": 2000,
+      "value": 70.7978830424622
+    },
+    {
+      "country": "FJ",
+      "countryName": "Fiji",
+      "year": 2000,
+      "value": 11.7894594544239
+    },
+    {
+      "country": "FI",
+      "countryName": "Finland",
+      "year": 2000,
+      "value": 7.00447897970121
+    },
+    {
+      "country": "FR",
+      "countryName": "France",
+      "year": 2000,
+      "value": 6.67428305813889
+    },
+    {
+      "country": "GA",
+      "countryName": "Gabon",
+      "year": 2000,
+      "value": 58.807041961362
+    },
+    {
+      "country": "GM",
+      "countryName": "Gambia, The",
+      "year": 2000,
+      "value": 63.5951725783481
+    },
+    {
+      "country": "GE",
+      "countryName": "Georgia",
+      "year": 2000,
+      "value": 5.67891708697807
+    },
+    {
+      "country": "DE",
+      "countryName": "Germany",
+      "year": 2000,
+      "value": 4.01908203487125
+    },
+    {
+      "country": "GH",
+      "countryName": "Ghana",
+      "year": 2000,
+      "value": 64.8564947132949
+    },
+    {
+      "country": "GR",
+      "countryName": "Greece",
+      "year": 2000,
+      "value": 3.89752324536745
+    },
+    {
+      "country": "GD",
+      "countryName": "Grenada",
+      "year": 2000,
+      "value": 14.6220203416122
+    },
+    {
+      "country": "GT",
+      "countryName": "Guatemala",
+      "year": 2000,
+      "value": 46.3706222221212
+    },
+    {
+      "country": "GN",
+      "countryName": "Guinea",
+      "year": 2000,
+      "value": 71.8001588510055
+    },
+    {
+      "country": "GW",
+      "countryName": "Guinea-Bissau",
+      "year": 2000,
+      "value": 68.3832312359985
+    },
+    {
+      "country": "GY",
+      "countryName": "Guyana",
+      "year": 2000,
+      "value": 28.3080119373561
+    },
+    {
+      "country": "HT",
+      "countryName": "Haiti",
+      "year": 2000,
+      "value": 47.638701389079
+    },
+    {
+      "country": "HN",
+      "countryName": "Honduras",
+      "year": 2000,
+      "value": 32.1189527473056
+    },
+    {
+      "country": "HU",
+      "countryName": "Hungary",
+      "year": 2000,
+      "value": 1.84589230247559
+    },
+    {
+      "country": "IS",
+      "countryName": "Iceland",
+      "year": 2000,
+      "value": 5.95273703425798
+    },
+    {
+      "country": "IN",
+      "countryName": "India",
+      "year": 2000,
+      "value": 52.7038850123775
+    },
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "year": 2000,
+      "value": 32.2477002082801
+    },
+    {
+      "country": "IR",
+      "countryName": "Iran, Islamic Rep.",
+      "year": 2000,
+      "value": 13.85148580198
+    },
+    {
+      "country": "IQ",
+      "countryName": "Iraq",
+      "year": 2000,
+      "value": 28.9170426443178
+    },
+    {
+      "country": "IE",
+      "countryName": "Ireland",
+      "year": 2000,
+      "value": 9.46123623269134
+    },
+    {
+      "country": "IL",
+      "countryName": "Israel",
+      "year": 2000,
+      "value": 7.1027109574561
+    },
+    {
+      "country": "IT",
+      "countryName": "Italy",
+      "year": 2000,
+      "value": 3.3661308791466
+    },
+    {
+      "country": "JM",
+      "countryName": "Jamaica",
+      "year": 2000,
+      "value": 17.4353091099225
+    },
+    {
+      "country": "JP",
+      "countryName": "Japan",
+      "year": 2000,
+      "value": 12.2721412607982
+    },
+    {
+      "country": "JO",
+      "countryName": "Jordan",
+      "year": 2000,
+      "value": 18.0558481301684
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "year": 2000,
+      "value": 9.87631334392548
+    },
+    {
+      "country": "KE",
+      "countryName": "Kenya",
+      "year": 2000,
+      "value": 81.0380050603262
+    },
+    {
+      "country": "KI",
+      "countryName": "Kiribati",
+      "year": 2000,
+      "value": 33.9818476892207
+    },
+    {
+      "country": "KP",
+      "countryName": "Korea, Dem. People's Rep.",
+      "year": 2000,
+      "value": 43.1379948643473
+    },
+    {
+      "country": "KR",
+      "countryName": "Korea, Rep.",
+      "year": 2000,
+      "value": 6.7761356254167
+    },
+    {
+      "country": "ZH",
+      "countryName": "Africa Eastern and Southern",
+      "year": 2010,
+      "value": 62.9812863503773
+    },
+    {
+      "country": "ZI",
+      "countryName": "Africa Western and Central",
+      "year": 2010,
+      "value": 68.1481947722394
+    },
+    {
+      "country": "1A",
+      "countryName": "Arab World",
+      "year": 2010,
+      "value": 27.1446277436636
+    },
+    {
+      "country": "S3",
+      "countryName": "Caribbean small states",
+      "year": 2010,
+      "value": 14.2726950317324
+    },
+    {
+      "country": "B8",
+      "countryName": "Central Europe and the Baltics",
+      "year": 2010,
+      "value": 3.32385536147329
+    },
+    {
+      "country": "V2",
+      "countryName": "Early-demographic dividend",
+      "year": 2010,
+      "value": 33.564670092094
+    },
+    {
+      "country": "Z4",
+      "countryName": "East Asia & Pacific",
+      "year": 2010,
+      "value": 10.393267944023
+    },
+    {
+      "country": "4E",
+      "countryName": "East Asia & Pacific (excluding high income)",
+      "year": 2010,
+      "value": 10.2561294892875
+    },
+    {
+      "country": "T4",
+      "countryName": "East Asia & Pacific (IDA & IBRD countries)",
+      "year": 2010,
+      "value": 10.1791540836197
+    },
+    {
+      "country": "XC",
+      "countryName": "Euro area",
+      "year": 2010,
+      "value": 4.80295448894674
+    },
+    {
+      "country": "Z7",
+      "countryName": "Europe & Central Asia",
+      "year": 2010,
+      "value": 5.10559975989243
+    },
+    {
+      "country": "7E",
+      "countryName": "Europe & Central Asia (excluding high income)",
+      "year": 2010,
+      "value": 6.33693356772038
+    },
+    {
+      "country": "T7",
+      "countryName": "Europe & Central Asia (IDA & IBRD countries)",
+      "year": 2010,
+      "value": 5.05425562779218
+    },
+    {
+      "country": "EU",
+      "countryName": "European Union",
+      "year": 2010,
+      "value": 4.56207551889872
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2010,
+      "value": 52.0085468579719
+    },
+    {
+      "country": "XE",
+      "countryName": "Heavily indebted poor countries (HIPC)",
+      "year": 2010,
+      "value": 60.6864213632581
+    },
+    {
+      "country": "XD",
+      "countryName": "High income",
+      "year": 2010,
+      "value": 6.06739937195428
+    },
+    {
+      "country": "XF",
+      "countryName": "IBRD only",
+      "year": 2010,
+      "value": 18.1226460606725
+    },
+    {
+      "country": "ZT",
+      "countryName": "IDA & IBRD total",
+      "year": 2010,
+      "value": 28.0749826645384
+    },
+    {
+      "country": "XH",
+      "countryName": "IDA blend",
+      "year": 2010,
+      "value": 57.7655915723832
+    },
+    {
+      "country": "XI",
+      "countryName": "IDA only",
+      "year": 2010,
+      "value": 53.0003517859965
+    },
+    {
+      "country": "XG",
+      "countryName": "IDA total",
+      "year": 2010,
+      "value": 54.7868640153045
+    },
+    {
+      "country": "V3",
+      "countryName": "Late-demographic dividend",
+      "year": 2010,
+      "value": 6.62139573287553
+    },
+    {
+      "country": "ZJ",
+      "countryName": "Latin America & Caribbean",
+      "year": 2010,
+      "value": 14.2569608419815
+    },
+    {
+      "country": "XJ",
+      "countryName": "Latin America & Caribbean (excluding high income)",
+      "year": 2010,
+      "value": 14.5853252115743
+    },
+    {
+      "country": "T2",
+      "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
+      "year": 2010,
+      "value": 14.5036246640307
+    },
+    {
+      "country": "XL",
+      "countryName": "Least developed countries: UN classification",
+      "year": 2010,
+      "value": 55.4481836877551
+    },
+    {
+      "country": "XO",
+      "countryName": "Low & middle income",
+      "year": 2010,
+      "value": 29.662470789507
+    },
+    {
+      "country": "XM",
+      "countryName": "Low income",
+      "year": 2010,
+      "value": 59.7252344061345
+    },
+    {
+      "country": "XN",
+      "countryName": "Lower middle income",
+      "year": 2010,
+      "value": 42.3750486736549
+    },
+    {
+      "country": "ZQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
+      "year": 2010,
+      "value": 30.5818306311213
+    },
+    {
+      "country": "XQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+      "year": 2010,
+      "value": 31.4549396938413
+    },
+    {
+      "country": "T3",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+      "year": 2010,
+      "value": 31.5175920004515
+    },
+    {
+      "country": "XP",
+      "countryName": "Middle income",
+      "year": 2010,
+      "value": 25.923386122444
+    },
+    {
+      "country": "XU",
+      "countryName": "North America",
+      "year": 2010,
+      "value": 5.70683686725377
+    },
+    {
+      "country": "OE",
+      "countryName": "OECD members",
+      "year": 2010,
+      "value": 6.81690769848502
+    },
+    {
+      "country": "S4",
+      "countryName": "Other small states",
+      "year": 2010,
+      "value": 28.3878792511011
+    },
+    {
+      "country": "S2",
+      "countryName": "Pacific island small states",
+      "year": 2010,
+      "value": 16.4074448389883
+    },
+    {
+      "country": "V4",
+      "countryName": "Post-demographic dividend",
+      "year": 2010,
+      "value": 6.34397080634377
+    },
+    {
+      "country": "V1",
+      "countryName": "Pre-demographic dividend",
+      "year": 2010,
+      "value": 65.7371717062184
+    },
+    {
+      "country": "S1",
+      "countryName": "Small states",
+      "year": 2010,
+      "value": 24.0936177374894
+    },
+    {
+      "country": "8S",
+      "countryName": "South Asia",
+      "year": 2010,
+      "value": 36.2006212604278
+    },
+    {
+      "country": "T5",
+      "countryName": "South Asia (IDA & IBRD)",
+      "year": 2010,
+      "value": 36.2006212604278
+    },
+    {
+      "country": "ZG",
+      "countryName": "Sub-Saharan Africa",
+      "year": 2010,
+      "value": 65.1651854316533
+    },
+    {
+      "country": "ZF",
+      "countryName": "Sub-Saharan Africa (excluding high income)",
+      "year": 2010,
+      "value": 65.1694016111557
+    },
+    {
+      "country": "T6",
+      "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
+      "year": 2010,
+      "value": 65.1651854316533
+    },
+    {
+      "country": "XT",
+      "countryName": "Upper middle income",
+      "year": 2010,
+      "value": 11.3293000333255
+    },
+    {
+      "country": "1W",
+      "countryName": "World",
+      "year": 2010,
+      "value": 24.4851630822405
+    },
+    {
+      "country": "AF",
+      "countryName": "Afghanistan",
+      "year": 2010,
+      "value": 49.5387998149725
+    },
+    {
+      "country": "AL",
+      "countryName": "Albania",
+      "year": 2010,
+      "value": 3.97028950019676
+    },
+    {
+      "country": "DZ",
+      "countryName": "Algeria",
+      "year": 2010,
+      "value": 15.964247038232
+    },
+    {
+      "country": "AO",
+      "countryName": "Angola",
+      "year": 2010,
+      "value": 67.4540851682449
+    },
+    {
+      "country": "AG",
+      "countryName": "Antigua and Barbuda",
+      "year": 2010,
+      "value": 14.3131228531582
+    },
+    {
+      "country": "AR",
+      "countryName": "Argentina",
+      "year": 2010,
+      "value": 14.8354091790285
+    },
+    {
+      "country": "AM",
+      "countryName": "Armenia",
+      "year": 2010,
+      "value": 4.29658306981706
+    },
+    {
+      "country": "AU",
+      "countryName": "Australia",
+      "year": 2010,
+      "value": 3.9758594307296
+    },
+    {
+      "country": "AT",
+      "countryName": "Austria",
+      "year": 2010,
+      "value": 2.78089123220823
+    },
+    {
+      "country": "AZ",
+      "countryName": "Azerbaijan",
+      "year": 2010,
+      "value": 10.4047004436459
+    },
+    {
+      "country": "BS",
+      "countryName": "Bahamas, The",
+      "year": 2010,
+      "value": 10.1551406464721
+    },
+    {
+      "country": "BH",
+      "countryName": "Bahrain",
+      "year": 2010,
+      "value": 5.83878010047144
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "year": 2010,
+      "value": 33.5660822335873
+    },
+    {
+      "country": "BB",
+      "countryName": "Barbados",
+      "year": 2010,
+      "value": 9.66393892242397
+    },
+    {
+      "country": "BY",
+      "countryName": "Belarus",
+      "year": 2010,
+      "value": 2.05301418902098
+    },
+    {
+      "country": "BE",
+      "countryName": "Belgium",
+      "year": 2010,
+      "value": 7.36711903000834
+    },
+    {
+      "country": "BZ",
+      "countryName": "Belize",
+      "year": 2010,
+      "value": 18.4093363216687
+    },
+    {
+      "country": "BJ",
+      "countryName": "Benin",
+      "year": 2010,
+      "value": 60.6128028718355
+    },
+    {
+      "country": "BT",
+      "countryName": "Bhutan",
+      "year": 2010,
+      "value": 27.7159047432746
+    },
+    {
+      "country": "BO",
+      "countryName": "Bolivia",
+      "year": 2010,
+      "value": 28.7817909315225
+    },
+    {
+      "country": "BA",
+      "countryName": "Bosnia and Herzegovina",
+      "year": 2010,
+      "value": 2.33012888177843
+    },
+    {
+      "country": "BW",
+      "countryName": "Botswana",
+      "year": 2010,
+      "value": 59.2149431196259
+    },
+    {
+      "country": "BR",
+      "countryName": "Brazil",
+      "year": 2010,
+      "value": 14.217466990012
+    },
+    {
+      "country": "BN",
+      "countryName": "Brunei Darussalam",
+      "year": 2010,
+      "value": 11.1244089040751
+    },
+    {
+      "country": "BG",
+      "countryName": "Bulgaria",
+      "year": 2010,
+      "value": 2.4048297667633
+    },
+    {
+      "country": "BF",
+      "countryName": "Burkina Faso",
+      "year": 2010,
+      "value": 65.3504291140362
+    },
+    {
+      "country": "BI",
+      "countryName": "Burundi",
+      "year": 2010,
+      "value": 63.247556692343
+    },
+    {
+      "country": "CV",
+      "countryName": "Cabo Verde",
+      "year": 2010,
+      "value": 24.7718556500044
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "year": 2010,
+      "value": 31.6891171835514
+    },
+    {
+      "country": "CM",
+      "countryName": "Cameroon",
+      "year": 2010,
+      "value": 63.6816002526921
+    },
+    {
+      "country": "CA",
+      "countryName": "Canada",
+      "year": 2010,
+      "value": 5.22471794657739
+    },
+    {
+      "country": "CF",
+      "countryName": "Central African Republic",
+      "year": 2010,
+      "value": 73.0554529607823
+    },
+    {
+      "country": "TD",
+      "countryName": "Chad",
+      "year": 2010,
+      "value": 72.5383530325293
+    },
+    {
+      "country": "CL",
+      "countryName": "Chile",
+      "year": 2010,
+      "value": 8.22558790714338
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "year": 2010,
+      "value": 4.95412973221738
+    },
+    {
+      "country": "CO",
+      "countryName": "Colombia",
+      "year": 2010,
+      "value": 11.1859719099012
+    },
+    {
+      "country": "KM",
+      "countryName": "Comoros",
+      "year": 2010,
+      "value": 44.782642604179
+    },
+    {
+      "country": "CD",
+      "countryName": "Congo, Dem. Rep.",
+      "year": 2010,
+      "value": 65.2643754796676
+    },
+    {
+      "country": "CG",
+      "countryName": "Congo, Rep.",
+      "year": 2010,
+      "value": 57.769483509775
+    },
+    {
+      "country": "CR",
+      "countryName": "Costa Rica",
+      "year": 2010,
+      "value": 7.03761972664075
+    },
+    {
+      "country": "CI",
+      "countryName": "Cote d'Ivoire",
+      "year": 2010,
+      "value": 67.4957863312689
+    },
+    {
+      "country": "HR",
+      "countryName": "Croatia",
+      "year": 2010,
+      "value": 1.69531655601335
+    },
+    {
+      "country": "CU",
+      "countryName": "Cuba",
+      "year": 2010,
+      "value": 7.24551699243733
+    },
+    {
+      "country": "CY",
+      "countryName": "Cyprus",
+      "year": 2010,
+      "value": 3.92117233527451
+    },
+    {
+      "country": "CZ",
+      "countryName": "Czechia",
+      "year": 2010,
+      "value": 4.57711774395194
+    },
+    {
+      "country": "DK",
+      "countryName": "Denmark",
+      "year": 2010,
+      "value": 6.61167669689565
+    },
+    {
+      "country": "DJ",
+      "countryName": "Djibouti",
+      "year": 2010,
+      "value": 55.6393074112499
+    },
+    {
+      "country": "DO",
+      "countryName": "Dominican Republic",
+      "year": 2010,
+      "value": 24.7541149278268
+    },
+    {
+      "country": "EC",
+      "countryName": "Ecuador",
+      "year": 2010,
+      "value": 16.2307246922465
+    },
+    {
+      "country": "EG",
+      "countryName": "Egypt, Arab Rep.",
+      "year": 2010,
+      "value": 14.1314710864137
+    },
+    {
+      "country": "SV",
+      "countryName": "El Salvador",
+      "year": 2010,
+      "value": 11.7629157768257
+    },
+    {
+      "country": "GQ",
+      "countryName": "Equatorial Guinea",
+      "year": 2010,
+      "value": 67.1848524064946
+    },
+    {
+      "country": "ER",
+      "countryName": "Eritrea",
+      "year": 2010,
+      "value": 44.5878327104543
+    },
+    {
+      "country": "EE",
+      "countryName": "Estonia",
+      "year": 2010,
+      "value": 2.04012079055247
+    },
+    {
+      "country": "SZ",
+      "countryName": "Eswatini",
+      "year": 2010,
+      "value": 64.1903749781521
+    },
+    {
+      "country": "ET",
+      "countryName": "Ethiopia",
+      "year": 2010,
+      "value": 62.9178074282546
+    },
+    {
+      "country": "FJ",
+      "countryName": "Fiji",
+      "year": 2010,
+      "value": 9.92470552548722
+    },
+    {
+      "country": "FI",
+      "countryName": "Finland",
+      "year": 2010,
+      "value": 2.02834882450653
+    },
+    {
+      "country": "FR",
+      "countryName": "France",
+      "year": 2010,
+      "value": 6.0073680448146
+    },
+    {
+      "country": "GA",
+      "countryName": "Gabon",
+      "year": 2010,
+      "value": 53.4127363202201
+    },
+    {
+      "country": "GM",
+      "countryName": "Gambia, The",
+      "year": 2010,
+      "value": 58.8707040121845
+    },
+    {
+      "country": "GE",
+      "countryName": "Georgia",
+      "year": 2010,
+      "value": 3.12430213043904
+    },
+    {
+      "country": "DE",
+      "countryName": "Germany",
+      "year": 2010,
+      "value": 4.68231380715095
+    },
+    {
+      "country": "GH",
+      "countryName": "Ghana",
+      "year": 2010,
+      "value": 54.9498601623797
+    },
+    {
+      "country": "GR",
+      "countryName": "Greece",
+      "year": 2010,
+      "value": 5.74599246011325
+    },
+    {
+      "country": "GD",
+      "countryName": "Grenada",
+      "year": 2010,
+      "value": 10.5420749813881
+    },
+    {
+      "country": "GT",
+      "countryName": "Guatemala",
+      "year": 2010,
+      "value": 29.0373098257318
+    },
+    {
+      "country": "GN",
+      "countryName": "Guinea",
+      "year": 2010,
+      "value": 62.4670361214039
+    },
+    {
+      "country": "GW",
+      "countryName": "Guinea-Bissau",
+      "year": 2010,
+      "value": 65.3327942166948
+    },
+    {
+      "country": "GY",
+      "countryName": "Guyana",
+      "year": 2010,
+      "value": 22.4610313827564
+    },
+    {
+      "country": "HT",
+      "countryName": "Haiti",
+      "year": 2010,
+      "value": 11.1409753033807
+    },
+    {
+      "country": "HN",
+      "countryName": "Honduras",
+      "year": 2010,
+      "value": 19.7350448852367
+    },
+    {
+      "country": "HU",
+      "countryName": "Hungary",
+      "year": 2010,
+      "value": 1.4990840811414
+    },
+    {
+      "country": "IS",
+      "countryName": "Iceland",
+      "year": 2010,
+      "value": 4.6445319503839
+    },
+    {
+      "country": "IN",
+      "countryName": "India",
+      "year": 2010,
+      "value": 36.8357981425921
+    },
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "year": 2010,
+      "value": 23.662788075145
+    },
+    {
+      "country": "IR",
+      "countryName": "Iran, Islamic Rep.",
+      "year": 2010,
+      "value": 9.42713098124546
+    },
+    {
+      "country": "IQ",
+      "countryName": "Iraq",
+      "year": 2010,
+      "value": 24.091030066093
+    },
+    {
+      "country": "IE",
+      "countryName": "Ireland",
+      "year": 2010,
+      "value": 6.35589537800393
+    },
+    {
+      "country": "IL",
+      "countryName": "Israel",
+      "year": 2010,
+      "value": 8.06805102781932
+    },
+    {
+      "country": "IT",
+      "countryName": "Italy",
+      "year": 2010,
+      "value": 3.64740083108753
+    },
+    {
+      "country": "JM",
+      "countryName": "Jamaica",
+      "year": 2010,
+      "value": 12.6318352795104
+    },
+    {
+      "country": "JP",
+      "countryName": "Japan",
+      "year": 2010,
+      "value": 13.6347209927361
+    },
+    {
+      "country": "JO",
+      "countryName": "Jordan",
+      "year": 2010,
+      "value": 14.5423850382299
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "year": 2010,
+      "value": 6.41185855379786
+    },
+    {
+      "country": "KE",
+      "countryName": "Kenya",
+      "year": 2010,
+      "value": 66.6342746980752
+    },
+    {
+      "country": "KI",
+      "countryName": "Kiribati",
+      "year": 2010,
+      "value": 29.9383432806421
+    },
+    {
+      "country": "KP",
+      "countryName": "Korea, Dem. People's Rep.",
+      "year": 2010,
+      "value": 15.0158148863262
+    },
+    {
+      "country": "KR",
+      "countryName": "Korea, Rep.",
+      "year": 2010,
+      "value": 7.16586854148486
+    },
+    {
+      "country": "ZH",
+      "countryName": "Africa Eastern and Southern",
+      "year": 2015,
+      "value": 55.8552577626782
+    },
+    {
+      "country": "ZI",
+      "countryName": "Africa Western and Central",
+      "year": 2015,
+      "value": 64.4366015657985
+    },
+    {
+      "country": "1A",
+      "countryName": "Arab World",
+      "year": 2015,
+      "value": 21.2414430987165
+    },
+    {
+      "country": "S3",
+      "countryName": "Caribbean small states",
+      "year": 2015,
+      "value": 12.3995893730105
+    },
+    {
+      "country": "B8",
+      "countryName": "Central Europe and the Baltics",
+      "year": 2015,
+      "value": 3.95830370738824
+    },
+    {
+      "country": "V2",
+      "countryName": "Early-demographic dividend",
+      "year": 2015,
+      "value": 26.3139011362589
+    },
+    {
+      "country": "Z4",
+      "countryName": "East Asia & Pacific",
+      "year": 2015,
+      "value": 9.06775870385593
+    },
+    {
+      "country": "4E",
+      "countryName": "East Asia & Pacific (excluding high income)",
+      "year": 2015,
+      "value": 8.71637686777525
+    },
+    {
+      "country": "T4",
+      "countryName": "East Asia & Pacific (IDA & IBRD countries)",
+      "year": 2015,
+      "value": 8.70607921813764
+    },
+    {
+      "country": "XC",
+      "countryName": "Euro area",
+      "year": 2015,
+      "value": 5.58552033847487
+    },
+    {
+      "country": "Z7",
+      "countryName": "Europe & Central Asia",
+      "year": 2015,
+      "value": 5.45434061926972
+    },
+    {
+      "country": "7E",
+      "countryName": "Europe & Central Asia (excluding high income)",
+      "year": 2015,
+      "value": 5.76381132970005
+    },
+    {
+      "country": "T7",
+      "countryName": "Europe & Central Asia (IDA & IBRD countries)",
+      "year": 2015,
+      "value": 4.98178862376729
+    },
+    {
+      "country": "EU",
+      "countryName": "European Union",
+      "year": 2015,
+      "value": 5.34785075340282
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2015,
+      "value": 48.2222046818518
+    },
+    {
+      "country": "XE",
+      "countryName": "Heavily indebted poor countries (HIPC)",
+      "year": 2015,
+      "value": 56.3738095704216
+    },
+    {
+      "country": "XD",
+      "countryName": "High income",
+      "year": 2015,
+      "value": 6.51296933347264
+    },
+    {
+      "country": "XF",
+      "countryName": "IBRD only",
+      "year": 2015,
+      "value": 14.5198007041909
+    },
+    {
+      "country": "ZT",
+      "countryName": "IDA & IBRD total",
+      "year": 2015,
+      "value": 23.8083485642394
+    },
+    {
+      "country": "XH",
+      "countryName": "IDA blend",
+      "year": 2015,
+      "value": 52.9799993566325
+    },
+    {
+      "country": "XI",
+      "countryName": "IDA only",
+      "year": 2015,
+      "value": 47.7942879870228
+    },
+    {
+      "country": "XG",
+      "countryName": "IDA total",
+      "year": 2015,
+      "value": 49.7552885129851
+    },
+    {
+      "country": "V3",
+      "countryName": "Late-demographic dividend",
+      "year": 2015,
+      "value": 6.04630328560244
+    },
+    {
+      "country": "ZJ",
+      "countryName": "Latin America & Caribbean",
+      "year": 2015,
+      "value": 14.239359971514
+    },
+    {
+      "country": "XJ",
+      "countryName": "Latin America & Caribbean (excluding high income)",
+      "year": 2015,
+      "value": 14.6250462879158
+    },
+    {
+      "country": "T2",
+      "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
+      "year": 2015,
+      "value": 14.4637850808617
+    },
+    {
+      "country": "XL",
+      "countryName": "Least developed countries: UN classification",
+      "year": 2015,
+      "value": 50.8449363987503
+    },
+    {
+      "country": "XO",
+      "countryName": "Low & middle income",
+      "year": 2015,
+      "value": 24.9836196290125
+    },
+    {
+      "country": "XM",
+      "countryName": "Low income",
+      "year": 2015,
+      "value": 52.6681496603752
+    },
+    {
+      "country": "XN",
+      "countryName": "Lower middle income",
+      "year": 2015,
+      "value": 35.1442971126711
+    },
+    {
+      "country": "ZQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
+      "year": 2015,
+      "value": 24.6236123440862
+    },
+    {
+      "country": "XQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+      "year": 2015,
+      "value": 25.2702658386495
+    },
+    {
+      "country": "T3",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+      "year": 2015,
+      "value": 25.3088503067695
+    },
+    {
+      "country": "XP",
+      "countryName": "Middle income",
+      "year": 2015,
+      "value": 21.5609234962751
+    },
+    {
+      "country": "XU",
+      "countryName": "North America",
+      "year": 2015,
+      "value": 5.72356777416623
+    },
+    {
+      "country": "OE",
+      "countryName": "OECD members",
+      "year": 2015,
+      "value": 7.128369881284
+    },
+    {
+      "country": "S4",
+      "countryName": "Other small states",
+      "year": 2015,
+      "value": 24.2396866812688
+    },
+    {
+      "country": "S2",
+      "countryName": "Pacific island small states",
+      "year": 2015,
+      "value": 14.7185013790264
+    },
+    {
+      "country": "V4",
+      "countryName": "Post-demographic dividend",
+      "year": 2015,
+      "value": 6.74905817282661
+    },
+    {
+      "country": "V1",
+      "countryName": "Pre-demographic dividend",
+      "year": 2015,
+      "value": 60.5563038207515
+    },
+    {
+      "country": "S1",
+      "countryName": "Small states",
+      "year": 2015,
+      "value": 20.5131687377634
+    },
+    {
+      "country": "8S",
+      "countryName": "South Asia",
+      "year": 2015,
+      "value": 27.0874774709168
+    },
+    {
+      "country": "T5",
+      "countryName": "South Asia (IDA & IBRD)",
+      "year": 2015,
+      "value": 27.0874774709168
+    },
+    {
+      "country": "ZG",
+      "countryName": "Sub-Saharan Africa",
+      "year": 2015,
+      "value": 59.6403504116024
+    },
+    {
+      "country": "ZF",
+      "countryName": "Sub-Saharan Africa (excluding high income)",
+      "year": 2015,
+      "value": 59.644649466402
+    },
+    {
+      "country": "T6",
+      "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
+      "year": 2015,
+      "value": 59.6403504116025
+    },
+    {
+      "country": "XT",
+      "countryName": "Upper middle income",
+      "year": 2015,
+      "value": 9.71320766889444
+    },
+    {
+      "country": "1W",
+      "countryName": "World",
+      "year": 2015,
+      "value": 20.8499179493034
+    },
+    {
+      "country": "AF",
+      "countryName": "Afghanistan",
+      "year": 2015,
+      "value": 41.8928134845624
+    },
+    {
+      "country": "AL",
+      "countryName": "Albania",
+      "year": 2015,
+      "value": 3.45640958176196
+    },
+    {
+      "country": "DZ",
+      "countryName": "Algeria",
+      "year": 2015,
+      "value": 14.5461178196362
+    },
+    {
+      "country": "AO",
+      "countryName": "Angola",
+      "year": 2015,
+      "value": 62.2689352246269
+    },
+    {
+      "country": "AG",
+      "countryName": "Antigua and Barbuda",
+      "year": 2015,
+      "value": 11.6978340454717
+    },
+    {
+      "country": "AR",
+      "countryName": "Argentina",
+      "year": 2015,
+      "value": 16.1174014888282
+    },
+    {
+      "country": "AM",
+      "countryName": "Armenia",
+      "year": 2015,
+      "value": 4.72868692758724
+    },
+    {
+      "country": "AU",
+      "countryName": "Australia",
+      "year": 2015,
+      "value": 4.60786064585654
+    },
+    {
+      "country": "AT",
+      "countryName": "Austria",
+      "year": 2015,
+      "value": 2.6844875181263
+    },
+    {
+      "country": "AZ",
+      "countryName": "Azerbaijan",
+      "year": 2015,
+      "value": 8.51578568007404
+    },
+    {
+      "country": "BS",
+      "countryName": "Bahamas, The",
+      "year": 2015,
+      "value": 9.48801419340478
+    },
+    {
+      "country": "BH",
+      "countryName": "Bahrain",
+      "year": 2015,
+      "value": 5.50726835958247
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "year": 2015,
+      "value": 27.8444448021518
+    },
+    {
+      "country": "BB",
+      "countryName": "Barbados",
+      "year": 2015,
+      "value": 9.2109900747165
+    },
+    {
+      "country": "BY",
+      "countryName": "Belarus",
+      "year": 2015,
+      "value": 1.66626250375662
+    },
+    {
+      "country": "BE",
+      "countryName": "Belgium",
+      "year": 2015,
+      "value": 7.98064765339945
+    },
+    {
+      "country": "BZ",
+      "countryName": "Belize",
+      "year": 2015,
+      "value": 18.5306829434951
+    },
+    {
+      "country": "BJ",
+      "countryName": "Benin",
+      "year": 2015,
+      "value": 57.282097333015
+    },
+    {
+      "country": "BT",
+      "countryName": "Bhutan",
+      "year": 2015,
+      "value": 20.6184533871583
+    },
+    {
+      "country": "BO",
+      "countryName": "Bolivia",
+      "year": 2015,
+      "value": 24.7282553310721
+    },
+    {
+      "country": "BA",
+      "countryName": "Bosnia and Herzegovina",
+      "year": 2015,
+      "value": 2.01546450667276
+    },
+    {
+      "country": "BW",
+      "countryName": "Botswana",
+      "year": 2015,
+      "value": 53.3721260814799
+    },
+    {
+      "country": "BR",
+      "countryName": "Brazil",
+      "year": 2015,
+      "value": 14.6235594048516
+    },
+    {
+      "country": "BN",
+      "countryName": "Brunei Darussalam",
+      "year": 2015,
+      "value": 14.0797422517461
+    },
+    {
+      "country": "BG",
+      "countryName": "Bulgaria",
+      "year": 2015,
+      "value": 2.13711775001711
+    },
+    {
+      "country": "BF",
+      "countryName": "Burkina Faso",
+      "year": 2015,
+      "value": 57.8476962176554
+    },
+    {
+      "country": "BI",
+      "countryName": "Burundi",
+      "year": 2015,
+      "value": 56.5747149364569
+    },
+    {
+      "country": "CV",
+      "countryName": "Cabo Verde",
+      "year": 2015,
+      "value": 18.7076985550938
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "year": 2015,
+      "value": 25.3908622581705
+    },
+    {
+      "country": "CM",
+      "countryName": "Cameroon",
+      "year": 2015,
+      "value": 58.1228783053332
+    },
+    {
+      "country": "CA",
+      "countryName": "Canada",
+      "year": 2015,
+      "value": 5.59374452602841
+    },
+    {
+      "country": "CF",
+      "countryName": "Central African Republic",
+      "year": 2015,
+      "value": 69.1167898590642
+    },
+    {
+      "country": "TD",
+      "countryName": "Chad",
+      "year": 2015,
+      "value": 70.2605825969102
+    },
+    {
+      "country": "CL",
+      "countryName": "Chile",
+      "year": 2015,
+      "value": 7.62606057397591
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "year": 2015,
+      "value": 4.0733655151777
+    },
+    {
+      "country": "CO",
+      "countryName": "Colombia",
+      "year": 2015,
+      "value": 10.5289291990302
+    },
+    {
+      "country": "KM",
+      "countryName": "Comoros",
+      "year": 2015,
+      "value": 38.9099084780851
+    },
+    {
+      "country": "CD",
+      "countryName": "Congo, Dem. Rep.",
+      "year": 2015,
+      "value": 60.9307534299789
+    },
+    {
+      "country": "CG",
+      "countryName": "Congo, Rep.",
+      "year": 2015,
+      "value": 58.6944709734212
+    },
+    {
+      "country": "CR",
+      "countryName": "Costa Rica",
+      "year": 2015,
+      "value": 7.41076427694773
+    },
+    {
+      "country": "CI",
+      "countryName": "Cote d'Ivoire",
+      "year": 2015,
+      "value": 59.1417424477216
+    },
+    {
+      "country": "HR",
+      "countryName": "Croatia",
+      "year": 2015,
+      "value": 2.09970080806331
+    },
+    {
+      "country": "CU",
+      "countryName": "Cuba",
+      "year": 2015,
+      "value": 8.45693422803048
+    },
+    {
+      "country": "CY",
+      "countryName": "Cyprus",
+      "year": 2015,
+      "value": 4.57664598267131
+    },
+    {
+      "country": "CZ",
+      "countryName": "Czechia",
+      "year": 2015,
+      "value": 5.08845384167018
+    },
+    {
+      "country": "DK",
+      "countryName": "Denmark",
+      "year": 2015,
+      "value": 6.41678756622089
+    },
+    {
+      "country": "DJ",
+      "countryName": "Djibouti",
+      "year": 2015,
+      "value": 46.4619747992814
+    },
+    {
+      "country": "DO",
+      "countryName": "Dominican Republic",
+      "year": 2015,
+      "value": 19.9012897249571
+    },
+    {
+      "country": "EC",
+      "countryName": "Ecuador",
+      "year": 2015,
+      "value": 13.9230040748214
+    },
+    {
+      "country": "EG",
+      "countryName": "Egypt, Arab Rep.",
+      "year": 2015,
+      "value": 11.0483239474535
+    },
+    {
+      "country": "SV",
+      "countryName": "El Salvador",
+      "year": 2015,
+      "value": 10.1872758307764
+    },
+    {
+      "country": "GQ",
+      "countryName": "Equatorial Guinea",
+      "year": 2015,
+      "value": 66.450274266381
+    },
+    {
+      "country": "ER",
+      "countryName": "Eritrea",
+      "year": 2015,
+      "value": 40.2291079948839
+    },
+    {
+      "country": "EE",
+      "countryName": "Estonia",
+      "year": 2015,
+      "value": 2.7665620476669
+    },
+    {
+      "country": "SZ",
+      "countryName": "Eswatini",
+      "year": 2015,
+      "value": 58.5028978483406
+    },
+    {
+      "country": "ET",
+      "countryName": "Ethiopia",
+      "year": 2015,
+      "value": 56.03019983908
+    },
+    {
+      "country": "FJ",
+      "countryName": "Fiji",
+      "year": 2015,
+      "value": 9.34691910636426
+    },
+    {
+      "country": "FI",
+      "countryName": "Finland",
+      "year": 2015,
+      "value": 1.35036037480835
+    },
+    {
+      "country": "FR",
+      "countryName": "France",
+      "year": 2015,
+      "value": 6.91861203502287
+    },
+    {
+      "country": "GA",
+      "countryName": "Gabon",
+      "year": 2015,
+      "value": 47.28081303574
+    },
+    {
+      "country": "GM",
+      "countryName": "Gambia, The",
+      "year": 2015,
+      "value": 53.1691470670585
+    },
+    {
+      "country": "GE",
+      "countryName": "Georgia",
+      "year": 2015,
+      "value": 5.24807471147744
+    },
+    {
+      "country": "DE",
+      "countryName": "Germany",
+      "year": 2015,
+      "value": 5.04985313156462
+    },
+    {
+      "country": "GH",
+      "countryName": "Ghana",
+      "year": 2015,
+      "value": 48.953599665203
+    },
+    {
+      "country": "GR",
+      "countryName": "Greece",
+      "year": 2015,
+      "value": 10.4468048750297
+    },
+    {
+      "country": "GD",
+      "countryName": "Grenada",
+      "year": 2015,
+      "value": 12.5561846179605
+    },
+    {
+      "country": "GT",
+      "countryName": "Guatemala",
+      "year": 2015,
+      "value": 24.4963849221168
+    },
+    {
+      "country": "GN",
+      "countryName": "Guinea",
+      "year": 2015,
+      "value": 60.8661092136816
+    },
+    {
+      "country": "GW",
+      "countryName": "Guinea-Bissau",
+      "year": 2015,
+      "value": 62.0238352893597
+    },
+    {
+      "country": "GY",
+      "countryName": "Guyana",
+      "year": 2015,
+      "value": 19.4061900837543
+    },
+    {
+      "country": "HT",
+      "countryName": "Haiti",
+      "year": 2015,
+      "value": 31.2242016766566
+    },
+    {
+      "country": "HN",
+      "countryName": "Honduras",
+      "year": 2015,
+      "value": 15.1806125738098
+    },
+    {
+      "country": "HU",
+      "countryName": "Hungary",
+      "year": 2015,
+      "value": 2.09624258587245
+    },
+    {
+      "country": "IS",
+      "countryName": "Iceland",
+      "year": 2015,
+      "value": 4.56657945009562
+    },
+    {
+      "country": "IN",
+      "countryName": "India",
+      "year": 2015,
+      "value": 27.2977388024525
+    },
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "year": 2015,
+      "value": 19.8269522333883
+    },
+    {
+      "country": "IR",
+      "countryName": "Iran, Islamic Rep.",
+      "year": 2015,
+      "value": 7.99814891923834
+    },
+    {
+      "country": "IQ",
+      "countryName": "Iraq",
+      "year": 2015,
+      "value": 17.4897625872206
+    },
+    {
+      "country": "IE",
+      "countryName": "Ireland",
+      "year": 2015,
+      "value": 6.30565421524364
+    },
+    {
+      "country": "IL",
+      "countryName": "Israel",
+      "year": 2015,
+      "value": 10.387493600761
+    },
+    {
+      "country": "IT",
+      "countryName": "Italy",
+      "year": 2015,
+      "value": 5.17483874936745
+    },
+    {
+      "country": "JM",
+      "countryName": "Jamaica",
+      "year": 2015,
+      "value": 11.4028304789413
+    },
+    {
+      "country": "JP",
+      "countryName": "Japan",
+      "year": 2015,
+      "value": 13.5824167351054
+    },
+    {
+      "country": "JO",
+      "countryName": "Jordan",
+      "year": 2015,
+      "value": 12.5895257168778
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "year": 2015,
+      "value": 5.31524333376031
+    },
+    {
+      "country": "KE",
+      "countryName": "Kenya",
+      "year": 2015,
+      "value": 58.1989744486982
+    },
+    {
+      "country": "KI",
+      "countryName": "Kiribati",
+      "year": 2015,
+      "value": 28.5506487894543
+    },
+    {
+      "country": "KP",
+      "countryName": "Korea, Dem. People's Rep.",
+      "year": 2015,
+      "value": 9.32192039192181
+    },
+    {
+      "country": "KR",
+      "countryName": "Korea, Rep.",
+      "year": 2015,
+      "value": 9.84252163560969
+    },
+    {
+      "country": "ZH",
+      "countryName": "Africa Eastern and Southern",
+      "year": 2019,
+      "value": 50.6099185863474
+    },
+    {
+      "country": "ZI",
+      "countryName": "Africa Western and Central",
+      "year": 2019,
+      "value": 61.1987671752752
+    },
+    {
+      "country": "1A",
+      "countryName": "Arab World",
+      "year": 2019,
+      "value": 19.7274637473109
+    },
+    {
+      "country": "S3",
+      "countryName": "Caribbean small states",
+      "year": 2019,
+      "value": 10.7956783080594
+    },
+    {
+      "country": "B8",
+      "countryName": "Central Europe and the Baltics",
+      "year": 2019,
+      "value": 4.74222469529935
+    },
+    {
+      "country": "V2",
+      "countryName": "Early-demographic dividend",
+      "year": 2019,
+      "value": 22.19629046798
+    },
+    {
+      "country": "Z4",
+      "countryName": "East Asia & Pacific",
+      "year": 2019,
+      "value": 7.95110926118826
+    },
+    {
+      "country": "4E",
+      "countryName": "East Asia & Pacific (excluding high income)",
+      "year": 2019,
+      "value": 7.62691628726513
+    },
+    {
+      "country": "T4",
+      "countryName": "East Asia & Pacific (IDA & IBRD countries)",
+      "year": 2019,
+      "value": 7.56208815828313
+    },
+    {
+      "country": "XC",
+      "countryName": "Euro area",
+      "year": 2019,
+      "value": 5.62083935231062
+    },
+    {
+      "country": "Z7",
+      "countryName": "Europe & Central Asia",
+      "year": 2019,
+      "value": 5.29881263595355
+    },
+    {
+      "country": "7E",
+      "countryName": "Europe & Central Asia (excluding high income)",
+      "year": 2019,
+      "value": 5.22347589617277
+    },
+    {
+      "country": "T7",
+      "countryName": "Europe & Central Asia (IDA & IBRD countries)",
+      "year": 2019,
+      "value": 4.7352421163374
+    },
+    {
+      "country": "EU",
+      "countryName": "European Union",
+      "year": 2019,
+      "value": 5.57253123592399
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2019,
+      "value": 44.7020032388889
+    },
+    {
+      "country": "XE",
+      "countryName": "Heavily indebted poor countries (HIPC)",
+      "year": 2019,
+      "value": 51.5781464548206
+    },
+    {
+      "country": "XD",
+      "countryName": "High income",
+      "year": 2019,
+      "value": 6.18474978653997
+    },
+    {
+      "country": "XF",
+      "countryName": "IBRD only",
+      "year": 2019,
+      "value": 12.3264794465031
+    },
+    {
+      "country": "ZT",
+      "countryName": "IDA & IBRD total",
+      "year": 2019,
+      "value": 20.7756747855109
+    },
+    {
+      "country": "XH",
+      "countryName": "IDA blend",
+      "year": 2019,
+      "value": 49.2897659559017
+    },
+    {
+      "country": "XI",
+      "countryName": "IDA only",
+      "year": 2019,
+      "value": 43.1775787350232
+    },
+    {
+      "country": "XG",
+      "countryName": "IDA total",
+      "year": 2019,
+      "value": 45.4321912310493
+    },
+    {
+      "country": "V3",
+      "countryName": "Late-demographic dividend",
+      "year": 2019,
+      "value": 5.54892913179981
+    },
+    {
+      "country": "ZJ",
+      "countryName": "Latin America & Caribbean",
+      "year": 2019,
+      "value": 13.8513652344457
+    },
+    {
+      "country": "XJ",
+      "countryName": "Latin America & Caribbean (excluding high income)",
+      "year": 2019,
+      "value": 14.1666553514729
+    },
+    {
+      "country": "T2",
+      "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
+      "year": 2019,
+      "value": 14.027708752968
+    },
+    {
+      "country": "XL",
+      "countryName": "Least developed countries: UN classification",
+      "year": 2019,
+      "value": 45.5804862674242
+    },
+    {
+      "country": "XO",
+      "countryName": "Low & middle income",
+      "year": 2019,
+      "value": 21.7104548803699
+    },
+    {
+      "country": "XM",
+      "countryName": "Low income",
+      "year": 2019,
+      "value": 48.6581087800487
+    },
+    {
+      "country": "XN",
+      "countryName": "Lower middle income",
+      "year": 2019,
+      "value": 30.1398397541594
+    },
+    {
+      "country": "ZQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
+      "year": 2019,
+      "value": 21.7086998698823
+    },
+    {
+      "country": "XQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+      "year": 2019,
+      "value": 22.2736171679095
+    },
+    {
+      "country": "T3",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+      "year": 2019,
+      "value": 22.3085570553675
+    },
+    {
+      "country": "XP",
+      "countryName": "Middle income",
+      "year": 2019,
+      "value": 18.4759856187716
+    },
+    {
+      "country": "XU",
+      "countryName": "North America",
+      "year": 2019,
+      "value": 5.08961912941688
+    },
+    {
+      "country": "OE",
+      "countryName": "OECD members",
+      "year": 2019,
+      "value": 6.82741630812413
+    },
+    {
+      "country": "S4",
+      "countryName": "Other small states",
+      "year": 2019,
+      "value": 20.4473975426487
+    },
+    {
+      "country": "S2",
+      "countryName": "Pacific island small states",
+      "year": 2019,
+      "value": 14.4162913817907
+    },
+    {
+      "country": "V4",
+      "countryName": "Post-demographic dividend",
+      "year": 2019,
+      "value": 6.25757659851824
+    },
+    {
+      "country": "V1",
+      "countryName": "Pre-demographic dividend",
+      "year": 2019,
+      "value": 56.2071908605301
+    },
+    {
+      "country": "S1",
+      "countryName": "Small states",
+      "year": 2019,
+      "value": 17.5346073355139
+    },
+    {
+      "country": "8S",
+      "countryName": "South Asia",
+      "year": 2019,
+      "value": 21.5986676394195
+    },
+    {
+      "country": "T5",
+      "countryName": "South Asia (IDA & IBRD)",
+      "year": 2019,
+      "value": 21.5986676394195
+    },
+    {
+      "country": "ZG",
+      "countryName": "Sub-Saharan Africa",
+      "year": 2019,
+      "value": 55.2062550732363
+    },
+    {
+      "country": "ZF",
+      "countryName": "Sub-Saharan Africa (excluding high income)",
+      "year": 2019,
+      "value": 55.2107562711444
+    },
+    {
+      "country": "T6",
+      "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
+      "year": 2019,
+      "value": 55.2062550732363
+    },
+    {
+      "country": "XT",
+      "countryName": "Upper middle income",
+      "year": 2019,
+      "value": 8.74839612083527
+    },
+    {
+      "country": "1W",
+      "countryName": "World",
+      "year": 2019,
+      "value": 18.2908295889405
+    },
+    {
+      "country": "AF",
+      "countryName": "Afghanistan",
+      "year": 2019,
+      "value": 34.6999786128974
+    },
+    {
+      "country": "AL",
+      "countryName": "Albania",
+      "year": 2019,
+      "value": 3.31891338870116
+    },
+    {
+      "country": "DZ",
+      "countryName": "Algeria",
+      "year": 2019,
+      "value": 12.7651230191142
+    },
+    {
+      "country": "AO",
+      "countryName": "Angola",
+      "year": 2019,
+      "value": 57.1772720297183
+    },
+    {
+      "country": "AG",
+      "countryName": "Antigua and Barbuda",
+      "year": 2019,
+      "value": 9.60929467466023
+    },
+    {
+      "country": "AR",
+      "countryName": "Argentina",
+      "year": 2019,
+      "value": 17.4498078516924
+    },
+    {
+      "country": "AM",
+      "countryName": "Armenia",
+      "year": 2019,
+      "value": 7.34131032093157
+    },
+    {
+      "country": "AU",
+      "countryName": "Australia",
+      "year": 2019,
+      "value": 4.89843094909796
+    },
+    {
+      "country": "AT",
+      "countryName": "Austria",
+      "year": 2019,
+      "value": 3.60225763022282
+    },
+    {
+      "country": "AZ",
+      "countryName": "Azerbaijan",
+      "year": 2019,
+      "value": 6.25682019436042
+    },
+    {
+      "country": "BS",
+      "countryName": "Bahamas, The",
+      "year": 2019,
+      "value": 6.93978080074773
+    },
+    {
+      "country": "BH",
+      "countryName": "Bahrain",
+      "year": 2019,
+      "value": 5.02969301730191
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "year": 2019,
+      "value": 21.7101855375349
+    },
+    {
+      "country": "BB",
+      "countryName": "Barbados",
+      "year": 2019,
+      "value": 8.36285354803012
+    },
+    {
+      "country": "BY",
+      "countryName": "Belarus",
+      "year": 2019,
+      "value": 1.53441452312803
+    },
+    {
+      "country": "BE",
+      "countryName": "Belgium",
+      "year": 2019,
+      "value": 8.68545560805597
+    },
+    {
+      "country": "BZ",
+      "countryName": "Belize",
+      "year": 2019,
+      "value": 16.6800079649781
+    },
+    {
+      "country": "BJ",
+      "countryName": "Benin",
+      "year": 2019,
+      "value": 54.7126301158935
+    },
+    {
+      "country": "BT",
+      "countryName": "Bhutan",
+      "year": 2019,
+      "value": 16.3597714197921
+    },
+    {
+      "country": "BO",
+      "countryName": "Bolivia",
+      "year": 2019,
+      "value": 21.9755008085922
+    },
+    {
+      "country": "BA",
+      "countryName": "Bosnia and Herzegovina",
+      "year": 2019,
+      "value": 1.88799935113379
+    },
+    {
+      "country": "BW",
+      "countryName": "Botswana",
+      "year": 2019,
+      "value": 52.1364281845063
+    },
+    {
+      "country": "BR",
+      "countryName": "Brazil",
+      "year": 2019,
+      "value": 14.0257587170462
+    },
+    {
+      "country": "BN",
+      "countryName": "Brunei Darussalam",
+      "year": 2019,
+      "value": 10.9445065578749
+    },
+    {
+      "country": "BG",
+      "countryName": "Bulgaria",
+      "year": 2019,
+      "value": 2.15838018606689
+    },
+    {
+      "country": "BF",
+      "countryName": "Burkina Faso",
+      "year": 2019,
+      "value": 52.3338381998252
+    },
+    {
+      "country": "BI",
+      "countryName": "Burundi",
+      "year": 2019,
+      "value": 52.0689189061514
+    },
+    {
+      "country": "CV",
+      "countryName": "Cabo Verde",
+      "year": 2019,
+      "value": 16.7793753242354
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "year": 2019,
+      "value": 21.5061586538103
+    },
+    {
+      "country": "CM",
+      "countryName": "Cameroon",
+      "year": 2019,
+      "value": 54.1350394491912
+    },
+    {
+      "country": "CA",
+      "countryName": "Canada",
+      "year": 2019,
+      "value": 4.73487826142313
+    },
+    {
+      "country": "CF",
+      "countryName": "Central African Republic",
+      "year": 2019,
+      "value": 65.8893116932645
+    },
+    {
+      "country": "TD",
+      "countryName": "Chad",
+      "year": 2019,
+      "value": 67.8818028393383
+    },
+    {
+      "country": "CL",
+      "countryName": "Chile",
+      "year": 2019,
+      "value": 9.41292544608567
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "year": 2019,
+      "value": 3.46731254453738
+    },
+    {
+      "country": "CO",
+      "countryName": "Colombia",
+      "year": 2019,
+      "value": 9.95946346262364
+    },
+    {
+      "country": "KM",
+      "countryName": "Comoros",
+      "year": 2019,
+      "value": 35.2152596512165
+    },
+    {
+      "country": "CD",
+      "countryName": "Congo, Dem. Rep.",
+      "year": 2019,
+      "value": 57.5103028676614
+    },
+    {
+      "country": "CG",
+      "countryName": "Congo, Rep.",
+      "year": 2019,
+      "value": 55.6854592350319
+    },
+    {
+      "country": "CR",
+      "countryName": "Costa Rica",
+      "year": 2019,
+      "value": 7.17670539586838
+    },
+    {
+      "country": "CI",
+      "countryName": "Cote d'Ivoire",
+      "year": 2019,
+      "value": 53.9401959393894
+    },
+    {
+      "country": "HR",
+      "countryName": "Croatia",
+      "year": 2019,
+      "value": 1.20669499105628
+    },
+    {
+      "country": "CU",
+      "countryName": "Cuba",
+      "year": 2019,
+      "value": 9.51348032446083
+    },
+    {
+      "country": "CY",
+      "countryName": "Cyprus",
+      "year": 2019,
+      "value": 5.90302131822346
+    },
+    {
+      "country": "CZ",
+      "countryName": "Czechia",
+      "year": 2019,
+      "value": 5.82718151632374
+    },
+    {
+      "country": "DK",
+      "countryName": "Denmark",
+      "year": 2019,
+      "value": 6.8271380300265
+    },
+    {
+      "country": "DJ",
+      "countryName": "Djibouti",
+      "year": 2019,
+      "value": 39.5495746126226
+    },
+    {
+      "country": "DO",
+      "countryName": "Dominican Republic",
+      "year": 2019,
+      "value": 17.6008506337531
+    },
+    {
+      "country": "EC",
+      "countryName": "Ecuador",
+      "year": 2019,
+      "value": 12.9956053635072
+    },
+    {
+      "country": "EG",
+      "countryName": "Egypt, Arab Rep.",
+      "year": 2019,
+      "value": 9.18637363253208
+    },
+    {
+      "country": "SV",
+      "countryName": "El Salvador",
+      "year": 2019,
+      "value": 9.37277563577208
+    },
+    {
+      "country": "GQ",
+      "countryName": "Equatorial Guinea",
+      "year": 2019,
+      "value": 61.7878538546425
+    },
+    {
+      "country": "ER",
+      "countryName": "Eritrea",
+      "year": 2019,
+      "value": 36.9849370654438
+    },
+    {
+      "country": "EE",
+      "countryName": "Estonia",
+      "year": 2019,
+      "value": 3.59969813053921
+    },
+    {
+      "country": "SZ",
+      "countryName": "Eswatini",
+      "year": 2019,
+      "value": 47.8824034780573
+    },
+    {
+      "country": "ET",
+      "countryName": "Ethiopia",
+      "year": 2019,
+      "value": 49.2411163721754
+    },
+    {
+      "country": "FJ",
+      "countryName": "Fiji",
+      "year": 2019,
+      "value": 9.86865671934701
+    },
+    {
+      "country": "FI",
+      "countryName": "Finland",
+      "year": 2019,
+      "value": 1.10415095530982
+    },
+    {
+      "country": "FR",
+      "countryName": "France",
+      "year": 2019,
+      "value": 7.47043718090151
+    },
+    {
+      "country": "GA",
+      "countryName": "Gabon",
+      "year": 2019,
+      "value": 47.786337705363
+    },
+    {
+      "country": "GM",
+      "countryName": "Gambia, The",
+      "year": 2019,
+      "value": 49.0332361637192
+    },
+    {
+      "country": "GE",
+      "countryName": "Georgia",
+      "year": 2019,
+      "value": 7.98133215103577
+    },
+    {
+      "country": "DE",
+      "countryName": "Germany",
+      "year": 2019,
+      "value": 4.59032955824096
+    },
+    {
+      "country": "GH",
+      "countryName": "Ghana",
+      "year": 2019,
+      "value": 45.0562793406133
+    },
+    {
+      "country": "GR",
+      "countryName": "Greece",
+      "year": 2019,
+      "value": 10.8616796025683
+    },
+    {
+      "country": "GD",
+      "countryName": "Grenada",
+      "year": 2019,
+      "value": 10.3692232750346
+    },
+    {
+      "country": "GT",
+      "countryName": "Guatemala",
+      "year": 2019,
+      "value": 21.6056135336461
+    },
+    {
+      "country": "GN",
+      "countryName": "Guinea",
+      "year": 2019,
+      "value": 58.5333995131645
+    },
+    {
+      "country": "GW",
+      "countryName": "Guinea-Bissau",
+      "year": 2019,
+      "value": 58.9953932978029
+    },
+    {
+      "country": "GY",
+      "countryName": "Guyana",
+      "year": 2019,
+      "value": 17.8111144952598
+    },
+    {
+      "country": "HT",
+      "countryName": "Haiti",
+      "year": 2019,
+      "value": 26.5362866796998
+    },
+    {
+      "country": "HN",
+      "countryName": "Honduras",
+      "year": 2019,
+      "value": 13.4915267354743
+    },
+    {
+      "country": "HU",
+      "countryName": "Hungary",
+      "year": 2019,
+      "value": 2.00125973206739
+    },
+    {
+      "country": "IS",
+      "countryName": "Iceland",
+      "year": 2019,
+      "value": 4.74815026747602
+    },
+    {
+      "country": "IN",
+      "countryName": "India",
+      "year": 2019,
+      "value": 21.7558305034359
+    },
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "year": 2019,
+      "value": 17.207866568779
+    },
+    {
+      "country": "IR",
+      "countryName": "Iran, Islamic Rep.",
+      "year": 2019,
+      "value": 6.19971728939288
+    },
+    {
+      "country": "IQ",
+      "countryName": "Iraq",
+      "year": 2019,
+      "value": 15.2898585866071
+    },
+    {
+      "country": "IE",
+      "countryName": "Ireland",
+      "year": 2019,
+      "value": 5.51635034121003
+    },
+    {
+      "country": "IL",
+      "countryName": "Israel",
+      "year": 2019,
+      "value": 10.5793214073566
+    },
+    {
+      "country": "IT",
+      "countryName": "Italy",
+      "year": 2019,
+      "value": 5.61963994554174
+    },
+    {
+      "country": "JM",
+      "countryName": "Jamaica",
+      "year": 2019,
+      "value": 9.83335998274112
+    },
+    {
+      "country": "JP",
+      "countryName": "Japan",
+      "year": 2019,
+      "value": 10.9516367194932
+    },
+    {
+      "country": "JO",
+      "countryName": "Jordan",
+      "year": 2019,
+      "value": 11.1377917477825
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "year": 2019,
+      "value": 5.01963367374797
+    },
+    {
+      "country": "KE",
+      "countryName": "Kenya",
+      "year": 2019,
+      "value": 47.7235952905794
+    },
+    {
+      "country": "KI",
+      "countryName": "Kiribati",
+      "year": 2019,
+      "value": 26.7382346679093
+    },
+    {
+      "country": "KP",
+      "countryName": "Korea, Dem. People's Rep.",
+      "year": 2019,
+      "value": 11.5280364674377
+    },
+    {
+      "country": "KR",
+      "countryName": "Korea, Rep.",
+      "year": 2019,
+      "value": 13.0364586438755
+    },
+    {
+      "country": "ZH",
+      "countryName": "Africa Eastern and Southern",
+      "year": 2020,
+      "value": 50.3865538346412
+    },
+    {
+      "country": "ZI",
+      "countryName": "Africa Western and Central",
+      "year": 2020,
+      "value": 60.1789957915565
+    },
+    {
+      "country": "1A",
+      "countryName": "Arab World",
+      "year": 2020,
+      "value": 27.0088400600036
+    },
+    {
+      "country": "S3",
+      "countryName": "Caribbean small states",
+      "year": 2020,
+      "value": 14.3507975841001
+    },
+    {
+      "country": "B8",
+      "countryName": "Central Europe and the Baltics",
+      "year": 2020,
+      "value": 13.0164451129903
+    },
+    {
+      "country": "V2",
+      "countryName": "Early-demographic dividend",
+      "year": 2020,
+      "value": 28.05524367916
+    },
+    {
+      "country": "Z4",
+      "countryName": "East Asia & Pacific",
+      "year": 2020,
+      "value": 9.12698957281438
+    },
+    {
+      "country": "4E",
+      "countryName": "East Asia & Pacific (excluding high income)",
+      "year": 2020,
+      "value": 9.05258496266942
+    },
+    {
+      "country": "T4",
+      "countryName": "East Asia & Pacific (IDA & IBRD countries)",
+      "year": 2020,
+      "value": 8.98245219739331
+    },
+    {
+      "country": "XC",
+      "countryName": "Euro area",
+      "year": 2020,
+      "value": 13.9566917164334
+    },
+    {
+      "country": "Z7",
+      "countryName": "Europe & Central Asia",
+      "year": 2020,
+      "value": 14.8325948051784
+    },
+    {
+      "country": "7E",
+      "countryName": "Europe & Central Asia (excluding high income)",
+      "year": 2020,
+      "value": 13.9966669774472
+    },
+    {
+      "country": "T7",
+      "countryName": "Europe & Central Asia (IDA & IBRD countries)",
+      "year": 2020,
+      "value": 15.287623448603
+    },
+    {
+      "country": "EU",
+      "countryName": "European Union",
+      "year": 2020,
+      "value": 13.9335397574023
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2020,
+      "value": 45.5491285497809
+    },
+    {
+      "country": "XE",
+      "countryName": "Heavily indebted poor countries (HIPC)",
+      "year": 2020,
+      "value": 51.7883491635413
+    },
+    {
+      "country": "XD",
+      "countryName": "High income",
+      "year": 2020,
+      "value": 14.4071666889336
+    },
+    {
+      "country": "XF",
+      "countryName": "IBRD only",
+      "year": 2020,
+      "value": 17.9163107615437
+    },
+    {
+      "country": "ZT",
+      "countryName": "IDA & IBRD total",
+      "year": 2020,
+      "value": 24.7771604026056
+    },
+    {
+      "country": "XH",
+      "countryName": "IDA blend",
+      "year": 2020,
+      "value": 49.3830527473393
+    },
+    {
+      "country": "XI",
+      "countryName": "IDA only",
+      "year": 2020,
+      "value": 44.0219869555376
+    },
+    {
+      "country": "XG",
+      "countryName": "IDA total",
+      "year": 2020,
+      "value": 46.0199006560795
+    },
+    {
+      "country": "V3",
+      "countryName": "Late-demographic dividend",
+      "year": 2020,
+      "value": 9.22467630819246
+    },
+    {
+      "country": "ZJ",
+      "countryName": "Latin America & Caribbean",
+      "year": 2020,
+      "value": 28.7565425991167
+    },
+    {
+      "country": "XJ",
+      "countryName": "Latin America & Caribbean (excluding high income)",
+      "year": 2020,
+      "value": 29.4039083506467
+    },
+    {
+      "country": "T2",
+      "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
+      "year": 2020,
+      "value": 29.3775293399169
+    },
+    {
+      "country": "XL",
+      "countryName": "Least developed countries: UN classification",
+      "year": 2020,
+      "value": 45.909031426755
+    },
+    {
+      "country": "XO",
+      "countryName": "Low & middle income",
+      "year": 2020,
+      "value": 25.2538416311386
+    },
+    {
+      "country": "XM",
+      "countryName": "Low income",
+      "year": 2020,
+      "value": 49.1203498742123
+    },
+    {
+      "country": "XN",
+      "countryName": "Lower middle income",
+      "year": 2020,
+      "value": 32.5854244401077
+    },
+    {
+      "country": "ZQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
+      "year": 2020,
+      "value": 29.0878017363401
+    },
+    {
+      "country": "XQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+      "year": 2020,
+      "value": 29.5441409984814
+    },
+    {
+      "country": "T3",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+      "year": 2020,
+      "value": 29.5819092073834
+    },
+    {
+      "country": "XP",
+      "countryName": "Middle income",
+      "year": 2020,
+      "value": 22.5416936965198
+    },
+    {
+      "country": "XU",
+      "countryName": "North America",
+      "year": 2020,
+      "value": 14.7662714118513
+    },
+    {
+      "country": "OE",
+      "countryName": "OECD members",
+      "year": 2020,
+      "value": 16.0467083130467
+    },
+    {
+      "country": "S4",
+      "countryName": "Other small states",
+      "year": 2020,
+      "value": 21.792741614635
+    },
+    {
+      "country": "S2",
+      "countryName": "Pacific island small states",
+      "year": 2020,
+      "value": 14.9606495106248
+    },
+    {
+      "country": "V4",
+      "countryName": "Post-demographic dividend",
+      "year": 2020,
+      "value": 13.3114285007611
+    },
+    {
+      "country": "V1",
+      "countryName": "Pre-demographic dividend",
+      "year": 2020,
+      "value": 55.8501545519385
+    },
+    {
+      "country": "S1",
+      "countryName": "Small states",
+      "year": 2020,
+      "value": 19.2625800673007
+    },
+    {
+      "country": "8S",
+      "countryName": "South Asia",
+      "year": 2020,
+      "value": 25.2449983238765
+    },
+    {
+      "country": "T5",
+      "countryName": "South Asia (IDA & IBRD)",
+      "year": 2020,
+      "value": 25.2449983238765
+    },
+    {
+      "country": "ZG",
+      "countryName": "Sub-Saharan Africa",
+      "year": 2020,
+      "value": 54.5855927370498
+    },
+    {
+      "country": "ZF",
+      "countryName": "Sub-Saharan Africa (excluding high income)",
+      "year": 2020,
+      "value": 54.588693269205
+    },
+    {
+      "country": "T6",
+      "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
+      "year": 2020,
+      "value": 54.5855927370498
+    },
+    {
+      "country": "XT",
+      "countryName": "Upper middle income",
+      "year": 2020,
+      "value": 14.2768676273924
+    },
+    {
+      "country": "1W",
+      "countryName": "World",
+      "year": 2020,
+      "value": 22.7744853883909
+    },
+    {
+      "country": "AF",
+      "countryName": "Afghanistan",
+      "year": 2020,
+      "value": 39.2740157736036
+    },
+    {
+      "country": "AL",
+      "countryName": "Albania",
+      "year": 2020,
+      "value": 13.1545527545528
+    },
+    {
+      "country": "DZ",
+      "countryName": "Algeria",
+      "year": 2020,
+      "value": 28.0176632765685
+    },
+    {
+      "country": "AO",
+      "countryName": "Angola",
+      "year": 2020,
+      "value": 56.3682323155547
+    },
+    {
+      "country": "AG",
+      "countryName": "Antigua and Barbuda",
+      "year": 2020,
+      "value": 13.2420568975786
+    },
+    {
+      "country": "AR",
+      "countryName": "Argentina",
+      "year": 2020,
+      "value": 29.5202375079691
+    },
+    {
+      "country": "AM",
+      "countryName": "Armenia",
+      "year": 2020,
+      "value": 17.5458193842947
+    },
+    {
+      "country": "AU",
+      "countryName": "Australia",
+      "year": 2020,
+      "value": 4.11315459606089
+    },
+    {
+      "country": "AT",
+      "countryName": "Austria",
+      "year": 2020,
+      "value": 10.1721771667782
+    },
+    {
+      "country": "AZ",
+      "countryName": "Azerbaijan",
+      "year": 2020,
+      "value": 17.5625887718139
+    },
+    {
+      "country": "BS",
+      "countryName": "Bahamas, The",
+      "year": 2020,
+      "value": 15.3864154306256
+    },
+    {
+      "country": "BH",
+      "countryName": "Bahrain",
+      "year": 2020,
+      "value": 13.4141750784419
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "year": 2020,
+      "value": 25.4553552539077
+    },
+    {
+      "country": "BB",
+      "countryName": "Barbados",
+      "year": 2020,
+      "value": 8.20452705356193
+    },
+    {
+      "country": "BY",
+      "countryName": "Belarus",
+      "year": 2020,
+      "value": 14.4393847845403
+    },
+    {
+      "country": "BE",
+      "countryName": "Belgium",
+      "year": 2020,
+      "value": 24.6813787805801
+    },
+    {
+      "country": "BZ",
+      "countryName": "Belize",
+      "year": 2020,
+      "value": 20.8839976295657
+    },
+    {
+      "country": "BJ",
+      "countryName": "Benin",
+      "year": 2020,
+      "value": 53.1665985783683
+    },
+    {
+      "country": "BT",
+      "countryName": "Bhutan",
+      "year": 2020,
+      "value": 17.5608405327028
+    },
+    {
+      "country": "BO",
+      "countryName": "Bolivia",
+      "year": 2020,
+      "value": 41.7828147970671
+    },
+    {
+      "country": "BA",
+      "countryName": "Bosnia and Herzegovina",
+      "year": 2020,
+      "value": 12.9379131317356
+    },
+    {
+      "country": "BW",
+      "countryName": "Botswana",
+      "year": 2020,
+      "value": 49.6622455750528
+    },
+    {
+      "country": "BR",
+      "countryName": "Brazil",
+      "year": 2020,
+      "value": 25.5391446726895
+    },
+    {
+      "country": "BN",
+      "countryName": "Brunei Darussalam",
+      "year": 2020,
+      "value": 11.8399184611804
+    },
+    {
+      "country": "BG",
+      "countryName": "Bulgaria",
+      "year": 2020,
+      "value": 10.0514291728242
+    },
+    {
+      "country": "BF",
+      "countryName": "Burkina Faso",
+      "year": 2020,
+      "value": 51.6640539372553
+    },
+    {
+      "country": "BI",
+      "countryName": "Burundi",
+      "year": 2020,
+      "value": 51.1580338276094
+    },
+    {
+      "country": "CV",
+      "countryName": "Cabo Verde",
+      "year": 2020,
+      "value": 19.1385768941155
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "year": 2020,
+      "value": 20.82817921518
+    },
+    {
+      "country": "CM",
+      "countryName": "Cameroon",
+      "year": 2020,
+      "value": 53.8879065769264
+    },
+    {
+      "country": "CA",
+      "countryName": "Canada",
+      "year": 2020,
+      "value": 9.59865040740583
+    },
+    {
+      "country": "CF",
+      "countryName": "Central African Republic",
+      "year": 2020,
+      "value": 67.1605902938288
+    },
+    {
+      "country": "TD",
+      "countryName": "Chad",
+      "year": 2020,
+      "value": 67.3677095425768
+    },
+    {
+      "country": "CL",
+      "countryName": "Chile",
+      "year": 2020,
+      "value": 20.7600275910393
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "year": 2020,
+      "value": 3.21073989494317
+    },
+    {
+      "country": "CO",
+      "countryName": "Colombia",
+      "year": 2020,
+      "value": 25.1855151928139
+    },
+    {
+      "country": "KM",
+      "countryName": "Comoros",
+      "year": 2020,
+      "value": 35.1944279553017
+    },
+    {
+      "country": "CD",
+      "countryName": "Congo, Dem. Rep.",
+      "year": 2020,
+      "value": 56.047284798558
+    },
+    {
+      "country": "CG",
+      "countryName": "Congo, Rep.",
+      "year": 2020,
+      "value": 58.1430129512395
+    },
+    {
+      "country": "CR",
+      "countryName": "Costa Rica",
+      "year": 2020,
+      "value": 13.7333609585086
+    },
+    {
+      "country": "CI",
+      "countryName": "Cote d'Ivoire",
+      "year": 2020,
+      "value": 53.9695380690906
+    },
+    {
+      "country": "HR",
+      "countryName": "Croatia",
+      "year": 2020,
+      "value": 9.09201266499655
+    },
+    {
+      "country": "CU",
+      "countryName": "Cuba",
+      "year": 2020,
+      "value": 7.68167353480172
+    },
+    {
+      "country": "CY",
+      "countryName": "Cyprus",
+      "year": 2020,
+      "value": 6.79820085443613
+    },
+    {
+      "country": "CZ",
+      "countryName": "Czechia",
+      "year": 2020,
+      "value": 13.9022834038394
+    },
+    {
+      "country": "DK",
+      "countryName": "Denmark",
+      "year": 2020,
+      "value": 8.66057399438855
+    },
+    {
+      "country": "DJ",
+      "countryName": "Djibouti",
+      "year": 2020,
+      "value": 40.7291381929611
+    },
+    {
+      "country": "DO",
+      "countryName": "Dominican Republic",
+      "year": 2020,
+      "value": 18.7097287049177
+    },
+    {
+      "country": "EC",
+      "countryName": "Ecuador",
+      "year": 2020,
+      "value": 37.548812574099
+    },
+    {
+      "country": "EG",
+      "countryName": "Egypt, Arab Rep.",
+      "year": 2020,
+      "value": 20.0418086280442
+    },
+    {
+      "country": "SV",
+      "countryName": "El Salvador",
+      "year": 2020,
+      "value": 20.0514624359442
+    },
+    {
+      "country": "GQ",
+      "countryName": "Equatorial Guinea",
+      "year": 2020,
+      "value": 62.1385424927187
+    },
+    {
+      "country": "ER",
+      "countryName": "Eritrea",
+      "year": 2020,
+      "value": 36.6830013144821
+    },
+    {
+      "country": "EE",
+      "countryName": "Estonia",
+      "year": 2020,
+      "value": 4.38768892274276
+    },
+    {
+      "country": "SZ",
+      "countryName": "Eswatini",
+      "year": 2020,
+      "value": 48.84040212742
+    },
+    {
+      "country": "ET",
+      "countryName": "Ethiopia",
+      "year": 2020,
+      "value": 47.4127086969879
+    },
+    {
+      "country": "FJ",
+      "countryName": "Fiji",
+      "year": 2020,
+      "value": 10.3721600728829
+    },
+    {
+      "country": "FI",
+      "countryName": "Finland",
+      "year": 2020,
+      "value": 1.96551067222448
+    },
+    {
+      "country": "FR",
+      "countryName": "France",
+      "year": 2020,
+      "value": 17.5022796588061
+    },
+    {
+      "country": "GA",
+      "countryName": "Gabon",
+      "year": 2020,
+      "value": 53.8687090282408
+    },
+    {
+      "country": "GM",
+      "countryName": "Gambia, The",
+      "year": 2020,
+      "value": 49.2910210221441
+    },
+    {
+      "country": "GE",
+      "countryName": "Georgia",
+      "year": 2020,
+      "value": 14.9080582517678
+    },
+    {
+      "country": "DE",
+      "countryName": "Germany",
+      "year": 2020,
+      "value": 8.01911014669637
+    },
+    {
+      "country": "GH",
+      "countryName": "Ghana",
+      "year": 2020,
+      "value": 44.1714629092787
+    },
+    {
+      "country": "GR",
+      "countryName": "Greece",
+      "year": 2020,
+      "value": 13.2840695474717
+    },
+    {
+      "country": "GD",
+      "countryName": "Grenada",
+      "year": 2020,
+      "value": 8.12791524225344
+    },
+    {
+      "country": "GT",
+      "countryName": "Guatemala",
+      "year": 2020,
+      "value": 27.5676824882557
+    },
+    {
+      "country": "GN",
+      "countryName": "Guinea",
+      "year": 2020,
+      "value": 59.1193137933218
+    },
+    {
+      "country": "GW",
+      "countryName": "Guinea-Bissau",
+      "year": 2020,
+      "value": 59.517284286419
+    },
+    {
+      "country": "GY",
+      "countryName": "Guyana",
+      "year": 2020,
+      "value": 24.2523324432541
+    },
+    {
+      "country": "HT",
+      "countryName": "Haiti",
+      "year": 2020,
+      "value": 27.3494565652601
+    },
+    {
+      "country": "HN",
+      "countryName": "Honduras",
+      "year": 2020,
+      "value": 19.9691171064567
+    },
+    {
+      "country": "HU",
+      "countryName": "Hungary",
+      "year": 2020,
+      "value": 8.20060877828205
+    },
+    {
+      "country": "IS",
+      "countryName": "Iceland",
+      "year": 2020,
+      "value": 5.48887311049004
+    },
+    {
+      "country": "IN",
+      "countryName": "India",
+      "year": 2020,
+      "value": 25.394137445736
+    },
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "year": 2020,
+      "value": 26.7703554370932
+    },
+    {
+      "country": "IR",
+      "countryName": "Iran, Islamic Rep.",
+      "year": 2020,
+      "value": 26.1000337107441
+    },
+    {
+      "country": "IQ",
+      "countryName": "Iraq",
+      "year": 2020,
+      "value": 23.2274505172512
+    },
+    {
+      "country": "IE",
+      "countryName": "Ireland",
+      "year": 2020,
+      "value": 10.1416622151104
+    },
+    {
+      "country": "IL",
+      "countryName": "Israel",
+      "year": 2020,
+      "value": 16.3216032498984
+    },
+    {
+      "country": "IT",
+      "countryName": "Italy",
+      "year": 2020,
+      "value": 15.8556292781912
+    },
+    {
+      "country": "JM",
+      "countryName": "Jamaica",
+      "year": 2020,
+      "value": 11.1944927934395
+    },
+    {
+      "country": "JP",
+      "countryName": "Japan",
+      "year": 2020,
+      "value": 9.62759353301444
+    },
+    {
+      "country": "JO",
+      "countryName": "Jordan",
+      "year": 2020,
+      "value": 21.6242593532505
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "year": 2020,
+      "value": 19.1754633375751
+    },
+    {
+      "country": "KE",
+      "countryName": "Kenya",
+      "year": 2020,
+      "value": 48.4525645482508
+    },
+    {
+      "country": "KI",
+      "countryName": "Kiribati",
+      "year": 2020,
+      "value": 27.6606108713302
+    },
+    {
+      "country": "KP",
+      "countryName": "Korea, Dem. People's Rep.",
+      "year": 2020,
+      "value": 13.2948369455092
+    },
+    {
+      "country": "KR",
+      "countryName": "Korea, Rep.",
+      "year": 2020,
+      "value": 13.2850810775681
+    },
+    {
+      "country": "ZH",
+      "countryName": "Africa Eastern and Southern",
+      "year": 2021,
+      "value": 51.6592045905318
+    },
+    {
+      "country": "ZI",
+      "countryName": "Africa Western and Central",
+      "year": 2021,
+      "value": 59.0007510942931
+    },
+    {
+      "country": "1A",
+      "countryName": "Arab World",
+      "year": 2021,
+      "value": 29.130402590791
+    },
+    {
+      "country": "S3",
+      "countryName": "Caribbean small states",
+      "year": 2021,
+      "value": 29.1309432656847
+    },
+    {
+      "country": "B8",
+      "countryName": "Central Europe and the Baltics",
+      "year": 2021,
+      "value": 22.3604223435352
+    },
+    {
+      "country": "V2",
+      "countryName": "Early-demographic dividend",
+      "year": 2021,
+      "value": 35.7176343250504
+    },
+    {
+      "country": "Z4",
+      "countryName": "East Asia & Pacific",
+      "year": 2021,
+      "value": 11.3479937550005
+    },
+    {
+      "country": "4E",
+      "countryName": "East Asia & Pacific (excluding high income)",
+      "year": 2021,
+      "value": 11.4685108731305
+    },
+    {
+      "country": "T4",
+      "countryName": "East Asia & Pacific (IDA & IBRD countries)",
+      "year": 2021,
+      "value": 11.4515079758418
+    },
+    {
+      "country": "XC",
+      "countryName": "Euro area",
+      "year": 2021,
+      "value": 14.2082412849159
+    },
+    {
+      "country": "Z7",
+      "countryName": "Europe & Central Asia",
+      "year": 2021,
+      "value": 19.5933700289557
+    },
+    {
+      "country": "7E",
+      "countryName": "Europe & Central Asia (excluding high income)",
+      "year": 2021,
+      "value": 21.1983239531602
+    },
+    {
+      "country": "T7",
+      "countryName": "Europe & Central Asia (IDA & IBRD countries)",
+      "year": 2021,
+      "value": 23.8094705301542
+    },
+    {
+      "country": "EU",
+      "countryName": "European Union",
+      "year": 2021,
+      "value": 15.9862013434025
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2021,
+      "value": 46.5512525046895
+    },
+    {
+      "country": "XE",
+      "countryName": "Heavily indebted poor countries (HIPC)",
+      "year": 2021,
+      "value": 51.7902883398236
+    },
+    {
+      "country": "XD",
+      "countryName": "High income",
+      "year": 2021,
+      "value": 17.17623140636
+    },
+    {
+      "country": "XF",
+      "countryName": "IBRD only",
+      "year": 2021,
+      "value": 25.1708094104983
+    },
+    {
+      "country": "ZT",
+      "countryName": "IDA & IBRD total",
+      "year": 2021,
+      "value": 29.9461012779181
+    },
+    {
+      "country": "XH",
+      "countryName": "IDA blend",
+      "year": 2021,
+      "value": 48.7997576014592
+    },
+    {
+      "country": "XI",
+      "countryName": "IDA only",
+      "year": 2021,
+      "value": 44.7741804845538
+    },
+    {
+      "country": "XG",
+      "countryName": "IDA total",
+      "year": 2021,
+      "value": 46.2213669216502
+    },
+    {
+      "country": "V3",
+      "countryName": "Late-demographic dividend",
+      "year": 2021,
+      "value": 13.0531528292387
+    },
+    {
+      "country": "ZJ",
+      "countryName": "Latin America & Caribbean",
+      "year": 2021,
+      "value": 34.4470785648491
+    },
+    {
+      "country": "XJ",
+      "countryName": "Latin America & Caribbean (excluding high income)",
+      "year": 2021,
+      "value": 35.1981810479886
+    },
+    {
+      "country": "T2",
+      "countryName": "Latin America & the Caribbean (IDA & IBRD countries)",
+      "year": 2021,
+      "value": 34.5899202756537
+    },
+    {
+      "country": "XL",
+      "countryName": "Least developed countries: UN classification",
+      "year": 2021,
+      "value": 46.5677975359457
+    },
+    {
+      "country": "XO",
+      "countryName": "Low & middle income",
+      "year": 2021,
+      "value": 30.184671148505
+    },
+    {
+      "country": "XM",
+      "countryName": "Low income",
+      "year": 2021,
+      "value": 49.5099003520712
+    },
+    {
+      "country": "XN",
+      "countryName": "Lower middle income",
+      "year": 2021,
+      "value": 39.5001195610118
+    },
+    {
+      "country": "ZQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
+      "year": 2021,
+      "value": 30.1166625860611
+    },
+    {
+      "country": "XQ",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+      "year": 2021,
+      "value": 30.5938661962726
+    },
+    {
+      "country": "T3",
+      "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+      "year": 2021,
+      "value": 30.6174491346447
+    },
+    {
+      "country": "XP",
+      "countryName": "Middle income",
+      "year": 2021,
+      "value": 28.1310002174922
+    },
+    {
+      "country": "XU",
+      "countryName": "North America",
+      "year": 2021,
+      "value": 15.8714642575758
+    },
+    {
+      "country": "OE",
+      "countryName": "OECD members",
+      "year": 2021,
+      "value": 17.4616860347073
+    },
+    {
+      "country": "S4",
+      "countryName": "Other small states",
+      "year": 2021,
+      "value": 26.7219823487085
+    },
+    {
+      "country": "S2",
+      "countryName": "Pacific island small states",
+      "year": 2021,
+      "value": 21.2029601640981
+    },
+    {
+      "country": "V4",
+      "countryName": "Post-demographic dividend",
+      "year": 2021,
+      "value": 14.8324402514164
+    },
+    {
+      "country": "V1",
+      "countryName": "Pre-demographic dividend",
+      "year": 2021,
+      "value": 55.2378748427467
+    },
+    {
+      "country": "S1",
+      "countryName": "Small states",
+      "year": 2021,
+      "value": 26.5862600569624
+    },
+    {
+      "country": "8S",
+      "countryName": "South Asia",
+      "year": 2021,
+      "value": 37.2937768110221
+    },
+    {
+      "country": "T5",
+      "countryName": "South Asia (IDA & IBRD)",
+      "year": 2021,
+      "value": 37.2937768110221
+    },
+    {
+      "country": "ZG",
+      "countryName": "Sub-Saharan Africa",
+      "year": 2021,
+      "value": 54.6819925722371
+    },
+    {
+      "country": "ZF",
+      "countryName": "Sub-Saharan Africa (excluding high income)",
+      "year": 2021,
+      "value": 54.6849399702388
+    },
+    {
+      "country": "T6",
+      "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
+      "year": 2021,
+      "value": 54.6819925722371
+    },
+    {
+      "country": "XT",
+      "countryName": "Upper middle income",
+      "year": 2021,
+      "value": 18.0688366168112
+    },
+    {
+      "country": "1W",
+      "countryName": "World",
+      "year": 2021,
+      "value": 27.3660870888546
+    },
+    {
+      "country": "AF",
+      "countryName": "Afghanistan",
+      "year": 2021,
+      "value": 39.0689871038809
+    },
+    {
+      "country": "AL",
+      "countryName": "Albania",
+      "year": 2021,
+      "value": 23.0113153060195
+    },
+    {
+      "country": "DZ",
+      "countryName": "Algeria",
+      "year": 2021,
+      "value": 17.1101240822943
+    },
+    {
+      "country": "AO",
+      "countryName": "Angola",
+      "year": 2021,
+      "value": 56.3877981579305
+    },
+    {
+      "country": "AG",
+      "countryName": "Antigua and Barbuda",
+      "year": 2021,
+      "value": 27.3720030166574
+    },
+    {
+      "country": "AR",
+      "countryName": "Argentina",
+      "year": 2021,
+      "value": 35.6150076708303
+    },
+    {
+      "country": "AM",
+      "countryName": "Armenia",
+      "year": 2021,
+      "value": 24.5668089361369
+    },
+    {
+      "country": "AU",
+      "countryName": "Australia",
+      "year": 2021,
+      "value": 4.19491918738963
+    },
+    {
+      "country": "AT",
+      "countryName": "Austria",
+      "year": 2021,
+      "value": 11.2961991917301
+    },
+    {
+      "country": "AZ",
+      "countryName": "Azerbaijan",
+      "year": 2021,
+      "value": 29.0790318256219
+    },
+    {
+      "country": "BS",
+      "countryName": "Bahamas, The",
+      "year": 2021,
+      "value": 25.9072414655323
+    },
+    {
+      "country": "BH",
+      "countryName": "Bahrain",
+      "year": 2021,
+      "value": 17.182557208461
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "year": 2021,
+      "value": 26.8830218589772
+    },
+    {
+      "country": "BB",
+      "countryName": "Barbados",
+      "year": 2021,
+      "value": 16.4365031723167
+    },
+    {
+      "country": "BY",
+      "countryName": "Belarus",
+      "year": 2021,
+      "value": 16.0087336125794
+    },
+    {
+      "country": "BE",
+      "countryName": "Belgium",
+      "year": 2021,
+      "value": 17.9027095201615
+    },
+    {
+      "country": "BZ",
+      "countryName": "Belize",
+      "year": 2021,
+      "value": 27.2272979538845
+    },
+    {
+      "country": "BJ",
+      "countryName": "Benin",
+      "year": 2021,
+      "value": 53.3641746528881
+    },
+    {
+      "country": "BT",
+      "countryName": "Bhutan",
+      "year": 2021,
+      "value": 18.432871086217
+    },
+    {
+      "country": "BO",
+      "countryName": "Bolivia",
+      "year": 2021,
+      "value": 44.9225247678234
+    },
+    {
+      "country": "BA",
+      "countryName": "Bosnia and Herzegovina",
+      "year": 2021,
+      "value": 21.8985591170726
+    },
+    {
+      "country": "BW",
+      "countryName": "Botswana",
+      "year": 2021,
+      "value": 58.6480551924333
+    },
+    {
+      "country": "BR",
+      "countryName": "Brazil",
+      "year": 2021,
+      "value": 34.0917360480192
+    },
+    {
+      "country": "BN",
+      "countryName": "Brunei Darussalam",
+      "year": 2021,
+      "value": 14.4217640838851
+    },
+    {
+      "country": "BG",
+      "countryName": "Bulgaria",
+      "year": 2021,
+      "value": 21.6361889832661
+    },
+    {
+      "country": "BF",
+      "countryName": "Burkina Faso",
+      "year": 2021,
+      "value": 51.0468407771655
+    },
+    {
+      "country": "BI",
+      "countryName": "Burundi",
+      "year": 2021,
+      "value": 50.1772394199095
+    },
+    {
+      "country": "CV",
+      "countryName": "Cabo Verde",
+      "year": 2021,
+      "value": 23.2501719296098
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "year": 2021,
+      "value": 25.0603349379346
+    },
+    {
+      "country": "CM",
+      "countryName": "Cameroon",
+      "year": 2021,
+      "value": 54.4879114226982
+    },
+    {
+      "country": "CA",
+      "countryName": "Canada",
+      "year": 2021,
+      "value": 8.35712219298627
+    },
+    {
+      "country": "CF",
+      "countryName": "Central African Republic",
+      "year": 2021,
+      "value": 66.3064629911218
+    },
+    {
+      "country": "TD",
+      "countryName": "Chad",
+      "year": 2021,
+      "value": 66.4171571154452
+    },
+    {
+      "country": "CL",
+      "countryName": "Chile",
+      "year": 2021,
+      "value": 21.3441804893583
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "year": 2021,
+      "value": 3.20078141070178
+    },
+    {
+      "country": "CO",
+      "countryName": "Colombia",
+      "year": 2021,
+      "value": 32.6344677058304
+    },
+    {
+      "country": "KM",
+      "countryName": "Comoros",
+      "year": 2021,
+      "value": 37.5672016327583
+    },
+    {
+      "country": "CD",
+      "countryName": "Congo, Dem. Rep.",
+      "year": 2021,
+      "value": 55.9606093305437
+    },
+    {
+      "country": "CG",
+      "countryName": "Congo, Rep.",
+      "year": 2021,
+      "value": 58.5927718778482
+    },
+    {
+      "country": "CR",
+      "countryName": "Costa Rica",
+      "year": 2021,
+      "value": 24.4420343892099
+    },
+    {
+      "country": "CI",
+      "countryName": "Cote d'Ivoire",
+      "year": 2021,
+      "value": 53.1517506391788
+    },
+    {
+      "country": "HR",
+      "countryName": "Croatia",
+      "year": 2021,
+      "value": 15.3474256509976
+    },
+    {
+      "country": "CU",
+      "countryName": "Cuba",
+      "year": 2021,
+      "value": 34.609028272174
+    },
+    {
+      "country": "CY",
+      "countryName": "Cyprus",
+      "year": 2021,
+      "value": 12.9749697376432
+    },
+    {
+      "country": "CZ",
+      "countryName": "Czechia",
+      "year": 2021,
+      "value": 23.4625903529271
+    },
+    {
+      "country": "DK",
+      "countryName": "Denmark",
+      "year": 2021,
+      "value": 9.08109622802695
+    },
+    {
+      "country": "DJ",
+      "countryName": "Djibouti",
+      "year": 2021,
+      "value": 41.9400617797013
+    },
+    {
+      "country": "DO",
+      "countryName": "Dominican Republic",
+      "year": 2021,
+      "value": 22.0801018556591
+    },
+    {
+      "country": "EC",
+      "countryName": "Ecuador",
+      "year": 2021,
+      "value": 28.7761403105203
+    },
+    {
+      "country": "EG",
+      "countryName": "Egypt, Arab Rep.",
+      "year": 2021,
+      "value": 25.2617683266355
+    },
+    {
+      "country": "SV",
+      "countryName": "El Salvador",
+      "year": 2021,
+      "value": 21.6153292971656
+    },
+    {
+      "country": "GQ",
+      "countryName": "Equatorial Guinea",
+      "year": 2021,
+      "value": 61.4029717586352
+    },
+    {
+      "country": "ER",
+      "countryName": "Eritrea",
+      "year": 2021,
+      "value": 36.9870847749778
+    },
+    {
+      "country": "EE",
+      "countryName": "Estonia",
+      "year": 2021,
+      "value": 12.9083851652427
+    },
+    {
+      "country": "SZ",
+      "countryName": "Eswatini",
+      "year": 2021,
+      "value": 51.6066489893383
+    },
+    {
+      "country": "ET",
+      "countryName": "Ethiopia",
+      "year": 2021,
+      "value": 48.0965952272532
+    },
+    {
+      "country": "FJ",
+      "countryName": "Fiji",
+      "year": 2021,
+      "value": 22.4482861926604
+    },
+    {
+      "country": "FI",
+      "countryName": "Finland",
+      "year": 2021,
+      "value": 2.5593416426267
+    },
+    {
+      "country": "FR",
+      "countryName": "France",
+      "year": 2021,
+      "value": 14.6760864686264
+    },
+    {
+      "country": "GA",
+      "countryName": "Gabon",
+      "year": 2021,
+      "value": 54.6246335138714
+    },
+    {
+      "country": "GM",
+      "countryName": "Gambia, The",
+      "year": 2021,
+      "value": 50.2186084365271
+    },
+    {
+      "country": "GE",
+      "countryName": "Georgia",
+      "year": 2021,
+      "value": 28.1202799794566
+    },
+    {
+      "country": "DE",
+      "countryName": "Germany",
+      "year": 2021,
+      "value": 10.7098283576241
+    },
+    {
+      "country": "GH",
+      "countryName": "Ghana",
+      "year": 2021,
+      "value": 43.1552099248308
+    },
+    {
+      "country": "GR",
+      "countryName": "Greece",
+      "year": 2021,
+      "value": 19.5190055225599
+    },
+    {
+      "country": "GD",
+      "countryName": "Grenada",
+      "year": 2021,
+      "value": 36.9714741296207
+    },
+    {
+      "country": "GT",
+      "countryName": "Guatemala",
+      "year": 2021,
+      "value": 37.72005767879
+    },
+    {
+      "country": "GN",
+      "countryName": "Guinea",
+      "year": 2021,
+      "value": 56.9028351355668
+    },
+    {
+      "country": "GW",
+      "countryName": "Guinea-Bissau",
+      "year": 2021,
+      "value": 59.1007960473842
+    },
+    {
+      "country": "GY",
+      "countryName": "Guyana",
+      "year": 2021,
+      "value": 44.0212404403866
+    },
+    {
+      "country": "HT",
+      "countryName": "Haiti",
+      "year": 2021,
+      "value": 28.9884489530258
+    },
+    {
+      "country": "HN",
+      "countryName": "Honduras",
+      "year": 2021,
+      "value": 27.5530252321121
+    },
+    {
+      "country": "HU",
+      "countryName": "Hungary",
+      "year": 2021,
+      "value": 17.9199344539457
+    },
+    {
+      "country": "IS",
+      "countryName": "Iceland",
+      "year": 2021,
+      "value": 4.23865121597601
+    },
+    {
+      "country": "IN",
+      "countryName": "India",
+      "year": 2021,
+      "value": 38.3772760853965
+    },
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "year": 2021,
+      "value": 34.6746453992699
+    },
+    {
+      "country": "IR",
+      "countryName": "Iran, Islamic Rep.",
+      "year": 2021,
+      "value": 29.5114587696068
+    },
+    {
+      "country": "IQ",
+      "countryName": "Iraq",
+      "year": 2021,
+      "value": 20.1292879399341
+    },
+    {
+      "country": "IE",
+      "countryName": "Ireland",
+      "year": 2021,
+      "value": 14.7197719415142
+    },
+    {
+      "country": "IL",
+      "countryName": "Israel",
+      "year": 2021,
+      "value": 18.9543934106822
+    },
+    {
+      "country": "IT",
+      "countryName": "Italy",
+      "year": 2021,
+      "value": 15.0386399993496
+    },
+    {
+      "country": "JM",
+      "countryName": "Jamaica",
+      "year": 2021,
+      "value": 16.7021321055679
+    },
+    {
+      "country": "JP",
+      "countryName": "Japan",
+      "year": 2021,
+      "value": 9.93938650138259
+    },
+    {
+      "country": "JO",
+      "countryName": "Jordan",
+      "year": 2021,
+      "value": 31.4973757486721
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "year": 2021,
+      "value": 26.9232635964623
+    },
+    {
+      "country": "KE",
+      "countryName": "Kenya",
+      "year": 2021,
+      "value": 50.3130401280648
+    },
+    {
+      "country": "KI",
+      "countryName": "Kiribati",
+      "year": 2021,
+      "value": 30.1159185529193
+    },
+    {
+      "country": "KP",
+      "countryName": "Korea, Dem. People's Rep.",
+      "year": 2021,
+      "value": 12.5826148870732
+    },
+    {
+      "country": "KR",
+      "countryName": "Korea, Rep.",
+      "year": 2021,
+      "value": 14.6502843445075
+    }
+  ]
+}

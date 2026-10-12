@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+  body { font-family: 'Inter', sans-serif; margin: 0; padding: 32px 40px; background: #F6F5EE; color: #2B2A27; }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 4px; color: #2B2A27; }
+  .subtitle { font-size: 11px; color: #7A786F; margin: 0 0 24px; max-width: 520px; line-height: 1.5; }
+  .source { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A786F; margin-top: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .tooltip { position: fixed; pointer-events: none; background: #2B2A27; color: #F6F5EE; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 6px 10px; border-radius: 2px; white-space: nowrap; opacity: 0; transition: opacity 0.15s; z-index: 10; }
+</style></head><body>
+<h1>Who Pays Out of Pocket? Private Health Spending, 2000 vs. 2022</h1>
+<p class="subtitle">Private health expenditure as a share of total health spending. High values mean households bear more of the cost directly. China's dramatic shift toward public funding stands out.</p>
+<div id="chart" style="position:relative;"></div>
+<div class="tooltip" id="tip"></div>
+<p class="source">Source: World Bank — Domestic private health expenditure (SH.XPD.PVTD.CH.ZS)</p>
+<script>
+// All values verified from dataset: {n: country, a: 2000%, b: 2022%}
+const data = [
+  {"n":"Bangladesh","a":64.0,"b":80.9},
+  {"n":"Armenia","a":64.5,"b":82.3},
+  {"n":"Egypt, Arab Rep.","a":64.8,"b":61.0},
+  {"n":"Guatemala","a":61.9,"b":64.2},
+  {"n":"Cambodia","a":78.1,"b":62.5},
+  {"n":"Georgia","a":81.4,"b":62.5},
+  {"n":"India","a":76.6,"b":58.5},
+  {"n":"Indonesia","a":67.4,"b":47.3},
+  {"n":"Kenya","a":58.5,"b":34.6},
+  {"n":"Ghana","a":53.5,"b":28.8},
+  {"n":"Brazil","a":58.0,"b":54.6},
+  {"n":"Chile","a":64.2,"b":49.1},
+  {"n":"Ecuador","a":69.2,"b":37.6},
+  {"n":"China","a":78.0,"b":42.3},
+  {"n":"Algeria","a":28.0,"b":52.3},
+  {"n":"Colombia","a":25.4,"b":29.5},
+  {"n":"Cuba","a":16.2,"b":11.1},
+  {"n":"Japan","a":19.6,"b":14.0},
+  {"n":"Denmark","a":16.9,"b":15.6},
+  {"n":"Czechia","a":11.3,"b":15.2}
+];
+
+const W = 660, H = 600;
+const pad = { left: 145, right: 150, top: 50, bottom: 36 };
+const minV = 0, maxV = 88;
+
+const scale = v => pad.top + (maxV - v) / (maxV - minV) * (H - pad.top - pad.bottom);
+const xL = pad.left, xR = W - pad.right;
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+svg.setAttribute("width", "100%");
+svg.style.maxWidth = W + "px";
+document.getElementById("chart").appendChild(svg);
+
+function mkEl(tag, attrs = {}) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 30; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i - 1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i - 1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  const top = pad.top + 4, bot = H - pad.bottom - 4;
+  for (const item of sorted) item.y = Math.max(top, Math.min(bot, item.y));
+  return sorted;
+}
+
+function colorForChange(d) {
+  const change = d.b - d.a;
+  if (change > 15) return "#B34B3B";
+  if (change > 5)  return "#C4715A";
+  if (change > -5) return "#C49A45";
+  if (change > -15) return "#8BAD72";
+  if (change > -25) return "#5B9E78";
+  return "#3D7A5A";
+}
+
+svg.appendChild(mkEl("line", { x1: xL, y1: pad.top, x2: xL, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+svg.appendChild(mkEl("line", { x1: xR, y1: pad.top, x2: xR, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+
+[{x: xL, label: "2000"}, {x: xR, label: "2022"}].forEach(({x, label}) => {
+  const t = mkEl("text", { x, y: pad.top - 12, "text-anchor": "middle", "font-family": "'JetBrains Mono', monospace", "font-size": "10", fill: "#7A786F" });
+  t.textContent = label;
+  svg.appendChild(t);
+});
+
+[20, 40, 60, 80].forEach(v => {
+  svg.appendChild(mkEl("line", { x1: xL, y1: scale(v), x2: xR, y2: scale(v), stroke: "#E2E0D5", "stroke-width": "0.5" }));
+});
+
+svg.appendChild(mkEl("line", {
+  x1: xL, y1: scale(50), x2: xR, y2: scale(50),
+  stroke: "#C2C0B5", "stroke-dasharray": "4,3", "stroke-width": "1"
+}));
+const refLbl = mkEl("text", { x: xL + 4, y: scale(50) - 4, "font-family": "'JetBrains Mono', monospace", "font-size": "8", fill: "#9A9890" });
+refLbl.textContent = "50% — majority private";
+svg.appendChild(refLbl);
+
+const tip = document.getElementById("tip");
+function showTip(text, e) { tip.textContent = text; tip.style.opacity = "1"; tip.style.left = (e.clientX + 14) + "px"; tip.style.top = (e.clientY - 24) + "px"; }
+function hideTip() { tip.style.opacity = "0"; }
+
+const rows = [];
+
+data.forEach(d => {
+  const color = colorForChange(d);
+  const yA = scale(d.a), yB = scale(d.b);
+  const g = mkEl("g");
+  svg.appendChild(g);
+
+  g.appendChild(mkEl("line", { x1: xL, y1: yA, x2: xR, y2: yB, stroke: color, "stroke-width": "1.4", opacity: "0.85" }));
+  g.appendChild(mkEl("circle", { cx: xL, cy: yA, r: "3", fill: color }));
+  g.appendChild(mkEl("circle", { cx: xR, cy: yB, r: "3", fill: color }));
+
+  const hit = mkEl("line", { x1: xL - 10, y1: yA, x2: xR + 10, y2: yB, stroke: "transparent", "stroke-width": "14", cursor: "pointer" });
+  g.appendChild(hit);
+  rows.push({ g, d });
+
+  const change = d.b - d.a;
+  const sign = change >= 0 ? "+" : "";
+  hit.addEventListener("mouseenter", e => {
+    showTip(`${d.n}: ${d.a}% → ${d.b}%  (${sign}${change.toFixed(1)} pp)`, e);
+    rows.forEach(r => r.g.style.opacity = r.d === d ? "1" : "0.1");
+  });
+  hit.addEventListener("mousemove", e => { tip.style.left = (e.clientX + 14) + "px"; tip.style.top = (e.clientY - 24) + "px"; });
+  hit.addEventListener("mouseleave", () => { hideTip(); rows.forEach(r => r.g.style.opacity = "1"); });
+});
+
+resolveCollisions(data.map(d => ({ name: d.n, val: d.a, y: scale(d.a), color: colorForChange(d) })), 13).forEach(item => {
+  const origY = scale(item.val);
+  if (Math.abs(item.y - origY) > 1.5) {
+    svg.appendChild(mkEl("line", { x1: xL - 4, y1: origY, x2: xL - 4, y2: item.y, stroke: item.color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+  const t = mkEl("text", { x: xL - 8, y: item.y + 3.5, "text-anchor": "end", "font-size": "9", fill: "#2B2A27" });
+  t.textContent = `${item.name}  ${item.val}`;
+  svg.appendChild(t);
+});
+
+resolveCollisions(data.map(d => ({ name: d.n, val: d.b, y: scale(d.b), color: colorForChange(d) })), 13).forEach(item => {
+  const origY = scale(item.val);
+  if (Math.abs(item.y - origY) > 1.5) {
+    svg.appendChild(mkEl("line", { x1: xR + 4, y1: origY, x2: xR + 4, y2: item.y, stroke: item.color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+  const t = mkEl("text", { x: xR + 8, y: item.y + 3.5, "text-anchor": "start", "font-size": "9", fill: "#2B2A27" });
+  t.textContent = `${item.val}  ${item.name}`;
+  svg.appendChild(t);
+});
+
+const legendY = H - 12;
+const legendItems = [
+  { color: "#B34B3B", label: ">15pp rise" },
+  { color: "#C4715A", label: "5-15pp rise" },
+  { color: "#C49A45", label: "stable" },
+  { color: "#8BAD72", label: "5-15pp drop" },
+  { color: "#5B9E78", label: "15-25pp drop" },
+  { color: "#3D7A5A", label: ">25pp drop" }
+];
+let lx = pad.left;
+legendItems.forEach(item => {
+  svg.appendChild(mkEl("rect", { x: lx, y: legendY - 7, width: 8, height: 8, fill: item.color }));
+  const t = mkEl("text", { x: lx + 11, y: legendY, "font-size": "8", fill: "#7A786F" });
+  t.textContent = item.label;
+  svg.appendChild(t);
+  lx += 76;
+});
+</script>
+</body></html>

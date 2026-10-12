@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+  body { font-family: 'Inter', sans-serif; margin: 0; padding: 32px 40px; background: #F6F5EE; color: #2B2A27; }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 4px; color: #2B2A27; }
+  .subtitle { font-size: 11px; color: #7A786F; margin: 0 0 24px; max-width: 520px; line-height: 1.5; }
+  .source { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A786F; margin-top: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .tooltip { position: fixed; pointer-events: none; background: #2B2A27; color: #F6F5EE; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 6px 10px; border-radius: 2px; white-space: nowrap; opacity: 0; transition: opacity 0.15s; z-index: 10; }
+</style></head><body>
+<h1>Epidemiological Transition: Deaths from Communicable Diseases, 2000 vs. 2019</h1>
+<p class="subtitle">Share of total deaths caused by communicable, maternal, prenatal, and nutritional conditions. Every country shown has made progress—but the gap between regions remains vast.</p>
+<div id="chart" style="position:relative;"></div>
+<div class="tooltip" id="tip"></div>
+<p class="source">Source: World Bank — Cause of death, by communicable diseases (SH.DTH.COMM.ZS)</p>
+<script>
+// {n: name, a: 2000 value, b: 2019 value}
+const data = [
+  {"n":"Kenya","a":81.0,"b":47.7},
+  {"n":"Botswana","a":78.2,"b":52.1},
+  {"n":"Chad","a":76.0,"b":67.9},
+  {"n":"Eswatini","a":74.6,"b":47.9},
+  {"n":"Burkina Faso","a":73.4,"b":52.3},
+  {"n":"Angola","a":72.9,"b":57.2},
+  {"n":"Cameroon","a":71.4,"b":54.1},
+  {"n":"Ethiopia","a":70.8,"b":49.2},
+  {"n":"Ghana","a":64.9,"b":45.1},
+  {"n":"Djibouti","a":64.2,"b":39.5},
+  {"n":"Afghanistan","a":61.0,"b":34.7},
+  {"n":"Congo, Rep.","a":60.9,"b":55.7},
+  {"n":"Haiti","a":47.5,"b":32.0},
+  {"n":"India","a":47.0,"b":27.5},
+  {"n":"Indonesia","a":37.8,"b":22.4},
+  {"n":"Hungary","a":1.8,"b":2.0},
+  {"n":"Croatia","a":3.3,"b":1.2},
+  {"n":"Denmark","a":3.8,"b":6.8},
+  {"n":"Italy","a":3.4,"b":5.6},
+  {"n":"Japan","a":10.7,"b":9.3}
+];
+
+const W = 640, H = 600;
+const pad = { left: 130, right: 145, top: 50, bottom: 30 };
+const minV = 0, maxV = 85;
+
+const scale = v => pad.top + (maxV - v) / (maxV - minV) * (H - pad.top - pad.bottom);
+const xL = pad.left, xR = W - pad.right;
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+svg.setAttribute("width", "100%");
+svg.style.maxWidth = W + "px";
+document.getElementById("chart").appendChild(svg);
+
+function mkEl(tag, attrs = {}) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 30; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i - 1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i - 1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  const top = pad.top + 4, bot = H - pad.bottom - 4;
+  for (const item of sorted) item.y = Math.max(top, Math.min(bot, item.y));
+  return sorted;
+}
+
+function colorForChange(d) {
+  const drop = d.a - d.b;
+  if (drop > 30) return "#3D7A5A";
+  if (drop > 20) return "#5B9E78";
+  if (drop > 10) return "#8BAD72";
+  if (drop > 0)  return "#C49A45";
+  return "#C4715A";
+}
+
+// Axis lines
+svg.appendChild(mkEl("line", { x1: xL, y1: pad.top, x2: xL, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+svg.appendChild(mkEl("line", { x1: xR, y1: pad.top, x2: xR, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+
+// Column headers
+function hdrText(x, label) {
+  const t = mkEl("text", { x, y: pad.top - 12, "text-anchor": "middle", "font-family": "'JetBrains Mono', monospace", "font-size": "10", fill: "#7A786F" });
+  t.textContent = label;
+  svg.appendChild(t);
+}
+hdrText(xL, "2000");
+hdrText(xR, "2019");
+
+// Gridlines at key values
+[20, 40, 60, 80].forEach(v => {
+  svg.appendChild(mkEl("line", { x1: xL, y1: scale(v), x2: xR, y2: scale(v), stroke: "#E2E0D5", "stroke-width": "0.5" }));
+});
+
+const tip = document.getElementById("tip");
+function showTip(text, e) { tip.textContent = text; tip.style.opacity = "1"; tip.style.left = (e.clientX + 14) + "px"; tip.style.top = (e.clientY - 24) + "px"; }
+function hideTip() { tip.style.opacity = "0"; }
+
+const rows = [];
+
+data.forEach(d => {
+  const color = colorForChange(d);
+  const yA = scale(d.a), yB = scale(d.b);
+  const g = mkEl("g");
+  svg.appendChild(g);
+
+  // Connecting line
+  const line = mkEl("line", { x1: xL, y1: yA, x2: xR, y2: yB, stroke: color, "stroke-width": "1.4", opacity: "0.85" });
+  g.appendChild(line);
+
+  // Dots
+  g.appendChild(mkEl("circle", { cx: xL, cy: yA, r: "3", fill: color }));
+  g.appendChild(mkEl("circle", { cx: xR, cy: yB, r: "3", fill: color }));
+
+  // Invisible hit area
+  const hit = mkEl("line", { x1: xL - 10, y1: yA, x2: xR + 10, y2: yB, stroke: "transparent", "stroke-width": "14", cursor: "pointer" });
+  g.appendChild(hit);
+
+  rows.push({ g, line, d, color });
+
+  const drop = d.a - d.b;
+  hit.addEventListener("mouseenter", e => {
+    showTip(`${d.n}: ${d.a}% → ${d.b}%  (${drop > 0 ? "-" : "+"}${Math.abs(drop).toFixed(1)} pp)`, e);
+    rows.forEach(r => r.g.style.opacity = r.d === d ? "1" : "0.12");
+  });
+  hit.addEventListener("mousemove", e => { tip.style.left = (e.clientX + 14) + "px"; tip.style.top = (e.clientY - 24) + "px"; });
+  hit.addEventListener("mouseleave", () => { hideTip(); rows.forEach(r => r.g.style.opacity = "1"); });
+});
+
+// Left labels (2000 values)
+const leftItems = data.map(d => ({ name: d.n, val: d.a, y: scale(d.a), color: colorForChange(d) }));
+resolveCollisions(leftItems, 13).forEach(item => {
+  const origY = scale(item.val);
+  if (Math.abs(item.y - origY) > 1.5) {
+    svg.appendChild(mkEl("line", { x1: xL - 4, y1: origY, x2: xL - 4, y2: item.y, stroke: item.color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+  const t = mkEl("text", { x: xL - 8, y: item.y + 3.5, "text-anchor": "end", "font-size": "9", fill: "#2B2A27" });
+  t.textContent = `${item.name}  ${item.val}`;
+  svg.appendChild(t);
+});
+
+// Right labels (2019 values)
+const rightItems = data.map(d => ({ name: d.n, val: d.b, y: scale(d.b), color: colorForChange(d) }));
+resolveCollisions(rightItems, 13).forEach(item => {
+  const origY = scale(item.val);
+  if (Math.abs(item.y - origY) > 1.5) {
+    svg.appendChild(mkEl("line", { x1: xR + 4, y1: origY, x2: xR + 4, y2: item.y, stroke: item.color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+  const t = mkEl("text", { x: xR + 8, y: item.y + 3.5, "text-anchor": "start", "font-size": "9", fill: "#2B2A27" });
+  t.textContent = `${item.val}  ${item.name}`;
+  svg.appendChild(t);
+});
+
+// Legend
+const legendY = H - 14;
+const legendItems = [
+  { color: "#3D7A5A", label: ">30 pp drop" },
+  { color: "#5B9E78", label: "20–30 pp drop" },
+  { color: "#8BAD72", label: "10–20 pp drop" },
+  { color: "#C49A45", label: "<10 pp drop" },
+  { color: "#C4715A", label: "rose" }
+];
+let lx = pad.left;
+legendItems.forEach(item => {
+  svg.appendChild(mkEl("rect", { x: lx, y: legendY - 7, width: 8, height: 8, fill: item.color }));
+  const t = mkEl("text", { x: lx + 11, y: legendY, "font-size": "8", fill: "#7A786F" });
+  t.textContent = item.label;
+  svg.appendChild(t);
+  lx += 80;
+});
+</script>
+</body></html>
