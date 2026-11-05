@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; margin: 0; padding: 24px; background: #fff; color: #0f172a; }
+  h1 { font-size: 18px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { font-size: 13px; color: #64748b; margin: 0 0 20px; }
+  #chart { width: 100%; }
+  .source { font-size: 11px; color: #94a3b8; margin-top: 12px; }
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0;
+    background: #1e293b; color: #f1f5f9; font-size: 12px;
+    padding: 6px 10px; border-radius: 4px; white-space: nowrap;
+    transition: opacity 0.1s; z-index: 100;
+  }
+</style>
+</head>
+<body>
+<h1>Economic Catch-Up: GDP per Capita PPP, 1990–2024</h1>
+<p class="subtitle">GDP per person adjusted for purchasing power parity (constant 2021 international $)</p>
+<div id="chart"></div>
+<p class="source">Source: World Bank (NY.GDP.PCAP.PP.KD)</p>
+<div id="tip"></div>
+<script>
+const data = [{"n":"China","s":[1667,1798,2030,2287,2557,2808,3056,3306,3534,3774,4066,4372,4744,5192,5684,6298,7057,8014,8744,9519,10476,11405,12218,13081,13969,14857,15773,16758,17807,18821,19215,20843,21499,22687,23841],"y0":1990,"step":1},{"n":"India","s":[2140,2116,2185,2241,2342,2469,2603,2656,2766,2954,3010,3097,3157,3347,3551,3770,4011,4254,4322,4595,4914,5099,5304,5567,5905,6302,6741,7116,7493,7702,7187,7819,8347,8871,9416],"y0":1990,"step":1},{"n":"Indonesia","s":[4873,5118,5357,5609,5931,6313,6695,6897,5898,5856,6056,6191,6382,6599,6844,7141,7434,7802,8165,8435,8848,9275,9709,10122,10504,10894,11320,11773,12262,12758,12389,12757,13334,13890,14471],"y0":1990,"step":1},{"n":"Korea, Rep.","s":[14378,15784,16613,17596,19052,20698,22140,23311,22000,24382,26404,27441,29395,30142,31580,32886,34430,36257,37064,37176,39574,40719,41538,42710,43807,44849,46088,47537,48834,49791,49374,51718,53229,54029,55071],"y0":1990,"step":1},{"n":"Brazil","s":[12633,12547,12272,12669,13203,13550,13642,13897,13738,13602,14005,14016,14266,14259,14911,15221,15657,16441,17113,16939,18062,18628,18832,19242,19183,18357,17621,17724,17918,18019,17328,18076,18554,19080,19652],"y0":1990,"step":1},{"n":"Germany","s":[42355,44196,44744,44018,45005,45548,45888,46671,47642,48625,49956,50688,50487,50192,50786,51265,53307,54921,55514,52569,54826,57951,58110,58182,59203,59669,60505,61965,62481,62950,60300,62631,63778,63140,62655],"y0":1990,"step":1},{"n":"Japan","s":[36138,37226,37403,37089,37353,38138,39222,39662,38853,38647,39732,39749,39690,40152,40987,41740,42359,43042,42519,40000,41647,41641,42395,43304,43754,44589,44927,45693,46133,46055,44213,45999,46819,47387,47480],"y0":1990,"step":1}];
+
+const COLORS = {
+  "China": "#c0392b",
+  "India": "#e67e22",
+  "Indonesia": "#16a085",
+  "Korea, Rep.": "#2980b9",
+  "Brazil": "#27ae60",
+  "Germany": "#7f8c8d",
+  "Japan": "#8e44ad"
+};
+
+const W = 820, H = 480;
+const margin = { top: 36, right: 148, bottom: 36, left: 68 };
+
+const allVals = data.flatMap(d => d.s.filter(v => v !== null));
+const valMin = 0;
+const valMax = Math.ceil(Math.max(...allVals) / 5000) * 5000;
+
+const years = data[0].s.map((_, i) => data[0].y0 + i);
+const yearMin = years[0], yearMax = years[years.length - 1];
+
+function xScale(year) {
+  return margin.left + (year - yearMin) / (yearMax - yearMin) * (W - margin.left - margin.right);
+}
+function yScale(val) {
+  return margin.top + (valMax - val) / (valMax - valMin) * (H - margin.top - margin.bottom);
+}
+function fmtK(v) {
+  return v >= 1000 ? (v / 1000).toFixed(0) + "k" : v;
+}
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 30; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i - 1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i - 1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  return sorted;
+}
+
+const svg = mkEl("svg", {
+  viewBox: `0 0 ${W} ${H}`, width: "100%",
+  style: `max-width:${W}px; display:block;`
+});
+
+// Y-axis grid
+for (let v = 0; v <= valMax; v += 10000) {
+  const y = yScale(v);
+  svg.appendChild(mkEl("line", { x1: margin.left, y1: y, x2: W - margin.right, y2: y,
+    stroke: "#e2e8f0", "stroke-width": "0.5" }));
+  const lbl = mkEl("text", { x: margin.left - 6, y: y + 4, "text-anchor": "end",
+    fill: "#7a786f", "font-size": "10" });
+  lbl.textContent = "$" + fmtK(v);
+  svg.appendChild(lbl);
+}
+
+// X-axis labels
+for (let yr = 1990; yr <= 2024; yr += 5) {
+  const lbl = mkEl("text", { x: xScale(yr), y: H - margin.bottom + 14,
+    "text-anchor": "middle", fill: "#7a786f", "font-size": "10" });
+  lbl.textContent = yr;
+  svg.appendChild(lbl);
+}
+
+// Endpoint labels
+const labelItems = data.map(s => {
+  const lastVal = s.s[s.s.length - 1];
+  return { n: s.n, lastVal, y: yScale(lastVal) };
+});
+const resolved = resolveCollisions(labelItems, 13);
+
+const groups = [];
+data.forEach(s => {
+  const color = COLORS[s.n] || "#888";
+  const pts = s.s.map((v, i) => v !== null ? { year: s.y0 + i, v } : null).filter(Boolean);
+  const pathD = pts.map((p, i) => `${i === 0 ? "M" : "L"} ${xScale(p.year).toFixed(1)} ${yScale(p.v).toFixed(1)}`).join(" ");
+
+  const g = mkEl("g", {});
+  const line = mkEl("path", { d: pathD, stroke: color, "stroke-width": "1.8", fill: "none",
+    "stroke-linejoin": "round" });
+
+  const hitPath = mkEl("path", { d: pathD, stroke: "transparent", "stroke-width": "12", fill: "none",
+    style: "cursor:pointer" });
+
+  const rItem = resolved.find(r => r.n === s.n);
+  const labelY = rItem ? rItem.y : yScale(s.s[s.s.length - 1]);
+  const anchorX = xScale(yearMax) + 6;
+  const dataY = yScale(s.s[s.s.length - 1]);
+
+  if (Math.abs(labelY - dataY) > 2) {
+    g.appendChild(mkEl("line", {
+      x1: xScale(yearMax), y1: dataY, x2: anchorX + 1, y2: labelY,
+      stroke: color, "stroke-width": "0.5", opacity: "0.5"
+    }));
+  }
+
+  const lbl = mkEl("text", { x: anchorX, y: labelY + 4, "text-anchor": "start",
+    fill: color, "font-size": "9", "font-family": "'JetBrains Mono', monospace" });
+  const name = s.n === "Korea, Rep." ? "Korea" : s.n;
+  lbl.textContent = `$${fmtK(s.s[s.s.length - 1])}  ${name}`;
+
+  g.appendChild(line);
+  g.appendChild(lbl);
+  g.appendChild(hitPath);
+  svg.appendChild(g);
+  groups.push({ g, line, hitPath, s, color });
+});
+
+// Interactivity
+const tip = document.getElementById("tip");
+groups.forEach(({ line, hitPath, s }) => {
+  hitPath.addEventListener("mousemove", e => {
+    groups.forEach(o => {
+      o.line.style.opacity = o.s === s ? "1" : "0.08";
+      o.line.style.strokeWidth = o.s === s ? "3" : "1.8";
+    });
+    const rect = svg.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, (mx - margin.left) / (W - margin.left - margin.right)));
+    const idx = Math.min(Math.round(ratio * (s.s.length - 1)), s.s.length - 1);
+    const year = s.y0 + idx;
+    const val = s.s[idx];
+    if (val !== null) {
+      tip.textContent = `${s.n}: $${val.toLocaleString()} PPP (${year})`;
+      tip.style.opacity = "1";
+      tip.style.left = (e.clientX + 14) + "px";
+      tip.style.top = (e.clientY - 24) + "px";
+    }
+  });
+  hitPath.addEventListener("mouseleave", () => {
+    groups.forEach(o => { o.line.style.opacity = "1"; o.line.style.strokeWidth = "1.8"; });
+    tip.style.opacity = "0";
+  });
+});
+
+document.getElementById("chart").appendChild(svg);
+</script>
+</body>
+</html>

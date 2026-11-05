@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; margin: 0; padding: 24px; background: #fff; color: #0f172a; }
+  h1 { font-size: 18px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { font-size: 13px; color: #64748b; margin: 0 0 20px; }
+  #chart { width: 100%; }
+  .source { font-size: 11px; color: #94a3b8; margin-top: 12px; }
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0;
+    background: #1e293b; color: #f1f5f9; font-size: 12px;
+    padding: 6px 10px; border-radius: 4px; white-space: nowrap;
+    transition: opacity 0.1s; z-index: 100;
+  }
+</style>
+</head>
+<body>
+<h1>Premature NCD Mortality: Who Is Making Progress?</h1>
+<p class="subtitle">Probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or chronic respiratory disease (%), 2000–2021</p>
+<div id="chart"></div>
+<p class="source">Source: World Bank (SH.DYN.NCOM.ZS) · SDG indicator 3.4.1</p>
+<div id="tip"></div>
+<script>
+const data = [{"n":"Fiji","s":[44,42.6,41.4,41.5,40.2,40.8,41.2,41.4,41.9,41.6,41.3,40.8,40.4,40.2,40,39.7,39.4,39.3,39,38.8,38.6,37.9],"y0":2000,"step":1},{"n":"Afghanistan","s":[43.2,43.5,43.1,42.5,42.3,41.9,41.1,40.5,39.6,38.3,37.6,37.2,36.5,36,35.4,35,34.9,35,34.6,34.4,34.8,32.7],"y0":2000,"step":1},{"n":"Bulgaria","s":[28.5,28.1,27.9,27.9,27.6,27.6,27.5,26.6,25.7,25.8,25.6,25.1,24.3,23.9,24.7,24.3,24.4,24.4,24.3,24,25.1,25.6],"y0":2000,"step":1},{"n":"India","s":[22.9,22.6,22.5,22.3,21.5,21.4,21.7,21.9,22.1,22.1,22.6,22.9,22.9,22.3,22,22.6,22.8,23,23.6,23.7,23.3,23.6],"y0":2000,"step":1},{"n":"Indonesia","s":[25.9,25.9,26,26.2,26.3,26.3,26.2,26.2,26.2,26.1,26,25.7,25.5,25.3,25.1,25,24.7,24.5,24.3,24.2,23.8,21.9],"y0":2000,"step":1},{"n":"China","s":[24.1,23.8,23.6,23.5,23.3,22.5,21.2,20.3,20,19.7,19.4,19,18.7,18.1,17.5,17.1,16.8,16.5,16.2,16,15.8,15.9],"y0":2000,"step":1},{"n":"Brazil","s":[20.8,20.4,19.9,19.7,19.6,18.7,18.4,18.1,18,17.6,17.4,17.3,16.8,16.6,16.1,16.1,16.2,15.7,15.4,15.1,14.7,14.5],"y0":2000,"step":1},{"n":"Germany","s":[16.1,15.5,15.3,15,14.4,14,13.6,13.5,13.3,13.2,13,12.8,12.5,12.8,12.3,12.5,12.4,12.1,12.1,11.8,11.7,11.6],"y0":2000,"step":1},{"n":"Japan","s":[11.3,11,10.7,10.5,10.4,10.3,10,9.9,9.8,9.5,9.6,9.6,9.4,9.2,9,8.7,8.7,8.6,8.4,8.3,8.2,8],"y0":2000,"step":1},{"n":"Korea, Rep.","s":[16.9,16.2,15.9,15.1,14.6,13.8,13.1,12.5,11.9,11.3,10.9,10.3,9.8,9.2,8.9,8.4,8.2,7.7,7.5,7.3,7,6.9],"y0":2000,"step":1},{"n":"Australia","s":[13,12.6,12.3,11.8,11.5,11.4,10.9,10.7,10.5,10.1,9.9,9.8,9.4,9.4,9.3,9.3,9,8.7,8.7,9,8.3,8.3],"y0":2000,"step":1}];
+
+const W = 800, H = 480;
+const margin = { top: 36, right: 140, bottom: 36, left: 46 };
+
+function colorForChange(pctDecline) {
+  if (pctDecline > 50) return "#2d6a4f";
+  if (pctDecline > 35) return "#52b788";
+  if (pctDecline > 20) return "#74c69d";
+  if (pctDecline > 5)  return "#c49a45";
+  return "#c4715a";
+}
+
+const seriesWithChange = data.map(d => {
+  const vals = d.s.filter(v => v !== null);
+  const pctDecline = (vals[0] - vals[vals.length - 1]) / vals[0] * 100;
+  return { ...d, pctDecline, color: colorForChange(pctDecline) };
+});
+
+const allVals = data.flatMap(d => d.s.filter(v => v !== null));
+const valMin = Math.floor(Math.min(...allVals) / 5) * 5;
+const valMax = Math.ceil(Math.max(...allVals) / 5) * 5;
+
+const years = data[0].s.map((_, i) => data[0].y0 + i * data[0].step);
+const yearMin = years[0], yearMax = years[years.length - 1];
+
+function xScale(year) {
+  return margin.left + (year - yearMin) / (yearMax - yearMin) * (W - margin.left - margin.right);
+}
+function yScale(val) {
+  return margin.top + (valMax - val) / (valMax - valMin) * (H - margin.top - margin.bottom);
+}
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 30; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i - 1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i - 1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  return sorted;
+}
+
+const svg = mkEl("svg", {
+  viewBox: `0 0 ${W} ${H}`, width: "100%",
+  style: `max-width:${W}px; display:block; font-family: 'JetBrains Mono', monospace;`
+});
+
+// Y-axis grid + labels
+for (let v = valMin; v <= valMax; v += 10) {
+  const y = yScale(v);
+  svg.appendChild(mkEl("line", {
+    x1: margin.left, y1: y, x2: W - margin.right, y2: y,
+    stroke: "#e2e8f0", "stroke-width": "0.5"
+  }));
+  const lbl = mkEl("text", { x: margin.left - 6, y: y + 4, "text-anchor": "end",
+    fill: "#7a786f", "font-size": "10" });
+  lbl.textContent = v + "%";
+  svg.appendChild(lbl);
+}
+
+// X-axis year labels
+for (let yr = 2000; yr <= 2020; yr += 5) {
+  const x = xScale(yr);
+  const lbl = mkEl("text", { x, y: H - margin.bottom + 14, "text-anchor": "middle",
+    fill: "#7a786f", "font-size": "10" });
+  lbl.textContent = yr;
+  svg.appendChild(lbl);
+}
+const lbl2021 = mkEl("text", { x: xScale(2021), y: H - margin.bottom + 14, "text-anchor": "middle",
+  fill: "#7a786f", "font-size": "10" });
+lbl2021.textContent = "2021";
+svg.appendChild(lbl2021);
+
+// Build endpoint label positions
+const labelItems = seriesWithChange.map(s => {
+  const vals = s.s;
+  const lastVal = vals[vals.length - 1];
+  return { n: s.n, lastVal, y: yScale(lastVal), color: s.color };
+});
+const resolved = resolveCollisions(labelItems, 13);
+
+// Draw each series
+const groups = [];
+seriesWithChange.forEach((s, si) => {
+  const pts = s.s.map((v, i) => v !== null ? { year: s.y0 + i * s.step, v } : null).filter(Boolean);
+  const pathD = pts.map((p, i) => `${i === 0 ? "M" : "L"} ${xScale(p.year).toFixed(1)} ${yScale(p.v).toFixed(1)}`).join(" ");
+
+  const g = mkEl("g", {});
+
+  const line = mkEl("path", {
+    d: pathD, stroke: s.color, "stroke-width": "1.8", fill: "none", "stroke-linejoin": "round",
+    opacity: "1"
+  });
+
+  const hitPath = mkEl("path", {
+    d: pathD, stroke: "transparent", "stroke-width": "12", fill: "none",
+    style: "cursor:pointer"
+  });
+
+  const rItem = resolved.find(r => r.n === s.n);
+  const labelY = rItem ? rItem.y : yScale(s.s[s.s.length - 1]);
+  const anchorX = xScale(yearMax) + 5;
+  const dataY = yScale(s.s[s.s.length - 1]);
+
+  if (Math.abs(labelY - dataY) > 2) {
+    const leader = mkEl("line", {
+      x1: xScale(yearMax), y1: dataY,
+      x2: anchorX + 2, y2: labelY,
+      stroke: s.color, "stroke-width": "0.5", opacity: "0.5"
+    });
+    g.appendChild(leader);
+  }
+
+  const name = s.n === "Korea, Rep." ? "Korea" : s.n;
+  const endLabel = mkEl("text", {
+    x: anchorX, y: labelY + 4,
+    "text-anchor": "start", fill: s.color, "font-size": "9",
+    "font-family": "'JetBrains Mono', monospace"
+  });
+  endLabel.textContent = `${s.s[s.s.length - 1]}%  ${name}`;
+
+  g.appendChild(line);
+  g.appendChild(endLabel);
+  g.appendChild(hitPath);
+  svg.appendChild(g);
+  groups.push({ g, line, hitPath, endLabel, s });
+});
+
+// Hover interactivity
+const tip = document.getElementById("tip");
+groups.forEach(({ g, line, hitPath, s }) => {
+  hitPath.addEventListener("mousemove", e => {
+    groups.forEach(other => {
+      other.line.style.opacity = other.s === s ? "1" : "0.08";
+      other.line.style.strokeWidth = other.s === s ? "3" : "1.8";
+    });
+    const rect = svg.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, (mx - margin.left) / (W - margin.left - margin.right)));
+    const idx = Math.min(Math.round(ratio * (s.s.length - 1)), s.s.length - 1);
+    const year = s.y0 + idx * s.step;
+    const val = s.s[idx];
+    tip.textContent = `${s.n}: ${val}% (${year})`;
+    tip.style.opacity = "1";
+    tip.style.left = (e.clientX + 14) + "px";
+    tip.style.top = (e.clientY - 24) + "px";
+  });
+  hitPath.addEventListener("mouseleave", () => {
+    groups.forEach(other => {
+      other.line.style.opacity = "1";
+      other.line.style.strokeWidth = "1.8";
+    });
+    tip.style.opacity = "0";
+  });
+});
+
+document.getElementById("chart").appendChild(svg);
+</script>
+</body>
+</html>

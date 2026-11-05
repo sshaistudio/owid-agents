@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; margin: 0; padding: 24px; background: #fff; color: #0f172a; }
+  h1 { font-size: 18px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { font-size: 13px; color: #64748b; margin: 0 0 20px; }
+  #chart { width: 100%; }
+  .source { font-size: 11px; color: #94a3b8; margin-top: 12px; }
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0;
+    background: #1e293b; color: #f1f5f9; font-size: 12px;
+    padding: 6px 10px; border-radius: 4px; white-space: nowrap;
+    transition: opacity 0.1s; z-index: 100;
+  }
+</style>
+</head>
+<body>
+<h1>Global Imbalances: Current Account Balances, 2000 vs. 2022</h1>
+<p class="subtitle">Current account balance as % of GDP — positive = surplus, negative = deficit</p>
+<div id="chart"></div>
+<p class="source">Source: World Bank (BN.CAB.XOKA.GD.ZS)</p>
+<div id="tip"></div>
+<script>
+const data = [
+  {"n":"Germany","a":-1.77,"b":4.11,"y":2000},
+  {"n":"Japan","a":2.59,"b":2.03,"y":2000},
+  {"n":"China","a":1.68,"b":2.21,"y":2000},
+  {"n":"Korea, Rep.","a":1.7,"b":1.29,"y":2000},
+  {"n":"Australia","a":-3.71,"b":0.25,"y":2000},
+  {"n":"Canada","a":2.48,"b":-0.44,"y":2000},
+  {"n":"France","a":1.18,"b":-1.43,"y":2000},
+  {"n":"Italy","a":-0.27,"b":-1.83,"y":2000},
+  {"n":"India","a":-0.98,"b":-2.43,"y":2000},
+  {"n":"Brazil","a":-4.05,"b":-2.15,"y":2000}
+];
+
+function colorForChange(a, b) {
+  const chg = b - a;
+  if (chg > 4) return "#2d6a4f";
+  if (chg > 1.5) return "#74c69d";
+  if (chg >= -1.5) return "#94a3b8";
+  if (chg >= -3) return "#f29a44";
+  return "#c4715a";
+}
+
+const W = 680, H = 520;
+const pad = { left: 118, right: 118, top: 48, bottom: 24 };
+
+const allVals = data.flatMap(d => [d.a, d.b]);
+const minV = Math.floor(Math.min(...allVals)) - 0.5;
+const maxV = Math.ceil(Math.max(...allVals)) + 0.5;
+
+function scale(v) {
+  return pad.top + (maxV - v) / (maxV - minV) * (H - pad.top - pad.bottom);
+}
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 40; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i - 1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i - 1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  return sorted;
+}
+
+const svg = mkEl("svg", {
+  viewBox: `0 0 ${W} ${H}`, width: "100%",
+  style: `max-width:${W}px; display:block;`
+});
+
+const axisLeft = pad.left;
+const axisRight = W - pad.right;
+
+// Zero line
+const zeroY = scale(0);
+svg.appendChild(mkEl("line", {
+  x1: axisLeft - 4, y1: zeroY, x2: axisRight + 4, y2: zeroY,
+  stroke: "#cbd5e1", "stroke-width": "1", "stroke-dasharray": "4,3"
+}));
+const zeroLbl = mkEl("text", { x: axisLeft + (axisRight - axisLeft) / 2, y: zeroY - 4,
+  "text-anchor": "middle", fill: "#cbd5e1", "font-size": "9" });
+zeroLbl.textContent = "0% (balanced)";
+svg.appendChild(zeroLbl);
+
+// Y grid
+for (let v = Math.ceil(minV); v <= Math.floor(maxV); v++) {
+  if (v === 0) continue;
+  const y = scale(v);
+  svg.appendChild(mkEl("line", { x1: axisLeft, y1: y, x2: axisRight, y2: y,
+    stroke: "#f1f5f9", "stroke-width": "0.5" }));
+}
+
+// Column headers
+const hdrL = mkEl("text", { x: axisLeft, y: pad.top - 18, "text-anchor": "middle",
+  fill: "#7a786f", "font-size": "10", "font-family": "'JetBrains Mono', monospace" });
+hdrL.textContent = "2000";
+svg.appendChild(hdrL);
+const hdrR = mkEl("text", { x: axisRight, y: pad.top - 18, "text-anchor": "middle",
+  fill: "#7a786f", "font-size": "10", "font-family": "'JetBrains Mono', monospace" });
+hdrR.textContent = "2022";
+svg.appendChild(hdrR);
+
+svg.appendChild(mkEl("line", { x1: axisLeft, y1: pad.top - 10, x2: axisLeft, y2: H - pad.bottom,
+  stroke: "#e2e8f0", "stroke-width": "1" }));
+svg.appendChild(mkEl("line", { x1: axisRight, y1: pad.top - 10, x2: axisRight, y2: H - pad.bottom,
+  stroke: "#e2e8f0", "stroke-width": "1" }));
+
+const leftItems = data.map(d => ({ n: d.n, y: scale(d.a) }));
+const rightItems = data.map(d => ({ n: d.n, y: scale(d.b) }));
+const resolvedLeft = resolveCollisions(leftItems, 13);
+const resolvedRight = resolveCollisions(rightItems, 13);
+
+const groups = [];
+data.forEach(d => {
+  const color = colorForChange(d.a, d.b);
+  const ya = scale(d.a), yb = scale(d.b);
+  const g = mkEl("g", {});
+
+  const line = mkEl("line", { x1: axisLeft, y1: ya, x2: axisRight, y2: yb,
+    stroke: color, "stroke-width": "1.5" });
+  const hitLine = mkEl("line", { x1: axisLeft, y1: ya, x2: axisRight, y2: yb,
+    stroke: "transparent", "stroke-width": "12", style: "cursor:pointer" });
+
+  const dotA = mkEl("circle", { cx: axisLeft, cy: ya, r: "3", fill: color });
+  const dotB = mkEl("circle", { cx: axisRight, cy: yb, r: "3", fill: color });
+
+  const leftPos = resolvedLeft.find(r => r.n === d.n);
+  const rightPos = resolvedRight.find(r => r.n === d.n);
+  const lLabelY = leftPos ? leftPos.y : ya;
+  const rLabelY = rightPos ? rightPos.y : yb;
+
+  if (Math.abs(lLabelY - ya) > 1) {
+    g.appendChild(mkEl("line", { x1: axisLeft - 2, y1: ya, x2: axisLeft - 4, y2: lLabelY,
+      stroke: color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+  if (Math.abs(rLabelY - yb) > 1) {
+    g.appendChild(mkEl("line", { x1: axisRight + 2, y1: yb, x2: axisRight + 4, y2: rLabelY,
+      stroke: color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+
+  const sign = v => v >= 0 ? "+" : "";
+  const leftLbl = mkEl("text", { x: axisLeft - 6, y: lLabelY + 4, "text-anchor": "end",
+    fill: color, "font-size": "9", "font-family": "'JetBrains Mono', monospace" });
+  const displayN = d.n === "Korea, Rep." ? "Korea" : d.n;
+  leftLbl.textContent = `${displayN}  ${sign(d.a)}${d.a}%`;
+
+  const rightLbl = mkEl("text", { x: axisRight + 6, y: rLabelY + 4, "text-anchor": "start",
+    fill: color, "font-size": "9", "font-family": "'JetBrains Mono', monospace" });
+  rightLbl.textContent = `${sign(d.b)}${d.b}%`;
+
+  g.appendChild(line);
+  g.appendChild(dotA);
+  g.appendChild(dotB);
+  g.appendChild(leftLbl);
+  g.appendChild(rightLbl);
+  g.appendChild(hitLine);
+  svg.appendChild(g);
+  groups.push({ g, line, hitLine, dotA, dotB, d });
+});
+
+const tip = document.getElementById("tip");
+groups.forEach(({ line, hitLine, dotA, dotB, d }) => {
+  function enter() {
+    groups.forEach(o => {
+      const dim = o.d !== d;
+      o.line.style.opacity = dim ? "0.1" : "1";
+      o.line.style.strokeWidth = dim ? "1.5" : "2.5";
+      o.dotA.style.opacity = dim ? "0.1" : "1";
+      o.dotB.style.opacity = dim ? "0.1" : "1";
+    });
+  }
+  function leave() {
+    groups.forEach(o => {
+      o.line.style.opacity = "1";
+      o.line.style.strokeWidth = "1.5";
+      o.dotA.style.opacity = "1";
+      o.dotB.style.opacity = "1";
+    });
+    tip.style.opacity = "0";
+  }
+  [hitLine].forEach(el => {
+    el.addEventListener("mouseenter", e => {
+      enter();
+      const sign = v => v >= 0 ? "+" : "";
+      const chg = d.b - d.a;
+      const dn = d.n === "Korea, Rep." ? "Korea" : d.n;
+      tip.textContent = `${dn}: ${sign(d.a)}${d.a}% (2000) → ${sign(d.b)}${d.b}% (2022)  (${sign(chg)}${chg.toFixed(1)}pp)`;
+      tip.style.opacity = "1";
+    });
+    el.addEventListener("mousemove", e => {
+      tip.style.left = (e.clientX + 14) + "px";
+      tip.style.top = (e.clientY - 24) + "px";
+    });
+    el.addEventListener("mouseleave", leave);
+  });
+});
+
+document.getElementById("chart").appendChild(svg);
+</script>
+</body>
+</html>

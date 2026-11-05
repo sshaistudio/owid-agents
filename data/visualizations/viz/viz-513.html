@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; margin: 0; padding: 24px; background: #fff; color: #0f172a; }
+  h1 { font-size: 18px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { font-size: 13px; color: #64748b; margin: 0 0 20px; }
+  #chart { width: 100%; }
+  .source { font-size: 11px; color: #94a3b8; margin-top: 12px; }
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0;
+    background: #1e293b; color: #f1f5f9; font-size: 12px;
+    padding: 6px 10px; border-radius: 4px; white-space: nowrap;
+    transition: opacity 0.1s; z-index: 100;
+  }
+</style>
+</head>
+<body>
+<h1>A Woman's Odds of Dying in Childbirth, 1990 vs. 2022</h1>
+<p class="subtitle">Lifetime risk of maternal death (%) — probability that a 15-year-old girl will eventually die from a maternal cause, given that year's fertility and mortality rates</p>
+<div id="chart"></div>
+<p class="source">Source: World Bank (SH.MMR.RISK.ZS) · High-burden countries shown (≥2% lifetime risk in 1990)</p>
+<div id="tip"></div>
+<script>
+const data = [
+  {"n":"Afghanistan","a":10.7438,"b":2.6674,"y":1990},
+  {"n":"Guinea-Bissau","a":10.157,"b":2.0503,"y":1990},
+  {"n":"Burundi","a":9.4243,"b":1.9079,"y":1990},
+  {"n":"Ethiopia","a":8.5358,"b":0.8608,"y":1990},
+  {"n":"Chad","a":7.9666,"b":4.5288,"y":1990},
+  {"n":"Gambia, The","a":7.5452,"b":1.4505,"y":1990},
+  {"n":"Eritrea","a":7.3622,"b":1.1103,"y":1990},
+  {"n":"Guinea","a":6.8253,"b":2.1866,"y":1990},
+  {"n":"Angola","a":5.5533,"b":0.9664,"y":1990},
+  {"n":"Burkina Faso","a":4.8431,"b":1.3145,"y":1990},
+  {"n":"Comoros","a":4.43,"b":0.6989,"y":1990},
+  {"n":"Congo, Dem. Rep.","a":4.4201,"b":2.6437,"y":1990},
+  {"n":"Bangladesh","a":4.1613,"b":0.3018,"y":1990},
+  {"n":"Cote d'Ivoire","a":4.0941,"b":1.7344,"y":1990},
+  {"n":"India","a":2.2198,"b":0.1749,"y":1990}
+];
+
+function colorForChange(a, b) {
+  const pctDecline = (a - b) / a * 100;
+  if (pctDecline >= 85) return "#2d6a4f";
+  if (pctDecline >= 70) return "#52b788";
+  if (pctDecline >= 55) return "#74c69d";
+  if (pctDecline >= 40) return "#c49a45";
+  return "#c4715a";
+}
+
+const W = 700, H = 580;
+const pad = { left: 128, right: 138, top: 48, bottom: 24 };
+
+const allA = data.map(d => d.a);
+const allB = data.map(d => d.b);
+const minV = 0;
+const maxV = Math.ceil(Math.max(...allA) / 2) * 2 + 0.5;
+
+function scale(v) {
+  return pad.top + (maxV - v) / (maxV - minV) * (H - pad.top - pad.bottom);
+}
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 40; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i - 1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i - 1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  return sorted;
+}
+
+const svg = mkEl("svg", {
+  viewBox: `0 0 ${W} ${H}`, width: "100%",
+  style: `max-width:${W}px; display:block;`
+});
+
+// Axes
+const axisLeft = pad.left;
+const axisRight = W - pad.right;
+
+// Y-axis grid lines
+for (let v = 0; v <= maxV; v += 2) {
+  const y = scale(v);
+  svg.appendChild(mkEl("line", { x1: axisLeft, y1: y, x2: axisRight, y2: y,
+    stroke: "#e2e8f0", "stroke-width": "0.5" }));
+}
+for (let v = 0; v <= maxV; v += 2) {
+  const y = scale(v);
+  const lbl = mkEl("text", { x: axisLeft + (axisRight - axisLeft) / 2, y: y - 3,
+    "text-anchor": "middle", fill: "#cbd5e1", "font-size": "9" });
+  lbl.textContent = v + "%";
+  svg.appendChild(lbl);
+}
+
+// Column headers
+const hdr1990 = mkEl("text", { x: axisLeft, y: pad.top - 18, "text-anchor": "middle",
+  fill: "#7a786f", "font-size": "10", "font-family": "'JetBrains Mono', monospace" });
+hdr1990.textContent = "1990";
+svg.appendChild(hdr1990);
+
+const hdr2022 = mkEl("text", { x: axisRight, y: pad.top - 18, "text-anchor": "middle",
+  fill: "#7a786f", "font-size": "10", "font-family": "'JetBrains Mono', monospace" });
+hdr2022.textContent = "2022";
+svg.appendChild(hdr2022);
+
+// Axis lines
+svg.appendChild(mkEl("line", { x1: axisLeft, y1: pad.top - 10, x2: axisLeft, y2: H - pad.bottom,
+  stroke: "#e2e8f0", "stroke-width": "1" }));
+svg.appendChild(mkEl("line", { x1: axisRight, y1: pad.top - 10, x2: axisRight, y2: H - pad.bottom,
+  stroke: "#e2e8f0", "stroke-width": "1" }));
+
+// Label positions
+const leftItems = data.map(d => ({ n: d.n, y: scale(d.a) }));
+const rightItems = data.map(d => ({ n: d.n, y: scale(d.b) }));
+const resolvedLeft = resolveCollisions(leftItems, 13);
+const resolvedRight = resolveCollisions(rightItems, 13);
+
+const groups = [];
+data.forEach(d => {
+  const color = colorForChange(d.a, d.b);
+  const ya = scale(d.a), yb = scale(d.b);
+
+  const g = mkEl("g", {});
+
+  const line = mkEl("line", {
+    x1: axisLeft, y1: ya, x2: axisRight, y2: yb,
+    stroke: color, "stroke-width": "1.5", opacity: "1"
+  });
+
+  const hitLine = mkEl("line", {
+    x1: axisLeft, y1: ya, x2: axisRight, y2: yb,
+    stroke: "transparent", "stroke-width": "12", style: "cursor:pointer"
+  });
+
+  const dotA = mkEl("circle", { cx: axisLeft, cy: ya, r: "3", fill: color });
+  const dotB = mkEl("circle", { cx: axisRight, cy: yb, r: "3", fill: color });
+
+  const leftPos = resolvedLeft.find(r => r.n === d.n);
+  const rightPos = resolvedRight.find(r => r.n === d.n);
+  const lLabelY = leftPos ? leftPos.y : ya;
+  const rLabelY = rightPos ? rightPos.y : yb;
+
+  if (Math.abs(lLabelY - ya) > 1) {
+    g.appendChild(mkEl("line", { x1: axisLeft - 2, y1: ya, x2: axisLeft - 4, y2: lLabelY,
+      stroke: color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+  if (Math.abs(rLabelY - yb) > 1) {
+    g.appendChild(mkEl("line", { x1: axisRight + 2, y1: yb, x2: axisRight + 4, y2: rLabelY,
+      stroke: color, "stroke-width": "0.5", opacity: "0.5" }));
+  }
+
+  const leftLbl = mkEl("text", { x: axisLeft - 6, y: lLabelY + 4, "text-anchor": "end",
+    fill: color, "font-size": "9", "font-family": "'JetBrains Mono', monospace" });
+  const shortName = d.n.replace(", The", "").replace(", Dem. Rep.", ", D.R.").replace("Cote d'Ivoire", "Côte d'Ivoire").replace("Burkina Faso", "Burkina Faso");
+  leftLbl.textContent = `${shortName}  ${d.a.toFixed(2)}%`;
+
+  const rightLbl = mkEl("text", { x: axisRight + 6, y: rLabelY + 4, "text-anchor": "start",
+    fill: color, "font-size": "9", "font-family": "'JetBrains Mono', monospace" });
+  rightLbl.textContent = `${d.b.toFixed(2)}%`;
+
+  g.appendChild(line);
+  g.appendChild(dotA);
+  g.appendChild(dotB);
+  g.appendChild(leftLbl);
+  g.appendChild(rightLbl);
+  g.appendChild(hitLine);
+  svg.appendChild(g);
+  groups.push({ g, line, hitLine, dotA, dotB, d });
+});
+
+const tip = document.getElementById("tip");
+groups.forEach(({ line, hitLine, dotA, dotB, d }) => {
+  function enter() {
+    groups.forEach(o => {
+      const dim = o.d !== d;
+      o.line.style.opacity = dim ? "0.1" : "1";
+      o.line.style.strokeWidth = dim ? "1.5" : "2.5";
+      o.dotA.style.opacity = dim ? "0.1" : "1";
+      o.dotB.style.opacity = dim ? "0.1" : "1";
+    });
+  }
+  function leave() {
+    groups.forEach(o => {
+      o.line.style.opacity = "1";
+      o.line.style.strokeWidth = "1.5";
+      o.dotA.style.opacity = "1";
+      o.dotB.style.opacity = "1";
+    });
+    tip.style.opacity = "0";
+  }
+  [hitLine].forEach(el => {
+    el.addEventListener("mouseenter", e => {
+      enter();
+      const displayName = d.n.replace(", The", "").replace(", Dem. Rep.", ", D.R.");
+      const pctChg = ((d.b - d.a) / d.a * 100).toFixed(0);
+      tip.textContent = `${displayName}: ${d.a.toFixed(2)}% (1990) → ${d.b.toFixed(2)}% (2022)  (${pctChg}%)`;
+      tip.style.opacity = "1";
+    });
+    el.addEventListener("mousemove", e => {
+      tip.style.left = (e.clientX + 14) + "px";
+      tip.style.top = (e.clientY - 24) + "px";
+    });
+    el.addEventListener("mouseleave", leave);
+  });
+});
+
+document.getElementById("chart").appendChild(svg);
+</script>
+</body>
+</html>
