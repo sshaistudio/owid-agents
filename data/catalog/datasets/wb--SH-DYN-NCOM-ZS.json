@@ -1,20 +1,23 @@
 {
   "meta": {
     "id": "wb--SH-DYN-NCOM-ZS",
-    "title": "NCD Mortality Risk (age 30-70)",
+    "title": "Premature NCD Mortality Risk, Ages 30-70 (%)",
     "description": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%) from world-bank",
     "source": {
       "provider": "world-bank",
       "indicatorId": "SH.DYN.NCOM.ZS",
       "indicatorName": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",
       "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.NCOM.ZS",
-      "lastFetched": "2026-08-28T01:46:30.253Z"
+      "lastFetched": "2026-11-05T00:34:16.408Z"
     },
     "topics": [
-      "health",
       "noncommunicable disease",
+      "cardiovascular",
+      "cancer",
+      "diabetes",
       "mortality",
-      "chronic disease"
+      "health",
+      "sdg-3"
     ],
     "countries": [
       "ZH",
@@ -31,6 +34,7 @@
       "7E",
       "T7",
       "EU",
+      "F2",
       "XE",
       "XD",
       "XF",
@@ -158,7 +162,7 @@
       "start": "2000",
       "end": "2021"
     },
-    "dataPointCount": 2992,
+    "dataPointCount": 3014,
     "dataFilePath": "datasets/wb--SH-DYN-NCOM-ZS.json"
   },
   "data": [
@@ -245,6 +249,12 @@
       "countryName": "European Union",
       "year": 2000,
       "value": 17.4669197135768
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2000,
+      "value": 26.5558676485946
     },
     {
       "country": "XE",
@@ -340,7 +350,7 @@
       "country": "ZQ",
       "countryName": "Middle East, North Africa, Afghanistan & Pakistan",
       "year": 2000,
-      "value": 25.6876827990204
+      "value": 25.6876827990205
     },
     {
       "country": "XQ",
@@ -994,7 +1004,7 @@
       "country": "1A",
       "countryName": "Arab World",
       "year": 2001,
-      "value": 24.8413592210918
+      "value": 24.8413592210917
     },
     {
       "country": "S3",
@@ -1061,6 +1071,12 @@
       "countryName": "European Union",
       "year": 2001,
       "value": 17.0106263679717
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2001,
+      "value": 26.1858060371394
     },
     {
       "country": "XE",
@@ -1216,7 +1232,7 @@
       "country": "S1",
       "countryName": "Small states",
       "year": 2001,
-      "value": 25.3434921463559
+      "value": 25.343492146356
     },
     {
       "country": "8S",
@@ -1822,7 +1838,7 @@
       "country": "B8",
       "countryName": "Central Europe and the Baltics",
       "year": 2002,
-      "value": 24.7647931210503
+      "value": 24.7647931210502
     },
     {
       "country": "V2",
@@ -1877,6 +1893,12 @@
       "countryName": "European Union",
       "year": 2002,
       "value": 16.6871241481778
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2002,
+      "value": 25.9069463944601
     },
     {
       "country": "XE",
@@ -1990,7 +2012,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2002,
-      "value": 23.2007824069676
+      "value": 23.2007824069675
     },
     {
       "country": "XU",
@@ -2695,6 +2717,12 @@
       "value": 16.4146543859738
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2003,
+      "value": 25.5921277591206
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2003,
@@ -2818,7 +2846,7 @@
       "country": "OE",
       "countryName": "OECD members",
       "year": 2003,
-      "value": 15.3622728707157
+      "value": 15.3622728707158
     },
     {
       "country": "S4",
@@ -3511,6 +3539,12 @@
       "value": 15.8267161213587
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2004,
+      "value": 25.4124321970968
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2004,
@@ -3706,7 +3740,7 @@
       "country": "1W",
       "countryName": "World",
       "year": 2004,
-      "value": 21.6420873971383
+      "value": 21.6420873971382
     },
     {
       "country": "AF",
@@ -4258,7 +4292,7 @@
       "country": "1A",
       "countryName": "Arab World",
       "year": 2005,
-      "value": 23.9974908243367
+      "value": 23.9974908243366
     },
     {
       "country": "S3",
@@ -4324,7 +4358,13 @@
       "country": "EU",
       "countryName": "European Union",
       "year": 2005,
-      "value": 15.5644558138232
+      "value": 15.5644558138231
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2005,
+      "value": 25.0804951117369
     },
     {
       "country": "XE",
@@ -5143,6 +5183,12 @@
       "value": 15.1885226806137
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2006,
+      "value": 24.5807659801532
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2006,
@@ -5158,7 +5204,7 @@
       "country": "XF",
       "countryName": "IBRD only",
       "year": 2006,
-      "value": 22.0098289552409
+      "value": 22.009828955241
     },
     {
       "country": "ZT",
@@ -5959,6 +6005,12 @@
       "value": 14.9550291060439
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2007,
+      "value": 24.3178850585536
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2007,
@@ -6070,7 +6122,7 @@
       "country": "XP",
       "countryName": "Middle income",
       "year": 2007,
-      "value": 21.5873709825616
+      "value": 21.5873709825617
     },
     {
       "country": "XU",
@@ -6775,6 +6827,12 @@
       "value": 14.6046190778778
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2008,
+      "value": 23.9902953103113
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2008,
@@ -6922,7 +6980,7 @@
       "country": "V1",
       "countryName": "Pre-demographic dividend",
       "year": 2008,
-      "value": 23.2865603013607
+      "value": 23.2865603013608
     },
     {
       "country": "S1",
@@ -7570,7 +7628,7 @@
       "country": "Z7",
       "countryName": "Europe & Central Asia",
       "year": 2009,
-      "value": 19.8636661056653
+      "value": 19.8636661056652
     },
     {
       "country": "7E",
@@ -7589,6 +7647,12 @@
       "countryName": "European Union",
       "year": 2009,
       "value": 14.4640716303705
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2009,
+      "value": 23.3871130714824
     },
     {
       "country": "XE",
@@ -8407,6 +8471,12 @@
       "value": 14.1441071566465
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2010,
+      "value": 22.9082535999076
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2010,
@@ -8494,7 +8564,7 @@
       "country": "XN",
       "countryName": "Lower middle income",
       "year": 2010,
-      "value": 23.2481038411163
+      "value": 23.2481038411162
     },
     {
       "country": "ZQ",
@@ -9223,6 +9293,12 @@
       "value": 13.8844407400922
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2011,
+      "value": 22.5445895676553
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2011,
@@ -9358,7 +9434,7 @@
       "country": "S2",
       "countryName": "Pacific island small states",
       "year": 2011,
-      "value": 38.8428042788571
+      "value": 38.842804278857
     },
     {
       "country": "V4",
@@ -10037,6 +10113,12 @@
       "countryName": "European Union",
       "year": 2012,
       "value": 13.6764959592527
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2012,
+      "value": 22.3515972864044
     },
     {
       "country": "XE",
@@ -10840,7 +10922,7 @@
       "country": "7E",
       "countryName": "Europe & Central Asia (excluding high income)",
       "year": 2013,
-      "value": 23.8919980597341
+      "value": 23.8919980597342
     },
     {
       "country": "T7",
@@ -10853,6 +10935,12 @@
       "countryName": "European Union",
       "year": 2013,
       "value": 13.4557311992118
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2013,
+      "value": 22.0805187528644
     },
     {
       "country": "XE",
@@ -11671,6 +11759,12 @@
       "value": 13.1351376536004
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2014,
+      "value": 22.01662625208
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2014,
@@ -11860,13 +11954,13 @@
       "country": "XT",
       "countryName": "Upper middle income",
       "year": 2014,
-      "value": 18.3822511231682
+      "value": 18.3822511231683
     },
     {
       "country": "1W",
       "countryName": "World",
       "year": 2014,
-      "value": 18.89780098982
+      "value": 18.8978009898199
     },
     {
       "country": "AF",
@@ -12485,6 +12579,12 @@
       "countryName": "European Union",
       "year": 2015,
       "value": 13.1842502427963
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2015,
+      "value": 21.826480333208
     },
     {
       "country": "XE",
@@ -13276,7 +13376,7 @@
       "country": "XC",
       "countryName": "Euro area",
       "year": 2016,
-      "value": 11.5416195344383
+      "value": 11.5416195344384
     },
     {
       "country": "Z7",
@@ -13301,6 +13401,12 @@
       "countryName": "European Union",
       "year": 2016,
       "value": 12.9153337426893
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2016,
+      "value": 21.6790953470771
     },
     {
       "country": "XE",
@@ -14119,6 +14225,12 @@
       "value": 12.7451306027777
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2017,
+      "value": 21.5084057200912
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2017,
@@ -14935,6 +15047,12 @@
       "value": 12.6160081681801
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2018,
+      "value": 21.5529778481671
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2018,
@@ -15118,7 +15236,7 @@
       "country": "T6",
       "countryName": "Sub-Saharan Africa (IDA & IBRD countries)",
       "year": 2018,
-      "value": 21.6721674764167
+      "value": 21.6721674764166
     },
     {
       "country": "XT",
@@ -15751,6 +15869,12 @@
       "value": 12.2486732873773
     },
     {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2019,
+      "value": 21.4277833199354
+    },
+    {
       "country": "XE",
       "countryName": "Heavily indebted poor countries (HIPC)",
       "year": 2019,
@@ -15856,7 +15980,7 @@
       "country": "T3",
       "countryName": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
       "year": 2019,
-      "value": 22.5934274633378
+      "value": 22.5934274633379
     },
     {
       "country": "XP",
@@ -16565,6 +16689,12 @@
       "countryName": "European Union",
       "year": 2020,
       "value": 12.1378040238022
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2020,
+      "value": 21.6823578595403
     },
     {
       "country": "XE",
@@ -17381,6 +17511,12 @@
       "countryName": "European Union",
       "year": 2021,
       "value": 12.1014360579722
+    },
+    {
+      "country": "F2",
+      "countryName": "Fragility, Conflict, and Violence (FCV) situations",
+      "year": 2021,
+      "value": 20.9316581037077
     },
     {
       "country": "XE",
