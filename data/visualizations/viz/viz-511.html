@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+  body { font-family: 'Inter', sans-serif; margin: 0; padding: 32px 40px; background: #F6F5EE; color: #2B2A27; }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 4px; color: #2B2A27; }
+  .subtitle { font-size: 11px; color: #7A786F; margin: 0 0 24px; max-width: 520px; line-height: 1.5; }
+  .source { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A786F; margin-top: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .tooltip { position: fixed; pointer-events: none; background: #2B2A27; color: #F6F5EE; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 6px 10px; border-radius: 2px; white-space: nowrap; opacity: 0; transition: opacity 0.15s; z-index: 10; }
+</style></head><body>
+<h1>Primary School Enrollment, 2000 vs. 2017</h1>
+<p class="subtitle">Net enrollment rate among primary-school-age children. Many low-income countries made dramatic gains, while some middle-income countries saw modest declines.</p>
+<div id="chart" style="position:relative;"></div>
+<div class="tooltip" id="tip"></div>
+<p class="source">Source: World Bank — Adjusted Net Enrollment Rate, Primary (SE.PRM.TENR)</p>
+<script>
+// y = before year (used for source validation), a = 2000 value, b = 2017 value
+const data = [{"n":"Djibouti","y":2000,"a":27.0,"b":60.0},{"n":"Burkina Faso","y":2000,"a":36.7,"b":77.0},{"n":"Burundi","y":2000,"a":41.4,"b":95.5},{"n":"Cote d'Ivoire","y":2000,"a":56.5,"b":88.6},{"n":"Bhutan","y":2000,"a":57.6,"b":89.7},{"n":"Gambia, The","y":2000,"a":64.5,"b":80.2},{"n":"Comoros","y":2000,"a":67.5,"b":84.2},{"n":"Ghana","y":2000,"a":67.9,"b":85.7},{"n":"Honduras","y":2000,"a":85.7,"b":80.5},{"n":"Dominican Republic","y":2000,"a":86.1,"b":94.3},{"n":"Iran, Islamic Rep.","y":2000,"a":86.2,"b":99.8},{"n":"Azerbaijan","y":2000,"a":88.2,"b":97.9},{"n":"Algeria","y":2000,"a":90.7,"b":99.5},{"n":"El Salvador","y":2000,"a":91.0,"b":81.0},{"n":"Jordan","y":2000,"a":91.3,"b":80.2},{"n":"Jamaica","y":2000,"a":92.8,"b":82.9},{"n":"Bolivia","y":2000,"a":96.4,"b":91.5},{"n":"Bulgaria","y":2000,"a":97.1,"b":88.1},{"n":"Cuba","y":2000,"a":99.6,"b":95.7},{"n":"Cabo Verde","y":2000,"a":99.6,"b":93.0}];
+
+const W = 700, H = 580;
+const pad = { left: 130, right: 140, top: 50, bottom: 20 };
+const minV = 15, maxV = 102;
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+svg.setAttribute("width", "100%");
+svg.style.maxWidth = W + "px";
+document.getElementById("chart").appendChild(svg);
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function scaleY(v) {
+  return pad.top + (maxV - v) / (maxV - minV) * (H - pad.top - pad.bottom);
+}
+
+function colorForChange(d) {
+  const ch = d.b - d.a;
+  if (ch > 30) return "#3D7A5A";
+  if (ch > 15) return "#5B9E78";
+  if (ch > 5)  return "#8BAD72";
+  if (ch >= 0) return "#C49A45";
+  return "#C4715A";
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 30; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i-1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i-1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  // clamp to chart bounds
+  for (const item of sorted) {
+    item.y = Math.max(pad.top + 4, Math.min(H - pad.bottom - 4, item.y));
+  }
+  return sorted;
+}
+
+const xL = pad.left;
+const xR = W - pad.right;
+
+// Axes
+svg.appendChild(mkEl("line", { x1: xL, y1: pad.top - 10, x2: xL, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+svg.appendChild(mkEl("line", { x1: xR, y1: pad.top - 10, x2: xR, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+
+// Year headers
+function addText(x, y, txt, anchor, size, fill, weight) {
+  const t = mkEl("text", { x, y, "text-anchor": anchor, "font-size": size, fill: fill || "#7A786F", "font-weight": weight || "400", "font-family": "'JetBrains Mono', monospace" });
+  t.textContent = txt;
+  return t;
+}
+svg.appendChild(addText(xL, pad.top - 18, "2000", "middle", "10px", "#7A786F"));
+svg.appendChild(addText(xR, pad.top - 18, "2017", "middle", "10px", "#7A786F"));
+
+// Grid lines at 20, 40, 60, 80, 100
+[20, 40, 60, 80, 100].forEach(v => {
+  const y = scaleY(v);
+  svg.appendChild(mkEl("line", { x1: xL, y1: y, x2: xR, y2: y, stroke: "#E2E0D5", "stroke-width": "0.5" }));
+  const t = mkEl("text", { x: xL - 6, y: y + 3, "text-anchor": "end", "font-size": "8px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+  t.textContent = v + "%";
+  svg.appendChild(t);
+});
+
+const tip = document.getElementById("tip");
+
+// Prepare label positions
+const leftLabels = data.map(d => ({ d, y: scaleY(d.a), orig: scaleY(d.a) }));
+const rightLabels = data.map(d => ({ d, y: scaleY(d.b), orig: scaleY(d.b) }));
+resolveCollisions(leftLabels, 11);
+resolveCollisions(rightLabels, 11);
+
+const leftMap = {};
+leftLabels.forEach(item => { leftMap[item.d.n] = item.y; });
+const rightMap = {};
+rightLabels.forEach(item => { rightMap[item.d.n] = item.y; });
+
+// Draw rows
+data.forEach(d => {
+  const ya = scaleY(d.a);
+  const yb = scaleY(d.b);
+  const col = colorForChange(d);
+  const g = mkEl("g", {});
+
+  // Line
+  const line = mkEl("line", { x1: xL, y1: ya, x2: xR, y2: yb, stroke: col, "stroke-width": "1.5", opacity: "1" });
+  g.appendChild(line);
+
+  // Dots
+  g.appendChild(mkEl("circle", { cx: xL, cy: ya, r: "3", fill: col }));
+  g.appendChild(mkEl("circle", { cx: xR, cy: yb, r: "3", fill: col }));
+
+  // Left label with leader line if needed
+  const ly = leftMap[d.n];
+  if (Math.abs(ly - ya) > 2) {
+    g.appendChild(mkEl("line", { x1: xL - 4, y1: ya, x2: xL - 20, y2: ly, stroke: col, "stroke-width": "0.5", opacity: "0.4" }));
+  }
+  const lt = mkEl("text", { x: xL - 6, y: ly + 3, "text-anchor": "end", "font-size": "9px", fill: "#2B2A27", "font-family": "'Inter', sans-serif" });
+  lt.textContent = d.n.length > 14 ? d.n.slice(0, 13) + "." : d.n;
+  g.appendChild(lt);
+  const lv = mkEl("text", { x: xL - 50, y: ly + 3, "text-anchor": "end", "font-size": "9px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" });
+  lv.textContent = d.a.toFixed(1);
+  g.appendChild(lv);
+
+  // Right label
+  const ry = rightMap[d.n];
+  if (Math.abs(ry - yb) > 2) {
+    g.appendChild(mkEl("line", { x1: xR + 4, y1: yb, x2: xR + 20, y2: ry, stroke: col, "stroke-width": "0.5", opacity: "0.4" }));
+  }
+  const rv = mkEl("text", { x: xR + 7, y: ry + 3, "text-anchor": "start", "font-size": "9px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" });
+  rv.textContent = d.b.toFixed(1);
+  g.appendChild(rv);
+  const rn = mkEl("text", { x: xR + 32, y: ry + 3, "text-anchor": "start", "font-size": "9px", fill: "#2B2A27", "font-family": "'Inter', sans-serif" });
+  rn.textContent = d.n.length > 14 ? d.n.slice(0, 13) + "." : d.n;
+  g.appendChild(rn);
+
+  // Hit area
+  const hit = mkEl("line", { x1: xL, y1: ya, x2: xR, y2: yb, stroke: "transparent", "stroke-width": "12", cursor: "pointer" });
+  hit.addEventListener("mousemove", e => {
+    const ch = d.b - d.a;
+    tip.textContent = `${d.n}: ${d.a.toFixed(1)}% → ${d.b.toFixed(1)}% (${ch >= 0 ? "+" : ""}${ch.toFixed(1)} pp)`;
+    tip.style.opacity = "1";
+    tip.style.left = (e.clientX + 12) + "px";
+    tip.style.top = (e.clientY - 20) + "px";
+    // Dim others
+    svg.querySelectorAll("g").forEach(gg => gg.style.opacity = "0.12");
+    g.style.opacity = "1";
+  });
+  hit.addEventListener("mouseleave", () => {
+    tip.style.opacity = "0";
+    svg.querySelectorAll("g").forEach(gg => gg.style.opacity = "1");
+  });
+  g.appendChild(hit);
+  svg.appendChild(g);
+});
+
+// Legend
+const legendItems = [
+  { col: "#3D7A5A", label: "+30 pp or more" },
+  { col: "#5B9E78", label: "+15 to +30 pp" },
+  { col: "#8BAD72", label: "+5 to +15 pp" },
+  { col: "#C49A45", label: "0 to +5 pp" },
+  { col: "#C4715A", label: "Declined" },
+];
+let lx = xL;
+const ly2 = H - 4;
+legendItems.forEach((item, i) => {
+  svg.appendChild(mkEl("rect", { x: lx, y: ly2 - 7, width: 8, height: 8, fill: item.col, rx: 1 }));
+  const lt2 = mkEl("text", { x: lx + 11, y: ly2, "font-size": "8px", fill: "#7A786F", "font-family": "'Inter', sans-serif" });
+  lt2.textContent = item.label;
+  svg.appendChild(lt2);
+  lx += item.label.length * 5.5 + 20;
+});
+</script>
+</body></html>
