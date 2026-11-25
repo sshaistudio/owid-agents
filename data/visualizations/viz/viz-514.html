@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+  body { font-family: 'Inter', sans-serif; margin: 0; padding: 32px 40px; background: #F6F5EE; color: #2B2A27; }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 4px; color: #2B2A27; }
+  .subtitle { font-size: 11px; color: #7A786F; margin: 0 0 24px; max-width: 520px; line-height: 1.5; }
+  .source { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A786F; margin-top: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .tooltip { position: fixed; pointer-events: none; background: #2B2A27; color: #F6F5EE; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 6px 10px; border-radius: 2px; white-space: nowrap; opacity: 0; transition: opacity 0.15s; z-index: 10; }
+</style></head><body>
+<h1>Current Account Balance, 1990–2024</h1>
+<p class="subtitle">As a share of GDP. Germany's persistent export surplus and the US structural deficit tell opposite stories about global trade imbalances. China's surplus peaked around 2007–2008 and has since narrowed.</p>
+<div id="chart" style="position:relative;"></div>
+<div class="tooltip" id="tip"></div>
+<p class="source">Source: World Bank — Current Account Balance (BN.CAB.XOKA.GD.ZS)</p>
+<script>
+const series = [
+  {"n":"Australia","pts":[{"y":1990,"v":-4.98},{"y":1991,"v":-3.24},{"y":1992,"v":-3.16},{"y":1993,"v":-2.97},{"y":1994,"v":-4.91},{"y":1995,"v":-5.06},{"y":1996,"v":-3.58},{"y":1997,"v":-2.73},{"y":1998,"v":-4.44},{"y":1999,"v":-5.58},{"y":2000,"v":-3.71},{"y":2001,"v":-2.1},{"y":2002,"v":-4.04},{"y":2003,"v":-6.26},{"y":2004,"v":-6.71},{"y":2005,"v":-6.22},{"y":2006,"v":-6.17},{"y":2007,"v":-7.55},{"y":2008,"v":-4.87},{"y":2009,"v":-5.21},{"y":2010,"v":-3.99},{"y":2011,"v":-3.25},{"y":2012,"v":-4.43},{"y":2013,"v":-3.24},{"y":2014,"v":-3.08},{"y":2015,"v":-4.3},{"y":2016,"v":-3.6},{"y":2017,"v":-3.01},{"y":2018,"v":-2.59},{"y":2019,"v":-0.08},{"y":2020,"v":1.64},{"y":2021,"v":2.45},{"y":2022,"v":0.25},{"y":2023,"v":-0.43},{"y":2024,"v":-2.31}]},
+  {"n":"Brazil","pts":[{"y":1990,"v":-0.99},{"y":1991,"v":-0.42},{"y":1992,"v":1.86},{"y":1993,"v":0.01},{"y":1994,"v":-0.22},{"y":1995,"v":-2.36},{"y":1996,"v":-2.73},{"y":1997,"v":-3.64},{"y":1998,"v":-4.05},{"y":1999,"v":-4.47},{"y":2000,"v":-4.05},{"y":2001,"v":-4.44},{"y":2002,"v":-1.85},{"y":2003,"v":0.39},{"y":2004,"v":1.34},{"y":2005,"v":1.31},{"y":2006,"v":0.97},{"y":2007,"v":-0.2},{"y":2008,"v":-2.1},{"y":2009,"v":-1.76},{"y":2010,"v":-3.93},{"y":2011,"v":-3.19},{"y":2012,"v":-3.76},{"y":2013,"v":-3.57},{"y":2014,"v":-4.5},{"y":2015,"v":-3.52},{"y":2016,"v":-1.7},{"y":2017,"v":-1.22},{"y":2018,"v":-2.81},{"y":2019,"v":-3.41},{"y":2020,"v":-1.64},{"y":2021,"v":-2.36},{"y":2022,"v":-2.15},{"y":2023,"v":-1.23},{"y":2024,"v":-2.99}]},
+  {"n":"China","pts":[{"y":1990,"v":3.32},{"y":1991,"v":3.45},{"y":1992,"v":1.49},{"y":1993,"v":-2.6},{"y":1994,"v":1.22},{"y":1995,"v":0.22},{"y":1996,"v":0.83},{"y":1997,"v":3.82},{"y":1998,"v":3.03},{"y":1999,"v":1.91},{"y":2000,"v":1.68},{"y":2001,"v":1.28},{"y":2002,"v":2.38},{"y":2003,"v":2.56},{"y":2004,"v":3.47},{"y":2005,"v":5.71},{"y":2006,"v":8.31},{"y":2007,"v":9.8},{"y":2008,"v":9.01},{"y":2009,"v":4.69},{"y":2010,"v":3.84},{"y":2011,"v":1.77},{"y":2012,"v":2.48},{"y":2013,"v":1.52},{"y":2014,"v":2.21},{"y":2015,"v":2.6},{"y":2016,"v":1.67},{"y":2017,"v":1.5},{"y":2018,"v":0.17},{"y":2019,"v":0.62},{"y":2020,"v":1.49},{"y":2021,"v":1.63},{"y":2022,"v":2.21},{"y":2023,"v":1.41},{"y":2024,"v":2.47}]},
+  {"n":"France","pts":[{"y":1990,"v":-0.79},{"y":1991,"v":-0.52},{"y":1992,"v":0.28},{"y":1993,"v":0.68},{"y":1994,"v":0.54},{"y":1995,"v":0.68},{"y":1996,"v":1.29},{"y":1997,"v":2.61},{"y":1998,"v":2.52},{"y":1999,"v":3.41},{"y":2000,"v":1.18},{"y":2001,"v":1.53},{"y":2002,"v":1.18},{"y":2003,"v":0.87},{"y":2004,"v":0.43},{"y":2005,"v":-0.01},{"y":2006,"v":0.02},{"y":2007,"v":-0.33},{"y":2008,"v":-0.96},{"y":2009,"v":-0.82},{"y":2010,"v":-0.83},{"y":2011,"v":-1.03},{"y":2012,"v":-1.23},{"y":2013,"v":-0.6},{"y":2014,"v":-0.96},{"y":2015,"v":-0.33},{"y":2016,"v":-0.54},{"y":2017,"v":-0.47},{"y":2018,"v":-0.74},{"y":2019,"v":0.59},{"y":2020,"v":-2.0},{"y":2021,"v":0.24},{"y":2022,"v":-1.43},{"y":2023,"v":-0.93},{"y":2024,"v":-0.33}]},
+  {"n":"Germany","pts":[{"y":1990,"v":2.61},{"y":1991,"v":-1.52},{"y":1992,"v":-1.26},{"y":1993,"v":-1.04},{"y":1994,"v":-1.58},{"y":1995,"v":-1.32},{"y":1996,"v":-0.78},{"y":1997,"v":-0.64},{"y":1998,"v":-0.75},{"y":1999,"v":-1.43},{"y":2000,"v":-1.77},{"y":2001,"v":-0.45},{"y":2002,"v":1.71},{"y":2003,"v":1.26},{"y":2004,"v":4.27},{"y":2005,"v":4.4},{"y":2006,"v":5.53},{"y":2007,"v":6.52},{"y":2008,"v":5.41},{"y":2009,"v":5.66},{"y":2010,"v":5.59},{"y":2011,"v":6.09},{"y":2012,"v":7.02},{"y":2013,"v":6.56},{"y":2014,"v":7.19},{"y":2015,"v":8.1},{"y":2016,"v":8.9},{"y":2017,"v":8.08},{"y":2018,"v":8.44},{"y":2019,"v":7.87},{"y":2020,"v":6.35},{"y":2021,"v":6.92},{"y":2022,"v":4.11},{"y":2023,"v":5.5},{"y":2024,"v":5.89}]},
+  {"n":"Canada","pts":[{"y":1990,"v":-3.4},{"y":1991,"v":-3.73},{"y":1992,"v":-3.65},{"y":1993,"v":-3.86},{"y":1994,"v":-2.4},{"y":1995,"v":-0.84},{"y":1996,"v":0.39},{"y":1997,"v":-1.37},{"y":1998,"v":-1.42},{"y":1999,"v":0.12},{"y":2000,"v":2.48},{"y":2001,"v":2.13},{"y":2002,"v":1.65},{"y":2003,"v":1.16},{"y":2004,"v":2.26},{"y":2005,"v":1.87},{"y":2006,"v":1.36},{"y":2007,"v":0.75},{"y":2008,"v":0.2},{"y":2009,"v":-2.97},{"y":2010,"v":-3.6},{"y":2011,"v":-2.77},{"y":2012,"v":-3.53},{"y":2013,"v":-3.15},{"y":2014,"v":-2.32},{"y":2015,"v":-3.51},{"y":2016,"v":-3.09},{"y":2017,"v":-2.8},{"y":2018,"v":-2.39},{"y":2019,"v":-1.95},{"y":2020,"v":-2.01},{"y":2021,"v":-0.02},{"y":2022,"v":-0.44},{"y":2023,"v":-0.69},{"y":2024,"v":-0.49}]}
+];
+
+const COLORS = { "Germany": "#EA5E33", "China": "#3D7A5A", "France": "#8BAD72", "Australia": "#C4715A", "Brazil": "#C49A45", "Canada": "#A6C4A2" };
+
+const W = 800, H = 460;
+const margin = { top: 30, right: 100, bottom: 40, left: 50 };
+const yearMin = 1990, yearMax = 2024;
+const valMin = -9, valMax = 11;
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+svg.setAttribute("width", "100%");
+svg.style.maxWidth = W + "px";
+document.getElementById("chart").appendChild(svg);
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function xScale(yr) {
+  return margin.left + (yr - yearMin) / (yearMax - yearMin) * (W - margin.left - margin.right);
+}
+function yScale(v) {
+  return margin.top + (valMax - v) / (valMax - valMin) * (H - margin.top - margin.bottom);
+}
+
+// Zero line
+const y0 = yScale(0);
+svg.appendChild(mkEl("line", { x1: margin.left, y1: y0, x2: W - margin.right, y2: y0, stroke: "#C2C0B5", "stroke-width": "1", "stroke-dasharray": "4,3" }));
+const zt = mkEl("text", { x: margin.left - 5, y: y0 + 3, "text-anchor": "end", "font-size": "9px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+zt.textContent = "0%";
+svg.appendChild(zt);
+
+// Grid
+[-8, -4, 4, 8].forEach(v => {
+  const y = yScale(v);
+  svg.appendChild(mkEl("line", { x1: margin.left, y1: y, x2: W - margin.right, y2: y, stroke: "#E2E0D5", "stroke-width": "0.5" }));
+  const t = mkEl("text", { x: margin.left - 5, y: y + 3, "text-anchor": "end", "font-size": "9px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+  t.textContent = (v > 0 ? "+" : "") + v + "%";
+  svg.appendChild(t);
+});
+
+// X axis
+[1990, 2000, 2010, 2020, 2024].forEach(yr => {
+  const x = xScale(yr);
+  svg.appendChild(mkEl("line", { x1: x, y1: H - margin.bottom, x2: x, y2: H - margin.bottom + 4, stroke: "#C2C0B5", "stroke-width": "1" }));
+  const t = mkEl("text", { x, y: H - margin.bottom + 14, "text-anchor": "middle", "font-size": "9px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" });
+  t.textContent = yr;
+  svg.appendChild(t);
+});
+svg.appendChild(mkEl("line", { x1: margin.left, y1: H - margin.bottom, x2: W - margin.right, y2: H - margin.bottom, stroke: "#C2C0B5", "stroke-width": "0.5" }));
+
+// Surplus / Deficit labels
+const tSurplus = mkEl("text", { x: margin.left + 5, y: yScale(8) - 4, "font-size": "9px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+tSurplus.textContent = "SURPLUS";
+svg.appendChild(tSurplus);
+const tDeficit = mkEl("text", { x: margin.left + 5, y: yScale(-8) + 12, "font-size": "9px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+tDeficit.textContent = "DEFICIT";
+svg.appendChild(tDeficit);
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 30; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i-1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i-1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  for (const item of sorted) {
+    item.y = Math.max(margin.top + 4, Math.min(H - margin.bottom - 4, item.y));
+  }
+  return sorted;
+}
+
+const tip = document.getElementById("tip");
+const groups = [];
+
+const endLabels = series.map(s => {
+  const last = s.pts[s.pts.length - 1];
+  return { s, y: yScale(last.v) };
+});
+resolveCollisions(endLabels, 11);
+const endMap = {};
+endLabels.forEach(item => { endMap[item.s.n] = item.y; });
+
+series.forEach(s => {
+  const col = COLORS[s.n] || "#7A786F";
+  const g = mkEl("g", {});
+
+  const pts = s.pts;
+  const pathD = pts.map((p, j) => `${j === 0 ? "M" : "L"}${xScale(p.y)},${yScale(p.v)}`).join(" ");
+  g.appendChild(mkEl("path", { d: pathD, stroke: col, "stroke-width": "1.8", fill: "none", "stroke-linejoin": "round" }));
+
+  const last = pts[pts.length - 1];
+  const ey = endMap[s.n];
+  const ly = yScale(last.v);
+  const lx = xScale(last.y) + 5;
+  if (Math.abs(ey - ly) > 3) {
+    g.appendChild(mkEl("line", { x1: lx - 2, y1: ly, x2: lx + 10, y2: ey, stroke: col, "stroke-width": "0.5", opacity: "0.4" }));
+  }
+  const lt = mkEl("text", { x: lx + 2, y: ey + 3, "text-anchor": "start", "font-size": "9px", fill: col, "font-weight": "600", "font-family": "'Inter', sans-serif" });
+  lt.textContent = s.n;
+  g.appendChild(lt);
+
+  const hit = mkEl("path", { d: pathD, stroke: "transparent", "stroke-width": "14", fill: "none", cursor: "pointer" });
+  hit.addEventListener("mousemove", e => {
+    const rect = svg.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const yr = Math.round(yearMin + (mx - margin.left) / (W - margin.left - margin.right) * (yearMax - yearMin));
+    const pt = pts.reduce((a, b) => Math.abs(a.y - yr) < Math.abs(b.y - yr) ? a : b);
+    tip.textContent = `${s.n} (${pt.y}): ${pt.v > 0 ? "+" : ""}${pt.v.toFixed(2)}% of GDP`;
+    tip.style.opacity = "1";
+    tip.style.left = (e.clientX + 12) + "px";
+    tip.style.top = (e.clientY - 20) + "px";
+    groups.forEach(gg => gg.style.opacity = "0.08");
+    g.style.opacity = "1";
+  });
+  hit.addEventListener("mouseleave", () => {
+    tip.style.opacity = "0";
+    groups.forEach(gg => gg.style.opacity = "1");
+  });
+  g.appendChild(hit);
+  svg.appendChild(g);
+  groups.push(g);
+});
+</script>
+</body></html>

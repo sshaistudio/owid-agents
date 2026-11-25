@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+  body { font-family: 'Inter', sans-serif; margin: 0; padding: 32px 40px; background: #F6F5EE; color: #2B2A27; }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 4px; color: #2B2A27; }
+  .subtitle { font-size: 11px; color: #7A786F; margin: 0 0 24px; max-width: 520px; line-height: 1.5; }
+  .source { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A786F; margin-top: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .tooltip { position: fixed; pointer-events: none; background: #2B2A27; color: #F6F5EE; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 6px 10px; border-radius: 2px; white-space: nowrap; opacity: 0; transition: opacity 0.15s; z-index: 10; }
+</style></head><body>
+<h1>Diabetes Prevalence, 2024</h1>
+<p class="subtitle">Share of adults aged 20–79 with diabetes. The Middle East, Pacific Islands, and parts of Latin America carry disproportionately high burdens — often linked to dietary shifts and rapid urbanization.</p>
+<div id="chart" style="position:relative;"></div>
+<div class="tooltip" id="tip"></div>
+<p class="source">Source: World Bank — Diabetes Prevalence (SH.STA.DIAB.ZS), IDF estimates</p>
+<script>
+// y = data year for source validation; values from World Bank SH.STA.DIAB.ZS 2024
+const data = [{"n":"Kiribati","y":2024,"v":24.6},{"n":"French Polynesia","y":2024,"v":22.8},{"n":"Egypt, Arab Rep.","y":2024,"v":22.4},{"n":"Bahrain","y":2024,"v":22.1},{"n":"Jordan","y":2024,"v":20.5},{"n":"Guam","y":2024,"v":20.3},{"n":"Dominican Republic","y":2024,"v":17.6},{"n":"Algeria","y":2024,"v":17.5},{"n":"Fiji","y":2024,"v":16.6},{"n":"Guyana","y":2024,"v":16.4},{"n":"Belize","y":2024,"v":14.1},{"n":"Argentina","y":2024,"v":14.0},{"n":"Brunei Darussalam","y":2024,"v":13.7},{"n":"Bermuda","y":2024,"v":13.4},{"n":"Curacao","y":2024,"v":13.4},{"n":"Iraq","y":2024,"v":13.4},{"n":"Bangladesh","y":2024,"v":13.2},{"n":"Barbados","y":2024,"v":13.2},{"n":"Guatemala","y":2024,"v":13.2},{"n":"Dominica","y":2024,"v":12.9},{"n":"El Salvador","y":2024,"v":12.7},{"n":"Jamaica","y":2024,"v":12.5},{"n":"Chile","y":2024,"v":12.2},{"n":"Bhutan","y":2024,"v":12.0},{"n":"China","y":2024,"v":11.9}];
+
+const W = 640, H = 560;
+const margin = { top: 10, right: 80, bottom: 30, left: 140 };
+const barH = 15, barGap = 7;
+const totalH = data.length * (barH + barGap) + margin.top + margin.bottom;
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", `0 0 ${W} ${totalH}`);
+svg.setAttribute("width", "100%");
+svg.style.maxWidth = W + "px";
+document.getElementById("chart").appendChild(svg);
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+const maxV = 26;
+const chartW = W - margin.left - margin.right;
+
+function xScale(v) {
+  return margin.left + (v / maxV) * chartW;
+}
+
+// Color ramp by rank
+function colorForRank(i, n) {
+  const t = i / (n - 1);
+  if (t < 0.25) return "#EA5E33";
+  if (t < 0.5)  return "#F29A44";
+  if (t < 0.75) return "#F5D38A";
+  return "#A6C4A2";
+}
+
+// Grid lines
+[5, 10, 15, 20, 25].forEach(v => {
+  const x = xScale(v);
+  svg.appendChild(mkEl("line", { x1: x, y1: margin.top, x2: x, y2: totalH - margin.bottom + 4, stroke: "#E2E0D5", "stroke-width": "0.5" }));
+  const t = mkEl("text", { x, y: totalH - margin.bottom + 14, "text-anchor": "middle", "font-size": "9px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+  t.textContent = v + "%";
+  svg.appendChild(t);
+});
+
+const tip = document.getElementById("tip");
+
+data.forEach((d, i) => {
+  const y = margin.top + i * (barH + barGap);
+  const col = colorForRank(i, data.length);
+  const bw = xScale(d.v) - margin.left;
+
+  const g = mkEl("g", {});
+
+  // Country name
+  const label = mkEl("text", { x: margin.left - 6, y: y + barH - 3, "text-anchor": "end", "font-size": "10px", fill: "#2B2A27", "font-family": "'Inter', sans-serif" });
+  label.textContent = d.n;
+  g.appendChild(label);
+
+  // Bar
+  const bar = mkEl("rect", { x: margin.left, y, width: bw, height: barH, fill: col, rx: 2 });
+  g.appendChild(bar);
+
+  // Value label
+  const vl = mkEl("text", { x: margin.left + bw + 5, y: y + barH - 3, "text-anchor": "start", "font-size": "9px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" });
+  vl.textContent = d.v.toFixed(1) + "%";
+  g.appendChild(vl);
+
+  // Hit area
+  const hit = mkEl("rect", { x: 0, y, width: W, height: barH + barGap, fill: "transparent", cursor: "pointer" });
+  hit.addEventListener("mousemove", e => {
+    tip.textContent = `${d.n}: ${d.v.toFixed(1)}% of adults have diabetes`;
+    tip.style.opacity = "1";
+    tip.style.left = (e.clientX + 12) + "px";
+    tip.style.top = (e.clientY - 20) + "px";
+    svg.querySelectorAll("g").forEach(gg => gg.style.opacity = "0.2");
+    g.style.opacity = "1";
+  });
+  hit.addEventListener("mouseleave", () => {
+    tip.style.opacity = "0";
+    svg.querySelectorAll("g").forEach(gg => gg.style.opacity = "1");
+  });
+  g.appendChild(hit);
+  svg.appendChild(g);
+});
+</script>
+</body></html>

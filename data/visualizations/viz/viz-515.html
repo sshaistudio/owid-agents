@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+  body { font-family: 'Inter', sans-serif; margin: 0; padding: 32px 40px; background: #F6F5EE; color: #2B2A27; }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 4px; color: #2B2A27; }
+  .subtitle { font-size: 11px; color: #7A786F; margin: 0 0 24px; max-width: 520px; line-height: 1.5; }
+  .source { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A786F; margin-top: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .tooltip { position: fixed; pointer-events: none; background: #2B2A27; color: #F6F5EE; font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 6px 10px; border-radius: 2px; white-space: nowrap; opacity: 0; transition: opacity 0.15s; z-index: 10; }
+</style></head><body>
+<h1>Lifetime Risk of Maternal Death, 1990 vs. 2023</h1>
+<p class="subtitle">Probability that a 15-year-old girl will eventually die from maternal causes. The world has made extraordinary progress — but Chad and Congo have barely moved, while Bangladesh, Bhutan, and Cambodia have cut risk by over 90%.</p>
+<div id="chart" style="position:relative;"></div>
+<div class="tooltip" id="tip"></div>
+<p class="source">Source: World Bank — Lifetime Risk of Maternal Death (SH.MMR.RISK.ZS)</p>
+<script>
+// y = before year (1990) used for source validation; a = 1990 value, b = 2023 value
+const data = [{"n":"Afghanistan","y":1990,"a":10.7438,"b":2.4693},{"n":"Guinea-Bissau","y":1990,"a":10.157,"b":1.8867},{"n":"Burundi","y":1990,"a":9.4243,"b":1.7626},{"n":"Ethiopia","y":1990,"a":8.5358,"b":0.7939},{"n":"Chad","y":1990,"a":7.9666,"b":4.2251},{"n":"Gambia, The","y":1990,"a":7.5452,"b":1.389},{"n":"Eritrea","y":1990,"a":7.3622,"b":1.0634},{"n":"Guinea","y":1990,"a":6.8253,"b":2.1187},{"n":"Angola","y":1990,"a":5.5533,"b":0.9454},{"n":"Burkina Faso","y":1990,"a":4.8431,"b":0.9844},{"n":"Comoros","y":1990,"a":4.43,"b":0.6606},{"n":"Congo, Dem. Rep.","y":1990,"a":4.4201,"b":2.4626},{"n":"Benin","y":1990,"a":4.3318,"b":2.2697},{"n":"Haiti","y":1990,"a":4.2438,"b":0.8465},{"n":"Bangladesh","y":1990,"a":4.1613,"b":0.2628},{"n":"Ghana","y":1990,"a":4.1101,"b":0.7504},{"n":"Cote d'Ivoire","y":1990,"a":4.0941,"b":1.4898},{"n":"Equatorial Guinea","y":1990,"a":3.9784,"b":0.7144},{"n":"Cambodia","y":1990,"a":3.8169,"b":0.3392},{"n":"Bhutan","y":1990,"a":3.7335,"b":0.0685}];
+
+const W = 700, H = 580;
+const pad = { left: 140, right: 150, top: 50, bottom: 24 };
+const minV = -0.5, maxV = 11.5;
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+svg.setAttribute("width", "100%");
+svg.style.maxWidth = W + "px";
+document.getElementById("chart").appendChild(svg);
+
+function mkEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function scaleY(v) {
+  return pad.top + (maxV - v) / (maxV - minV) * (H - pad.top - pad.bottom);
+}
+
+function pctReduction(d) {
+  return (d.a - d.b) / d.a * 100;
+}
+
+function colorForReduction(d) {
+  const r = pctReduction(d);
+  if (r >= 90) return "#3D7A5A";
+  if (r >= 75) return "#5B9E78";
+  if (r >= 60) return "#8BAD72";
+  if (r >= 45) return "#C49A45";
+  return "#C4715A";
+}
+
+function resolveCollisions(items, minGap) {
+  const sorted = items.slice().sort((a, b) => a.y - b.y);
+  for (let pass = 0; pass < 40; pass++) {
+    let moved = false;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap = sorted[i].y - sorted[i-1].y;
+      if (gap < minGap) {
+        const shift = (minGap - gap) / 2;
+        sorted[i-1].y -= shift;
+        sorted[i].y += shift;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  for (const item of sorted) {
+    item.y = Math.max(pad.top + 4, Math.min(H - pad.bottom - 4, item.y));
+  }
+  return sorted;
+}
+
+const xL = pad.left;
+const xR = W - pad.right;
+
+// Axes
+svg.appendChild(mkEl("line", { x1: xL, y1: pad.top - 10, x2: xL, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+svg.appendChild(mkEl("line", { x1: xR, y1: pad.top - 10, x2: xR, y2: H - pad.bottom, stroke: "#C2C0B5", "stroke-width": "1" }));
+
+// Year headers
+svg.appendChild((() => { const t = mkEl("text", { x: xL, y: pad.top - 18, "text-anchor": "middle", "font-size": "10px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" }); t.textContent = "1990"; return t; })());
+svg.appendChild((() => { const t = mkEl("text", { x: xR, y: pad.top - 18, "text-anchor": "middle", "font-size": "10px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" }); t.textContent = "2023"; return t; })());
+
+// Grid
+[0, 2, 4, 6, 8, 10].forEach(v => {
+  const y = scaleY(v);
+  svg.appendChild(mkEl("line", { x1: xL, y1: y, x2: xR, y2: y, stroke: "#E2E0D5", "stroke-width": "0.5" }));
+  const t = mkEl("text", { x: xL - 6, y: y + 3, "text-anchor": "end", "font-size": "8px", fill: "#9A9890", "font-family": "'JetBrains Mono', monospace" });
+  t.textContent = v + "%";
+  svg.appendChild(t);
+});
+
+const tip = document.getElementById("tip");
+
+const leftLabels = data.map(d => ({ d, y: scaleY(d.a), orig: scaleY(d.a) }));
+const rightLabels = data.map(d => ({ d, y: scaleY(d.b), orig: scaleY(d.b) }));
+resolveCollisions(leftLabels, 11);
+resolveCollisions(rightLabels, 11);
+const leftMap = {}, rightMap = {};
+leftLabels.forEach(item => { leftMap[item.d.n] = item.y; });
+rightLabels.forEach(item => { rightMap[item.d.n] = item.y; });
+
+data.forEach(d => {
+  const ya = scaleY(d.a);
+  const yb = scaleY(d.b);
+  const col = colorForReduction(d);
+  const g = mkEl("g", {});
+
+  g.appendChild(mkEl("line", { x1: xL, y1: ya, x2: xR, y2: yb, stroke: col, "stroke-width": "1.5", opacity: "1" }));
+  g.appendChild(mkEl("circle", { cx: xL, cy: ya, r: "3", fill: col }));
+  g.appendChild(mkEl("circle", { cx: xR, cy: yb, r: "3", fill: col }));
+
+  const ly = leftMap[d.n];
+  if (Math.abs(ly - ya) > 2) {
+    g.appendChild(mkEl("line", { x1: xL - 4, y1: ya, x2: xL - 20, y2: ly, stroke: col, "stroke-width": "0.5", opacity: "0.4" }));
+  }
+  const lt = mkEl("text", { x: xL - 6, y: ly + 3, "text-anchor": "end", "font-size": "9px", fill: "#2B2A27", "font-family": "'Inter', sans-serif" });
+  lt.textContent = d.n.length > 15 ? d.n.slice(0, 14) + "." : d.n;
+  g.appendChild(lt);
+  const lv = mkEl("text", { x: xL - 48, y: ly + 3, "text-anchor": "end", "font-size": "9px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" });
+  lv.textContent = d.a.toFixed(2);
+  g.appendChild(lv);
+
+  const ry = rightMap[d.n];
+  if (Math.abs(ry - yb) > 2) {
+    g.appendChild(mkEl("line", { x1: xR + 4, y1: yb, x2: xR + 20, y2: ry, stroke: col, "stroke-width": "0.5", opacity: "0.4" }));
+  }
+  const rv = mkEl("text", { x: xR + 7, y: ry + 3, "text-anchor": "start", "font-size": "9px", fill: "#7A786F", "font-family": "'JetBrains Mono', monospace" });
+  rv.textContent = d.b.toFixed(2);
+  g.appendChild(rv);
+  const rn = mkEl("text", { x: xR + 32, y: ry + 3, "text-anchor": "start", "font-size": "9px", fill: "#2B2A27", "font-family": "'Inter', sans-serif" });
+  rn.textContent = d.n.length > 15 ? d.n.slice(0, 14) + "." : d.n;
+  g.appendChild(rn);
+
+  const hit = mkEl("line", { x1: xL, y1: ya, x2: xR, y2: yb, stroke: "transparent", "stroke-width": "12", cursor: "pointer" });
+  hit.addEventListener("mousemove", e => {
+    const r = pctReduction(d);
+    tip.textContent = `${d.n}: ${d.a.toFixed(2)}% → ${d.b.toFixed(2)}%  (${r.toFixed(0)}% reduction)`;
+    tip.style.opacity = "1";
+    tip.style.left = (e.clientX + 12) + "px";
+    tip.style.top = (e.clientY - 20) + "px";
+    svg.querySelectorAll("g").forEach(gg => gg.style.opacity = "0.1");
+    g.style.opacity = "1";
+  });
+  hit.addEventListener("mouseleave", () => {
+    tip.style.opacity = "0";
+    svg.querySelectorAll("g").forEach(gg => gg.style.opacity = "1");
+  });
+  g.appendChild(hit);
+  svg.appendChild(g);
+});
+
+// Legend
+const legendItems = [
+  { col: "#3D7A5A", label: "≥90% reduction" },
+  { col: "#5B9E78", label: "75–90%" },
+  { col: "#8BAD72", label: "60–75%" },
+  { col: "#C49A45", label: "45–60%" },
+  { col: "#C4715A", label: "<45%" },
+];
+let lx = pad.left;
+const ly2 = H - 4;
+legendItems.forEach(item => {
+  svg.appendChild(mkEl("rect", { x: lx, y: ly2 - 7, width: 8, height: 8, fill: item.col, rx: 1 }));
+  const lt2 = mkEl("text", { x: lx + 11, y: ly2, "font-size": "8px", fill: "#7A786F", "font-family": "'Inter', sans-serif" });
+  lt2.textContent = item.label;
+  svg.appendChild(lt2);
+  lx += item.label.length * 5.5 + 20;
+});
+</script>
+</body></html>
